@@ -1,0 +1,80 @@
+{
+  "identifier" : "4D3E0A11",
+  "nonRenewingSubscriptions" : [],
+  "products" : [
+    {
+      "displayPrice" : "99.99",
+      "familyShareable" : true,
+      "internalID" : "6790020003",
+      "localizations" : [
+        { "description" : "Every MenoMap Pro feature, forever. One payment.", "displayName" : "MenoMap Pro Lifetime", "locale" : "en_US" }
+      ],
+      "productID" : "menomap.pro.lifetime",
+      "referenceName" : "MenoMap Pro Lifetime",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "6790020004",
+      "localizations" : [
+        { "description" : "One full clinician PDF covering up to 90 days.", "displayName" : "Visit Report", "locale" : "en_US" }
+      ],
+      "productID" : "menomap.visitreport.single",
+      "referenceName" : "Visit Report (single)",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storeKitErrors" : [],
+    "_storefront" : "USA"
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "21790020",
+      "localizations" : [
+        { "description" : "Long-range stats, patterns, experiments and clinician notes.", "displayName" : "MenoMap Pro", "locale" : "en_US" }
+      ],
+      "name" : "MenoMap Pro",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "49.99",
+          "familyShareable" : true,
+          "groupNumber" : 1,
+          "internalID" : "6790020001",
+          "introductoryOffer" : { "internalID" : "6790021001", "paymentMode" : "free", "subscriptionPeriod" : "P1W" },
+          "localizations" : [
+            { "description" : "MenoMap Pro, billed yearly.", "displayName" : "MenoMap Pro Yearly", "locale" : "en_US" }
+          ],
+          "productID" : "menomap.pro.yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "MenoMap Pro Yearly",
+          "subscriptionGroupID" : "21790020",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "9.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "6790020002",
+          "introductoryOffer" : null,
+          "localizations" : [
+            { "description" : "MenoMap Pro, billed monthly.", "displayName" : "MenoMap Pro Monthly", "locale" : "en_US" }
+          ],
+          "productID" : "menomap.pro.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "MenoMap Pro Monthly",
+          "subscriptionGroupID" : "21790020",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : { "major" : 3, "minor" : 0 }
+}

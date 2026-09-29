@@ -1,0 +1,186 @@
+# MenoMap — XcodeGen spec. Regenerate the project with:  xcodegen generate
+name: MenoMap
+
+options:
+  bundleIdPrefix: app.gwlabs
+  deploymentTarget:
+    iOS: "18.0"
+    watchOS: "11.0"
+  createIntermediateGroups: true
+  developmentLanguage: en
+  groupSortPosition: top
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: 3N9RY9EG8V
+    SWIFT_EMIT_LOC_STRINGS: YES
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: YES
+
+fileGroups:
+  - project.yml
+  - Docs
+  - Tools
+
+packages:
+  MenoCore:
+    path: MenoCore
+  RevenueCat:
+    url: https://github.com/RevenueCat/purchases-ios
+    from: "5.0.0"
+
+schemes:
+  MenoMap:
+    build:
+      targets:
+        MenoMap: all
+        MenoMapTests: [test]
+    run:
+      config: Debug
+      storeKitConfiguration: MenoMap/Resources/StoreKit/MenoMap.storekit
+    test:
+      config: Debug
+      targets:
+        - MenoMapTests
+    archive:
+      config: Release
+
+targets:
+  MenoMap:
+    type: application
+    platform: iOS
+    sources:
+      - path: MenoMap
+        excludes:
+          - Info.plist
+      - path: Shared
+    info:
+      path: MenoMap/Info.plist
+      properties:
+        CFBundleDisplayName: MenoMap
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        LSRequiresIPhoneOS: true
+        ITSAppUsesNonExemptEncryption: false
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIRequiresFullScreen: true
+        NSSupportsLiveActivities: true
+        NSHealthShareUsageDescription: "MenoMap reads the symptoms, sleep and menopause stage you choose to share, so your history shows up next to what you log here."
+        NSHealthUpdateUsageDescription: "MenoMap saves the hot flashes, night sweats and symptoms you log to Apple Health, so all your records stay in one place."
+        CFBundleURLTypes:
+          - CFBundleTypeRole: Editor
+            CFBundleURLName: app.gwlabs.menomap
+            CFBundleURLSchemes:
+              - menomap
+        CFBundleLocalizations:
+          - en
+        # RevenueCat public SDK key (observer mode). Empty until the RevenueCat project exists (Milestone J).
+        RevenueCatAPIKey: ""
+        NSUserActivityTypes:
+          - StartSurgeIntent
+    entitlements:
+      path: MenoMap/MenoMap.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.app.gwlabs.menomap
+        com.apple.developer.healthkit: true
+        com.apple.developer.healthkit.access: []
+        com.apple.developer.healthkit.background-delivery: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.gwlabs.menomap
+        TARGETED_DEVICE_FAMILY: "1"
+        PRODUCT_NAME: MenoMap
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        ENABLE_PREVIEWS: YES
+    dependencies:
+      - target: MenoMapWidgets
+      - target: MenoMapWatch
+      - package: MenoCore
+        product: MenoCore
+      - package: RevenueCat
+        product: RevenueCat
+
+  MenoMapWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: MenoMapWidgets
+        excludes:
+          - Info.plist
+      - path: Shared
+    info:
+      path: MenoMapWidgets/Info.plist
+      properties:
+        CFBundleDisplayName: MenoMap
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: MenoMapWidgets/MenoMapWidgets.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.app.gwlabs.menomap
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.gwlabs.menomap.widgets
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME: WidgetBackground
+        SKIP_INSTALL: YES
+    dependencies:
+      - package: MenoCore
+        product: MenoCore
+
+  MenoMapWatch:
+    type: application
+    platform: watchOS
+    sources:
+      - path: MenoMapWatch
+        excludes:
+          - Info.plist
+    info:
+      path: MenoMapWatch/Info.plist
+      properties:
+        CFBundleDisplayName: MenoMap
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        WKApplication: true
+        WKCompanionAppBundleIdentifier: app.gwlabs.menomap
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.gwlabs.menomap.watchkitapp
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        SKIP_INSTALL: YES
+    dependencies:
+      - package: MenoCore
+        product: MenoCore
+
+  MenoMapTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: MenoMapTests
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.gwlabs.menomap.tests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: $(BUILT_PRODUCTS_DIR)/MenoMap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MenoMap
+        BUNDLE_LOADER: $(TEST_HOST)
+    dependencies:
+      - target: MenoMap
+      - package: MenoCore
+        product: MenoCore
