@@ -32,6 +32,7 @@
 		5B0E71979B31B86D04CBD240 /* SurgeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E857E1C5C4164235F3FEF15 /* SurgeController.swift */; };
 		5E7C0139613E36A9471F18B8 /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C5F48CE8A8DBD3D7BFA57 /* LearnView.swift */; };
 		65B7439A4AE99684F9566D6D /* CommerceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F7959D63439DEE178BA8CD /* CommerceProtocols.swift */; };
+		66D27823B221D6CEB5586CC1 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1D85B9AEBA8EFF055F299464 /* InfoPlist.xcstrings */; };
 		6816B4A1AF3C63BB26F05DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C17CEDEC32A9D6B405262BEF /* Assets.xcassets */; };
 		6AE54D90C1C281B635A50B01 /* MenoMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2338F3989D9480E279BADEE1 /* MenoMapTests.swift */; };
 		6AF1EF7D722DE7054EC1C5A1 /* YouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9976BDB5AE1DBAF8D2FA8D /* YouView.swift */; };
@@ -70,12 +71,14 @@
 		D262E57FFB96DD4EE37CD315 /* VisitReadinessCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE5CB260041B6E5DA3B5B2 /* VisitReadinessCalculator.swift */; };
 		D48DCD4E1067A090232B8814 /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F9DAE5682EF700409CB7F4 /* DemoData.swift */; };
 		D6F3AC89B11CDC923423EBB6 /* ShareCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10093BDC74BAC42C5FC6B7 /* ShareCards.swift */; };
+		D6FB7B4D900C0F7D138A07FD /* AppShortcuts.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 041FBA7640165084642F88F1 /* AppShortcuts.xcstrings */; };
 		D7A50E16DF3D84C7E8C318A5 /* MenoMapWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7AAD9961C44378001454B612 /* MenoMapWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D857ECD36C3416A7D5AA64B2 /* VisitPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C868CE9C238B4611467E42C /* VisitPDF.swift */; };
 		DA691D4519B60460DA9B44AF /* SurgeActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996246ECFF3B24871652C3F4 /* SurgeActivity.swift */; };
 		DBF94BDD0DC1C83A74891CD4 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B502418E031D67BE95E34 /* AppContainer.swift */; };
 		E1658BD0CA423E3C8CEC6AAF /* MenoComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C75EAAB061536AD4FFA6AF /* MenoComponents.swift */; };
 		E2D08B64412AECC937A2B6BE /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E1C326C79F924E8FE96A5 /* AppRootView.swift */; };
+		E42BD9BA273FF1686425D08F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B9B3876B68FDEDD89BDB99A5 /* Localizable.xcstrings */; };
 		E53192EA2833CB35DFBB522B /* MenoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C98FB90A7C57A8C1E778F27 /* MenoStore.swift */; };
 		E82559A8F8AB300AC59CC20E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 03640B69C1DBF3ACB44149C1 /* Localizable.xcstrings */; };
 		E86617E73E661ABB0D3B058B /* MenoMapWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225C9016DCB689375501188 /* MenoMapWidgets.swift */; };
@@ -164,6 +167,7 @@
 
 /* Begin PBXFileReference section */
 		03640B69C1DBF3ACB44149C1 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		041FBA7640165084642F88F1 /* AppShortcuts.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppShortcuts.xcstrings; sourceTree = "<group>"; };
 		048E1C326C79F924E8FE96A5 /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
 		06B84AA31F38EF05BB34D882 /* MenoCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MenoCore; path = MenoCore; sourceTree = SOURCE_ROOT; };
 		0A91C0FE1AFFAE6815D770E0 /* DECISIONS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DECISIONS.md; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 		1A4ADBA37EAE675D72B561C2 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		1B2DB5DD7C0F62F90E5A4C78 /* HealthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthService.swift; sourceTree = "<group>"; };
 		1BAB1D2AE863FFD66033350E /* SPEC_ADDITIONS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SPEC_ADDITIONS.md; sourceTree = "<group>"; };
+		1D85B9AEBA8EFF055F299464 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		1DB5BFD5687997CDD7EEB6FE /* MenoMapWatchWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenoMapWatchWidgets.swift; sourceTree = "<group>"; };
 		1E62E3A754E6B67DBDD66701 /* MenoLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenoLog.swift; sourceTree = "<group>"; };
 		1E97EA173A8A5FFDC0E59D45 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
@@ -184,6 +189,7 @@
 		24001D67241F48ADBC28A482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26400E5F884A7EF7F4125690 /* MenoMapWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenoMapWatchApp.swift; sourceTree = "<group>"; };
 		29C3B65666AB955DC5A39155 /* MenoMapWatchWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MenoMapWatchWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A3128B30A714668FB149F1C /* loc_merge_parts.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = loc_merge_parts.py; sourceTree = "<group>"; };
 		339B3A42E27D5BB7F1E336CD /* VisitQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitQuestions.swift; sourceTree = "<group>"; };
 		34A1259E340E65AF6CCE6EE0 /* MenoTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenoTheme.swift; sourceTree = "<group>"; };
 		35F0350809D50EF72C79F6F8 /* MenoMapWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MenoMapWidgets.entitlements; sourceTree = "<group>"; };
@@ -208,17 +214,20 @@
 		73FE6A5A82A35D4BEB27107A /* GROWTH.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = GROWTH.md; sourceTree = "<group>"; };
 		74730FA743459A17A0A5E006 /* HeadsUpTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadsUpTexts.swift; sourceTree = "<group>"; };
 		779200739445157BB344E50F /* MenoMapWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MenoMapWatch.entitlements; sourceTree = "<group>"; };
+		78D278FD29D1EA728B35FC25 /* loc_build_source.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = loc_build_source.py; sourceTree = "<group>"; };
 		7AAD9961C44378001454B612 /* MenoMapWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenoMapWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E857E1C5C4164235F3FEF15 /* SurgeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurgeController.swift; sourceTree = "<group>"; };
 		8166294910B5D2C33807EE60 /* NightWatchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightWatchController.swift; sourceTree = "<group>"; };
 		856588FAA6A23F3CC259133F /* SharedStores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStores.swift; sourceTree = "<group>"; };
 		85D9BF7A96EDB3F7588849EA /* TodayCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCards.swift; sourceTree = "<group>"; };
 		87F907A79D87FD72E89612BA /* ReviewPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPrompt.swift; sourceTree = "<group>"; };
+		89AB46BAB0ECEE1559F3DB5A /* loc_status.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = loc_status.py; sourceTree = "<group>"; };
 		8DADF631ECE97018FAAD861A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		911D9C0BAD9AE04A114E0FCC /* SPEC.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SPEC.md; sourceTree = "<group>"; };
 		92551116065B98B26BAAB512 /* MenoMapWatchWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MenoMapWatchWidgets.entitlements; sourceTree = "<group>"; };
 		958D06A5A7E9F925F9CC7225 /* MedicationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationViews.swift; sourceTree = "<group>"; };
 		98E9E0A18B0ACE8365B0755B /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		993DD5A3873B6EB29447344E /* loc_validate.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = loc_validate.py; sourceTree = "<group>"; };
 		996246ECFF3B24871652C3F4 /* SurgeActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurgeActivity.swift; sourceTree = "<group>"; };
 		9F0768A9B22A7A83B26BD507 /* asc_api.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = asc_api.py; sourceTree = "<group>"; };
 		A1383580A9C8E6711B427E66 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
@@ -227,6 +236,7 @@
 		AAB88FA64E0BCC11033AC291 /* MenoMap_Visual_Identity.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MenoMap_Visual_Identity.md; sourceTree = "<group>"; };
 		AB0BB6D8FAA1A68673E986AF /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		B8ADC4861887EC405241D82F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9B3876B68FDEDD89BDB99A5 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		B9F7959D63439DEE178BA8CD /* CommerceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommerceProtocols.swift; sourceTree = "<group>"; };
 		BC001B80FCFB18138C8DC5F2 /* MenoMapTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MenoMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17CEDEC32A9D6B405262BEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -247,7 +257,10 @@
 		E56168FEF9CDBB7745532EAD /* MenoMapWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = MenoMapWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7694678FAB4AB5721E96973 /* MenoMap.storekit */ = {isa = PBXFileReference; path = MenoMap.storekit; sourceTree = "<group>"; };
 		EA4472ABF70C84B71695C2A8 /* VisitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitView.swift; sourceTree = "<group>"; };
+		EEB32A3FC787123F694D9A8B /* loc_safety_blind.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = loc_safety_blind.py; sourceTree = "<group>"; };
 		EEF786AA84FA5BC64FB3A3B0 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		F0EEB6127E946699AD069C46 /* loc_apply_review.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = loc_apply_review.py; sourceTree = "<group>"; };
+		F3B9309E014736359376307B /* loc_build_catalogs.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = loc_build_catalogs.py; sourceTree = "<group>"; };
 		F5F5E24E974B6826046E68EA /* MenoShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenoShortcuts.swift; sourceTree = "<group>"; };
 		F8EA95507B9CDE06D2997363 /* MenoMapMessages.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = MenoMapMessages.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD9F7D70934C5ED52B9AF6E3 /* WeekSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekSections.swift; sourceTree = "<group>"; };
@@ -330,6 +343,7 @@
 		193D0154095F905CCF3FACA8 /* MenoMapWatchWidgets */ = {
 			isa = PBXGroup;
 			children = (
+				B9B3876B68FDEDD89BDB99A5 /* Localizable.xcstrings */,
 				92551116065B98B26BAAB512 /* MenoMapWatchWidgets.entitlements */,
 				1DB5BFD5687997CDD7EEB6FE /* MenoMapWatchWidgets.swift */,
 			);
@@ -352,6 +366,13 @@
 			children = (
 				9F0768A9B22A7A83B26BD507 /* asc_api.py */,
 				43721A51ECC5911E964AC55E /* asc_setup.py */,
+				F0EEB6127E946699AD069C46 /* loc_apply_review.py */,
+				F3B9309E014736359376307B /* loc_build_catalogs.py */,
+				78D278FD29D1EA728B35FC25 /* loc_build_source.py */,
+				2A3128B30A714668FB149F1C /* loc_merge_parts.py */,
+				EEB32A3FC787123F694D9A8B /* loc_safety_blind.py */,
+				89AB46BAB0ECEE1559F3DB5A /* loc_status.py */,
+				993DD5A3873B6EB29447344E /* loc_validate.py */,
 				654E70B4A02F772B7DE58C24 /* make_icon.swift */,
 				CB5981226BA3469281B4C2B9 /* sim_run.sh */,
 			);
@@ -634,7 +655,9 @@
 			isa = PBXGroup;
 			children = (
 				3BCDC9C4A618554154D33260 /* StoreKit */,
+				041FBA7640165084642F88F1 /* AppShortcuts.xcstrings */,
 				B8ADC4861887EC405241D82F /* Assets.xcassets */,
+				1D85B9AEBA8EFF055F299464 /* InfoPlist.xcstrings */,
 				39D4AFC7799031A4B4996570 /* Localizable.xcstrings */,
 				1A4ADBA37EAE675D72B561C2 /* PrivacyInfo.xcprivacy */,
 			);
@@ -836,6 +859,7 @@
 			buildConfigurationList = 9F7E43475EF69A2FAF0886B1 /* Build configuration list for PBXNativeTarget "MenoMapWatchWidgets" */;
 			buildPhases = (
 				28AE0099B3B79610C7B161AB /* Sources */,
+				5D02B579CF85CF8E28279A83 /* Resources */,
 				CBF792E9B411F672C51EAD73 /* Frameworks */,
 			);
 			buildRules = (
@@ -940,7 +964,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6FB7B4D900C0F7D138A07FD /* AppShortcuts.xcstrings in Resources */,
 				1152F0C86B10EA3A9201FA67 /* Assets.xcassets in Resources */,
+				66D27823B221D6CEB5586CC1 /* InfoPlist.xcstrings in Resources */,
 				A6DEAAC88D8C9EF8CFDAE045 /* Localizable.xcstrings in Resources */,
 				19C71A554C4DC3946F332958 /* MenoMap.storekit in Resources */,
 				B7BA1BA7116C0F844E66A96E /* PrivacyInfo.xcprivacy in Resources */,
@@ -954,6 +980,14 @@
 				C44A2DF076E7E38912DAFD0D /* Assets.xcassets in Resources */,
 				1E667C817E04AFBB70EEDD8A /* Localizable.xcstrings in Resources */,
 				F76F74002A62B62E60CE8B43 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D02B579CF85CF8E28279A83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E42BD9BA273FF1686425D08F /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

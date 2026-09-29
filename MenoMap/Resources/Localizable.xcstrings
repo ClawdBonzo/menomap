@@ -1,5 +1,3083 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {},
-  "version" : "1.0"
+  "sourceLanguage": "en",
+  "strings": {
+    "\"Log a hot flash in MenoMap\"": {
+      "localizations": {}
+    },
+    "%@ asleep · from Apple Health": {
+      "localizations": {}
+    },
+    "%@ at %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ at %2$@"
+          }
+        }
+      }
+    },
+    "%@ in %lld days": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%1$@ in %2$lld day"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%1$@ in %2$lld days"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%@ running": {
+      "localizations": {}
+    },
+    "%@ surges a day": {
+      "localizations": {}
+    },
+    "%@ today": {
+      "localizations": {}
+    },
+    "%@ tomorrow": {
+      "localizations": {}
+    },
+    "%@ was tagged on %lld%% of your %lld tagged surges in the last 30 days.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ was tagged on %2$lld%% of your %3$lld tagged surges in the last 30 days."
+          }
+        }
+      }
+    },
+    "%@ · %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ · %2$@"
+          }
+        }
+      }
+    },
+    "%@ · %@%@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ · %2$@%3$@"
+          }
+        }
+      }
+    },
+    "%@ · 10": {
+      "localizations": {}
+    },
+    "%@/month, billed yearly": {
+      "localizations": {}
+    },
+    "%@: %lld days": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%1$@: %2$lld day"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%1$@: %2$lld days"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%@: %lld surges": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%1$@: %2$lld surge"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%1$@: %2$lld surges"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld": {
+      "shouldTranslate": false
+    },
+    "%lld / %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld / %2$lld"
+          }
+        }
+      },
+      "shouldTranslate": false
+    },
+    "%lld days": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld day"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld days"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld days before": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld day before"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld days before"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld days during": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld day during"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld days during"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld days · %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld days · %2$@"
+          }
+        }
+      }
+    },
+    "%lld fewer than the month before": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld fewer than the month before"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld fewer than the month before"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld hot flashes": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld hot flash"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld hot flashes"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld hot flashes · %lld night sweats": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld hot flashes · %2$lld night sweats"
+          }
+        }
+      }
+    },
+    "%lld min": {
+      "localizations": {}
+    },
+    "%lld more than the month before": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld more than the month before"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld more than the month before"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld night sweats": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld night sweat"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld night sweats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld personal summers this week.": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld personal summer this week."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld personal summers this week."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld surges this week": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld surge this week"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld surges this week"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld%%": {
+      "shouldTranslate": false
+    },
+    "%lld%% at night (9pm–7am)": {
+      "localizations": {}
+    },
+    "%lld%% fewer than the %lld days before": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld%% fewer than the %2$lld days before"
+          }
+        }
+      }
+    },
+    "%lld%% more than the %lld days before": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld%% more than the %2$lld days before"
+          }
+        }
+      }
+    },
+    "%lld%% of your surges in the last 30 days started around %@.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld%% of your surges in the last 30 days started around %2$@."
+          }
+        }
+      }
+    },
+    "%lld, %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld, %2$@"
+          }
+        }
+      },
+      "shouldTranslate": false
+    },
+    "%lld-day free trial, then %@/year (%@/month)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld-day free trial, then %2$@/year (%3$@/month)"
+          }
+        }
+      }
+    },
+    "%lld. %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld. %2$@"
+          }
+        }
+      },
+      "shouldTranslate": false
+    },
+    "%lldd": {
+      "localizations": {}
+    },
+    "**Before the visit**\n- Add the appointment date in the Visit tab. MenoMap shows how ready your notes are and what would make them stronger.\n- Pick the topics and questions that matter most. Keep it to three or four.\n- Create your notes for the last 30 or 90 days. Check that your medication list is up to date.\n\n**At the visit**\n- Hand over or show the first page. It's designed to be read in under a minute: counts, averages, the heat calendar and your questions.\n- Start with the question that matters most to you.\n- If your clinician speaks another language, you can create the notes in that language.\n\n**What the notes are, and aren't**\n\nThey're a summary of what you entered, plus anything you chose to bring in from Apple Health. They aren't a diagnosis or a complete medical record, and any patterns in them are coincidence checks, not proof of cause. Your clinician may ask questions the notes can't answer, and that's normal.\n\n**After the visit**\n\nAdd any new medication with its start date. In a few weeks, MenoMap can show your entries before and after, which makes your next review easier.": {
+      "localizations": {}
+    },
+    "**Menopause** is a single point in time: the day that marks 12 months in a row without a period, when that isn't explained by something else (like pregnancy, some medicines, or surgery). In many countries it happens on average in the early 50s, but anywhere from the mid-40s to the mid-50s is common.\n\n**Perimenopause** is the stretch of years leading up to that point. Hormone levels rise and fall unevenly, so periods can become irregular, heavier, lighter, closer together or further apart. Many of the changes people associate with menopause, like hot flashes, night sweats, sleep changes and mood changes, often start here, while periods are still happening. Perimenopause can last a few years or quite a bit longer, and it looks different for everyone.\n\n**Post-menopause** is everything after that 12-month mark. Some symptoms settle over time; others can continue for years.\n\nMenopause can also happen earlier because of surgery that removes the ovaries, some cancer treatments, or other health conditions. Menopause before 40 is sometimes called premature ovarian insufficiency, and it's worth discussing with a clinician.\n\n**How it's recognized.** For many people over 45, clinicians recognize perimenopause or menopause from your history and symptoms. Blood tests aren't always needed, because hormone levels swing from day to day. They're more likely to be used when someone is younger or the picture is unclear.\n\n**What MenoMap does and doesn't do.** MenoMap can't tell you which stage you're in. What it can do is keep an honest record of what you notice: surges, sleep, mood and treatment, so you and your clinician can look at the same picture.": {
+      "localizations": {}
+    },
+    "0": {
+      "localizations": {}
+    },
+    "0 · %@": {
+      "localizations": {}
+    },
+    "15+ min": {
+      "localizations": {}
+    },
+    "1–5 min": {
+      "localizations": {}
+    },
+    "30 days": {
+      "localizations": {}
+    },
+    "30 days logged": {
+      "localizations": {}
+    },
+    "30 or 90 days of history and the heat calendar": {
+      "localizations": {}
+    },
+    "30, 90 and 365-day heat maps and stats": {
+      "localizations": {}
+    },
+    "30, 90 and 365-day views are part of MenoMap Pro.": {
+      "localizations": {}
+    },
+    "3am club": {
+      "localizations": {}
+    },
+    "5–15 min": {
+      "localizations": {}
+    },
+    "7 days": {
+      "localizations": {}
+    },
+    "90 days": {
+      "localizations": {}
+    },
+    "?": {
+      "localizations": {}
+    },
+    "A cool, dark room, a fan, breathable bedding and layers you can shed often help. Try it as a two-week experiment.": {
+      "localizations": {}
+    },
+    "A few evening check-ins and your sleep, mood and energy lines appear here.": {
+      "localizations": {}
+    },
+    "A few more check-ins will make your notes stronger.": {
+      "localizations": {}
+    },
+    "A heat map of your own weather": {
+      "localizations": {}
+    },
+    "A missed dose is just a note in your log. No lectures.": {
+      "localizations": {}
+    },
+    "A night sweat button on your Lock Screen all night": {
+      "localizations": {}
+    },
+    "A one-tap night sweat button on your Lock Screen, from bedtime until morning. No unlocking, no bright screen at 3am.": {
+      "localizations": {}
+    },
+    "A pattern showed up in your entries. MenoMap Pro shows the numbers behind it.": {
+      "localizations": {}
+    },
+    "A readable file of everything you've logged. Free, always.": {
+      "localizations": {}
+    },
+    "A4": {
+      "localizations": {}
+    },
+    "About": {
+      "localizations": {}
+    },
+    "About these notes": {
+      "localizations": {}
+    },
+    "Across your last %lld cycles, you logged %@ surges a day in the 3 days before your period started, compared with %@ on other days.": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Across your last %1$lld cycle, you logged %2$@ surges a day in the 3 days before your period started, compared with %3$@ on other days."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Across your last %1$lld cycles, you logged %2$@ surges a day in the 3 days before your period started, compared with %3$@ on other days."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Action Button": {
+      "localizations": {}
+    },
+    "Add": {
+      "localizations": {}
+    },
+    "Add appointment": {
+      "localizations": {}
+    },
+    "Add medication": {
+      "localizations": {}
+    },
+    "Add one I missed": {
+      "localizations": {}
+    },
+    "Add the MenoMap complication to your watch face.": {
+      "localizations": {}
+    },
+    "Add the date and MenoMap will get your notes ready in time. Optional.": {
+      "localizations": {}
+    },
+    "Add the date. MenoMap shows how ready your notes are and reminds you a week before, the day before and that morning.": {
+      "localizations": {}
+    },
+    "Add what you take, including HRT, non-hormonal options and supplements.": {
+      "localizations": {}
+    },
+    "Add your own question": {
+      "localizations": {}
+    },
+    "Alcohol": {
+      "localizations": {}
+    },
+    "Alcohol evenings": {
+      "localizations": {}
+    },
+    "Alcohol today?": {
+      "localizations": {}
+    },
+    "All": {
+      "localizations": {}
+    },
+    "All MenoMap data was deleted.": {
+      "localizations": {}
+    },
+    "Already over": {
+      "localizations": {}
+    },
+    "Already saved": {
+      "localizations": {}
+    },
+    "Am I in perimenopause?": {
+      "localizations": {}
+    },
+    "Answer": {
+      "localizations": {}
+    },
+    "Any bleeding after menopause should be checked by a clinician.": {
+      "localizations": {}
+    },
+    "Anything going on?": {
+      "localizations": {}
+    },
+    "Anything going on? (optional)": {
+      "localizations": {}
+    },
+    "Apple Health": {
+      "localizations": {}
+    },
+    "Apple Health isn't available on this device.": {
+      "localizations": {}
+    },
+    "Apple Watch": {
+      "localizations": {}
+    },
+    "Appointment": {
+      "localizations": {}
+    },
+    "Appointment %@": {
+      "localizations": {}
+    },
+    "Appointment in %lld days": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Appointment in %lld day"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Appointment in %lld days"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Appointment in a week": {
+      "localizations": {}
+    },
+    "Appointment today": {
+      "localizations": {}
+    },
+    "Appointment tomorrow": {
+      "localizations": {}
+    },
+    "Appointments are short. Memory is kind. Notes are exact.": {
+      "localizations": {}
+    },
+    "Are night sweats normal?": {
+      "localizations": {}
+    },
+    "Arm Night Watch": {
+      "localizations": {}
+    },
+    "Articles": {
+      "localizations": {}
+    },
+    "As needed": {
+      "localizations": {}
+    },
+    "Ask MenoMap, e.g. why 3am waking?": {
+      "localizations": {}
+    },
+    "Average %@ asleep over %lld nights (from Apple Health).": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Average %1$@ asleep over %2$lld night (from Apple Health)."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Average %1$@ asleep over %2$lld nights (from Apple Health)."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Average strength": {
+      "localizations": {}
+    },
+    "Average surge intensity was %@ in the last 30 days, compared with %@ in the 30 days before.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Average surge intensity was %1$@ in the last 30 days, compared with %2$@ in the 30 days before."
+          }
+        }
+      }
+    },
+    "Awful": {
+      "localizations": {}
+    },
+    "Back": {
+      "localizations": {}
+    },
+    "Based on public guidance from %@.": {
+      "localizations": {}
+    },
+    "Bedtime": {
+      "localizations": {}
+    },
+    "Bedtime reminder to arm it": {
+      "localizations": {}
+    },
+    "Best value": {
+      "localizations": {}
+    },
+    "Big button on your Home Screen": {
+      "localizations": {}
+    },
+    "Billed monthly. Cancel any time.": {
+      "localizations": {}
+    },
+    "Bladder incontinence": {
+      "localizations": {}
+    },
+    "Bleeding": {
+      "localizations": {}
+    },
+    "Bleeding after menopause": {
+      "localizations": {}
+    },
+    "Bleeding after menopause recorded in Apple Health: %lld times.": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Bleeding after menopause recorded in Apple Health: %lld time."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Bleeding after menopause recorded in Apple Health: %lld times."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Bleeding after menopause should be checked": {
+      "localizations": {}
+    },
+    "Bleeding after menopause — even once, even light — should be checked by a clinician. MenoMap cannot tell you why it happened.": {
+      "localizations": {}
+    },
+    "Brain fog": {
+      "localizations": {}
+    },
+    "Breathe in": {
+      "localizations": {}
+    },
+    "Breathe out": {
+      "localizations": {}
+    },
+    "Breathe with me": {
+      "localizations": {}
+    },
+    "Bring in what you've already logged": {
+      "localizations": {}
+    },
+    "Brought in from Apple Health.": {
+      "localizations": {}
+    },
+    "By continuing you agree that MenoMap processes the health information you enter on this device to show your logs, patterns and notes.": {
+      "localizations": {}
+    },
+    "Caffeine": {
+      "localizations": {}
+    },
+    "Caffeine later than usual?": {
+      "localizations": {}
+    },
+    "Calm": {
+      "localizations": {}
+    },
+    "Calm stretch": {
+      "localizations": {}
+    },
+    "Calm stretch %lldd": {
+      "localizations": {}
+    },
+    "Calmest": {
+      "localizations": {}
+    },
+    "Calmest day": {
+      "localizations": {}
+    },
+    "Can I ask about HRT?": {
+      "localizations": {}
+    },
+    "Can menopause affect mood?": {
+      "localizations": {}
+    },
+    "Cancel": {
+      "localizations": {}
+    },
+    "Certain days": {
+      "localizations": {}
+    },
+    "Check in": {
+      "localizations": {}
+    },
+    "Check-in": {
+      "localizations": {}
+    },
+    "Check-in questions": {
+      "localizations": {}
+    },
+    "Check-ins": {
+      "localizations": {}
+    },
+    "Checked in": {
+      "localizations": {}
+    },
+    "Chills": {
+      "localizations": {}
+    },
+    "Clean notes for your clinician": {
+      "localizations": {}
+    },
+    "Clear": {
+      "localizations": {}
+    },
+    "Clinician notes": {
+      "localizations": {}
+    },
+    "Clinician notes as a PDF, in any language we support": {
+      "localizations": {}
+    },
+    "Clinician's name (optional)": {
+      "localizations": {}
+    },
+    "Clinicians call hot flashes and night sweats **vasomotor symptoms**. A hot flash is a sudden wave of heat, often in the face, neck and chest, sometimes with flushing, sweating, a racing heart or a chill afterward. A night sweat is the same thing during sleep, and it can be strong enough to wake you or soak your sheets.\n\nThey are among the most common changes around menopause. Some people have a few mild ones; others have many a day that disrupt work and sleep. For some they fade within a few years; for others they last much longer.\n\n**What can make them more likely.** People often notice patterns with alcohol, caffeine, spicy food, hot rooms, stress or heavy bedding. These vary a lot from person to person, which is why tracking your own tags can be more useful than a general list.\n\n**Other causes exist.** Flushing and sweating can also come from thyroid problems, infections, some medicines, anxiety and other conditions. If your symptoms don't fit the usual pattern, or come with weight loss, fever or feeling unwell, mention it to a clinician.\n\n**Describing them well.** Useful details for a visit:\n- How many a day and a night, roughly\n- How strong they feel and how long they last\n- What they interrupt: sleep, work, conversations, exercise\n- What seems to come before them\n- What you've tried, and whether it changed anything\n\nMenoMap's Surge button and after-the-fact log exist to capture exactly this without much effort.\n\n**Help is available.** There are hormonal and non-hormonal treatment options, plus practical approaches. Which ones suit you is a conversation to have with a clinician.": {
+      "localizations": {}
+    },
+    "Close": {
+      "localizations": {}
+    },
+    "Coffee, tea and cola before noon only, for two weeks.": {
+      "localizations": {}
+    },
+    "Combined": {
+      "localizations": {}
+    },
+    "Common questions": {
+      "localizations": {}
+    },
+    "Connect Apple Health": {
+      "localizations": {}
+    },
+    "Connected": {
+      "localizations": {}
+    },
+    "Connected. Nothing to import yet.": {
+      "localizations": {}
+    },
+    "Constant": {
+      "localizations": {}
+    },
+    "Continue": {
+      "localizations": {}
+    },
+    "Continue with %@": {
+      "localizations": {}
+    },
+    "Control Center": {
+      "localizations": {}
+    },
+    "Cooler bedroom": {
+      "localizations": {}
+    },
+    "Could anything besides menopause be causing my night sweats?": {
+      "localizations": {}
+    },
+    "Could something other than night sweats be affecting my sleep?": {
+      "localizations": {}
+    },
+    "Could you turn the fan on?": {
+      "localizations": {}
+    },
+    "Couldn't make the video. Try again.": {
+      "localizations": {}
+    },
+    "Couldn't reach the App Store. Try again": {
+      "localizations": {}
+    },
+    "Crack a window": {
+      "localizations": {}
+    },
+    "Create my notes": {
+      "localizations": {}
+    },
+    "Cycle": {
+      "localizations": {}
+    },
+    "Daily reminder": {
+      "localizations": {}
+    },
+    "Date": {
+      "localizations": {}
+    },
+    "Day": {
+      "localizations": {}
+    },
+    "Day %lld of %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Day %1$lld of %2$lld"
+          }
+        }
+      }
+    },
+    "Day %lld of %lld. Keep logging as usual; MenoMap compares with the %lld days before.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Day %1$lld of %2$lld. Keep logging as usual; MenoMap compares with the %3$lld days before."
+          }
+        }
+      }
+    },
+    "Delete": {
+      "localizations": {}
+    },
+    "Delete all MenoMap data?": {
+      "localizations": {}
+    },
+    "Delete all data": {
+      "localizations": {}
+    },
+    "Delete any time": {
+      "localizations": {}
+    },
+    "Delete appointment": {
+      "localizations": {}
+    },
+    "Delete everything": {
+      "localizations": {}
+    },
+    "Delete medication": {
+      "localizations": {}
+    },
+    "Delete this medication and its dose log?": {
+      "localizations": {}
+    },
+    "Delete this surge": {
+      "localizations": {}
+    },
+    "Delete this surge?": {
+      "localizations": {}
+    },
+    "Deletes everything MenoMap stores on this iPhone. Data in Apple Health stays until you remove it in the Health app.": {
+      "localizations": {}
+    },
+    "Details (optional)": {
+      "localizations": {}
+    },
+    "Didn't happen": {
+      "localizations": {}
+    },
+    "Discard": {
+      "localizations": {}
+    },
+    "Dismiss": {
+      "localizations": {}
+    },
+    "Do I have menopause?": {
+      "localizations": {}
+    },
+    "Do my first check-in": {
+      "localizations": {}
+    },
+    "Do supplements work?": {
+      "localizations": {}
+    },
+    "Does the bleeding I logged need to be checked, and how?": {
+      "localizations": {}
+    },
+    "Done": {
+      "localizations": {}
+    },
+    "Dose, e.g. 1 pump or 100 mg": {
+      "localizations": {}
+    },
+    "Doses marked in this period: %lld taken, %lld skipped.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Doses marked in this period: %1$lld taken, %2$lld skipped."
+          }
+        }
+      }
+    },
+    "Drenched": {
+      "localizations": {}
+    },
+    "EXPERIMENT": {
+      "localizations": {}
+    },
+    "Each one often lasts a few minutes. How many months or years they continue varies a lot from person to person.": {
+      "localizations": {}
+    },
+    "Edit": {
+      "localizations": {}
+    },
+    "Edit appointment": {
+      "localizations": {}
+    },
+    "Edit medication": {
+      "localizations": {}
+    },
+    "Elapsed %@": {
+      "localizations": {}
+    },
+    "Empty": {
+      "localizations": {}
+    },
+    "End surge": {
+      "localizations": {}
+    },
+    "Energy": {
+      "localizations": {}
+    },
+    "Entered by the user. Not a diagnosis. Not a complete medical record.": {
+      "localizations": {}
+    },
+    "Estrogen": {
+      "localizations": {}
+    },
+    "Even once, even light.": {
+      "localizations": {}
+    },
+    "Evening breathing": {
+      "localizations": {}
+    },
+    "Evening check-in": {
+      "localizations": {}
+    },
+    "Evening check-ins (0–10, %lld days)": {
+      "localizations": {}
+    },
+    "Every day": {
+      "localizations": {}
+    },
+    "Everything stays on this iPhone": {
+      "localizations": {}
+    },
+    "Evidence is mixed for many supplements, and some interact with medicines. Tell your clinician or pharmacist what you take.": {
+      "localizations": {}
+    },
+    "Example data, not yours": {
+      "localizations": {}
+    },
+    "Exercise": {
+      "localizations": {}
+    },
+    "Experiment: %@": {
+      "localizations": {}
+    },
+    "Experiments": {
+      "localizations": {}
+    },
+    "Export all my data (JSON)": {
+      "localizations": {}
+    },
+    "Export first if you might want it later.": {
+      "localizations": {}
+    },
+    "Fan me": {
+      "localizations": {}
+    },
+    "Fan, window or a lower thermostat at night, for two weeks.": {
+      "localizations": {}
+    },
+    "Fatigue": {
+      "localizations": {}
+    },
+    "First name (optional)": {
+      "localizations": {}
+    },
+    "Five minutes of slow breathing before bed, for two weeks.": {
+      "localizations": {}
+    },
+    "Flagged to check with a clinician": {
+      "localizations": {}
+    },
+    "Flow": {
+      "localizations": {}
+    },
+    "For %@": {
+      "localizations": {}
+    },
+    "For clinicians": {
+      "localizations": {}
+    },
+    "For some people it does. Mark alcohol in your check-in; after two weeks MenoMap can compare your nights with and without it.": {
+      "localizations": {}
+    },
+    "Format": {
+      "localizations": {}
+    },
+    "Found %lld surges from the last 90 days": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Found %lld surge from the last 90 days"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Found %lld surges from the last 90 days"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Four quick taps. Under 30 seconds.": {
+      "localizations": {}
+    },
+    "Free version": {
+      "localizations": {}
+    },
+    "Free: a watermarked 7-day preview of your counts. Pro or a one-time Visit Report unlocks the full notes.": {
+      "localizations": {}
+    },
+    "From Apple Health": {
+      "localizations": {}
+    },
+    "Full": {
+      "localizations": {}
+    },
+    "Full notes include": {
+      "localizations": {}
+    },
+    "Fully automatic: in the Shortcuts app, tap Automation → + → Sleep (or Focus → Sleep) → When turning on → Arm Night Watch.": {
+      "localizations": {}
+    },
+    "Generated %@": {
+      "localizations": {}
+    },
+    "Get started": {
+      "localizations": {}
+    },
+    "Give a friend 30 days of Pro": {
+      "localizations": {}
+    },
+    "Glad it helped. Keep logging and your next notes will be even sharper.": {
+      "localizations": {}
+    },
+    "Good afternoon": {
+      "localizations": {}
+    },
+    "Good afternoon, %@": {
+      "localizations": {}
+    },
+    "Good evening": {
+      "localizations": {}
+    },
+    "Good evening, %@": {
+      "localizations": {}
+    },
+    "Good for patches changed twice a week or weekly treatments.": {
+      "localizations": {}
+    },
+    "Good morning": {
+      "localizations": {}
+    },
+    "Good morning, %@": {
+      "localizations": {}
+    },
+    "Got it": {
+      "localizations": {}
+    },
+    "Great": {
+      "localizations": {}
+    },
+    "Have a code from your clinic or a friend?": {
+      "localizations": {}
+    },
+    "Headache": {
+      "localizations": {}
+    },
+    "Heads up: running hot today. Not you, it's me.": {
+      "localizations": {}
+    },
+    "Heart sensations have many causes. If they are new, severe, or come with chest pain, shortness of breath, or fainting, seek care now.": {
+      "localizations": {}
+    },
+    "Heat": {
+      "localizations": {}
+    },
+    "Heat Report": {
+      "localizations": {}
+    },
+    "Heat calendar": {
+      "localizations": {}
+    },
+    "Heat map": {
+      "localizations": {}
+    },
+    "Heat scale from calm to hot. Each cell also shows its number of surges.": {
+      "localizations": {}
+    },
+    "Heavy": {
+      "localizations": {}
+    },
+    "Heavy nights and sleep": {
+      "localizations": {}
+    },
+    "Help us": {
+      "localizations": {}
+    },
+    "Here's your last 90 days": {
+      "localizations": {}
+    },
+    "History": {
+      "localizations": {}
+    },
+    "Hold": {
+      "localizations": {}
+    },
+    "Home Screen widget": {
+      "localizations": {}
+    },
+    "Hormone therapy (often called HRT or MHT) replaces some of the estrogen the body makes less of around menopause. Major guidelines describe it as an effective treatment for hot flashes and night sweats for many people, and it can help with other symptoms too.\n\n**It comes in different forms:** patches, gels, sprays, tablets, and low-dose vaginal products for local symptoms like dryness. People who still have a uterus are usually prescribed a progestogen alongside estrogen to protect the lining of the womb.\n\n**Benefits and risks depend on the person:** age, how long since periods stopped, personal and family history (for example of breast cancer, blood clots, stroke or heart disease), and the type and route of treatment. That's why it's a decision to make with a clinician who knows your history, not something an app can decide.\n\n**Questions people often ask:**\n- Is hormone therapy an option for me, and why or why not?\n- Which type and form would you suggest, and why?\n- What benefits could I expect, and how soon?\n- What are my personal risks, and how do they compare with not treating?\n- What should I watch for, and when should we review it?\n\n**If you already take it,** log it in MenoMap (You → Medications). MenoMap will show your surges before and after you started, as a coincidence check and not proof, so you have something concrete to discuss at review.\n\nMenoMap never suggests starting, stopping or changing a medicine.": {
+      "localizations": {}
+    },
+    "Hormone therapy is a decision to make with a clinician": {
+      "localizations": {}
+    },
+    "Hormone therapy isn't right for everyone, and some people simply prefer other routes. There are several.\n\n**Prescription options.** Some non-hormonal medicines have evidence for reducing hot flashes. These include certain medicines originally developed for other conditions, and a newer class designed specifically for hot flashes. Each has its own benefits, side effects and interactions, so a clinician can help you weigh them.\n\n**Talking and mind-body approaches.** Cognitive behavioral therapy (CBT) adapted for menopause has evidence for making hot flashes and night sweats less bothersome and for improving sleep. Clinical hypnosis has also been studied.\n\n**Practical changes people find helpful:**\n- Layers you can remove quickly\n- A fan at your desk and bedside\n- A cooler bedroom and breathable bedding\n- Noticing and easing personal triggers (MenoMap's tags and experiments help here)\n- Regular activity and a steady sleep routine\n\n**Supplements and herbal products.** Evidence is mixed or limited for many of them, quality varies, and some interact with other medicines. Tell your clinician or pharmacist about anything you take, including over-the-counter products.\n\n**Try one change at a time.** MenoMap's two-week experiments compare your own entries before and during a change, which is easier to judge than a feeling.": {
+      "localizations": {}
+    },
+    "Hot": {
+      "localizations": {}
+    },
+    "Hot flash": {
+      "localizations": {}
+    },
+    "Hot flash, give me 3 minutes.": {
+      "localizations": {}
+    },
+    "Hot flash. Back in 3.": {
+      "localizations": {}
+    },
+    "Hot flashes": {
+      "localizations": {}
+    },
+    "Hot flashes and night sweats": {
+      "localizations": {}
+    },
+    "Hot flashes today": {
+      "localizations": {}
+    },
+    "Hot flashes, night sweats and sleep are on. Add more if they matter to you. You can change this any time.": {
+      "localizations": {}
+    },
+    "Hot flashes, night sweats, sleep, other symptoms, menopause stage and wrist temperature": {
+      "localizations": {}
+    },
+    "How did it go with %@?": {
+      "localizations": {}
+    },
+    "How did your appointment go?": {
+      "localizations": {}
+    },
+    "How do I sleep cooler?": {
+      "localizations": {}
+    },
+    "How do my current medications fit this picture?": {
+      "localizations": {}
+    },
+    "How it turns on": {
+      "localizations": {}
+    },
+    "How long": {
+      "localizations": {}
+    },
+    "How long do hot flashes last?": {
+      "localizations": {}
+    },
+    "How often": {
+      "localizations": {}
+    },
+    "How strong": {
+      "localizations": {}
+    },
+    "How strong was it?": {
+      "localizations": {}
+    },
+    "How to use your MenoMap notes in a visit": {
+      "localizations": {}
+    },
+    "How was %@?": {
+      "localizations": {}
+    },
+    "How was today?": {
+      "localizations": {}
+    },
+    "How you take it, e.g. gel, patch, tablet": {
+      "localizations": {}
+    },
+    "I don't take anything right now": {
+      "localizations": {}
+    },
+    "I had bleeding after menopause": {
+      "localizations": {}
+    },
+    "I have an appointment": {
+      "localizations": {}
+    },
+    "I no longer have periods": {
+      "localizations": {}
+    },
+    "I track my symptoms with MenoMap and can bring you a one-page summary. Information for clinicians:": {
+      "localizations": {}
+    },
+    "I understand": {
+      "localizations": {}
+    },
+    "I use MenoMap to log hot flashes and bring notes to my appointments. Code MENOFRIEND gets you 30 days of Pro free.": {
+      "localizations": {}
+    },
+    "I'm having a night sweat": {
+      "localizations": {}
+    },
+    "I'm having a surge": {
+      "localizations": {}
+    },
+    "I'm having a surge now": {
+      "localizations": {}
+    },
+    "I've stopped taking it": {
+      "localizations": {}
+    },
+    "If you connect Health, MenoMap reads the types you allowed and writes only the surges and bleeding you log here. Apple Health manages that data, not us.": {
+      "localizations": {}
+    },
+    "If you've logged symptoms in Apple Health, MenoMap can show them on day one. Surges you log here are saved back to Health.": {
+      "localizations": {}
+    },
+    "Import from Apple Health again": {
+      "localizations": {}
+    },
+    "Imported %lld new surges.": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Imported %lld new surge."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Imported %lld new surges."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Importing…": {
+      "localizations": {}
+    },
+    "Intense": {
+      "localizations": {}
+    },
+    "Internal sauna: on": {
+      "localizations": {}
+    },
+    "Is alcohol making it worse?": {
+      "localizations": {}
+    },
+    "Is brain fog common?": {
+      "localizations": {}
+    },
+    "Is hormone therapy an option for me, and why or why not?": {
+      "localizations": {}
+    },
+    "Is my HRT working?": {
+      "localizations": {}
+    },
+    "Is my current treatment still the right fit, and when should we review it?": {
+      "localizations": {}
+    },
+    "Is what I'm noticing with my mood something we should look at?": {
+      "localizations": {}
+    },
+    "It only changes which notes you see. MenoMap never tries to decide this for you.": {
+      "localizations": {}
+    },
+    "It stays on your iPhone. Nothing is uploaded. You can export or delete everything from You → Privacy.": {
+      "localizations": {}
+    },
+    "It switches on by itself after your evening check-in.": {
+      "localizations": {}
+    },
+    "It turns on by itself when you do your evening check-in or open MenoMap near bedtime.": {
+      "localizations": {}
+    },
+    "It's easing. End it.": {
+      "localizations": {}
+    },
+    "Just look around": {
+      "localizations": {}
+    },
+    "Just this visit: %@": {
+      "localizations": {}
+    },
+    "Keep my data": {
+      "localizations": {}
+    },
+    "Kind": {
+      "localizations": {}
+    },
+    "Language": {
+      "localizations": {}
+    },
+    "Last 7 days": {
+      "localizations": {}
+    },
+    "Last month, in one page": {
+      "localizations": {}
+    },
+    "Last month, in one page.": {
+      "localizations": {}
+    },
+    "Last night": {
+      "localizations": {}
+    },
+    "Learn": {
+      "localizations": {}
+    },
+    "Length": {
+      "localizations": {}
+    },
+    "Library": {
+      "localizations": {}
+    },
+    "Library and questions": {
+      "localizations": {}
+    },
+    "Lifetime": {
+      "localizations": {}
+    },
+    "Light": {
+      "localizations": {}
+    },
+    "Lock Screen": {
+      "localizations": {}
+    },
+    "Log a past surge": {
+      "localizations": {}
+    },
+    "Log a surge in one tap. Spot patterns. Walk into your appointment with notes.": {
+      "localizations": {}
+    },
+    "Log at 3am without lighting up your phone": {
+      "localizations": {}
+    },
+    "Log bleeding": {
+      "localizations": {}
+    },
+    "Log bleeding or spotting": {
+      "localizations": {}
+    },
+    "Logged on %lld of %lld days. Strength is self-rated from 1 (mild) to 5 (intense).": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Logged on %1$lld of %2$lld days. Strength is self-rated from 1 (mild) to 5 (intense)."
+          }
+        }
+      }
+    },
+    "Logged with MenoMap": {
+      "localizations": {}
+    },
+    "Longest": {
+      "localizations": {}
+    },
+    "Longest calm stretch: %lld days": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Longest calm stretch: %lld day"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Longest calm stretch: %lld days"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Longest calm stretch: %lld days.": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Longest calm stretch: %lld day."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Longest calm stretch: %lld days."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Longest calm stretch: %lld days. Frame it.": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Longest calm stretch: %lld day. Frame it."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Longest calm stretch: %lld days. Frame it."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Low": {
+      "localizations": {}
+    },
+    "Made with MenoMap · gwlabs.app/menomap": {
+      "localizations": {}
+    },
+    "Make a video for Stories and Reels": {
+      "localizations": {}
+    },
+    "Making your video…": {
+      "localizations": {}
+    },
+    "Manage subscription": {
+      "localizations": {}
+    },
+    "Many people notice changes in memory and focus around menopause, and poor sleep can add to it. Track it in your check-in and mention it at your visit.": {
+      "localizations": {}
+    },
+    "Many people notice mood changes, irritability or anxiety around this time. If low mood is persistent or you feel unsafe, contact a clinician or local emergency services.": {
+      "localizations": {}
+    },
+    "Maxed out": {
+      "localizations": {}
+    },
+    "Medication reminder": {
+      "localizations": {}
+    },
+    "Medication reminders": {
+      "localizations": {}
+    },
+    "Medications": {
+      "localizations": {}
+    },
+    "Medications (entered by the user)": {
+      "localizations": {}
+    },
+    "Medications, patterns and your questions": {
+      "localizations": {}
+    },
+    "Medium": {
+      "localizations": {}
+    },
+    "Memory lapse": {
+      "localizations": {}
+    },
+    "MenoMap": {
+      "shouldTranslate": false
+    },
+    "MenoMap %@ · GW Labs": {
+      "localizations": {}
+    },
+    "MenoMap Pro": {
+      "shouldTranslate": false
+    },
+    "MenoMap Pro is active": {
+      "localizations": {}
+    },
+    "MenoMap can show your surges before and after you started, as a coincidence check. Whether a treatment is right for you is a question for your clinician.": {
+      "localizations": {}
+    },
+    "MenoMap cannot tell you to start, stop, or change a medicine. Bring your list to a clinician.": {
+      "localizations": {}
+    },
+    "MenoMap doesn't know that yet. If you are worried, contact a clinician. If this feels urgent, use local emergency services.": {
+      "localizations": {}
+    },
+    "MenoMap doesn't predict periods or fertile days.": {
+      "localizations": {}
+    },
+    "MenoMap is a wellness tracker and education tool. It does not diagnose menopause or any other condition, does not prescribe or change treatment, and does not replace care from a qualified clinician. If symptoms worry you, or if you have bleeding after menopause, chest pain, sudden severe headache, one-sided weakness, trouble breathing, or fainting, seek in-person or emergency care.": {
+      "localizations": {}
+    },
+    "Menopause": {
+      "localizations": {}
+    },
+    "Metric": {
+      "localizations": {}
+    },
+    "Mid-flash, you don't want to hunt for an app. Add MenoMap where your thumb already is. Each takes about 10 seconds.": {
+      "localizations": {}
+    },
+    "Mild": {
+      "localizations": {}
+    },
+    "Minimize": {
+      "localizations": {}
+    },
+    "Mixed": {
+      "localizations": {}
+    },
+    "Monthly": {
+      "localizations": {}
+    },
+    "Monthly Heat Report": {
+      "localizations": {}
+    },
+    "Mood": {
+      "localizations": {}
+    },
+    "Mood changes": {
+      "localizations": {}
+    },
+    "Most appointments are short, and it's hard to remember a month of nights on the spot. People tend to recall the most recent days or the worst ones. A simple record fills the gap.\n\n**What a diary gives your clinician:**\n- How often symptoms happen and how strong they are, not just that they happen\n- Whether things are getting better, worse or staying the same\n- What was going on around them: sleep, alcohol, stress, medicines\n- A starting point to compare against if you try a treatment\n\n**Keep it light.** A diary only helps if you keep it. MenoMap is built around a one-tap Surge button and a four-question evening check-in, so it takes seconds, not a notebook.\n\n**Two weeks is a good start.** Two to four weeks of entries usually show a clearer picture than a single bad week.\n\n**Bring your questions too.** Write down what matters most to you: the symptom that bothers you most, what you want to try or avoid, and anything that worries you. MenoMap's Visit tab helps you pick questions and prints them with your notes.": {
+      "localizations": {}
+    },
+    "Most often around %@": {
+      "localizations": {}
+    },
+    "Most surges around %@": {
+      "localizations": {}
+    },
+    "Most-tagged": {
+      "localizations": {}
+    },
+    "Most-tagged: %@": {
+      "localizations": {}
+    },
+    "My experiment": {
+      "localizations": {}
+    },
+    "My heart is racing": {
+      "localizations": {}
+    },
+    "My own entries. Not proof of cause.": {
+      "localizations": {}
+    },
+    "Name, as on the label": {
+      "localizations": {}
+    },
+    "Next time, pick the one question that matters most.": {
+      "localizations": {}
+    },
+    "Next: ": {
+      "localizations": {}
+    },
+    "Next: a few evening check-ins": {
+      "localizations": {}
+    },
+    "Next: add your medications (or confirm none)": {
+      "localizations": {}
+    },
+    "Next: log on a few more days": {
+      "localizations": {}
+    },
+    "Next: log surges as they happen": {
+      "localizations": {}
+    },
+    "Next: pick questions to ask": {
+      "localizations": {}
+    },
+    "Night Watch": {
+      "localizations": {}
+    },
+    "Night Watch is on": {
+      "localizations": {}
+    },
+    "Night Watch is on until morning.": {
+      "localizations": {}
+    },
+    "Night shift survivor": {
+      "localizations": {}
+    },
+    "Night sweat": {
+      "localizations": {}
+    },
+    "Night sweat. Cracking the window.": {
+      "localizations": {}
+    },
+    "Night sweats": {
+      "localizations": {}
+    },
+    "Night sweats, needing the bathroom, alcohol wearing off and a racing mind are common reasons. Log your nights for two weeks and look at the pattern.": {
+      "localizations": {}
+    },
+    "No": {
+      "localizations": {}
+    },
+    "No account, no cloud": {
+      "localizations": {}
+    },
+    "No account. No cloud. No analytics on your health.": {
+      "localizations": {}
+    },
+    "No alcohol after 7pm": {
+      "localizations": {}
+    },
+    "No caffeine after noon": {
+      "localizations": {}
+    },
+    "No health analytics": {
+      "localizations": {}
+    },
+    "No medications yet": {
+      "localizations": {}
+    },
+    "No night surges logged": {
+      "localizations": {}
+    },
+    "No pattern yet": {
+      "localizations": {}
+    },
+    "Non-hormonal": {
+      "localizations": {}
+    },
+    "Non-hormonal approaches exist": {
+      "localizations": {}
+    },
+    "None": {
+      "localizations": {}
+    },
+    "None entered.": {
+      "localizations": {}
+    },
+    "None yet": {
+      "localizations": {}
+    },
+    "Not answered": {
+      "localizations": {}
+    },
+    "Not now, I'm molten": {
+      "localizations": {}
+    },
+    "Not set": {
+      "localizations": {}
+    },
+    "Not sure": {
+      "localizations": {}
+    },
+    "Not sure yet": {
+      "localizations": {}
+    },
+    "Note (optional)": {
+      "localizations": {}
+    },
+    "Notes": {
+      "localizations": {}
+    },
+    "Notes %lld percent ready": {
+      "localizations": {}
+    },
+    "Notes %lld%% ready": {
+      "localizations": {}
+    },
+    "Notes show how often, how strong and what's changing, which is hard to remember in a short appointment.": {
+      "localizations": {}
+    },
+    "Nothing is sent to us. Ever.": {
+      "localizations": {}
+    },
+    "Nothing logged in the last two weeks.": {
+      "localizations": {}
+    },
+    "Nothing logged yet.": {
+      "localizations": {}
+    },
+    "Noticeable": {
+      "localizations": {}
+    },
+    "Noticing changes": {
+      "localizations": {}
+    },
+    "On %lld days with a skipped dose you logged %@ surges a day, compared with %@ on %lld other days. That's a coincidence check, not proof of a cause.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "On %1$lld days with a skipped dose you logged %2$@ surges a day, compared with %3$@ on %4$lld other days. That's a coincidence check, not proof of a cause."
+          }
+        }
+      }
+    },
+    "On %lld evenings you marked alcohol, night sweats were logged on %lld of the nights that followed. On %lld evenings without, %lld.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "On %1$lld evenings you marked alcohol, night sweats were logged on %2$lld of the nights that followed. On %3$lld evenings without, %4$lld."
+          }
+        }
+      }
+    },
+    "On %lld nights with 3 or more surges, Apple Health recorded %@ of sleep on average, compared with %@ on the other %lld nights.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "On %1$lld nights with 3 or more surges, Apple Health recorded %2$@ of sleep on average, compared with %3$@ on the other %4$lld nights."
+          }
+        }
+      }
+    },
+    "On %lld nights with 3 or more surges, your sleep score averaged %@, compared with %@ on the other %lld nights.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "On %1$lld nights with 3 or more surges, your sleep score averaged %2$@, compared with %3$@ on the other %4$lld nights."
+          }
+        }
+      }
+    },
+    "On %lld nights with a logged night sweat, your wrist temperature from Apple Health averaged %@ from your usual, compared with %@ on %lld other nights.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "On %1$lld nights with a logged night sweat, your wrist temperature from Apple Health averaged %2$@ from your usual, compared with %3$@ on %4$lld other nights."
+          }
+        }
+      }
+    },
+    "On this iPhone only": {
+      "localizations": {}
+    },
+    "Once you've gone 12 months without a period, **any vaginal bleeding should be checked by a clinician**, even if it happened only once, and even if it was only spotting or light pink or brown discharge.\n\nMost of the time the cause turns out not to be serious. Thinning of the vaginal or womb lining is common, for example. But bleeding after menopause can sometimes be an early sign of a condition that's much easier to treat when found early. That's why public health guidance says to get it looked at rather than wait.\n\n**If you take hormone therapy,** some bleeding patterns can be expected, depending on the type you take. Bleeding that's unexpected for your treatment, heavier than usual, or happening at the wrong time should also be checked.\n\n**What to do:**\n- Contact your clinician or health service and say you've had bleeding after menopause.\n- Note the date, how much, and anything else you noticed. MenoMap can hold this for you (You → Cycle).\n\nMenoMap can't tell you why bleeding happened. It will remind you to get it checked and include it in your visit notes.": {
+      "localizations": {}
+    },
+    "One clean PDF: counts, heat calendar, surge clock, check-in averages, medications, patterns and your questions.": {
+      "localizations": {}
+    },
+    "One full PDF of up to 90 days. No subscription.": {
+      "localizations": {}
+    },
+    "One gentle evening reminder. Off by default.": {
+      "localizations": {}
+    },
+    "One line for future you (optional)": {
+      "localizations": {}
+    },
+    "One tap away": {
+      "localizations": {}
+    },
+    "One tap from your Lock Screen, Control Center or Watch": {
+      "localizations": {}
+    },
+    "One tap: how strong was it?": {
+      "localizations": {}
+    },
+    "Only a clinician can evaluate that. What MenoMap can do is show what you logged.": {
+      "localizations": {}
+    },
+    "Only numbers. No notes, medication names or health details leave your phone unless you send them.": {
+      "localizations": {}
+    },
+    "Only the surges and bleeding you log in MenoMap": {
+      "localizations": {}
+    },
+    "Only what you share": {
+      "localizations": {}
+    },
+    "Only what you share or print yourself.": {
+      "localizations": {}
+    },
+    "Open MenoMap to share or print your notes.": {
+      "localizations": {}
+    },
+    "Open Settings → Action Button.": {
+      "localizations": {}
+    },
+    "Open the Watch app on your iPhone.": {
+      "localizations": {}
+    },
+    "Opens Messages or any app you choose. MenoMap doesn't send anything by itself. In Messages, tap the MenoMap app for stickers and heads-up cards.": {
+      "localizations": {}
+    },
+    "Optional: in Shortcuts, add an automation: when Sleep Focus turns on → Arm Night Watch.": {
+      "localizations": {}
+    },
+    "Options for people who can't or don't want to use hormones.": {
+      "localizations": {}
+    },
+    "Other": {
+      "localizations": {}
+    },
+    "Other symptoms recorded in Apple Health": {
+      "localizations": {}
+    },
+    "PREVIEW": {
+      "localizations": {}
+    },
+    "PRO": {
+      "shouldTranslate": false
+    },
+    "Paper": {
+      "localizations": {}
+    },
+    "Patch": {
+      "localizations": {}
+    },
+    "Patch, twice a week (Sun & Wed)": {
+      "localizations": {}
+    },
+    "Pattern": {
+      "localizations": {}
+    },
+    "Patterns": {
+      "localizations": {}
+    },
+    "Patterns are still forming": {
+      "localizations": {}
+    },
+    "Patterns compare the user's own entries. They are coincidence checks, not causes.": {
+      "localizations": {}
+    },
+    "Patterns in the entries": {
+      "localizations": {}
+    },
+    "Patterns in your own entries, with the numbers": {
+      "localizations": {}
+    },
+    "Patterns need about two weeks of check-ins.": {
+      "localizations": {}
+    },
+    "Pay once. Family Sharing included.": {
+      "localizations": {}
+    },
+    "Peak": {
+      "localizations": {}
+    },
+    "Peak %@": {
+      "localizations": {}
+    },
+    "Peak hour: %@.": {
+      "localizations": {}
+    },
+    "Peak hour: %@. Rude.": {
+      "localizations": {}
+    },
+    "People often notice alcohol, caffeine, spicy food, heat and stress, but it varies. Tag your surges and MenoMap will show which tags come up most for you.": {
+      "localizations": {}
+    },
+    "Perimenopause": {
+      "localizations": {}
+    },
+    "Perimenopause and menopause: what the words mean": {
+      "localizations": {}
+    },
+    "Period": {
+      "localizations": {}
+    },
+    "Personal summer in progress": {
+      "localizations": {}
+    },
+    "Pick MenoMap → Start a surge.": {
+      "localizations": {}
+    },
+    "Pick any that fit. It shapes what you see first.": {
+      "localizations": {}
+    },
+    "Pick one change and keep it for two weeks.": {
+      "localizations": {}
+    },
+    "Pick the Surge button or the 7-day heat map.": {
+      "localizations": {}
+    },
+    "Pick three or four. They print at the top of your notes.": {
+      "localizations": {}
+    },
+    "Poor sleep is one of the most common complaints in midlife, and it rarely has a single cause.\n\n**Night sweats** can wake you directly, or leave you too hot or damp to settle again.\n\n**Other common contributors:**\n- Needing to pass urine at night\n- Anxiety or a racing mind\n- Alcohol, which can help you fall asleep but tends to fragment the second half of the night\n- Caffeine later in the day\n- Pain, restless legs, or a partner's snoring\n- Snoring or pauses in breathing, which can be a sign of sleep apnea (worth raising, especially if you're very sleepy in the day)\n\n**What tends to help people.** A cool, dark room; breathable bedding and layers you can shed; a steady wake-up time; and less alcohol close to bed. Cognitive behavioral therapy for insomnia (CBT-I) is a structured, well-studied approach, and many clinicians can point you to it.\n\n**What to track.** For a week or two, note your sleep score, night surges, alcohol and late caffeine. MenoMap's evening check-in and the Surge log do this in a few taps. If you use Apple Watch, MenoMap can show your sleep and wrist temperature from Apple Health next to your night sweats, as context rather than an explanation.\n\n**When to get checked.** Talk to a clinician if poor sleep is affecting your safety (for example, driving), your mood, or your daily life, or if you notice pauses in your breathing or gasping at night.": {
+      "localizations": {}
+    },
+    "Post-menopause": {
+      "localizations": {}
+    },
+    "Prefer not to say": {
+      "localizations": {}
+    },
+    "Preparing for a visit": {
+      "localizations": {}
+    },
+    "Preview": {
+      "localizations": {}
+    },
+    "Preview my notes": {
+      "localizations": {}
+    },
+    "Privacy": {
+      "localizations": {}
+    },
+    "Privacy Policy": {
+      "localizations": {}
+    },
+    "Private by design": {
+      "localizations": {}
+    },
+    "Pro feature": {
+      "localizations": {}
+    },
+    "Progestogen": {
+      "localizations": {}
+    },
+    "Put Surge one tap away": {
+      "localizations": {}
+    },
+    "Puts a one-tap night sweat button on your Lock Screen until morning.": {
+      "localizations": {}
+    },
+    "QR code for MenoMap": {
+      "localizations": {}
+    },
+    "Questions": {
+      "localizations": {}
+    },
+    "Questions I'd like to ask": {
+      "localizations": {}
+    },
+    "Questions to ask": {
+      "localizations": {}
+    },
+    "Quick actions": {
+      "localizations": {}
+    },
+    "RECORD": {
+      "localizations": {}
+    },
+    "Range": {
+      "localizations": {}
+    },
+    "Rapid, pounding or fluttering heartbeat": {
+      "localizations": {}
+    },
+    "Rate MenoMap": {
+      "localizations": {}
+    },
+    "Rate surge": {
+      "localizations": {}
+    },
+    "Rate your %@ hot flash": {
+      "localizations": {}
+    },
+    "Rate your %@ night sweat": {
+      "localizations": {}
+    },
+    "Read: %@": {
+      "localizations": {}
+    },
+    "Reading your last 90 days…": {
+      "localizations": {}
+    },
+    "Reads": {
+      "localizations": {}
+    },
+    "Recalibrating…": {
+      "localizations": {}
+    },
+    "Records": {
+      "localizations": {}
+    },
+    "Redeem a clinic or friend code": {
+      "localizations": {}
+    },
+    "Remind me to check in": {
+      "localizations": {}
+    },
+    "Reminders": {
+      "localizations": {}
+    },
+    "Restore": {
+      "localizations": {}
+    },
+    "Restore purchases": {
+      "localizations": {}
+    },
+    "Results are ready.": {
+      "localizations": {}
+    },
+    "Results compare your own entries before and during. They're a coincidence check, not proof.": {
+      "localizations": {}
+    },
+    "Reveal one free this week": {
+      "localizations": {}
+    },
+    "Right?": {
+      "localizations": {}
+    },
+    "Rough night. I'll be slow this morning.": {
+      "localizations": {}
+    },
+    "Running hot. Not you, it's me.": {
+      "localizations": {}
+    },
+    "Save": {
+      "localizations": {}
+    },
+    "Save without rating": {
+      "localizations": {}
+    },
+    "Saved · %@": {
+      "localizations": {}
+    },
+    "Saved. %@ of weather, logged.": {
+      "localizations": {}
+    },
+    "Say \"Log a hot flash in MenoMap\" or \"Start a night sweat in MenoMap\".": {
+      "localizations": {}
+    },
+    "Schedule": {
+      "localizations": {}
+    },
+    "Score": {
+      "localizations": {}
+    },
+    "Scroll to Available Apps and tap Install next to MenoMap.": {
+      "localizations": {}
+    },
+    "Search MenoMap and pick Start a surge.": {
+      "localizations": {}
+    },
+    "Search MenoMap.": {
+      "localizations": {}
+    },
+    "See it with Pro": {
+      "localizations": {}
+    },
+    "See more": {
+      "localizations": {}
+    },
+    "See results": {
+      "localizations": {}
+    },
+    "See the month, not just the day": {
+      "localizations": {}
+    },
+    "See the month, not just the day.": {
+      "localizations": {}
+    },
+    "See the pattern": {
+      "localizations": {}
+    },
+    "See what two weeks looks like": {
+      "localizations": {}
+    },
+    "See what your entries show.": {
+      "localizations": {}
+    },
+    "See what's changing.": {
+      "localizations": {}
+    },
+    "Seeing %@ today": {
+      "localizations": {}
+    },
+    "Seeing a clinician soon?": {
+      "localizations": {}
+    },
+    "Send": {
+      "localizations": {}
+    },
+    "Send feedback": {
+      "localizations": {}
+    },
+    "Seven days in one card.": {
+      "localizations": {}
+    },
+    "Share": {
+      "localizations": {}
+    },
+    "Share card": {
+      "localizations": {}
+    },
+    "Share cards and PDFs are made on your iPhone and leave it only if you send them.": {
+      "localizations": {}
+    },
+    "Share my week": {
+      "localizations": {}
+    },
+    "Share result": {
+      "localizations": {}
+    },
+    "Share the cover": {
+      "localizations": {}
+    },
+    "Share the export file": {
+      "localizations": {}
+    },
+    "Share video": {
+      "localizations": {}
+    },
+    "Share your calm stretch": {
+      "localizations": {}
+    },
+    "Share, print or save": {
+      "localizations": {}
+    },
+    "Shortest": {
+      "localizations": {}
+    },
+    "Should I stop my medication?": {
+      "localizations": {}
+    },
+    "Show App Store QR code": {
+      "localizations": {}
+    },
+    "Since %@": {
+      "localizations": {}
+    },
+    "Since you added %@": {
+      "localizations": {}
+    },
+    "Siri": {
+      "localizations": {}
+    },
+    "Skip": {
+      "localizations": {}
+    },
+    "Skip alcohol after 7pm for two weeks. Keep logging surges as usual.": {
+      "localizations": {}
+    },
+    "Skip anything. Nothing here is required.": {
+      "localizations": {}
+    },
+    "Skip breathing": {
+      "localizations": {}
+    },
+    "Skipped": {
+      "localizations": {}
+    },
+    "Skipped doses": {
+      "localizations": {}
+    },
+    "Skipped today": {
+      "localizations": {}
+    },
+    "Sleep": {
+      "localizations": {}
+    },
+    "Sleep changes": {
+      "localizations": {}
+    },
+    "Sleep changes: many causes, not one": {
+      "localizations": {}
+    },
+    "Sleep from Apple Health": {
+      "localizations": {}
+    },
+    "Sleep score": {
+      "localizations": {}
+    },
+    "Source: %@": {
+      "localizations": {}
+    },
+    "Sources checked %@": {
+      "localizations": {}
+    },
+    "Spicy food": {
+      "localizations": {}
+    },
+    "Spotting": {
+      "localizations": {}
+    },
+    "Square": {
+      "localizations": {}
+    },
+    "Stage": {
+      "localizations": {}
+    },
+    "Stage (self-reported): %@": {
+      "localizations": {}
+    },
+    "Stage from Apple Health.": {
+      "localizations": {}
+    },
+    "Start": {
+      "localizations": {}
+    },
+    "Start a surge": {
+      "localizations": {}
+    },
+    "Start an experiment": {
+      "localizations": {}
+    },
+    "Start free trial": {
+      "localizations": {}
+    },
+    "Start timing. Breathe if you want.": {
+      "localizations": {}
+    },
+    "Start with whatever's happening now.": {
+      "localizations": {}
+    },
+    "Start without unlocking": {
+      "localizations": {}
+    },
+    "Started": {
+      "localizations": {}
+    },
+    "Started %@": {
+      "localizations": {}
+    },
+    "Starts a timer and a Lock Screen Live Activity": {
+      "localizations": {}
+    },
+    "Starts timing a hot flash or night sweat in MenoMap.": {
+      "localizations": {}
+    },
+    "Stays on your iPhone": {
+      "localizations": {}
+    },
+    "Step %lld of %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Step %1$lld of %2$lld"
+          }
+        }
+      }
+    },
+    "Stop this experiment": {
+      "localizations": {}
+    },
+    "Stopped": {
+      "localizations": {}
+    },
+    "Stops the timer and saves the surge in MenoMap.": {
+      "localizations": {}
+    },
+    "Stops the timer without saving": {
+      "localizations": {}
+    },
+    "Story": {
+      "localizations": {}
+    },
+    "Straight": {
+      "localizations": {}
+    },
+    "Stress": {
+      "localizations": {}
+    },
+    "Strong": {
+      "localizations": {}
+    },
+    "Subscriptions renew automatically until cancelled in Settings → Apple Account → Subscriptions. The free trial applies to the yearly plan for new subscribers. Your data stays on your iPhone either way, and everything you've logged stays yours on the free plan.": {
+      "localizations": {}
+    },
+    "Sunday Weekly Wrap": {
+      "localizations": {}
+    },
+    "Supplement": {
+      "localizations": {}
+    },
+    "Surge": {
+      "localizations": {}
+    },
+    "Surge clock": {
+      "localizations": {}
+    },
+    "Surges (hot flashes and night sweats)": {
+      "localizations": {}
+    },
+    "Surges by hour of day": {
+      "localizations": {}
+    },
+    "Surges running milder": {
+      "localizations": {}
+    },
+    "Surges running stronger": {
+      "localizations": {}
+    },
+    "Surges × strength per day": {
+      "localizations": {}
+    },
+    "Surges, check-ins, medications, cycle notes, appointments and experiments live in the app's own storage on this device. They are included in your normal encrypted iPhone backup.": {
+      "localizations": {}
+    },
+    "Surges, check-ins, medications, notes and appointments will be removed from this iPhone.": {
+      "localizations": {}
+    },
+    "Sweater on. Sweater off.": {
+      "localizations": {}
+    },
+    "Swipe down from the top-right corner.": {
+      "localizations": {}
+    },
+    "Swipe down, tap, done": {
+      "localizations": {}
+    },
+    "Swipe to Controls, tap Choose a Control.": {
+      "localizations": {}
+    },
+    "Switch surge type": {
+      "localizations": {}
+    },
+    "Symptom notes": {
+      "localizations": {}
+    },
+    "Symptom notes, continued": {
+      "localizations": {}
+    },
+    "Tag a few surges (alcohol, heat, stress…) and your top three land here.": {
+      "localizations": {}
+    },
+    "Tags you chose. Counting them together doesn't show a cause.": {
+      "localizations": {}
+    },
+    "Taken": {
+      "localizations": {}
+    },
+    "Taken today": {
+      "localizations": {}
+    },
+    "Tap + at the top left, then Add a Control.": {
+      "localizations": {}
+    },
+    "Tap Lock Screen, then tap a control at the bottom.": {
+      "localizations": {}
+    },
+    "Tap to edit today's answers": {
+      "localizations": {}
+    },
+    "Tap to put a one-tap night sweat button on your Lock Screen until morning.": {
+      "localizations": {}
+    },
+    "Tell my clinician about MenoMap": {
+      "localizations": {}
+    },
+    "Tell my person": {
+      "localizations": {}
+    },
+    "Terms": {
+      "localizations": {}
+    },
+    "Terms of Use": {
+      "localizations": {}
+    },
+    "Test it on your own data.": {
+      "localizations": {}
+    },
+    "That's enough for clinician notes whenever you want them.": {
+      "localizations": {}
+    },
+    "That's right": {
+      "localizations": {}
+    },
+    "The App Store couldn't verify that purchase.": {
+      "localizations": {}
+    },
+    "The cover is free. The rest of the month is Pro.": {
+      "localizations": {}
+    },
+    "The days before your period": {
+      "localizations": {}
+    },
+    "The full Heat Report": {
+      "localizations": {}
+    },
+    "The full monthly Heat Report": {
+      "localizations": {}
+    },
+    "The timer keeps running on your Lock Screen": {
+      "localizations": {}
+    },
+    "The timer starts on your Lock Screen. Tap End when it eases.": {
+      "localizations": {}
+    },
+    "There are non-hormonal medicines, CBT and practical changes. A clinician can help you choose.": {
+      "localizations": {}
+    },
+    "There's no sign-in. MenoMap never uploads your health data, and nothing is stored in iCloud by the app.": {
+      "localizations": {}
+    },
+    "Thermostat: mine": {
+      "localizations": {}
+    },
+    "These notes summarize what the user entered in MenoMap and, where labeled, data they chose to bring in from Apple Health. MenoMap does not diagnose, prescribe or give treatment advice.": {
+      "localizations": {}
+    },
+    "These often crest and ease within a couple of minutes. This is not medical treatment.": {
+      "localizations": {}
+    },
+    "They need about two weeks of check-ins and surges. They always compare your own entries, never other people's.": {
+      "localizations": {}
+    },
+    "They're very common around menopause. Sweats with fever, weight loss or feeling unwell are worth checking with a clinician.": {
+      "localizations": {}
+    },
+    "Thick fog": {
+      "localizations": {}
+    },
+    "This can be an emergency. Call %@. MenoMap cannot assess this.": {
+      "localizations": {}
+    },
+    "This can be an emergency. Contact your local emergency number. MenoMap cannot assess this.": {
+      "localizations": {}
+    },
+    "This can't be undone": {
+      "localizations": {}
+    },
+    "This surge isn't here anymore.": {
+      "localizations": {}
+    },
+    "This week": {
+      "localizations": {}
+    },
+    "Three stages, and why the lines between them are blurry.": {
+      "localizations": {}
+    },
+    "Time": {
+      "localizations": {}
+    },
+    "Time for %@. Tap to mark it taken or skipped.": {
+      "localizations": {}
+    },
+    "Time of day": {
+      "localizations": {}
+    },
+    "Time-of-day chart and check-in averages": {
+      "localizations": {}
+    },
+    "Timeline": {
+      "localizations": {}
+    },
+    "Times": {
+      "localizations": {}
+    },
+    "To change what MenoMap can read or write: Settings → Health → Data Access & Devices → MenoMap.": {
+      "localizations": {}
+    },
+    "To make your notes stronger": {
+      "localizations": {}
+    },
+    "Today": {
+      "localizations": {}
+    },
+    "Tonight's heads-up": {
+      "localizations": {}
+    },
+    "Touch and hold the Home Screen, tap Edit, then Add Widget.": {
+      "localizations": {}
+    },
+    "Touch and hold the Lock Screen, then tap Customize.": {
+      "localizations": {}
+    },
+    "Track bleeding": {
+      "localizations": {}
+    },
+    "Tracking": {
+      "localizations": {}
+    },
+    "Tracking symptoms": {
+      "localizations": {}
+    },
+    "Tracking treatment": {
+      "localizations": {}
+    },
+    "Treatment I take": {
+      "localizations": {}
+    },
+    "Try one change for two weeks and see what your own entries show.": {
+      "localizations": {}
+    },
+    "Turn it on in You → Night Watch and set your bedtime.": {
+      "localizations": {}
+    },
+    "Turn off Night Watch": {
+      "localizations": {}
+    },
+    "Turn off until tomorrow": {
+      "localizations": {}
+    },
+    "Turn on Night Watch": {
+      "localizations": {}
+    },
+    "Turn on for tonight": {
+      "localizations": {}
+    },
+    "Turning a question off never deletes past answers.": {
+      "localizations": {}
+    },
+    "Two minutes of prep for a better conversation.": {
+      "localizations": {}
+    },
+    "Two to four weeks of notes, your medication list, and your top three questions. The Visit tab puts all of that on one page.": {
+      "localizations": {}
+    },
+    "Two weeks of logging looks like this.": {
+      "localizations": {}
+    },
+    "Two-week experiment": {
+      "localizations": {}
+    },
+    "Two-week experiments: before vs during": {
+      "localizations": {}
+    },
+    "Type": {
+      "localizations": {}
+    },
+    "Types only help organize your list and notes.": {
+      "localizations": {}
+    },
+    "Typical": {
+      "localizations": {}
+    },
+    "Typical length": {
+      "localizations": {}
+    },
+    "US Letter": {
+      "localizations": {}
+    },
+    "Under 1 min": {
+      "localizations": {}
+    },
+    "Unknown length": {
+      "localizations": {}
+    },
+    "Unlock all": {
+      "localizations": {}
+    },
+    "Unlock full notes": {
+      "localizations": {}
+    },
+    "Unlock with Pro": {
+      "localizations": {}
+    },
+    "Vaginal / urinary": {
+      "localizations": {}
+    },
+    "Vaginal dryness": {
+      "localizations": {}
+    },
+    "Vaginal estrogen": {
+      "localizations": {}
+    },
+    "Very common, very variable, and worth describing well.": {
+      "localizations": {}
+    },
+    "Very strong": {
+      "localizations": {}
+    },
+    "Visit": {
+      "localizations": {}
+    },
+    "Visit notes": {
+      "localizations": {}
+    },
+    "Voice for stats and cards": {
+      "localizations": {}
+    },
+    "Wake": {
+      "localizations": {}
+    },
+    "Walk in with notes.": {
+      "localizations": {}
+    },
+    "Warmest day of the week: %@": {
+      "localizations": {}
+    },
+    "We don't track what you log. Purchases are counted anonymously to measure the App Store and Apple Ads.": {
+      "localizations": {}
+    },
+    "Week": {
+      "localizations": {}
+    },
+    "Weight": {
+      "localizations": {}
+    },
+    "Wellness tracker, not a diagnosis. Check with a clinician before making medical decisions.": {
+      "localizations": {}
+    },
+    "Went well": {
+      "localizations": {}
+    },
+    "What MenoMap stores": {
+      "localizations": {}
+    },
+    "What are my options for hot flashes, hormonal and non-hormonal?": {
+      "localizations": {}
+    },
+    "What can I do without hormones?": {
+      "localizations": {}
+    },
+    "What can help with vaginal or urinary symptoms?": {
+      "localizations": {}
+    },
+    "What do I bring to the doctor?": {
+      "localizations": {}
+    },
+    "What do you want to cover?": {
+      "localizations": {}
+    },
+    "What does MenoMap do with my data?": {
+      "localizations": {}
+    },
+    "What it is, and the questions worth asking.": {
+      "localizations": {}
+    },
+    "What should I watch for that means I should call?": {
+      "localizations": {}
+    },
+    "What should Today show?": {
+      "localizations": {}
+    },
+    "What triggers hot flashes?": {
+      "localizations": {}
+    },
+    "What's realistic for weight and body changes at this stage?": {
+      "localizations": {}
+    },
+    "What's stored and where": {
+      "localizations": {}
+    },
+    "When": {
+      "localizations": {}
+    },
+    "When did this start, and has it changed?": {
+      "localizations": {}
+    },
+    "When, e.g. every morning": {
+      "localizations": {}
+    },
+    "Where are you? (optional)": {
+      "localizations": {}
+    },
+    "Which of these is most disruptive for me?": {
+      "localizations": {}
+    },
+    "Why 3am waking happens, and what to note.": {
+      "localizations": {}
+    },
+    "Why a symptom diary helps at an appointment": {
+      "localizations": {}
+    },
+    "Why are you here?": {
+      "localizations": {}
+    },
+    "Why do I wake at 3am?": {
+      "localizations": {}
+    },
+    "Why track my symptoms?": {
+      "localizations": {}
+    },
+    "Wrist temperature": {
+      "localizations": {}
+    },
+    "Wrist temperature %@%@° from your usual · from Apple Health": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Wrist temperature %1$@%2$@° from your usual · from Apple Health"
+          }
+        }
+      }
+    },
+    "Write your own heads-up": {
+      "localizations": {}
+    },
+    "Writes": {
+      "localizations": {}
+    },
+    "Wry": {
+      "localizations": {}
+    },
+    "Year": {
+      "localizations": {}
+    },
+    "Yearly": {
+      "localizations": {}
+    },
+    "Yes": {
+      "localizations": {}
+    },
+    "Yes. Asking whether hormone therapy is an option for you, and why or why not, is a very reasonable question.": {
+      "localizations": {}
+    },
+    "You": {
+      "localizations": {}
+    },
+    "You can find this again in You → One tap away.": {
+      "localizations": {}
+    },
+    "You decide what leaves": {
+      "localizations": {}
+    },
+    "You have %lld Visit Report ready to use.": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "You have %lld Visit Report ready to use."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "You have %lld Visit Report ready to use."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "You logged %@ surges a day in the %lld days after you added %@, compared with %@ in the %lld days before. That's a coincidence check, not proof the medicine is the reason.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "You logged %1$@ surges a day in the %2$lld days after you added %3$@, compared with %4$@ in the %5$lld days before. That's a coincidence check, not proof the medicine is the reason."
+          }
+        }
+      }
+    },
+    "You logged %@ surges on an average %@, compared with %@ on other days over the last 8 weeks.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "You logged %1$@ surges on an average %2$@, compared with %3$@ on other days over the last 8 weeks."
+          }
+        }
+      }
+    },
+    "You marked alcohol today. After %lld of your recent alcohol evenings, you logged night sweats on %lld. Your entries, not a forecast.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "You marked alcohol today. After %1$lld of your recent alcohol evenings, you logged night sweats on %2$lld. Your entries, not a forecast."
+          }
+        }
+      }
+    },
+    "You → Privacy → Delete all.": {
+      "localizations": {}
+    },
+    "You're set.": {
+      "localizations": {}
+    },
+    "Your Heat Report is ready": {
+      "localizations": {}
+    },
+    "Your entries have something to say about tonight.": {
+      "localizations": {}
+    },
+    "Your entries, compared with your entries. Coincidence checks, not causes.": {
+      "localizations": {}
+    },
+    "Your entries: %lld night surges in the %lld logged days before, %lld in the %lld logged days during. That's what you logged, not proof of cause.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Your entries: %1$lld night surges in the %2$lld logged days before, %3$lld in the %4$lld logged days during. That's what you logged, not proof of cause."
+          }
+        }
+      }
+    },
+    "Your entries: %lld surges in the %lld logged days before, %lld in the %lld logged days during. That's what you logged, not proof of cause.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Your entries: %1$lld surges in the %2$lld logged days before, %3$lld in the %4$lld logged days during. That's what you logged, not proof of cause."
+          }
+        }
+      }
+    },
+    "Your experiment finished": {
+      "localizations": {}
+    },
+    "Your health data never leaves your iPhone": {
+      "localizations": {}
+    },
+    "Your map starts with your first tap.": {
+      "localizations": {}
+    },
+    "Your notes": {
+      "localizations": {}
+    },
+    "Your notes are ready to review.": {
+      "localizations": {}
+    },
+    "Your notes are ready.": {
+      "localizations": {}
+    },
+    "Your own": {
+      "localizations": {}
+    },
+    "Your peak hour": {
+      "localizations": {}
+    },
+    "Your surges will appear around the clock here.": {
+      "localizations": {}
+    },
+    "Your weather": {
+      "localizations": {}
+    },
+    "Your week, wrapped": {
+      "localizations": {}
+    },
+    "Yours starts filling in with your first surge. Most people see their first pattern in about two weeks.": {
+      "localizations": {}
+    },
+    "Zero personal summers this week.": {
+      "localizations": {}
+    },
+    "a day": {
+      "localizations": {}
+    },
+    "average strength (%lld rated)": {
+      "localizations": {}
+    },
+    "between 9pm and 7am": {
+      "localizations": {}
+    },
+    "e.g. cotton pajamas": {
+      "localizations": {}
+    },
+    "e.g. hot office, new sheets": {
+      "localizations": {}
+    },
+    "gwlabs.app/menomap": {
+      "shouldTranslate": false
+    },
+    "hot flashes": {
+      "localizations": {}
+    },
+    "hot flashes / night sweats": {
+      "localizations": {}
+    },
+    "iPhone 15 Pro and later": {
+      "localizations": {}
+    },
+    "logged after menopause": {
+      "localizations": {}
+    },
+    "night surges logged": {
+      "localizations": {}
+    },
+    "night sweats": {
+      "localizations": {}
+    },
+    "per logged day": {
+      "localizations": {}
+    },
+    "personal summers last month": {
+      "localizations": {}
+    },
+    "since %@": {
+      "localizations": {}
+    },
+    "sleep %lld of 10": {
+      "localizations": {}
+    },
+    "stopped %@": {
+      "localizations": {}
+    },
+    "surges in %lld days": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "surges in %lld day"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "surges in %lld days"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "surges last month": {
+      "localizations": {}
+    },
+    "surges logged": {
+      "localizations": {}
+    },
+    "typical length": {
+      "localizations": {}
+    },
+    "·": {
+      "shouldTranslate": false
+    },
+    "· %@": {
+      "localizations": {}
+    },
+    "–": {
+      "shouldTranslate": false
+    }
+  },
+  "version": "1.0"
 }

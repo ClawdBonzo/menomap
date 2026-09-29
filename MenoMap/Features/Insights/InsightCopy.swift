@@ -71,7 +71,7 @@ enum InsightCopy {
 
         case let .weekdayPattern(wd, avg, other):
             return Text(
-                title: String(localized: "\(Copy.weekday(wd))s run warmer"),
+                title: String(localized: "Warmest day of the week: \(Copy.weekday(wd))"),
                 body: String(localized: "You logged \(avg.formatted(f)) surges on an average \(Copy.weekday(wd)), compared with \(other.formatted(f)) on other days over the last 8 weeks."),
                 symbol: "calendar")
 
@@ -88,10 +88,12 @@ enum InsightCopy {
                 symbol: "drop")
 
         case let .experimentResult(_, kind, measure, b, bDays, d, dDays):
-            let what = measure == .nightSurges ? String(localized: "night surges") : String(localized: "surges")
+            let body = measure == .nightSurges
+                ? String(localized: "Your entries: \(b) night surges in the \(bDays) logged days before, \(d) in the \(dDays) logged days during. That's what you logged, not proof of cause.")
+                : String(localized: "Your entries: \(b) surges in the \(bDays) logged days before, \(d) in the \(dDays) logged days during. That's what you logged, not proof of cause.")
             return Text(
                 title: String(localized: "Experiment: \(Copy.experiment(kind))"),
-                body: String(localized: "Your entries: \(b) \(what) in the \(bDays) logged days before, \(d) in the \(dDays) logged days during. That's what you logged, not proof of cause."),
+                body: body,
                 symbol: "flask")
         }
     }

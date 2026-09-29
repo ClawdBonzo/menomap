@@ -1,0 +1,53 @@
+{
+ "demo": {
+  "d1": "Sarah",
+  "d2": "Dr Patel",
+  "d3": "Oestradiol gel",
+  "d4": "Micronised progesterone",
+  "d5": "1 pump",
+  "d6": "Skin",
+  "d7": "Every morning",
+  "d8": "100 mg",
+  "d9": "By mouth",
+  "d10": "At bedtime",
+  "d11": "Menopause review"
+ },
+ "store": {
+  "name": "MenoMap: Menopause Tracker",
+  "subtitle": "Hot Flush Log & Doctor Notes",
+  "keywords": "perimenopause,night,sweats,hrt,symptom,diary,sleep,hormone,journal,women,midlife,insomnia,cycle",
+  "promotionalText": "Log a hot flush in one tap from your Lock Screen or Apple Watch. See your patterns. Walk into your appointment with clear notes. No account, no ads.",
+  "description": "Log a hot flush in one tap. See what's changing. Walk into your appointment with notes.\n\nMenoMap is built for the moment itself. When a hot flush or night sweat starts, tap once from your Lock Screen, Control Centre, the Action Button or your Apple Watch. MenoMap times it, breathes with you if you want, and saves it. At night, Night Watch keeps a dim, one-tap night sweat button on your Lock Screen until morning.\n\nWORKS WITH APPLE HEALTH\nMenoMap reads the symptoms and menopause stage you've logged in Health, so your history shows up on day one, and saves every surge you log back to Health.\n\nYOUR WEATHER, MAPPED\n• A heat map of your days, a surge clock showing when they cluster, and your most-tagged triggers\n• A 30-second evening check-in for sleep, mood and energy\n• Patterns in your own entries, like how your sleep looks after heavy nights, always as a coincidence check, never a cause\n• Two-week experiments: try one change and compare your own before and during\n\nWALK IN WITH NOTES\nAdd your appointment and MenoMap shows how ready your notes are. Pick your questions, then create a clean one-page PDF for your clinician, in the language they speak.\n\nPRIVATE BY DESIGN\nNo account. No ads. No cloud. Your health data stays on your iPhone.\n\nMENOMAP PRO\nLonger history (30, 90 and 365 days), patterns, experiments, the full monthly Heat Report, clinician notes and medication reminders. Monthly, yearly (with a free trial) or lifetime. Or buy a single Visit Report for one appointment.\n\nMenoMap is a wellness tracker and education tool. It does not diagnose menopause or any other condition, does not prescribe or change treatment, and does not replace care from a qualified clinician.\n\nPrivacy: https://gwlabs.app/menomap/privacy\nTerms of use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+  "whatsNew": "The first release of MenoMap.",
+  "iap": {
+   "groupName": "MenoMap Pro",
+   "monthly": {
+    "name": "MenoMap Pro Monthly",
+    "description": "Patterns, stats and clinician notes."
+   },
+   "yearly": {
+    "name": "MenoMap Pro Yearly",
+    "description": "Patterns, stats and clinician notes."
+   },
+   "lifetime": {
+    "name": "MenoMap Pro Lifetime",
+    "description": "Every Pro feature, forever."
+   },
+   "visitReport": {
+    "name": "Visit Report",
+    "description": "One full clinician PDF, up to 90 days."
+   }
+  },
+  "screenshots": {
+   "1": "Log a hot flush in *one tap*.",
+   "2": "*Night Watch* on your Lock Screen.",
+   "3": "See your *heat map*.",
+   "4": "Find *your* patterns.",
+   "5": "Walk in with *notes*.",
+   "6": "Works with *Apple Health*.",
+   "7": "Right on your *Apple Watch*.",
+   "8": "Test one change for *two weeks*.",
+   "9": "Your data stays *yours*."
+  }
+ }
+}

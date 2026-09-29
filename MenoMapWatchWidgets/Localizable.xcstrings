@@ -1,0 +1,24 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "%lld": {
+      "shouldTranslate": false
+    },
+    "One tap to start timing a surge.": {
+      "localizations": {}
+    },
+    "Surge": {
+      "localizations": {}
+    },
+    "Surge · %lld": {
+      "localizations": {}
+    },
+    "Surges today: %lld": {
+      "localizations": {}
+    },
+    "Today: %lld": {
+      "localizations": {}
+    }
+  },
+  "version": "1.0"
+}

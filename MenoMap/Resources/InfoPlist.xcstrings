@@ -1,0 +1,32 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "CFBundleDisplayName": {
+      "shouldTranslate": false
+    },
+    "CFBundleName": {
+      "shouldTranslate": false
+    },
+    "NSHealthShareUsageDescription": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MenoMap reads the symptoms, sleep and menopause stage you choose to share, so your history shows up next to what you log here."
+          }
+        }
+      }
+    },
+    "NSHealthUpdateUsageDescription": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MenoMap saves the hot flashes, night sweats and symptoms you log to Apple Health, so all your records stay in one place."
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

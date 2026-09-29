@@ -1,0 +1,46 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "Arm Night Watch in ${applicationName}": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arm Night Watch in ${applicationName}"
+          }
+        }
+      }
+    },
+    "End my surge in ${applicationName}": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "End my surge in ${applicationName}"
+          }
+        }
+      }
+    },
+    "Log a hot flash in ${applicationName}": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log a hot flash in ${applicationName}"
+          }
+        }
+      }
+    },
+    "Log a night sweat in ${applicationName}": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log a night sweat in ${applicationName}"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

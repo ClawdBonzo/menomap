@@ -362,7 +362,7 @@ private struct NotesPage2: View {
                             .font(.system(size: 9.5)).foregroundStyle(P.ink)
                     }
                     if input.bleedingFromHealth > 0 {
-                        Text("Bleeding after menopause recorded in Apple Health: \(input.bleedingFromHealth) time(s).")
+                        Text("Bleeding after menopause recorded in Apple Health: \(input.bleedingFromHealth) times.")
                             .font(.system(size: 9.5)).foregroundStyle(P.ink)
                     }
                     if input.bleedingNotes.contains(where: \.2) || input.bleedingFromHealth > 0 {
@@ -376,7 +376,7 @@ private struct NotesPage2: View {
             if !input.healthSymptoms.isEmpty {
                 PDFSection(title: String(localized: "Other symptoms recorded in Apple Health")) {
                     ForEach(input.healthSymptoms.prefix(8), id: \.0) { name, days in
-                        Text("\(name): \(days) day(s)").font(.system(size: 9.5)).foregroundStyle(P.ink)
+                        Text("\(name): \(days) days").font(.system(size: 9.5)).foregroundStyle(P.ink)
                     }
                     if input.palpitationsLogged {
                         Text(SafetyCopy.palpitations).font(.system(size: 8.5)).foregroundStyle(P.ink2)

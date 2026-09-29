@@ -151,7 +151,9 @@ struct ThermostatCard: View {
                         .font(.subheadline.weight(.semibold)).foregroundStyle(MenoTheme.ink)
                     if let change {
                         let down = change < 0
-                        Label("\(Int(abs(change) * 100))% \(down ? String(localized: "fewer") : String(localized: "more")) than the \(range.rawValue) days before",
+                        let pct = Int(abs(change) * 100)
+                        Label(down ? String(localized: "\(pct)% fewer than the \(range.rawValue) days before")
+                                   : String(localized: "\(pct)% more than the \(range.rawValue) days before"),
                               systemImage: down ? "arrow.down.right" : "arrow.up.right")
                             .font(.caption).foregroundStyle(down ? MenoTheme.teal : MenoTheme.ember)
                     }

@@ -1,5 +1,66 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {},
-  "version" : "1.0"
+  "sourceLanguage": "en",
+  "strings": {
+    "%lld": {
+      "shouldTranslate": false
+    },
+    "Double tap your fingers to end": {
+      "localizations": {}
+    },
+    "End": {
+      "localizations": {}
+    },
+    "Hold": {
+      "localizations": {}
+    },
+    "Hot flash": {
+      "localizations": {}
+    },
+    "How strong?": {
+      "localizations": {}
+    },
+    "In": {
+      "localizations": {}
+    },
+    "Intense": {
+      "localizations": {}
+    },
+    "MenoMap": {
+      "shouldTranslate": false
+    },
+    "Mild": {
+      "localizations": {}
+    },
+    "Night sweat": {
+      "localizations": {}
+    },
+    "Noticeable": {
+      "localizations": {}
+    },
+    "Out": {
+      "localizations": {}
+    },
+    "Save": {
+      "localizations": {}
+    },
+    "Skip rating": {
+      "localizations": {}
+    },
+    "Strong": {
+      "localizations": {}
+    },
+    "Surge": {
+      "localizations": {}
+    },
+    "Today: %lld": {
+      "localizations": {}
+    },
+    "Turn the Crown": {
+      "localizations": {}
+    },
+    "Very strong": {
+      "localizations": {}
+    }
+  },
+  "version": "1.0"
 }

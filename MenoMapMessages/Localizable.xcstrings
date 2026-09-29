@@ -1,5 +1,64 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {},
-  "version" : "1.0"
+  "sourceLanguage": "en",
+  "strings": {
+    "": {},
+    "3am club": {
+      "localizations": {}
+    },
+    "Could you turn the fan on?": {
+      "localizations": {}
+    },
+    "Crack a window": {
+      "localizations": {}
+    },
+    "Fan me": {
+      "localizations": {}
+    },
+    "Heads up: running hot today. Not you, it's me.": {
+      "localizations": {}
+    },
+    "Heads-up": {
+      "localizations": {}
+    },
+    "Hot flash, give me 3 minutes.": {
+      "localizations": {}
+    },
+    "Hot flash. Back in 3.": {
+      "localizations": {}
+    },
+    "Internal sauna: on": {
+      "localizations": {}
+    },
+    "Night shift survivor": {
+      "localizations": {}
+    },
+    "Night sweat. Cracking the window.": {
+      "localizations": {}
+    },
+    "Not now, I'm molten": {
+      "localizations": {}
+    },
+    "Personal summer in progress": {
+      "localizations": {}
+    },
+    "Recalibrating…": {
+      "localizations": {}
+    },
+    "Rough night. I'll be slow this morning.": {
+      "localizations": {}
+    },
+    "Running hot. Not you, it's me.": {
+      "localizations": {}
+    },
+    "Stickers": {
+      "localizations": {}
+    },
+    "Sweater on. Sweater off.": {
+      "localizations": {}
+    },
+    "Thermostat: mine": {
+      "localizations": {}
+    }
+  },
+  "version": "1.0"
 }

@@ -183,7 +183,9 @@ struct RateLaterCard: View {
             HStack(spacing: 12) {
                 Image(systemName: "hand.tap").font(.title3).foregroundStyle(MenoTheme.teal)
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("Rate your \(event.startedAt.formatted(date: .omitted, time: .shortened)) \(Copy.kind(event.kind).lowercased())")
+                    Text(event.kind == .nightSweat
+                         ? String(localized: "Rate your \(event.startedAt.formatted(date: .omitted, time: .shortened)) night sweat")
+                         : String(localized: "Rate your \(event.startedAt.formatted(date: .omitted, time: .shortened)) hot flash"))
                         .font(.headline).foregroundStyle(MenoTheme.ink)
                     Text("One tap: how strong was it?").font(.subheadline).foregroundStyle(MenoTheme.inkSecondary)
                 }
