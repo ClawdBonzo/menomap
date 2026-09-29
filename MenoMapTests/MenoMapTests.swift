@@ -56,7 +56,10 @@ final class AskMenoMapTests: XCTestCase {
     func testEveryFAQPointsAtARealArticle() {
         for f in FAQLibrary.all { XCTAssertNotNil(ArticleLibrary.article(id: f.articleID), f.question) }
         XCTAssertEqual(ArticleLibrary.all.count, 8)
-        XCTAssertTrue(ArticleLibrary.all.allSatisfy(\.needsSourceReview), "no article ships as reviewed until sources are checked")
+        for a in ArticleLibrary.all where a.sourceName != nil {
+            XCTAssertTrue(a.needsSourceReview || (a.sourceURL != nil && a.reviewedAt != nil),
+                          "\(a.id): an article only ships as checked with a real source link and date")
+        }
     }
 }
 

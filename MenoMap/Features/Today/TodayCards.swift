@@ -33,7 +33,7 @@ struct MorningCard: View {
                     }
                 }
                 Text("Right?").font(.headline).foregroundStyle(MenoTheme.ink)
-                HStack(spacing: 10) {
+                AdaptiveStack(spacing: 10) {
                     Button("That's right") { withAnimation { confirmedDay = today.description } }
                         .buttonStyle(.menoPrimary)
                     Button("Add one I missed") { router.present(.afterTheFact) }

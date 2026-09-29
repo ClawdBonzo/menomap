@@ -43,7 +43,7 @@ struct PatternsSection: View {
                             }
                             .frame(minHeight: MenoTheme.minHit)
                         } else {
-                        HStack {
+                        AdaptiveStack {
                             if canRevealFree {
                                 Button("Reveal one free this week") {
                                     revealedID = i.id

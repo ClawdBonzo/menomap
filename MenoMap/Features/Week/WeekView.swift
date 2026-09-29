@@ -123,7 +123,7 @@ struct ThermostatCard: View {
     var body: some View {
         let change: Double? = previous.total > 0 ? Double(stats.total - previous.total) / Double(previous.total) : nil
         MenoCard {
-            HStack(alignment: .center, spacing: 18) {
+            AdaptiveStack(spacing: 18) {
                 ThermostatGauge(value: min(stats.perDayAverage / 6, 1), label: stats.perDayAverage.formatted(.number.precision(.fractionLength(1))))
                     .frame(width: 120, height: 120)
                 VStack(alignment: .leading, spacing: 6) {
@@ -194,8 +194,8 @@ struct SurgeClockCard: View {
             if stats.total == 0 {
                 Text("Your surges will appear around the clock here.").font(.subheadline).foregroundStyle(MenoTheme.inkSecondary)
             } else {
-                HStack(spacing: 16) {
-                    SurgeClock(histogram: stats.hourHistogram).frame(width: 150, height: 150)
+                AdaptiveStack(spacing: 16) {
+                    SurgeClock(histogram: stats.hourHistogram).frame(width: 160, height: 160)
                     VStack(alignment: .leading, spacing: 8) {
                         if let peak = stats.peakTime {
                             Text(Copy.peakLine(peak, voice: voice)).font(MenoTheme.headline(.headline)).foregroundStyle(MenoTheme.ink)

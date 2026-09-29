@@ -180,11 +180,21 @@ struct YesNoRow: View {
     @Binding var value: Bool?
 
     var body: some View {
-        HStack(spacing: 10) {
-            Label(title, systemImage: systemImage).font(.body).foregroundStyle(MenoTheme.ink)
-            Spacer(minLength: 8)
-            MetricChip(title: "Yes", isOn: value == true) { value = value == true ? nil : true }
-            MetricChip(title: "No", isOn: value == false) { value = value == false ? nil : false }
+        ViewThatFits(in: .horizontal) {
+            HStack(spacing: 10) {
+                Label(title, systemImage: systemImage).font(.body).foregroundStyle(MenoTheme.ink)
+                Spacer(minLength: 8)
+                chips
+            }
+            VStack(alignment: .leading, spacing: 8) {
+                Label(title, systemImage: systemImage).font(.body).foregroundStyle(MenoTheme.ink)
+                HStack(spacing: 10) { chips }
+            }
         }
+    }
+
+    @ViewBuilder private var chips: some View {
+        MetricChip(title: "Yes", isOn: value == true) { value = value == true ? nil : true }
+        MetricChip(title: "No", isOn: value == false) { value = value == false ? nil : false }
     }
 }

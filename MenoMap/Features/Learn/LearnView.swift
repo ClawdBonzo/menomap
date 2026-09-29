@@ -95,7 +95,7 @@ struct ArticleView: View {
                         Text("Based on public guidance from \(source).").font(.footnote).foregroundStyle(MenoTheme.inkSecondary)
                     }
                 }
-                if let reviewed = article.reviewedAt, !article.needsSourceReview {
+                if let reviewed = article.reviewedAt, !article.needsSourceReview, article.sourceURL != nil {
                     Text("Sources checked \(reviewed.formatted(date: .abbreviated, time: .omitted))").font(.footnote).foregroundStyle(MenoTheme.inkSecondary)
                 }
                 DisclaimerBanner()

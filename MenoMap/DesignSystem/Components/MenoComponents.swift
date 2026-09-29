@@ -236,3 +236,20 @@ extension View {
             .tint(MenoTheme.teal)
     }
 }
+
+// MARK: - Adaptive stack
+
+/// HStack normally; VStack at accessibility text sizes so labels never break mid-word.
+struct AdaptiveStack<Content: View>: View {
+    var spacing: CGFloat = 10
+    @ViewBuilder var content: Content
+    @Environment(\.dynamicTypeSize) private var size
+
+    var body: some View {
+        if size.isAccessibilitySize {
+            VStack(spacing: spacing) { content }
+        } else {
+            HStack(spacing: spacing) { content }
+        }
+    }
+}

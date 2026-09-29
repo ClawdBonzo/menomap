@@ -1,6 +1,7 @@
 import SwiftUI
 import WatchConnectivity
 import WatchKit
+import WidgetKit
 import MenoCore
 
 @main
@@ -59,9 +60,18 @@ final class WatchModel: NSObject, WCSessionDelegate {
             WCSession.default.transferUserInfo(WatchMessage.surge(record).userInfo())
         }
         snapshot.todayCount += 1
+        Self.storeForComplications(snapshot)
         startedAt = nil
         pendingRating = false
         WKInterfaceDevice.current().play(.success)
+    }
+
+    /// Complications read today's count from the Watch-side App Group.
+    static func storeForComplications(_ s: MenoSnapshot) {
+        if let data = try? JSONEncoder().encode(s) {
+            UserDefaults(suiteName: MenoShared.appGroupID)?.set(data, forKey: MenoShared.snapshotKey)
+            WidgetCenter.shared.reloadAllTimelines()
+        }
     }
 
     func discard() {
@@ -73,7 +83,10 @@ final class WatchModel: NSObject, WCSessionDelegate {
 
     nonisolated func session(_ session: WCSession, didReceiveApplicationContext context: [String: Any]) {
         guard let msg = WatchMessage(userInfo: context), case .snapshot(let s) = msg else { return }
-        Task { @MainActor in self.snapshot = s }
+        Task { @MainActor in
+            self.snapshot = s
+            Self.storeForComplications(s)
+        }
     }
 }
 
@@ -113,6 +126,7 @@ struct WatchHomeView: View {
                     }
                     .frame(maxWidth: .infinity, minHeight: 90)
                 }
+                .buttonStyle(.borderedProminent)
                 .tint(night ? nightInk : teal)
                 .handGestureShortcut(.primaryAction)
 
@@ -148,7 +162,7 @@ struct WatchSessionView: View {
                     }
                     Text(phase).font(.headline)
                 }
-                .frame(height: 60)
+                .frame(height: 84)
                 Button("End") { model.end() }
                     .tint(teal)
                     .handGestureShortcut(.primaryAction)
@@ -166,13 +180,25 @@ struct WatchRateView: View {
     @Environment(WatchModel.self) private var model
     @State private var crown = 3.0
 
+    static func word(_ i: Int) -> String {
+        switch i {
+        case 1: String(localized: "Mild")
+        case 2: String(localized: "Noticeable")
+        case 3: String(localized: "Strong")
+        case 4: String(localized: "Very strong")
+        default: String(localized: "Intense")
+        }
+    }
+
     var body: some View {
         VStack(spacing: 8) {
             Text("How strong?").font(.headline)
+            Text("Turn the Crown").font(.caption2).foregroundStyle(.secondary)
             Text("\(Int(crown.rounded()))").font(.system(size: 44, weight: .semibold, design: .serif).monospacedDigit())
                 .foregroundStyle(ember)
                 .focusable()
                 .digitalCrownRotation($crown, from: 1, through: 5, by: 1, sensitivity: .low, isContinuous: false, isHapticFeedbackEnabled: true)
+            Text(Self.word(Int(crown.rounded()))).font(.footnote).foregroundStyle(.secondary)
             Button("Save") { model.save(intensity: Int(crown.rounded())) }
                 .tint(teal)
                 .handGestureShortcut(.primaryAction)

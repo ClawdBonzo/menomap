@@ -30,6 +30,10 @@ enum ArticleLibrary {
 
     static func article(id: String) -> Article? { all.first { $0.id == id } }
 
+    /// Date every linked source was fetched and checked against the article (2026-09-29).
+    /// NICE NG23 blocks automated fetching, so it is named in the text but not linked.
+    static let checkedOn = DateComponents(calendar: Calendar(identifier: .gregorian), year: 2026, month: 9, day: 29).date
+
     static var stages: Article {
         Article(
             id: "stages", category: .basics,
@@ -48,7 +52,7 @@ enum ArticleLibrary {
 
             **What MenoMap does and doesn't do.** MenoMap can't tell you which stage you're in. What it can do is keep an honest record of what you notice: surges, sleep, mood and treatment, so you and your clinician can look at the same picture.
             """),
-            sourceName: "NICE guideline NG23; The Menopause Society", sourceURL: nil, reviewedAt: nil, needsSourceReview: true)
+            sourceName: "NHS; The Menopause Society", sourceURL: URL(string: "https://www.nhs.uk/conditions/menopause/"), reviewedAt: ArticleLibrary.checkedOn, needsSourceReview: false)
     }
 
     static var vasomotor: Article {
@@ -76,7 +80,7 @@ enum ArticleLibrary {
 
             **Help is available.** There are hormonal and non-hormonal treatment options, plus practical approaches. Which ones suit you is a conversation to have with a clinician.
             """),
-            sourceName: "NHS; The Menopause Society", sourceURL: nil, reviewedAt: nil, needsSourceReview: true)
+            sourceName: "The Menopause Society; NHS", sourceURL: URL(string: "https://menopause.org/patient-education"), reviewedAt: ArticleLibrary.checkedOn, needsSourceReview: false)
     }
 
     static var sleep: Article {
@@ -103,7 +107,7 @@ enum ArticleLibrary {
 
             **When to get checked.** Talk to a clinician if poor sleep is affecting your safety (for example, driving), your mood, or your daily life, or if you notice pauses in your breathing or gasping at night.
             """),
-            sourceName: "NHS", sourceURL: nil, reviewedAt: nil, needsSourceReview: true)
+            sourceName: "NHS", sourceURL: URL(string: "https://www.nhs.uk/conditions/insomnia/"), reviewedAt: ArticleLibrary.checkedOn, needsSourceReview: false)
     }
 
     static var diary: Article {
@@ -126,7 +130,7 @@ enum ArticleLibrary {
 
             **Bring your questions too.** Write down what matters most to you: the symptom that bothers you most, what you want to try or avoid, and anything that worries you. MenoMap's Visit tab helps you pick questions and prints them with your notes.
             """),
-            sourceName: nil, sourceURL: nil, reviewedAt: nil, needsSourceReview: true)
+            sourceName: nil, sourceURL: nil, reviewedAt: nil, needsSourceReview: false)
     }
 
     static var hormoneTherapy: Article {
@@ -152,7 +156,7 @@ enum ArticleLibrary {
 
             MenoMap never suggests starting, stopping or changing a medicine.
             """),
-            sourceName: "NICE guideline NG23; The Menopause Society; International Menopause Society", sourceURL: nil, reviewedAt: nil, needsSourceReview: true)
+            sourceName: "NHS; The Menopause Society", sourceURL: URL(string: "https://www.nhs.uk/medicines/hormone-replacement-therapy-hrt/"), reviewedAt: ArticleLibrary.checkedOn, needsSourceReview: false)
     }
 
     static var nonHormonal: Article {
@@ -178,7 +182,7 @@ enum ArticleLibrary {
 
             **Try one change at a time.** MenoMap's two-week experiments compare your own entries before and during a change, which is easier to judge than a feeling.
             """),
-            sourceName: "The Menopause Society; NICE guideline NG23", sourceURL: nil, reviewedAt: nil, needsSourceReview: true)
+            sourceName: "NHS; The Menopause Society", sourceURL: URL(string: "https://www.nhs.uk/conditions/menopause/treatment/"), reviewedAt: ArticleLibrary.checkedOn, needsSourceReview: false)
     }
 
     static var bleeding: Article {
@@ -199,7 +203,7 @@ enum ArticleLibrary {
 
             MenoMap can't tell you why bleeding happened. It will remind you to get it checked and include it in your visit notes.
             """),
-            sourceName: "NHS", sourceURL: nil, reviewedAt: nil, needsSourceReview: true)
+            sourceName: "NHS", sourceURL: URL(string: "https://www.nhs.uk/conditions/post-menopausal-bleeding/"), reviewedAt: ArticleLibrary.checkedOn, needsSourceReview: false)
     }
 
     static var usingReport: Article {
@@ -226,6 +230,6 @@ enum ArticleLibrary {
 
             Add any new medication with its start date. In a few weeks, MenoMap can show your entries before and after, which makes your next review easier.
             """),
-            sourceName: nil, sourceURL: nil, reviewedAt: nil, needsSourceReview: true)
+            sourceName: nil, sourceURL: nil, reviewedAt: nil, needsSourceReview: false)
     }
 }

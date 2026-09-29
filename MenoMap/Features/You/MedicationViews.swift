@@ -66,7 +66,7 @@ private struct MedicationRow: View {
                     Label(last.skipped ? "Skipped today" : "Taken today", systemImage: last.skipped ? "minus.circle" : "checkmark.circle.fill")
                         .font(.subheadline).foregroundStyle(last.skipped ? MenoTheme.inkSecondary : MenoTheme.teal)
                 } else {
-                    HStack(spacing: 8) {
+                    AdaptiveStack(spacing: 8) {
                         Button("Taken") { store.logDose(medicationID: med.id, skipped: false) }.buttonStyle(.menoQuiet)
                         Button("Skipped") { store.logDose(medicationID: med.id, skipped: true) }.buttonStyle(.menoSecondary)
                     }

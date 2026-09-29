@@ -91,6 +91,7 @@ struct TodayView: View {
 
 struct SurgeHero: View {
     @Environment(AppRouter.self) private var router
+    @Environment(\.dynamicTypeSize) private var dynamicType
 
     private var nightNow: Bool {
         let h = Calendar.current.component(.hour, from: .now)
@@ -105,11 +106,13 @@ struct SurgeHero: View {
                 router.present(.surge(primary))
             } label: {
                 HStack(spacing: 14) {
-                    Image(systemName: primary == .nightSweat ? "moon.haze.fill" : "flame.fill")
-                        .font(.system(size: 30, weight: .semibold))
+                    if !dynamicType.isAccessibilitySize {
+                        Image(systemName: primary == .nightSweat ? "moon.haze.fill" : "flame.fill")
+                            .font(.system(size: 30, weight: .semibold))
+                    }
                     VStack(alignment: .leading, spacing: 2) {
                         Text(primary == .nightSweat ? "I'm having a night sweat" : "I'm having a surge")
-                            .font(.system(size: 26, weight: .semibold, design: .serif))
+                            .font(.system(.title, design: .serif).weight(.semibold))
                             .multilineTextAlignment(.leading)
                             .fixedSize(horizontal: false, vertical: true)
                         Text("Start timing. Breathe if you want.")
@@ -120,6 +123,7 @@ struct SurgeHero: View {
                 }
                 .foregroundStyle(MenoTheme.onTeal)
                 .padding(.horizontal, 22)
+                .padding(.vertical, 18)
                 .frame(maxWidth: .infinity, minHeight: 104, alignment: .leading)
                 .background(
                     LinearGradient(colors: [MenoTheme.teal, MenoTheme.teal.opacity(0.86)], startPoint: .topLeading, endPoint: .bottomTrailing),
@@ -129,7 +133,7 @@ struct SurgeHero: View {
             .buttonStyle(.plain)
             .accessibilityHint(Text("Starts a timer and a Lock Screen Live Activity"))
 
-            HStack(spacing: 10) {
+            AdaptiveStack(spacing: 10) {
                 Button { router.present(.surge(secondary)) } label: {
                     Label(Copy.kind(secondary), systemImage: secondary == .nightSweat ? "moon.haze" : "flame")
                 }
