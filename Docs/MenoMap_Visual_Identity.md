@@ -41,8 +41,11 @@ Heat is always shown **with its number** (count or level). Intensity is never en
 - **Reduce Motion:** everything is instant and the breathing circle becomes a text countdown.
 - No confetti, sparkles or bounce.
 
-## Icon
-Concentric contour rings (a topographic "heat map") in ember on warm stone, with a single teal contour closest to the center: the calm at the core of the heat. No flowers, no female silhouette, no thermometer.
+## Icon (v2, 2026-09-29)
+An ember field (warm gradient) with stone topographic contour lines tightening toward a teal "calm core" summit. Rendered by `Tools/make_icon.swift` (default, dark, tinted).
+- **Why v2:** the first version (pale stone with filled bands) washed out at Home Screen size, and soft concentric pink-beige shapes can read as a body part. Line contours on ember read as a heat map at any size.
+- The icon is the one place ember is a background; in the UI, ember stays data-only.
+- No flowers, no female silhouette, no thermometer.
 
 ## Voice
 - **Straight** (default for safety, legal, Learn and the PDF): calm, plain and specific.
