@@ -88,7 +88,7 @@ targets:
         # RevenueCat public SDK key (observer mode). Empty until the RevenueCat project exists (Milestone J).
         RevenueCatAPIKey: ""
         # Numeric App Store ID, filled in once the App Store Connect record exists (Milestone J). Empty hides "Rate MenoMap".
-        AppStoreID: ""
+        AppStoreID: "6817484445"
         SupportEmail: support@gwlabs.app
         NSUserActivityTypes:
           - StartSurgeIntent

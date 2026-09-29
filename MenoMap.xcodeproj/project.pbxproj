@@ -190,6 +190,7 @@
 		38B078B6C5C62A170508EEFE /* WatchBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchBridge.swift; sourceTree = "<group>"; };
 		39D4AFC7799031A4B4996570 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		3FA989C8759EB2A4A7A3EA99 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		43721A51ECC5911E964AC55E /* asc_setup.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = asc_setup.py; sourceTree = "<group>"; };
 		4A79CEA7680F91305DCE87F0 /* SurgeViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurgeViews.swift; sourceTree = "<group>"; };
 		4B67E189B5CC34ABC2A15B94 /* StoryVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryVideo.swift; sourceTree = "<group>"; };
 		4C868CE9C238B4611467E42C /* VisitPDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitPDF.swift; sourceTree = "<group>"; };
@@ -197,12 +198,14 @@
 		56D75E773B8104F95D2C711E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		5BEE5CB260041B6E5DA3B5B2 /* VisitReadinessCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitReadinessCalculator.swift; sourceTree = "<group>"; };
 		5CC1BBCD671DF54BE473B092 /* MenoMap.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MenoMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61DAF3503554FC2DBE3CA0F9 /* handout.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = handout.html; sourceTree = "<group>"; };
 		6291A81DAE562A9A84E24438 /* NightWatchSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightWatchSettingsView.swift; sourceTree = "<group>"; };
 		654E70B4A02F772B7DE58C24 /* make_icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = make_icon.swift; sourceTree = "<group>"; };
 		6CFDBAD36C28528D7A910FD6 /* HeatMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatMap.swift; sourceTree = "<group>"; };
 		6F1AB0D1A4825962256D965C /* Copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copy.swift; sourceTree = "<group>"; };
 		6F3B502418E031D67BE95E34 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		7152B96600C00690D9558C7C /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		73FE6A5A82A35D4BEB27107A /* GROWTH.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = GROWTH.md; sourceTree = "<group>"; };
 		74730FA743459A17A0A5E006 /* HeadsUpTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadsUpTexts.swift; sourceTree = "<group>"; };
 		779200739445157BB344E50F /* MenoMapWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MenoMapWatch.entitlements; sourceTree = "<group>"; };
 		7AAD9961C44378001454B612 /* MenoMapWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenoMapWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,6 +220,7 @@
 		958D06A5A7E9F925F9CC7225 /* MedicationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationViews.swift; sourceTree = "<group>"; };
 		98E9E0A18B0ACE8365B0755B /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		996246ECFF3B24871652C3F4 /* SurgeActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurgeActivity.swift; sourceTree = "<group>"; };
+		9F0768A9B22A7A83B26BD507 /* asc_api.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = asc_api.py; sourceTree = "<group>"; };
 		A1383580A9C8E6711B427E66 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		A2C23E531525A24FEC40C140 /* NightWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightWatch.swift; sourceTree = "<group>"; };
 		A780E440C13ACAA9C5BFFFB4 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
@@ -346,6 +350,8 @@
 		1D797CA6983A646E0BA15649 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				9F0768A9B22A7A83B26BD507 /* asc_api.py */,
+				43721A51ECC5911E964AC55E /* asc_setup.py */,
 				654E70B4A02F772B7DE58C24 /* make_icon.swift */,
 				CB5981226BA3469281B4C2B9 /* sim_run.sh */,
 			);
@@ -536,6 +542,14 @@
 			path = MenoMapMessages;
 			sourceTree = "<group>";
 		};
+		903DF10B1271AE6AE9A8B272 /* ClinicKit */ = {
+			isa = PBXGroup;
+			children = (
+				61DAF3503554FC2DBE3CA0F9 /* handout.html */,
+			);
+			path = ClinicKit;
+			sourceTree = "<group>";
+		};
 		90EA029F8F345E5E0ADD85D2 /* Week */ = {
 			isa = PBXGroup;
 			children = (
@@ -572,7 +586,9 @@
 		CBD3FC4EABEB53592F40F35A /* Docs */ = {
 			isa = PBXGroup;
 			children = (
+				903DF10B1271AE6AE9A8B272 /* ClinicKit */,
 				0A91C0FE1AFFAE6815D770E0 /* DECISIONS.md */,
+				73FE6A5A82A35D4BEB27107A /* GROWTH.md */,
 				C6ECA048E81219262CC91CC8 /* IMPLEMENTATION_PLAN.md */,
 				E519BADC5B09EF84DE674B4F /* MARKETS.md */,
 				AAB88FA64E0BCC11033AC291 /* MenoMap_Visual_Identity.md */,
