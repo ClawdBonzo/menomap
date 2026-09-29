@@ -487,8 +487,8 @@ struct PDFPreviewSheet: View {
                 let u = FileManager.default.temporaryDirectory.appending(path: pdf.fileName)
                 try? pdf.data.write(to: u, options: [.atomic, .completeFileProtection])
                 url = u
-                if !pdf.isPreview { ReviewPrompt.recordPositiveMoment() }
             }
+            .onDisappear { if !pdf.isPreview { ReviewPrompt.recordPositiveMoment() } }
         }
     }
 }

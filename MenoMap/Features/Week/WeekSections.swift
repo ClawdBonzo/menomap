@@ -26,6 +26,7 @@ struct PatternsSection: View {
                                message: "They need about two weeks of check-ins and surges. They always compare your own entries, never other people's.")
                 }
             }
+            let firstLockedID = list.first { !(subscription.isPro || !$0.isPremium || $0.id == revealedID) }?.id
             ForEach(list) { i in
                 let t = InsightCopy.text(i)
                 let open = subscription.isPro || !i.isPremium || i.id == revealedID
@@ -36,6 +37,12 @@ struct PatternsSection: View {
                     } else {
                         Text(t.body).font(.body).foregroundStyle(MenoTheme.ink).blur(radius: 6).accessibilityHidden(true)
                             .fixedSize(horizontal: false, vertical: true)
+                        if i.id != firstLockedID {
+                            Button { router.present(.paywall(.pattern)) } label: {
+                                Label("Unlock with Pro", systemImage: "lock.fill").font(.subheadline.weight(.semibold))
+                            }
+                            .frame(minHeight: MenoTheme.minHit)
+                        } else {
                         HStack {
                             if canRevealFree {
                                 Button("Reveal one free this week") {
@@ -45,6 +52,7 @@ struct PatternsSection: View {
                                 .buttonStyle(.menoQuiet)
                             }
                             Button("Unlock all") { router.present(.paywall(.pattern)) }.buttonStyle(.menoSecondary)
+                        }
                         }
                     }
                 }

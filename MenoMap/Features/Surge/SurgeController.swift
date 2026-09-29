@@ -59,6 +59,9 @@ final class SurgeController: SurgeIntentHandling {
         let record = SurgeRecord(id: a.id, kind: a.kind, startedAt: a.startedAt, durationSec: max(secs, 1),
                                  intensity: intensity, tags: tags, source: source ?? startSource)
         clear()
+        if let c = container {
+            c.router.toast = Copy.savedLine(seconds: record.durationSec, voice: c.store.profile().voice)
+        }
         return container?.log(record)
     }
 

@@ -265,7 +265,8 @@ public struct InsightEngine: Sendable {
             let others = logged.filter { $0.weekday(calendar: calendar) != wd }
             let otherAvg = mean(others.map { Double(perDay[$0] ?? 0) })
             guard otherAvg > 0, avg >= otherAvg * 1.5, avg - otherAvg >= 0.5 else { continue }
-            if best == nil || avg / otherAvg > best!.1 / max(best!.2, 0.01) { best = (wd, avg, otherAvg) }
+            if let b = best, avg / otherAvg <= b.1 / max(b.2, 0.01) { continue }
+            best = (wd, avg, otherAvg)
         }
         guard let b = best else { return nil }
         return Insight(ruleID: InsightRuleID.weekdayPattern,

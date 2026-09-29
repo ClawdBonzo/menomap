@@ -409,8 +409,9 @@ struct ContourShape: Shape {
 
 enum LegalLinks {
     // Pages published on gwlabs.app before submission (Docs/SPEC_ADDITIONS §15).
-    static let privacy = URL(string: "https://gwlabs.app/menomap/privacy")!
-    static let terms = URL(string: "https://gwlabs.app/menomap/terms")!
-    static let clinicians = URL(string: "https://gwlabs.app/menomap/clinicians")!
-    static let appStore = URL(string: "https://gwlabs.app/menomap")!
+    static let home = URL(string: "https://gwlabs.app/menomap") ?? URL(fileURLWithPath: "/")
+    static let privacy = URL(string: "https://gwlabs.app/menomap/privacy") ?? home
+    static let terms = URL(string: "https://gwlabs.app/menomap/terms") ?? home
+    static let clinicians = URL(string: "https://gwlabs.app/menomap/clinicians") ?? home
+    static let appStore = home
 }

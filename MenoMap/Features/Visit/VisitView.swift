@@ -153,18 +153,26 @@ struct VisitView: View {
             }
             .pickerStyle(.segmented)
             HStack {
-                Picker(selection: $pdfLanguage) {
+                Label("Language", systemImage: "globe").foregroundStyle(MenoTheme.ink)
+                Spacer()
+                Picker("Language", selection: $pdfLanguage) {
                     ForEach(PDFLanguages.available, id: \.self) { code in
                         Text(PDFLanguages.name(code)).tag(code)
                     }
-                } label: { Label("Language", systemImage: "globe") }
+                }
+                .labelsHidden()
                 .onChange(of: pdfLanguage) { _, v in appt?.pdfLanguage = v; store.save() }
             }
-            Picker(selection: $paper) {
-                Text("A4").tag(RegionInfo.PaperSize.a4)
-                Text("US Letter").tag(RegionInfo.PaperSize.letter)
-            } label: { Label("Paper", systemImage: "doc") }
+            HStack {
+                Label("Paper", systemImage: "doc").foregroundStyle(MenoTheme.ink)
+                Spacer()
+                Picker("Paper", selection: $paper) {
+                    Text("A4").tag(RegionInfo.PaperSize.a4)
+                    Text("US Letter").tag(RegionInfo.PaperSize.letter)
+                }
+                .labelsHidden()
                 .onChange(of: paper) { _, v in store.profile().paperSize = v; store.save() }
+            }
 
             Button {
                 create(appt: appt)

@@ -111,11 +111,11 @@ struct HeatCalendar: View {
 struct HeatLegend: View {
     var body: some View {
         HStack(spacing: 6) {
-            Text("Calm").font(.caption2).foregroundStyle(MenoTheme.inkSecondary)
+            Text("Calm").font(.caption2).foregroundStyle(MenoTheme.inkSecondary).fixedSize()
             ForEach(0...5, id: \.self) { l in
                 RoundedRectangle(cornerRadius: 3).fill(MenoTheme.heat(l)).frame(width: 14, height: 14)
             }
-            Text("Hot").font(.caption2).foregroundStyle(MenoTheme.inkSecondary)
+            Text("Hot").font(.caption2).foregroundStyle(MenoTheme.inkSecondary).fixedSize()
         }
         .accessibilityElement(children: .ignore)
         .accessibilityLabel(Text("Heat scale from calm to hot. Each cell also shows its number of surges."))

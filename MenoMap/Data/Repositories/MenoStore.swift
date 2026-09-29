@@ -129,7 +129,7 @@ final class MenoStore: SurgeStoreing, CheckInStoreing {
 
     func medications(includeEnded: Bool = true) -> [Medication] {
         let all = (try? context.fetch(FetchDescriptor<Medication>(sortBy: [SortDescriptor(\.startDate, order: .reverse)]))) ?? []
-        return includeEnded ? all : all.filter { $0.endDate == nil || $0.endDate! > .now }
+        return includeEnded ? all : all.filter { ($0.endDate ?? .distantFuture) > .now }
     }
 
     func doses() -> [MedicationDose] {

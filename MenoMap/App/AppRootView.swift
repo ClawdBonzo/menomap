@@ -23,6 +23,30 @@ struct AppRootView: View {
             SheetHost(sheet: sheet)
         }
         .tint(MenoTheme.teal)
+        .overlay(alignment: .bottom) { ToastView() }
+    }
+}
+
+struct ToastView: View {
+    @Environment(AppRouter.self) private var router
+
+    var body: some View {
+        if let text = router.toast {
+            Text(text)
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(MenoTheme.onTeal)
+                .padding(.horizontal, 18).padding(.vertical, 12)
+                .background(MenoTheme.teal, in: Capsule())
+                .shadow(color: .black.opacity(0.15), radius: 10, y: 4)
+                .padding(.bottom, 100)
+                .transition(.move(edge: .bottom).combined(with: .opacity))
+                .task(id: text) {
+                    try? await Task.sleep(for: .seconds(2.6))
+                    withAnimation { router.toast = nil }
+                }
+                .accessibilityAddTraits(.updatesFrequently)
+                .onAppear { UIAccessibility.post(notification: .announcement, argument: text) }
+        }
     }
 }
 

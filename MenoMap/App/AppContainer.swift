@@ -48,6 +48,8 @@ enum AppSheet: Identifiable, Equatable {
 final class AppRouter {
     var tab: AppTab = .today
     var sheet: AppSheet?
+    /// Short confirmation shown at the bottom of the screen (e.g. after saving a surge).
+    var toast: String?
 
     func present(_ sheet: AppSheet) {
         // Surge always wins: someone mid-flash shouldn't hit a stale sheet.

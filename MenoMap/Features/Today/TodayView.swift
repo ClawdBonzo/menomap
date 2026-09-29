@@ -15,7 +15,7 @@ struct TodayView: View {
         let week = StatsCalculator.compute(window: DayWindow(lastDays: 7, endingOn: today),
                                            surges: store.surgeRecords(in: DayWindow(lastDays: 7, endingOn: today)),
                                            checkIns: store.checkInRecords(in: DayWindow(lastDays: 7, endingOn: today)))
-        let insights = InsightEngine().compute(store.insightInput(), today: today)
+        let insights = InsightEngine().compute(store.insightInput(), today: today).filter { $0.ruleID != InsightRuleID.experimentResult }
 
         NavigationStack {
             ScrollView {
@@ -56,6 +56,9 @@ struct TodayView: View {
             }
             .menoScreen()
             .toolbar(.hidden, for: .navigationBar)
+            .safeAreaInset(edge: .top, spacing: 0) {
+                Rectangle().fill(.clear).frame(height: 0).background(MenoTheme.ground.opacity(0.94).ignoresSafeArea(edges: .top))
+            }
         }
     }
 
@@ -267,12 +270,13 @@ struct QuickActions: View {
 
     private func tile(_ title: LocalizedStringKey, _ symbol: String, action: @escaping () -> Void) -> some View {
         Button(action: action) {
-            VStack(alignment: .leading, spacing: 10) {
-                Image(systemName: symbol).font(.title3).foregroundStyle(MenoTheme.teal)
+            HStack(spacing: 10) {
+                Image(systemName: symbol).font(.body.weight(.semibold)).foregroundStyle(MenoTheme.teal).frame(width: 22)
                 Text(title).font(.subheadline.weight(.semibold)).foregroundStyle(MenoTheme.ink)
                     .multilineTextAlignment(.leading)
+                Spacer(minLength: 0)
             }
-            .frame(maxWidth: .infinity, minHeight: 84, alignment: .topLeading)
+            .frame(maxWidth: .infinity, minHeight: 36, alignment: .leading)
             .padding(14)
             .background(MenoTheme.surface, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
             .overlay(RoundedRectangle(cornerRadius: 16, style: .continuous).strokeBorder(MenoTheme.hairline))

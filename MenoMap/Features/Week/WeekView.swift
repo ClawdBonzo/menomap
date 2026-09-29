@@ -158,7 +158,7 @@ struct ThermostatGauge: View {
             Circle()
                 .trim(from: 0.125, to: 0.875)
                 .stroke(AngularGradient(colors: [MenoTheme.teal, MenoTheme.ember.opacity(0.5), MenoTheme.ember],
-                                        center: .center, startAngle: .degrees(135), endAngle: .degrees(405)),
+                                        center: .center, startAngle: .degrees(45), endAngle: .degrees(315)),
                         style: StrokeStyle(lineWidth: 12, lineCap: .round))
                 .rotationEffect(.degrees(90))
             Capsule()
@@ -209,36 +209,43 @@ struct SurgeClockCard: View {
     }
 }
 
-/// 24-hour radial histogram; midnight at the top.
+/// 24-hour radial histogram; midnight at the top, noon at the bottom.
 struct SurgeClock: View {
     let histogram: [Int]
+    var ember: Color = MenoTheme.ember
+    var hairline: Color = MenoTheme.hairline
+    var labelColor: Color = MenoTheme.inkSecondary
 
     var body: some View {
         let maxV = max(histogram.max() ?? 1, 1)
-        GeometryReader { geo in
-            let size = min(geo.size.width, geo.size.height)
-            let inner = size * 0.2
-            let outer = size * 0.5
-            ZStack {
-                Circle().stroke(MenoTheme.hairline, lineWidth: 1).frame(width: inner * 2, height: inner * 2)
-                ForEach(0..<24, id: \.self) { h in
-                    let v = Double(histogram[h]) / Double(maxV)
-                    let len = (outer - inner) * max(v, 0.04)
-                    Capsule()
-                        .fill(v == 0 ? MenoTheme.hairline : MenoTheme.ember.opacity(0.3 + 0.7 * v))
-                        .frame(width: max(size * 0.035, 4), height: len)
-                        .offset(y: -(inner + len / 2))
-                        .rotationEffect(.degrees(Double(h) / 24 * 360))
-                }
-                ForEach([0, 6, 12, 18], id: \.self) { h in
-                    Text(h == 0 ? "12a" : h == 12 ? "12p" : h == 6 ? "6a" : "6p")
-                        .font(.system(size: 9, weight: .semibold)).foregroundStyle(MenoTheme.inkSecondary)
-                        .offset(y: -(inner - 10))
-                        .rotationEffect(.degrees(Double(h) / 24 * 360))
-                }
+        Canvas { ctx, size in
+            let side = min(size.width, size.height)
+            let c = CGPoint(x: size.width / 2, y: size.height / 2)
+            let inner = side * 0.24, outer = side * 0.47
+            func point(_ angle: Double, _ r: CGFloat) -> CGPoint {
+                CGPoint(x: c.x + CGFloat(sin(angle)) * r, y: c.y - CGFloat(cos(angle)) * r)
             }
-            .frame(width: size, height: size)
-            .position(x: geo.size.width / 2, y: geo.size.height / 2)
+            var guide = Path()
+            guide.addEllipse(in: CGRect(x: c.x - outer, y: c.y - outer, width: outer * 2, height: outer * 2))
+            ctx.stroke(guide, with: .color(hairline), style: StrokeStyle(lineWidth: 1, dash: [2, 4]))
+            var core = Path()
+            core.addEllipse(in: CGRect(x: c.x - inner, y: c.y - inner, width: inner * 2, height: inner * 2))
+            ctx.stroke(core, with: .color(hairline), lineWidth: 1)
+            for h in 0..<24 {
+                let v = Double(histogram[h]) / Double(maxV)
+                let a = (Double(h) + 0.5) / 24 * 2 * .pi
+                let r = inner + (outer - inner) * max(v, 0.06)
+                var bar = Path()
+                bar.move(to: point(a, inner + 3))
+                bar.addLine(to: point(a, r))
+                ctx.stroke(bar, with: .color(v == 0 ? hairline : ember.opacity(0.3 + 0.7 * v)),
+                           style: StrokeStyle(lineWidth: max(side * 0.045, 4), lineCap: .round))
+            }
+            for (h, label) in [(0, "12a"), (6, "6a"), (12, "12p"), (18, "6p")] {
+                let a = Double(h) / 24 * 2 * .pi
+                ctx.draw(Text(label).font(.system(size: max(side * 0.065, 8), weight: .semibold)).foregroundStyle(labelColor),
+                         at: point(a, inner * 0.62))
+            }
         }
         .accessibilityElement()
         .accessibilityLabel(Text("Surges by hour of day"))
@@ -308,7 +315,7 @@ struct RecordsCard: View {
                 record("Typical length", stats.avgDurationSec.map(Copy.duration) ?? "–")
                 record("Average strength", stats.avgIntensity.map { "\($0.formatted(.number.precision(.fractionLength(1)))) / 5" } ?? "–")
                 record("Calmest day", stats.calmestDay.map(Copy.date) ?? "–")
-                record("Calm stretch", String(localized: "\(stats.longestCalmStretch) days"))
+                record("Calm stretch", stats.longestCalmStretch == 0 ? String(localized: "None yet") : String(localized: "\(stats.longestCalmStretch) days"))
             }
             if stats.longestCalmStretch > 0 {
                 Text(Copy.calmStretchLine(stats.longestCalmStretch, voice: voice))
