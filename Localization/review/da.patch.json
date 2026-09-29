@@ -1,0 +1,82 @@
+{
+ "verdict": "A careful, faithful Danish translation in consistent du-register using sundhed.dk patient terms (hedeture, nattesved, overgangsalderen, hormonbehandling, gestagen, tørhed i skeden, hjertebanken) and a steady glossary (bølge, Nattevagt, privat hedebølge, Varmerapport, aftentjek, Besøgsrapport) across UI, widgets, Watch, Siri phrases, PDF and store. Every bleeding string uses 'blødning efter menopausen' (after periods have stopped), so the known 'overgangsalder' trap is avoided; all safety strings, hedges, placeholders and plurals are intact, and the many-number insight strings were sensibly recast as label: value. Apple terms checked against support.apple.com/da-dk (Kontrolcenter, Handlingsknappen, låseskærm, betjeningsmuligheder). Fixes are limited to check-in scale labels that misfire in Danish ('Fuld' = drunk, 'Lav' mood, 'I top' stress), a few calques ('Store retningslinjer', 'Privat fra bunden', 'Samtale'), an ambiguous tab reference, an imperative used as a time label, one broken duration sentence and small consistency points.",
+ "reviewedThrough": 844,
+ "extrasReviewed": true,
+ "strings": {
+  "241": {
+   "to": "Vift lidt for mig",
+   "why": "'Vift lige lidt' lacks the object and reads as 'just wave a bit'; the text asks someone to fan the sender."
+  },
+  "257": {
+   "to": "Fuld tank",
+   "why": "Energy scale high end. Bare 'Fuld' also means 'drunk' in Danish, in an app that tracks alcohol; 'Tom / Fuld tank' keeps the empty/full image."
+  },
+  "382": {
+   "to": "Langt nede",
+   "why": "Low end of the mood scale; 'Lav' is a calque for mood. 'Langt nede' is the everyday Danish for low mood."
+  },
+  "389": {
+   "to": "På max",
+   "why": "High end of the stress scale; 'I top' is not idiomatic for stress. 'På max' is short and natural."
+  },
+  "291": {
+   "to": "Hormonbehandling (ofte kaldet HRT eller MHT) erstatter noget af det østrogen, kroppen danner mindre af omkring overgangsalderen. Toneangivende faglige retningslinjer beskriver den som en effektiv behandling af hedeture og nattesved for mange, og den kan også hjælpe mod andre symptomer.\n\n**Den findes i forskellige former:** plastre, gel, spray, tabletter og lavdosis-præparater til skeden mod lokale symptomer som tørhed. De, der stadig har en livmoder, får normalt ordineret et gestagen sammen med østrogenet for at beskytte livmoderslimhinden.\n\n**Fordele og risici afhænger af den enkelte:** alder, hvor lang tid der er gået, siden menstruationen stoppede, egen og familiens sygehistorie (for eksempel brystkræft, blodpropper, slagtilfælde eller hjertesygdom) samt hvilken type behandling det er, og hvordan den gives. Derfor er det en beslutning, der skal træffes sammen med en læge, der kender din sygehistorie, og ikke noget, en app kan afgøre.\n\n**Spørgsmål, mange stiller:**\n- Er hormonbehandling en mulighed for mig, og hvorfor eller hvorfor ikke?\n- Hvilken type og form vil du foreslå, og hvorfor?\n- Hvilke fordele kan jeg forvente, og hvor hurtigt?\n- Hvad er mine personlige risici, og hvordan er de sammenlignet med ikke at blive behandlet?\n- Hvad skal jeg holde øje med, og hvornår skal vi følge op?\n\n**Hvis du allerede får den,** så registrer den i MenoMap (Dig → Medicin). MenoMap viser dine bølger før og efter, du begyndte, som et tilfældighedstjek og ikke et bevis, så du har noget konkret at tale om ved opfølgningen.\n\nMenoMap foreslår aldrig at starte, stoppe eller ændre medicin.",
+   "why": "'Store retningslinjer' is a calque of 'major guidelines'."
+  },
+  "293": {
+   "to": "Hormonbehandling passer ikke til alle, og nogle foretrækker simpelthen andre veje. Der er flere.\n\n**Receptpligtige muligheder.** Nogle ikke-hormonelle lægemidler har dokumentation for, at de kan mindske hedeture. Det gælder visse lægemidler, der oprindeligt blev udviklet til andre tilstande, og en nyere gruppe, der er udviklet specifikt mod hedeture. Hvert af dem har sine egne fordele, bivirkninger og interaktioner, så en læge kan hjælpe dig med at afveje dem.\n\n**Samtaleterapi og krop-sind-metoder.** Kognitiv adfærdsterapi, tilpasset overgangsalderen, har dokumentation for at gøre hedeture og nattesved mindre generende og for at forbedre søvnen. Klinisk hypnose er også blevet undersøgt.\n\n**Praktiske ændringer, som mange har gavn af:**\n- Tøj i lag, som du hurtigt kan tage af\n- En ventilator ved skrivebordet og ved sengen\n- Et køligere soveværelse og åndbart sengetøj\n- At lægge mærke til og dæmpe dine personlige udløsere (MenoMaps mærker og eksperimenter hjælper her)\n- Regelmæssig fysisk aktivitet og en fast søvnrytme\n\n**Kosttilskud og naturlægemidler.** Evidensen er blandet eller begrænset for mange af dem, kvaliteten varierer, og nogle interagerer med anden medicin. Fortæl din læge eller apoteket om alt, hvad du tager, også håndkøbsprodukter.\n\n**Prøv én ændring ad gangen.** MenoMaps eksperimenter på to uger sammenligner dine egne registreringer før og under en ændring, og det er lettere at vurdere end en fornemmelse.",
+   "why": "'Samtale' alone does not name a therapy approach; 'Samtaleterapi' matches 'talking approaches'."
+  },
+  "441": {
+   "to": "Nattevagt er slået til indtil i morgen tidlig.",
+   "why": "'until morning': 'indtil i morgen' reads as 'until tomorrow' (the whole day)."
+  },
+  "538": {
+   "to": "Bygget til privatliv",
+   "why": "'Privat fra bunden' is a calque of 'private by design'; aligned with the store description heading."
+  },
+  "576": {
+   "to": "Gemt. %@ af dit eget vejr er registreret.",
+   "why": "'%@ vejr' after a duration ('4 min. vejr') was ungrammatical; ties to the 'dit eget vejr' metaphor (id 61)."
+  },
+  "774": {
+   "to": "Opvågning",
+   "why": "Time-picker label paired with 'Sengetid'; 'Vågn op' is an imperative ('wake up')."
+  },
+  "791": {
+   "to": "Hvad skal fanen I dag vise?",
+   "why": "'Hvad skal I dag vise?' reads as 'What shall you (plural) show today?'; naming the tab removes the ambiguity."
+  },
+  "809": {
+   "to": "Tør humor",
+   "why": "Voice option; bare 'Tør' reads as 'dry' (and sits in an app that also mentions vaginal dryness). 'Tør humor' vs 'Ligeud' is clear."
+  },
+  "829": {
+   "to": "Dit varmekort med en Bølge-knap.",
+   "why": "Consistency: the feature is written 'Bølge-knap' everywhere else (665, 527, 542, 162)."
+  }
+ },
+ "demo": {
+  "d3": {
+   "to": "Estradiolgel",
+   "why": "Danish writes the generic product as one compound (estradiolgel)."
+  }
+ },
+ "store": {
+  "description": {
+   "to": "Registrer en hedetur med ét tryk. Se, hvad der ændrer sig. Mød op til din lægeaftale med noter.\n\nMenoMap er bygget til selve øjeblikket. Når en hedetur eller nattesved begynder, trykker du én gang fra låseskærmen, Kontrolcenter, handlingsknappen eller dit Apple Watch. MenoMap tager tid, trækker vejret med dig, hvis du vil, og gemmer det. Om natten holder Nattevagt en dæmpet nattesved-knap med ét tryk klar på låseskærmen indtil morgen.\n\nVIRKER MED APPLE SUNDHED\nMenoMap læser de symptomer og den fase i overgangsalderen, du har registreret i Sundhed, så din historik er der fra første dag, og gemmer hver bølge, du registrerer, tilbage i Sundhed.\n\nDIT VEJR PÅ ET KORT\n• Et varmekort over dine dage, et bølgeur, der viser, hvornår de samler sig, og de udløsere, du oftest markerer\n• Et aftentjek på 30 sekunder for søvn, humør og energi\n• Mønstre i dine egne registreringer, fx hvordan din søvn ser ud efter hårde nætter, altid som et tilfældighedstjek, aldrig som en årsag\n• Eksperimenter på to uger: prøv én ændring, og sammenlign dine egne registreringer før og under\n\nMØD OP MED NOTER\nTilføj din aftale, så viser MenoMap, hvor klar dine noter er. Vælg dine spørgsmål, og lav derefter en overskuelig pdf på én side til din læge, på det sprog, lægen taler.\n\nBYGGET TIL PRIVATLIV\nIngen konto. Ingen reklamer. Ingen sky. Dine helbredsdata bliver på din iPhone.\n\nMENOMAP PRO\nLængere historik (30, 90 og 365 dage), mønstre, eksperimenter, hele den månedlige Varmerapport, lægenoter og medicinpåmindelser. Månedligt, årligt (med gratis prøveperiode) eller livstid. Eller køb en enkelt Besøgsrapport til én aftale.\n\nMenoMap er et wellness-værktøj til registrering og oplysning. Appen stiller ikke diagnosen menopause eller nogen anden diagnose, ordinerer eller ændrer ikke behandling og erstatter ikke behandling fra en kvalificeret læge.\n\nPrivatliv: https://gwlabs.app/menomap/privacy\nBrugsbetingelser: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+   "why": "'sammenlign dit eget før og under' was elliptical and unclear; 'PRIVAT FRA BUNDEN' calque replaced, consistent with id 538."
+  },
+  "screenshots.7": {
+   "to": "Direkte på dit *Apple Watch*.",
+   "why": "'Lige på' reads as 'straight onto'; 'Direkte på' is the natural 'right on' (29 chars)."
+  }
+ },
+ "glossary": {},
+ "doubts": [
+  "Id 259: the Shortcuts Focus trigger is rendered 'Når den slås til'; the exact Danish UI label in the Automation editor could not be confirmed from Apple's pages (likely close enough to be followed).",
+  "Id 682/690/691: 'betjeningsmulighed(er)' matches Apple's Danish guide heading 'Tilpas betjeningsmuligheder'; the exact button labels 'Vælg en betjeningsmulighed'/'Tilføj en betjeningsmulighed' could not be seen in the rendered guide.",
+  "'Apple Sundhed' as a standalone label: Apple's Danish app name is 'Sundhed' (used as 'appen Sundhed' in running text, as the translation does); kept 'Apple Sundhed' where the English says 'Apple Health' as a source label.",
+  "Demo d2 'Læge Hansen': Danes rarely use a title with a surname; acceptable for screenshots, kept."
+ ]
+}

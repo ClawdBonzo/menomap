@@ -26,7 +26,7 @@ struct StoryVideoFrame: View {
                 HStack {
                     Text("MenoMap").font(.system(size: 15, weight: .semibold, design: .serif))
                     Spacer()
-                    Text(title.uppercased()).font(.system(size: 11, weight: .semibold)).tracking(1)
+                    Text(Copy.caps(title)).font(.system(size: 11, weight: .semibold)).tracking(1)
                 }
                 .foregroundStyle(CardPalette.ink)
                 .opacity(phase(0, 0.12))

@@ -1,0 +1,156 @@
+{
+ "verdict": "A careful, genuinely Malaysian translation: DBP spelling throughout (percuma, doktor, app, nafas, baharu), consistent 'anda', correct Apple ms-my terms, all placeholders and plural forms intact, safety strings faithful and complete (bleeding strings say 'selepas menopaus' and the article anchors it to 12 months without a period, so the 'after the change' trap is avoided), and wry lines that land ('Sampai hati.', 'Remote aircond: saya punya'). No Indonesian leakage found. The one systemic issue was the hot-flash term: 'kepanasan mendadak' is not what Malaysian patient information uses; it is replaced everywhere (UI, articles, Siri phrase + id 577, Health usage text, store) by 'panas badan mendadak', with counts phrased with 'kali'. Remaining fixes: 'buka kunci' for unlock, 'tera air' for watermark, 'rasa murung' for low mood, two calques, one flat wry line, and store keywords now carry 'panas badan' and 'putus haid'.",
+ "reviewedThrough": 844,
+ "extrasReviewed": true,
+ "strings": {
+  "1": {
+   "to": "“Catat panas badan mendadak dalam MenoMap”",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  },
+  "42": {
+   "to": "**Menopaus** ialah satu titik masa: hari yang menandakan 12 bulan berturut-turut tanpa haid, apabila keadaan itu tidak disebabkan oleh perkara lain (seperti kehamilan, sesetengah ubat atau pembedahan). Di banyak negara, ia berlaku secara purata pada awal usia 50-an, tetapi mana-mana usia dari pertengahan 40-an hingga pertengahan 50-an adalah biasa.\n\n**Perimenopaus** ialah tempoh beberapa tahun menjelang titik itu. Paras hormon naik dan turun secara tidak sekata, jadi haid boleh menjadi tidak teratur, lebih banyak, lebih sedikit, lebih kerap atau lebih jarang. Banyak perubahan yang dikaitkan dengan menopaus, seperti panas badan mendadak, berpeluh pada waktu malam, perubahan tidur dan perubahan mood, sering bermula di sini, semasa haid masih berlaku. Perimenopaus boleh berlangsung beberapa tahun atau jauh lebih lama, dan ia berbeza bagi setiap orang.\n\n**Pascamenopaus** ialah seluruh tempoh selepas tanda 12 bulan itu. Sesetengah simptom reda dari semasa ke semasa; yang lain boleh berterusan selama bertahun-tahun.\n\nMenopaus juga boleh berlaku lebih awal akibat pembedahan yang membuang ovari, sesetengah rawatan kanser atau keadaan kesihatan lain. Menopaus sebelum umur 40 tahun kadangkala dipanggil ketidakcukupan ovari pramatang, dan ia wajar dibincangkan dengan doktor.\n\n**Bagaimana ia dikenal pasti.** Bagi ramai orang yang berumur lebih 45 tahun, doktor mengenal pasti perimenopaus atau menopaus berdasarkan sejarah dan simptom anda. Ujian darah tidak selalu diperlukan kerana paras hormon berubah-ubah dari hari ke hari. Ujian ini lebih mungkin digunakan apabila seseorang itu lebih muda atau gambarannya kurang jelas.\n\n**Apa yang MenoMap lakukan dan tidak lakukan.** MenoMap tidak dapat memberitahu anda peringkat mana anda berada. Apa yang boleh dilakukannya ialah menyimpan rekod yang jujur tentang apa yang anda perasan: gelombang, tidur, mood dan rawatan, supaya anda dan doktor anda boleh melihat gambaran yang sama.",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  },
+  "162": {
+   "to": "Doktor menggelar panas badan mendadak dan berpeluh pada waktu malam sebagai **simptom vasomotor**. Panas badan mendadak ialah rasa panas yang datang secara tiba-tiba, selalunya di muka, leher dan dada, kadangkala disertai kemerahan kulit, berpeluh, jantung berdegup laju atau rasa sejuk selepas itu. Berpeluh pada waktu malam ialah perkara yang sama semasa tidur, dan ia boleh cukup kuat sehingga mengejutkan anda daripada tidur atau membasahkan cadar anda.\n\nIa antara perubahan yang paling biasa sekitar menopaus. Sesetengah orang mengalami beberapa kali yang ringan; yang lain mengalaminya berkali-kali sehari sehingga mengganggu kerja dan tidur. Bagi sesetengah orang ia reda dalam beberapa tahun; bagi yang lain ia berlanjutan jauh lebih lama.\n\n**Apa yang boleh menjadikannya lebih mungkin berlaku.** Ramai orang perasan corak dengan alkohol, kafein, makanan pedas, bilik yang panas, tekanan atau selimut yang tebal. Perkara ini sangat berbeza antara individu, sebab itulah menjejaki tag anda sendiri boleh lebih berguna daripada senarai umum.\n\n**Terdapat punca lain.** Kemerahan kulit dan berpeluh juga boleh berpunca daripada masalah tiroid, jangkitan, sesetengah ubat, keresahan dan keadaan lain. Jika simptom anda tidak sesuai dengan corak biasa, atau disertai penurunan berat badan, demam atau rasa tidak sihat, beritahu doktor.\n\n**Menerangkannya dengan baik.** Butiran yang berguna untuk temu janji:\n- Kira-kira berapa kali sehari dan semalam\n- Sekuat mana rasanya dan berapa lama ia berlangsung\n- Apa yang diganggunya: tidur, kerja, perbualan, senaman\n- Apa yang seolah-olah berlaku sebelumnya\n- Apa yang telah anda cuba, dan sama ada ia mengubah apa-apa\n\nButang Gelombang dan log selepas kejadian dalam MenoMap wujud untuk merekod perkara ini dengan tepat tanpa banyak usaha.\n\n**Bantuan tersedia.** Terdapat pilihan rawatan hormon dan bukan hormon, serta pendekatan praktikal. Pilihan yang sesuai untuk anda perlu dibincangkan dengan doktor.",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  },
+  "291": {
+   "to": "Terapi hormon (sering dipanggil HRT atau MHT) menggantikan sebahagian estrogen yang semakin kurang dihasilkan oleh badan sekitar menopaus. Garis panduan utama menyifatkannya sebagai rawatan yang berkesan untuk panas badan mendadak dan berpeluh pada waktu malam bagi ramai orang, dan ia juga boleh membantu simptom lain.\n\n**Ia terdapat dalam pelbagai bentuk:** tampalan, gel, semburan, tablet, dan produk faraj dos rendah untuk simptom setempat seperti kekeringan. Orang yang masih mempunyai rahim biasanya diberi preskripsi progestogen bersama estrogen untuk melindungi lapisan rahim.\n\n**Faedah dan risiko bergantung pada individu:** umur, berapa lama sejak haid berhenti, sejarah diri dan keluarga (contohnya kanser payudara, darah beku, strok atau penyakit jantung), serta jenis dan cara rawatan diambil. Sebab itulah ia keputusan yang perlu dibuat bersama doktor yang mengetahui sejarah anda, bukan sesuatu yang boleh diputuskan oleh app.\n\n**Soalan yang sering ditanya:**\n- Adakah terapi hormon satu pilihan untuk saya, dan mengapa atau mengapa tidak?\n- Jenis dan bentuk mana yang doktor cadangkan, dan mengapa?\n- Apakah faedah yang boleh saya jangkakan, dan berapa cepat?\n- Apakah risiko peribadi saya, dan bagaimana perbandingannya dengan tidak mendapatkan rawatan?\n- Apakah yang perlu saya perhatikan, dan bilakah kita patut menyemaknya semula?\n\n**Jika anda sudah mengambilnya,** catatkannya dalam MenoMap (Anda → Ubat). MenoMap akan menunjukkan gelombang anda sebelum dan selepas anda mula, sebagai semakan kebetulan dan bukan bukti, supaya anda ada sesuatu yang konkrit untuk dibincangkan semasa semakan semula.\n\nMenoMap tidak sekali-kali mencadangkan untuk memulakan, menghentikan atau mengubah sesuatu ubat.",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  },
+  "293": {
+   "to": "Terapi hormon tidak sesuai untuk semua orang, dan sesetengah orang lebih suka cara lain. Terdapat beberapa pilihan.\n\n**Pilihan preskripsi.** Sesetengah ubat bukan hormon mempunyai bukti dapat mengurangkan panas badan mendadak. Ini termasuk ubat tertentu yang pada asalnya dibangunkan untuk keadaan lain, dan satu kelas ubat yang lebih baharu yang direka khusus untuk panas badan mendadak. Setiap satu mempunyai faedah, kesan sampingan dan interaksinya sendiri, jadi doktor boleh membantu anda menimbangnya.\n\n**Terapi bercakap dan pendekatan minda-badan.** Terapi tingkah laku kognitif (CBT) yang disesuaikan untuk menopaus mempunyai bukti dapat menjadikan panas badan mendadak dan berpeluh pada waktu malam kurang mengganggu serta memperbaik tidur. Hipnosis klinikal juga telah dikaji.\n\n**Perubahan praktikal yang didapati membantu:**\n- Pakaian berlapis yang boleh ditanggalkan dengan cepat\n- Kipas di meja dan di sisi katil\n- Bilik tidur yang lebih sejuk dan cadar yang telap udara\n- Mengenal pasti dan mengurangkan pencetus peribadi (tag dan eksperimen MenoMap membantu di sini)\n- Aktiviti fizikal yang kerap dan rutin tidur yang tetap\n\n**Suplemen dan produk herba.** Bukti bagi banyak daripadanya tidak konsisten atau terhad, kualitinya berbeza-beza, dan sesetengahnya berinteraksi dengan ubat lain. Beritahu doktor atau ahli farmasi anda tentang apa-apa yang anda ambil, termasuk produk tanpa preskripsi.\n\n**Cuba satu perubahan pada satu masa.** Eksperimen dua minggu MenoMap membandingkan catatan anda sendiri sebelum dan semasa sesuatu perubahan, dan ini lebih mudah dinilai daripada sekadar perasaan.",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  },
+  "299": {
+   "to": "panas badan mendadak",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  },
+  "300": {
+   "to": "panas badan mendadak / peluh malam",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  },
+  "303": {
+   "to": "Panas badan mendadak, peluh malam dan tidur sudah dihidupkan. Tambah lagi jika penting bagi anda. Anda boleh menukarnya bila-bila masa.",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  },
+  "311": {
+   "to": "Berapa lama panas badan mendadak berlangsung?",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  },
+  "326": {
+   "to": "Saya guna MenoMap untuk mencatat panas badan mendadak dan membawa nota ke temu janji saya. Kod MENOFRIEND memberi anda 30 hari Pro secara percuma.",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  },
+  "368": {
+   "to": "Catat panas badan mendadak dalam ${applicationName}",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  },
+  "472": {
+   "to": "MenoMap menyimpan panas badan mendadak, peluh malam dan simptom yang anda catat ke app Kesihatan, supaya semua rekod anda kekal di satu tempat.",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  },
+  "554": {
+   "to": "Nilaikan panas badan mendadak anda (%@)",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  },
+  "577": {
+   "to": "Sebut “Catat panas badan mendadak dalam MenoMap” atau “Catat peluh malam dalam MenoMap”.",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  },
+  "640": {
+   "to": "Mula mengukur masa panas badan mendadak dengan satu ketikan.",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  },
+  "647": {
+   "to": "Mula mengukur masa panas badan mendadak dalam MenoMap.",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  },
+  "648": {
+   "to": "Mula mengukur masa panas badan mendadak atau peluh malam dalam MenoMap.",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  },
+  "668": {
+   "to": "Gelombang (panas badan mendadak dan berpeluh pada waktu malam)",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  },
+  "782": {
+   "to": "Apakah pilihan saya untuk panas badan mendadak, secara hormon dan bukan hormon?",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  },
+  "792": {
+   "to": "Apakah yang mencetuskan panas badan mendadak?",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  },
+  "23": {
+   "to": {
+    "other": "%lld kali panas badan mendadak"
+   },
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak'). Counted with 'kali' so '3 kali panas badan mendadak' reads naturally."
+  },
+  "24": {
+   "to": "%1$lld kali panas badan mendadak · %2$lld kali peluh malam",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak'). Counted with 'kali'."
+  },
+  "27": {
+   "to": {
+    "other": "%lld kali peluh malam"
+   },
+   "why": "Count with 'kali', parallel with ids 23/24."
+  },
+  "388": {
+   "to": "Ramai orang perasan perubahan mood, mudah marah atau keresahan sekitar waktu ini. Jika rasa murung berterusan atau anda rasa tidak selamat, hubungi doktor atau perkhidmatan kecemasan tempatan.",
+   "why": "'mood rendah' is a calque of 'low mood'; 'rasa murung' is the natural patient wording. Meaning unchanged."
+  },
+  "255": {
+   "to": "Percuma: pratonton 7 hari bagi kiraan anda, bertera air. Pro atau Laporan Temu Janji sekali bayar membuka kunci nota penuh.",
+   "why": "DBP term for watermark is 'tera air'; 'unlock' = 'buka kunci' (plain 'membuka' reads as 'opens')."
+  },
+  "761": {
+   "to": "Buka kunci semua",
+   "why": "Unlock = 'buka kunci'; 'Buka semua' reads as 'Open all'."
+  },
+  "762": {
+   "to": "Buka kunci nota penuh",
+   "why": "Unlock = 'buka kunci'."
+  },
+  "763": {
+   "to": "Buka kunci dengan Pro",
+   "why": "Unlock = 'buka kunci' (21 chars, max 22)."
+  },
+  "777": {
+   "to": "Kami tidak menjejaki apa yang anda catat. Pembelian dikira secara tanpa nama untuk mengukur prestasi App Store dan Apple Ads.",
+   "why": "'mengukur App Store' is a calque; the sense is measuring store/ad performance."
+  },
+  "381": {
+   "to": {
+    "other": "Tempoh tenang terpanjang: %lld hari. Patut dibingkaikan."
+   },
+   "why": "Wry line: bare imperative 'Bingkaikan.' reads flat; 'Patut dibingkaikan.' carries the joke."
+  }
+ },
+ "demo": {},
+ "store": {
+  "keywords": {
+   "to": "perimenopaus,putus,panas,badan,berpeluh,malam,hrt,hormon,diari,simptom,tidur,haid,kitaran,insomnia",
+   "why": "Malaysians search 'panas badan' and 'putus haid' (everyday word for menopause); 'kepanasan mendadak' is not a search term."
+  },
+  "promotionalText": {
+   "to": "Catat panas badan mendadak dengan satu ketikan dari Skrin Kunci atau Apple Watch. Lihat corak anda. Pergi ke temu janji dengan nota yang jelas. Tanpa akaun, tanpa iklan.",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  },
+  "description": {
+   "to": "Catat panas badan mendadak dengan satu ketikan. Lihat apa yang berubah. Pergi ke temu janji dengan nota.\n\nMenoMap dibina untuk saat itu sendiri. Apabila panas badan mendadak atau berpeluh pada waktu malam bermula, ketik sekali dari Skrin Kunci, Pusat Kawalan, butang Tindakan atau Apple Watch anda. MenoMap mengukur masanya, bernafas bersama anda jika anda mahu, dan menyimpannya. Pada waktu malam, Jaga Malam meletakkan butang peluh malam satu ketikan yang malap pada Skrin Kunci anda sehingga pagi.\n\nBERFUNGSI DENGAN APP KESIHATAN\nMenoMap membaca simptom dan peringkat menopaus yang telah anda catat dalam app Kesihatan, supaya sejarah anda dipaparkan sejak hari pertama, dan menyimpan semula setiap gelombang yang anda catat ke app Kesihatan.\n\nCUACA ANDA, DIPETAKAN\n• Peta haba hari-hari anda, jam gelombang yang menunjukkan bila ia berkumpul, dan pencetus yang paling kerap anda tandakan\n• Semakan malam 30 saat untuk tidur, mood dan tenaga\n• Corak dalam catatan anda sendiri, seperti keadaan tidur anda selepas malam yang sukar, sentiasa sebagai semakan kebetulan, bukan punca\n• Eksperimen dua minggu: cuba satu perubahan dan bandingkan catatan anda sendiri sebelum dan semasa\n\nDATANG DENGAN NOTA\nTambah temu janji anda dan MenoMap menunjukkan tahap kesediaan nota anda. Pilih soalan anda, kemudian buat PDF satu halaman yang kemas untuk doktor anda, dalam bahasa yang dituturkannya.\n\nDIREKA UNTUK PRIVASI\nTiada akaun. Tiada iklan. Tiada storan awan. Data kesihatan anda kekal pada iPhone anda.\n\nMENOMAP PRO\nSejarah yang lebih panjang (30, 90 dan 365 hari), corak, eksperimen, Laporan Haba bulanan penuh, nota untuk doktor dan peringatan ubat. Bulanan, tahunan (dengan percubaan percuma) atau seumur hidup. Atau beli satu Laporan Temu Janji untuk satu temu janji.\n\nMenoMap ialah alat penjejak kesejahteraan dan alat pendidikan. Ia tidak mendiagnosis menopaus atau apa-apa keadaan lain, tidak memberi preskripsi atau mengubah rawatan, dan tidak menggantikan penjagaan daripada doktor yang bertauliah.\n\nPrivasi: https://gwlabs.app/menomap/privacy\nTerma penggunaan: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+   "why": "Glossary: 'kepanasan mendadak' (being overheated) is not the Malaysian patient term; Malaysian hospital/health leaflets say 'panas badan (hot flush)'. Use 'panas badan mendadak' (short label stays 'Panas mendadak')."
+  }
+ },
+ "glossary": {
+  "hot flash": "panas badan mendadak (label pendek: Panas mendadak; kiraan: \"%lld kali panas badan mendadak\")"
+ },
+ "doubts": [
+  "Demo d4 'Progesteron termikron': could not confirm the wording on Malaysian packaging (alternatives: 'progesteron mikronisasi'); left as is.",
+  "Short label 'Panas mendadak' (ids 295/298, max 16) kept because 'Panas badan mendadak' is 20 characters; it reads as a shortened form of the full term.",
+  "Id 285 'Heavy nights and sleep' rendered 'Malam sukar dan tidur' (hedged, since 'heavy' could mean heavy-surge or heavy-drinking nights); kept."
+ ]
+}

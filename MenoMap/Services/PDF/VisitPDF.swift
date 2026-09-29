@@ -187,7 +187,7 @@ private struct PDFSection<Content: View>: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
-            Text(title.uppercased()).font(.system(size: 8, weight: .bold)).tracking(1).foregroundStyle(P.teal)
+            Text(Copy.caps(title)).font(.system(size: 8, weight: .bold)).tracking(1).foregroundStyle(P.teal)
             content
         }
         .padding(.top, 10)

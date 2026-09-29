@@ -28,7 +28,9 @@ struct MorningCard: View {
                             .font(.subheadline).foregroundStyle(MenoTheme.inkSecondary)
                     }
                     if let t = health?.wristTempDelta {
-                        Text("Wrist temperature \(t >= 0 ? "+" : "")\(t.formatted(.number.precision(.fractionLength(1))))° from your usual · from Apple Health")
+                        // The signed value is wrapped in a left-to-right isolate (LRI … PDI) so "+0.4" keeps its sign in front
+                        // in Arabic and Hebrew; the key keeps two arguments so existing translations still match.
+                        Text("Wrist temperature \("\u{2066}" + (t >= 0 ? "+" : ""))\(t.formatted(.number.precision(.fractionLength(1))) + "\u{2069}")° from your usual · from Apple Health")
                             .font(.subheadline).foregroundStyle(MenoTheme.inkSecondary)
                     }
                 }

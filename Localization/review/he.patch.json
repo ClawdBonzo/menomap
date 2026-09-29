@@ -1,0 +1,128 @@
+{
+ "verdict": "A careful, faithful Hebrew translation: consistent feminine singular address with gender-neutral action nouns on buttons, correct one/two/other plurals with placeholders intact, Apple's Hebrew terms (״בריאות״, מסך הנעילה, מרכז הבקרה, כפתור ״פעולה״), and all bleeding strings correctly say דימום לאחר הפסקת הווסת (never 'after the change'). Safety strings and hedges are complete. The main systematic problem was bidi: about fifteen strings and paragraphs (several safety ones, the Info.plist Health texts and the store description) began with 'MenoMap' or 'PDF', which makes iOS lay the paragraph out left-to-right; these now open with a Hebrew word (היישום MenoMap…, קובץ PDF…), and the '+' sign of the wrist-temperature delta is anchored with an LRM. Beyond that, a handful of meaning slips (a button subtitle in the past tense, 'log in a few days', 'in a short queue', 'מרגוע'), two ungrammatical sentences, experiment results that said 'the period' instead of the experiment, and one flat wry line.",
+ "reviewedThrough": 844,
+ "extrasReviewed": true,
+ "strings": {
+  "291": {
+   "to": "טיפול הורמונלי (שנקרא לעיתים קרובות HRT או MHT) מחליף חלק מהאסטרוגן שהגוף מייצר פחות ממנו סביב גיל המעבר. הנחיות מקצועיות מרכזיות מתארות אותו כטיפול יעיל בגלי חום ובהזעות לילה אצל רבים, והוא יכול לעזור גם בתסמינים אחרים.\n\n**הוא מגיע בצורות שונות:** מדבקות, ג׳לים, תרסיסים, טבליות, ותכשירים נרתיקיים במינון נמוך לתסמינים מקומיים כמו יובש. מי שעדיין יש לה רחם מקבלת בדרך כלל פרוגסטוגן לצד האסטרוגן, כדי להגן על רירית הרחם.\n\n**התועלת והסיכונים תלויים באדם:** גיל, כמה זמן עבר מאז הפסקת הווסת, היסטוריה אישית ומשפחתית (למשל של סרטן שד, קרישי דם, שבץ או מחלת לב), וסוג הטיפול ודרך נטילתו. לכן זו החלטה שמקבלים עם רופא/ה שמכיר/ה את ההיסטוריה שלך, ולא משהו שאפליקציה יכולה להחליט.\n\n**שאלות שנשאלות לעיתים קרובות:**\n- האם טיפול הורמונלי מתאים לי, ולמה כן או לא?\n- איזה סוג ואיזו צורה היית ממליץ/ה, ולמה?\n- איזו תועלת אפשר לצפות, ותוך כמה זמן?\n- מה הסיכונים האישיים שלי, ואיך הם בהשוואה לוויתור על טיפול?\n- למה עליי לשים לב, ומתי כדאי שנבדוק את זה שוב?\n\n**אם את כבר נוטלת אותו,** תעדי אותו ב-MenoMap (אני ← תרופות). MenoMap יציג את הגלים שלך לפני ואחרי שהתחלת, כבדיקת צירוף מקרים ולא כהוכחה, כדי שיהיה לך משהו מוחשי לדבר עליו בפגישת המעקב.\n\nהיישום MenoMap אף פעם לא מציע להתחיל, להפסיק או לשנות תרופה.",
+   "why": "Bidi: a line that starts with a Latin word gets an LTR paragraph direction in iOS text views, so the sentence-final period and word order render wrong in RTL; start with a Hebrew word."
+  },
+  "479": {
+   "to": "אחרי שעברו 12 חודשים בלי וסת, **כל דימום מהנרתיק צריך להיבדק אצל רופא/ה**, גם אם זה קרה רק פעם אחת, וגם אם זו הייתה רק הכתמה או הפרשה ורודה בהירה או חומה.\n\nברוב המקרים מתברר שהסיבה אינה חמורה. למשל, התדקקות של רירית הנרתיק או של רירית הרחם היא דבר נפוץ. אבל דימום לאחר הפסקת הווסת יכול לפעמים להיות סימן מוקדם למצב שהרבה יותר קל לטפל בו כשמגלים אותו מוקדם. לכן ההנחיות של רשויות הבריאות אומרות לבדוק אותו ולא לחכות.\n\n**אם את נוטלת טיפול הורמונלי,** ייתכנו דפוסי דימום צפויים מסוימים, בהתאם לסוג הטיפול. גם דימום שאינו צפוי בטיפול שלך, כבד מהרגיל או מופיע בזמן הלא נכון צריך להיבדק.\n\n**מה לעשות:**\n- פני לרופא/ה או לקופת החולים שלך, ואמרי שהיה לך דימום לאחר הפסקת הווסת.\n- רשמי את התאריך, את הכמות וכל דבר נוסף ששמת לב אליו. MenoMap יכול לשמור את זה בשבילך (אני ← מחזור).\n\nהיישום MenoMap לא יכול לומר לך למה היה דימום. הוא יזכיר לך לגשת לבדיקה ויכלול את זה בסיכום לביקור.",
+   "why": "Thinning of the lining = התדקקות (הידלדלות reads as 'depletion'); last paragraph started with a Latin word, which flips it to LTR in iOS, so it now starts with a Hebrew word."
+  },
+  "399": {
+   "to": "היישום MenoMap יכול להציג את הגלים שלך לפני ואחרי שהתחלת, כבדיקת צירוף מקרים. השאלה אם טיפול מתאים לך היא שאלה לרופא/ה שלך.",
+   "why": "Bidi: a line that starts with a Latin word gets an LTR paragraph direction in iOS text views, so the sentence-final period and word order render wrong in RTL; start with a Hebrew word. Wording otherwise unchanged."
+  },
+  "400": {
+   "to": "היישום MenoMap לא יכול לומר לך להתחיל, להפסיק או לשנות תרופה. הביאי את הרשימה שלך לרופא/ה.",
+   "why": "Bidi: a line that starts with a Latin word gets an LTR paragraph direction in iOS text views, so the sentence-final period and word order render wrong in RTL; start with a Hebrew word. Wording otherwise unchanged."
+  },
+  "401": {
+   "to": "היישום MenoMap עדיין לא יודע את זה. אם את מודאגת, פני לרופא/ה. אם זה מרגיש דחוף, פני לשירותי החירום המקומיים.",
+   "why": "Bidi: a line that starts with a Latin word gets an LTR paragraph direction in iOS text views, so the sentence-final period and word order render wrong in RTL; start with a Hebrew word. Wording otherwise unchanged."
+  },
+  "402": {
+   "to": "היישום MenoMap לא חוזה וסת או ימים פוריים.",
+   "why": "Bidi: a line that starts with a Latin word gets an LTR paragraph direction in iOS text views, so the sentence-final period and word order render wrong in RTL; start with a Hebrew word. Wording otherwise unchanged."
+  },
+  "403": {
+   "to": "היישום MenoMap הוא כלי למעקב אחר רווחה אישית ולהסברה. הוא אינו מאבחן מנופאוזה או כל מצב אחר, אינו רושם טיפול או משנה אותו, ואינו מחליף טיפול אצל רופא/ה מוסמך/ת. אם תסמינים מדאיגים אותך, או אם יש לך דימום לאחר הפסקת הווסת, כאב בחזה, כאב ראש פתאומי וחמור, חולשה בצד אחד של הגוף, קושי בנשימה או עילפון, פני לקבלת טיפול רפואי פנים אל פנים או לטיפול חירום.",
+   "why": "Bidi: a line that starts with a Latin word gets an LTR paragraph direction in iOS text views, so the sentence-final period and word order render wrong in RTL; start with a Hebrew word. Wording otherwise unchanged."
+  },
+  "471": {
+   "to": "היישום MenoMap קורא את התסמינים, השינה ושלב גיל המעבר שתבחרי לשתף, כדי שההיסטוריה שלך תופיע לצד מה שאת מתעדת כאן.",
+   "why": "Bidi: a line that starts with a Latin word gets an LTR paragraph direction in iOS text views, so the sentence-final period and word order render wrong in RTL; start with a Hebrew word. Wording otherwise unchanged."
+  },
+  "472": {
+   "to": "היישום MenoMap שומר ב״בריאות״ את גלי החום, הזעות הלילה והתסמינים שאת מתעדת, כדי שכל הרישומים שלך יישארו במקום אחד.",
+   "why": "Bidi: a line that starts with a Latin word gets an LTR paragraph direction in iOS text views, so the sentence-final period and word order render wrong in RTL; start with a Hebrew word. Wording otherwise unchanged."
+  },
+  "405": {
+   "to": "המינוי ל-MenoMap Pro פעיל",
+   "why": "Bidi: a line that starts with a Latin word gets an LTR paragraph direction in iOS text views, so the sentence-final period and word order render wrong in RTL; start with a Hebrew word."
+  },
+  "480": {
+   "to": "קובץ PDF מסודר אחד: ספירות, לוח החום, שעון הגלים, ממוצעי הצ׳ק-אין, תרופות, דפוסים והשאלות שלך.",
+   "why": "Bidi: a line that starts with a Latin word gets an LTR paragraph direction in iOS text views, so the sentence-final period and word order render wrong in RTL; start with a Hebrew word."
+  },
+  "481": {
+   "to": "קובץ PDF מלא אחד, של עד 90 יום. בלי מינוי.",
+   "why": "Bidi: a line that starts with a Latin word gets an LTR paragraph direction in iOS text views, so the sentence-final period and word order render wrong in RTL; start with a Hebrew word."
+  },
+  "340": {
+   "to": "דגמי iPhone 15 Pro ואילך",
+   "why": "Bidi: a line that starts with a Latin word gets an LTR paragraph direction in iOS text views, so the sentence-final period and word order render wrong in RTL; start with a Hebrew word."
+  },
+  "806": {
+   "to": "טמפרטורת פרק כף היד ‎%1$@%2$@° ביחס לרגיל · מתוך ״בריאות״",
+   "why": "The app inserts a literal '+' before the number; in RTL text it would render after the number ('0.4°+'). A left-to-right mark (U+200E) before the sign keeps '+0.4°' together."
+  },
+  "283": {
+   "to": "סולם חום מ״רגוע״ עד ״חם״. בכל משבצת מופיע גם מספר הגלים.",
+   "why": "'מרגוע' reads as the noun 'tranquillity'; quote the two legend labels instead."
+  },
+  "429": {
+   "to": "הבא: תעדי עוד כמה ימים",
+   "why": "'תעדי בעוד כמה ימים' means 'log a few days from now'; the task is to log on a few more days."
+  },
+  "465": {
+   "to": "הסיכום מראה כמה פעמים, באיזו עוצמה ומה משתנה, ואת כל זה קשה לזכור בפגישה קצרה.",
+   "why": "'בתור קצר' also reads as 'in a short queue'; say 'in a short appointment'."
+  },
+  "641": {
+   "to": "התחלת מדידה. אפשר גם לנשום יחד, אם תרצי.",
+   "why": "Subtitle of the big button shown BEFORE tapping; 'המדידה התחילה' claimed the timer had already started."
+  },
+  "714": {
+   "to": "הם צריכים כשבועיים של צ׳ק-אינים וגלים. הם תמיד משווים רק בין הרישומים שלך, אף פעם לא עם רישומים של אחרים.",
+   "why": "Broken construction 'משווים בין … לא לרישומים של אחרים'."
+  },
+  "790": {
+   "to": "לאילו סימנים כדאי לי לשים לב, שאומרים שעליי להתקשר?",
+   "why": "Original was ungrammatical ('למה עליי לשים לב, שאומר…')."
+  },
+  "457": {
+   "to": "לא עכשיו, אני במצב צבירה נוזלי",
+   "why": "'אני מותכת' is stiff (a metallurgy word); the school-chemistry 'state of matter: liquid' joke is what an Israeli friend would text."
+  },
+  "825": {
+   "to": "הרישומים שלך: %1$lld גלי לילה ב-%2$lld ימים מתועדים לפני הניסוי, ו-%3$lld ב-%4$lld ימים מתועדים במהלכו. זה מה שתיעדת, לא הוכחה לסיבה.",
+   "why": "Experiment result: 'לפני התקופה' is vague (and 'תקופה' sits next to period/cycle vocabulary); name the experiment. Hedge unchanged."
+  },
+  "826": {
+   "to": "הרישומים שלך: %1$lld גלים ב-%2$lld ימים מתועדים לפני הניסוי, ו-%3$lld ב-%4$lld ימים מתועדים במהלכו. זה מה שתיעדת, לא הוכחה לסיבה.",
+   "why": "Experiment result: 'לפני התקופה' is vague (and 'תקופה' sits next to period/cycle vocabulary); name the experiment. Hedge unchanged."
+  },
+  "568": {
+   "to": "התוצאות משוות בין הרישומים שלך לפני הניסוי ובמהלכו. זו בדיקת צירוף מקרים, לא הוכחה.",
+   "why": "Same as 825/826: before and during the experiment, not 'the period'. Hedge unchanged."
+  },
+  "205": {
+   "to": "לצ׳ק-אין הראשון שלי",
+   "why": "Button: the bare noun phrase read as a heading; 'ל…' is the usual Hebrew CTA form."
+  },
+  "255": {
+   "to": "בחינם: תצוגה מקדימה של הספירות שלך ל-7 ימים, עם סימן מים. Pro או דוח ביקור חד-פעמי פותחים את הסיכום המלא.",
+   "why": "Double 'עם … עם' was clumsy; reordered."
+  }
+ },
+ "demo": {},
+ "store": {
+  "description": {
+   "to": "רושמים גל חום בהקשה אחת. רואים מה משתנה. מגיעים לתור עם סיכום.\n\nהיישום MenoMap נבנה בשביל הרגע עצמו. כשגל חום או הזעת לילה מתחילים, הקישי פעם אחת ממסך הנעילה, ממרכז הבקרה, מכפתור ״פעולה״ או מה-Apple Watch. MenoMap מודד את הזמן, נושם איתך אם תרצי, ושומר. בלילה, משמר לילה משאיר במסך הנעילה כפתור הזעת לילה עמום בהקשה אחת, עד הבוקר.\n\nעובד עם ״בריאות״ של Apple\nהיישום MenoMap קורא את התסמינים ואת שלב גיל המעבר שתיעדת ב״בריאות״, כך שההיסטוריה שלך מופיעה כבר מהיום הראשון, ושומר ב״בריאות״ כל גל שאת מתעדת.\n\nמזג האוויר שלך, על המפה\n• מפת חום של הימים שלך, שעון גלים שמראה מתי הם מצטופפים, והטריגרים שתייגת הכי הרבה\n• צ׳ק-אין ערב של 30 שניות לשינה, למצב הרוח ולאנרגיה\n• דפוסים ברישומים שלך, למשל איך השינה שלך נראית אחרי לילות קשים, תמיד כבדיקת צירוף מקרים, אף פעם לא כסיבה\n• ניסויים של שבועיים: נסי שינוי אחד והשווי בין הרישומים שלך לפני השינוי ובמהלכו\n\nמגיעים לתור עם סיכום\nהוסיפי את התור, ו-MenoMap יראה עד כמה הסיכום שלך מוכן. בחרי את השאלות שלך, ואז הפיקי PDF מסודר של עמוד אחד לרופא/ה, בשפה של הרופא/ה.\n\nפרטי מעצם התכנון\nבלי חשבון. בלי פרסומות. בלי ענן. נתוני הבריאות שלך נשארים ב-iPhone שלך.\n\nMENOMAP PRO\nהיסטוריה ארוכה יותר (30, 90 ו-365 יום), דפוסים, ניסויים, דוח החום החודשי המלא, סיכום לרופא/ה ותזכורות לתרופות. חודשי, שנתי (עם תקופת ניסיון בחינם) או לכל החיים. אפשר גם לקנות דוח ביקור יחיד לתור אחד.\n\nהיישום MenoMap הוא כלי למעקב אחר רווחה אישית ולהסברה. הוא אינו מאבחן מנופאוזה או כל מצב אחר, אינו רושם טיפול או משנה אותו, ואינו מחליף טיפול אצל רופא/ה מוסמך/ת.\n\nמדיניות פרטיות: https://gwlabs.app/menomap/privacy\nתנאי שימוש: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+   "why": "Three paragraphs (incl. the disclaimer) started with 'MenoMap' and would lay out LTR in the RTL storefront; now start with a Hebrew word. Content unchanged."
+  },
+  "iap.visitReport.description": {
+   "to": "קובץ PDF מלא אחד לרופא/ה, עד 90 יום.",
+   "why": "Started with Latin 'PDF' (bidi). 36/45 chars."
+  }
+ },
+ "glossary": {},
+ "doubts": [
+  "id 806 relies on an invisible U+200E before %1$@ so '+0.4°' renders correctly in RTL; if a future tool strips invisible characters the sign will again appear after the number. A code-side fix (format the signed number with the locale, or wrap it in an LTR isolate) would be sturdier.",
+  "IAP names ('MenoMap Pro חודשי' etc.) and the store name start with Latin by design; left as is. If Apple's purchase sheet lays them out LTR, the Hebrew period word will appear on the right.",
+  "Heads-up message texts (276, 296, 572) address the recipients in the plural (אתם/תנו), which is right for messages to family or colleagues; kept."
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "demo": {
+  "d1": "Ewa",
+  "d2": "dr Nowak",
+  "d3": "Estradiol, żel",
+  "d4": "Progesteron mikronizowany",
+  "d5": "1 pompka",
+  "d6": "Na skórę",
+  "d7": "Codziennie rano",
+  "d8": "100 mg",
+  "d9": "Doustnie",
+  "d10": "Przed snem",
+  "d11": "Wizyta kontrolna – menopauza"
+ },
+ "store": {
+  "name": "MenoMap: Menopauza i objawy",
+  "subtitle": "Uderzenia gorąca, notatki PDF",
+  "keywords": "perimenopauza,przekwitanie,klimakterium,poty,nocne,mht,htz,hormony,sen,bezsenność,cykl,miesiączka",
+  "promotionalText": "Zapisuj uderzenie gorąca jednym stuknięciem z ekranu blokady lub Apple Watch. Zobacz swoje wzorce. Idź na wizytę z przejrzystymi notatkami. Bez konta, bez reklam.",
+  "description": "Zapisz uderzenie gorąca jednym stuknięciem. Zobacz, co się zmienia. Idź na wizytę z notatkami.\n\nMenoMap powstała z myślą o samym momencie. Gdy zaczyna się uderzenie gorąca lub nocne poty, stuknij raz na ekranie blokady, w centrum sterowania, przyciskiem czynności lub na Apple Watch. MenoMap mierzy czas, oddycha z tobą, jeśli chcesz, i zapisuje falę. W nocy Nocna warta utrzymuje na ekranie blokady przyciemniony przycisk nocnych potów, działający jednym stuknięciem, aż do rana.\n\nDZIAŁA Z APLIKACJĄ ZDROWIE\nMenoMap odczytuje objawy i etap menopauzy zapisane w aplikacji Zdrowie, więc twoja historia jest widoczna od pierwszego dnia, a każdą zapisaną falę przekazuje z powrotem do aplikacji Zdrowie.\n\nTWOJA POGODA NA MAPIE\n• Mapa cieplna twoich dni, zegar fal pokazujący, kiedy się kumulują, i najczęściej oznaczane czynniki\n• 30-sekundowe wieczorne podsumowanie snu, nastroju i energii\n• Wzorce w twoich własnych wpisach, np. jak wygląda twój sen po trudnych nocach – zawsze jako sprawdzenie zbieżności, nigdy jako przyczyna\n• Dwutygodniowe eksperymenty: wypróbuj jedną zmianę i porównaj swoje wpisy sprzed niej i z czasu jej trwania\n\nIDŹ NA WIZYTĘ Z NOTATKAMI\nDodaj wizytę, a MenoMap pokaże, na ile gotowe są twoje notatki. Wybierz pytania i utwórz przejrzysty, jednostronicowy PDF dla lekarza – w języku, którym mówi.\n\nPRYWATNOŚĆ OD PODSTAW\nBez konta. Bez reklam. Bez chmury. Twoje dane o zdrowiu zostają na twoim iPhonie.\n\nMENOMAP PRO\nDłuższa historia (30, 90 i 365 dni), wzorce, eksperymenty, pełny miesięczny Raport upałów, notatki dla lekarza i przypomnienia o lekach. Miesięcznie, rocznie (z bezpłatnym okresem próbnym) lub dożywotnio. Możesz też kupić pojedynczy Raport na wizytę na jedną wizytę.\n\nMenoMap to aplikacja do monitorowania samopoczucia i narzędzie edukacyjne. Nie diagnozuje menopauzy ani żadnej innej choroby, nie przepisuje ani nie zmienia leczenia i nie zastępuje opieki wykwalifikowanego lekarza.\n\nPrywatność: https://gwlabs.app/menomap/privacy\nWarunki korzystania: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+  "whatsNew": "Pierwsze wydanie MenoMap.",
+  "iap": {
+   "groupName": "MenoMap Pro",
+   "monthly": {
+    "name": "MenoMap Pro miesięcznie",
+    "description": "Wzorce, statystyki i notatki dla lekarza."
+   },
+   "yearly": {
+    "name": "MenoMap Pro rocznie",
+    "description": "Wzorce, statystyki i notatki dla lekarza."
+   },
+   "lifetime": {
+    "name": "MenoMap Pro dożywotnio",
+    "description": "Wszystkie funkcje Pro, na zawsze."
+   },
+   "visitReport": {
+    "name": "Raport na wizytę",
+    "description": "Jeden pełny PDF dla lekarza, do 90 dni."
+   }
+  },
+  "screenshots": {
+   "1": "Gorąco? *Jedno stuknięcie*.",
+   "2": "*Nocna warta* na ekranie blokady.",
+   "3": "Zobacz swoją *mapę cieplną*.",
+   "4": "Znajdź *swoje* wzorce.",
+   "5": "Idź na wizytę z *notatkami*.",
+   "6": "Działa z aplikacją *Zdrowie*.",
+   "7": "Prosto na *Apple Watch*.",
+   "8": "Jedna zmiana, *dwa tygodnie*.",
+   "9": "Twoje dane zostają *u ciebie*."
+  }
+ }
+}

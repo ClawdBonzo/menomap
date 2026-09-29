@@ -1,0 +1,53 @@
+{
+ "demo": {
+  "d1": "Mihaela",
+  "d2": "Dr. Ionescu",
+  "d3": "Estradiol gel",
+  "d4": "Progesteron micronizat",
+  "d5": "1 apăsare",
+  "d6": "Uz cutanat",
+  "d7": "În fiecare dimineață",
+  "d8": "100 mg",
+  "d9": "Uz oral",
+  "d10": "La culcare",
+  "d11": "Consultație pentru menopauză"
+ },
+ "store": {
+  "name": "MenoMap: Jurnal menopauză",
+  "subtitle": "Bufeuri și notițe pentru medic",
+  "keywords": "perimenopauză,transpirații,nocturne,ths,simptome,somn,hormoni,ciclu,insomnie,climax,estrogen,femei",
+  "promotionalText": "Înregistrează un bufeu cu o atingere de pe ecranul de blocare sau de pe Apple Watch. Vezi-ți tiparele. Mergi la consultație cu notițe clare. Fără cont, fără reclame.",
+  "description": "Înregistrează un bufeu cu o atingere. Vezi ce se schimbă. Mergi la consultație cu notițe.\n\nMenoMap este gândită pentru momentul în sine. Când începe un bufeu sau o transpirație nocturnă, atinge o dată de pe ecranul de blocare, din centrul de control, cu butonul Acțiune sau de pe Apple Watch. MenoMap îl cronometrează, respiră cu tine dacă vrei și îl salvează. Noaptea, Veghea de noapte păstrează pe ecranul de blocare, până dimineața, un buton discret pentru transpirații nocturne, la o singură atingere.\n\nFUNCȚIONEAZĂ CU APLICAȚIA SĂNĂTATE\nMenoMap citește simptomele și etapa menopauzei pe care le-ai înregistrat în Sănătate, astfel încât istoricul tău apare din prima zi, și salvează înapoi în Sănătate fiecare val pe care îl înregistrezi.\n\nVREMEA TA, PE HARTĂ\n• O hartă a căldurii pentru zilele tale, un ceas al valurilor care arată când se adună și factorii declanșatori pe care îi etichetezi cel mai des\n• Un bilanț de seară de 30 de secunde pentru somn, dispoziție și energie\n• Tipare în propriile tale înregistrări, de exemplu cum arată somnul după nopțile grele, mereu ca verificare de coincidență, niciodată ca o cauză\n• Experimente de două săptămâni: încearcă o schimbare și compară propriile înregistrări dinainte și din timpul ei\n\nMERGI LA CONSULTAȚIE CU NOTIȚE\nAdaugă programarea și MenoMap îți arată cât de pregătite sunt notițele. Alege-ți întrebările, apoi creează un PDF clar, de o pagină, pentru medicul tău, în limba pe care o vorbește.\n\nCONFIDENȚIALITATE DIN START\nFără cont. Fără reclame. Fără cloud. Datele tale de sănătate rămân pe iPhone.\n\nMENOMAP PRO\nIstoric mai lung (30, 90 și 365 de zile), tipare, experimente, Raportul lunar complet al căldurii, notițe pentru medic și mementouri pentru medicamente. Lunar, anual (cu perioadă de probă gratuită) sau pe viață. Sau cumpără un singur Raport de consultație pentru o programare.\n\nMenoMap este un instrument de monitorizare a stării de bine și de informare. Nu diagnostichează menopauza sau vreo altă afecțiune, nu prescrie și nu modifică tratamente și nu înlocuiește îngrijirea oferită de un medic calificat.\n\nConfidențialitate: https://gwlabs.app/menomap/privacy\nCondiții de utilizare: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+  "whatsNew": "Prima versiune MenoMap.",
+  "iap": {
+   "groupName": "MenoMap Pro",
+   "monthly": {
+    "name": "MenoMap Pro Lunar",
+    "description": "Tipare, statistici și notițe pentru medic."
+   },
+   "yearly": {
+    "name": "MenoMap Pro Anual",
+    "description": "Tipare, statistici și notițe pentru medic."
+   },
+   "lifetime": {
+    "name": "MenoMap Pro pe viață",
+    "description": "Toate funcțiile Pro, pentru totdeauna."
+   },
+   "visitReport": {
+    "name": "Raport de consultație",
+    "description": "PDF complet pentru medic, până la 90 de zile."
+   }
+  },
+  "screenshots": {
+   "1": "Un bufeu, *o singură atingere*.",
+   "2": "*Veghea de noapte*, fără deblocare.",
+   "3": "Vezi-ți *harta căldurii*.",
+   "4": "Descoperă-ți *propriile* tipare.",
+   "5": "Mergi la medic cu *notițe*.",
+   "6": "Merge cu aplicația *Sănătate*.",
+   "7": "Direct pe *Apple Watch*.",
+   "8": "O schimbare, *două săptămâni*.",
+   "9": "Datele tale rămân *ale tale*."
+  }
+ }
+}

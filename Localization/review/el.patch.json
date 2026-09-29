@@ -1,0 +1,57 @@
+{
+ "verdict": "Careful, natural Greek overall: εσύ register with feminine agreement held throughout (σας only when addressing the doctor), «» quotes and ';' question marks correct, no stray semicolons or exclamation marks, all max budgets met, placeholders handled with label: value rephrasings wherever Greek case or number would clash, CLDR one/other plurals correct. Glossary consistent across UI, widgets, Watch, Siri phrases and store (κύμα, έξαψη, νυχτερινή εφίδρωση, απολογισμός, θερμικός χάρτης, Νυχτερινή Βάρδια, προσωπικό καλοκαιράκι). Every bleeding string uses 'αιμορραγία μετά την εμμηνόπαυση' (after periods have stopped), never κλιμακτήριος. Apple terms checked on support.apple.com/el-gr: κουμπί Ενέργειας, Κέντρο ελέγχου, οθόνη κλειδώματος, οθόνη Αφετηρίας, στοιχεία ελέγχου, Συγκέντρωση, Ζωντανές δραστηριότητες, πολυπλοκότητα / πρόσοψη ρολογιού, Διπλό άγγιγμα, Αναμονή, widget. 'Νυχτερινή Βάρδια' kept: βάρδια is also a ship's watch and the on-duty-all-night image fits; Φρουρά sounds military and Βίγλα archaic/regional. Fixes: the bleeding article told the user to 'check it yourself' where English means get it checked (now passive), a heart-symptoms safety line used 'αισθήσεις' (reads as consciousness), the evening greeting was a good-night phrase, and three calqued or ambiguous sentences. Separate code issue: several PDF/share titles are uppercased at runtime with String.uppercased(), which keeps Greek accents; see doubts.",
+ "reviewedThrough": 844,
+ "extrasReviewed": true,
+ "strings": {
+  "42": {
+   "to": "Η **εμμηνόπαυση** είναι ένα συγκεκριμένο χρονικό σημείο: η ημέρα κατά την οποία συμπληρώνονται 12 συνεχόμενοι μήνες χωρίς περίοδο, όταν αυτό δεν εξηγείται από κάτι άλλο (όπως εγκυμοσύνη, ορισμένα φάρμακα ή χειρουργική επέμβαση). Σε πολλές χώρες συμβαίνει κατά μέσο όρο στις αρχές της δεκαετίας των 50, αλλά είναι συνηθισμένο να συμβεί οποιαδήποτε στιγμή από τα μέσα των 40 έως τα μέσα των 50.\n\nΗ **περιεμμηνόπαυση** είναι τα χρόνια που οδηγούν σε αυτό το σημείο. Τα επίπεδα των ορμονών ανεβαίνουν και πέφτουν άνισα, έτσι οι περίοδοι μπορεί να γίνουν ακανόνιστες, πιο έντονες, πιο ελαφριές, πιο κοντά ή πιο αραιά μεταξύ τους. Πολλές από τις αλλαγές που συνδέονται με την εμμηνόπαυση, όπως οι εξάψεις, οι νυχτερινές εφιδρώσεις, οι αλλαγές στον ύπνο και οι αλλαγές στη διάθεση, συχνά ξεκινούν σε αυτή τη φάση, ενώ υπάρχει ακόμη περίοδος. Η περιεμμηνόπαυση μπορεί να διαρκέσει λίγα χρόνια ή αρκετά περισσότερα, και εκδηλώνεται διαφορετικά σε κάθε άτομο.\n\nΗ **μετεμμηνόπαυση** είναι όλη η περίοδος μετά από αυτό το όριο των 12 μηνών. Ορισμένα συμπτώματα υποχωρούν με τον καιρό, ενώ άλλα μπορεί να συνεχιστούν για χρόνια.\n\nΗ εμμηνόπαυση μπορεί επίσης να έρθει νωρίτερα λόγω χειρουργικής επέμβασης που αφαιρεί τις ωοθήκες, ορισμένων θεραπειών για τον καρκίνο ή άλλων παθήσεων. Η εμμηνόπαυση πριν από τα 40 ονομάζεται μερικές φορές πρόωρη ωοθηκική ανεπάρκεια, και αξίζει να τη συζητήσεις με γιατρό.\n\n**Πώς αναγνωρίζεται.** Σε πολλά άτομα άνω των 45 ετών, οι γιατροί αναγνωρίζουν την περιεμμηνόπαυση ή την εμμηνόπαυση από το ιστορικό και τα συμπτώματά σου. Οι εξετάσεις αίματος δεν χρειάζονται πάντα, επειδή τα επίπεδα των ορμονών αλλάζουν από μέρα σε μέρα. Είναι πιο πιθανό να γίνουν όταν κάποια είναι νεότερη ή η εικόνα δεν είναι σαφής.\n\n**Τι κάνει και τι δεν κάνει το MenoMap.** Το MenoMap δεν μπορεί να σου πει σε ποιο στάδιο βρίσκεσαι. Αυτό που μπορεί να κάνει είναι να κρατά μια ειλικρινή καταγραφή όσων παρατηρείς: κύματα, ύπνο, διάθεση και θεραπεία, ώστε εσύ και ο γιατρός σου να βλέπετε την ίδια εικόνα.",
+   "why": "'η ημέρα που σημαίνει 12 μήνες' is a calque of 'marks'; 'συμπληρώνονται' states plainly that 12 months without a period have been completed."
+  },
+  "57": {
+   "to": "Συχνά βοηθούν ένα δροσερό, σκοτεινό δωμάτιο, ένας ανεμιστήρας, σκεπάσματα που αναπνέουν και ρούχα σε στρώσεις που βγάζεις εύκολα. Δοκίμασέ το ως πείραμα δύο εβδομάδων.",
+   "why": "'που βγάζεις εύκολα συχνά βοηθούν' let 'συχνά' attach to 'βγάζεις' (take off often); moved 'Συχνά βοηθούν' to the front so the hedge modifies 'help'."
+  },
+  "264": {
+   "to": "Καλό απόγευμα",
+   "why": "'Καλό βράδυ' (evening) is a leave-taking/good-night phrase, not a greeting; evening now 'Καλησπέρα', so afternoon becomes 'Καλό απόγευμα' to keep the two distinct."
+  },
+  "265": {
+   "to": "Καλό απόγευμα, %@",
+   "why": "See 264."
+  },
+  "266": {
+   "to": "Καλησπέρα",
+   "why": "'Καλό βράδυ' is said when leaving or at bedtime; the evening greeting on opening the app is 'Καλησπέρα'."
+  },
+  "267": {
+   "to": "Καλησπέρα, %@",
+   "why": "See 266."
+  },
+  "278": {
+   "to": "Τα αισθήματα στην καρδιά έχουν πολλές αιτίες. Αν είναι καινούργια, έντονα ή συνοδεύονται από πόνο στο στήθος, δύσπνοια ή λιποθυμία, ζήτησε ιατρική βοήθεια αμέσως.",
+   "why": "Safety string. Plural 'αισθήσεις' reads as 'the senses/consciousness' ('έχασε τις αισθήσεις της' = fainted), confusing next to 'λιποθυμία'; 'αισθήματα' is the patient-leaflet word (αίσθημα παλμών). 'ζήτησε ιατρική βοήθεια αμέσως' is the idiomatic, equally urgent rendering of 'seek care now'. Nothing added or dropped."
+  },
+  "438": {
+   "to": "Οι νυχτερινές εφιδρώσεις, η ανάγκη για τουαλέτα, η επίδραση του αλκοόλ που εξασθενεί και ένα μυαλό που τρέχει είναι συνηθισμένοι λόγοι. Κατάγραφε τις νύχτες σου για δύο εβδομάδες και δες το μοτίβο.",
+   "why": "'το αλκοόλ που ξεθυμαίνει' means alcohol going flat/evaporating; the meaning is the alcohol's effect wearing off."
+  },
+  "479": {
+   "to": "Μόλις περάσουν 12 μήνες χωρίς περίοδο, **κάθε κολπική αιμορραγία πρέπει να ελεγχθεί από γιατρό**, ακόμη κι αν συνέβη μόνο μία φορά, και ακόμη κι αν ήταν μόνο κηλίδωση ή ανοιχτή ροζ ή καφέ έκκριση.\n\nΤις περισσότερες φορές η αιτία αποδεικνύεται ότι δεν είναι σοβαρή. Η λέπτυνση του τοιχώματος του κόλπου ή του εσωτερικού τοιχώματος της μήτρας, για παράδειγμα, είναι συχνή. Όμως η αιμορραγία μετά την εμμηνόπαυση μπορεί μερικές φορές να είναι πρώιμο σημάδι μιας πάθησης που αντιμετωπίζεται πολύ πιο εύκολα όταν εντοπιστεί νωρίς. Γι' αυτό οι οδηγίες δημόσιας υγείας λένε να ελεγχθεί και να μην περιμένεις.\n\n**Αν κάνεις ορμονική θεραπεία,** κάποια μοτίβα αιμορραγίας μπορεί να είναι αναμενόμενα, ανάλογα με τον τύπο που παίρνεις. Πρέπει επίσης να ελεγχθεί η αιμορραγία που δεν είναι αναμενόμενη για τη θεραπεία σου, είναι πιο έντονη από το συνηθισμένο ή συμβαίνει σε λάθος χρονική στιγμή.\n\n**Τι να κάνεις:**\n- Επικοινώνησε με τον γιατρό σου ή με την υπηρεσία υγείας σου και πες ότι είχες αιμορραγία μετά την εμμηνόπαυση.\n- Σημείωσε την ημερομηνία, την ποσότητα και οτιδήποτε άλλο παρατήρησες. Το MenoMap μπορεί να τα κρατήσει για σένα (Εσύ → Κύκλος).\n\nΤο MenoMap δεν μπορεί να σου πει γιατί συνέβη η αιμορραγία. Θα σου υπενθυμίσει ότι πρέπει να ελεγχθεί και θα τη συμπεριλάβει στις σημειώσεις για το ραντεβού σου.",
+   "why": "Safety article. 'να την ελέγξεις' (twice) reads as 'check it yourself'; English 'get it looked at / get it checked' means by a clinician, so passive 'να ελεγχθεί' as in the bold sentence and ids 91/129. 'τοίχωμα της μήτρας' is the uterine wall; 'womb lining' is its inner lining, now 'εσωτερικό τοίχωμα της μήτρας' as in the HRT article (291)."
+  },
+  "790": {
+   "to": "Ποια σημάδια να προσέχω, που θα σήμαιναν ότι πρέπει να σας τηλεφωνήσω;",
+   "why": "'Σε τι πρέπει να προσέχω που σημαίνει ότι πρέπει…' is ungrammatical (relative 'που' has no antecedent, double 'πρέπει'); natural question to the doctor, σας kept."
+  }
+ },
+ "demo": {},
+ "store": {},
+ "glossary": {},
+ "doubts": [
+  "CODE (not fixable in strings): VisitPDF.swift:190, ShareCards.swift:128/129/209, StoryVideo.swift:29 and TodayView.swift:71 call String.uppercased(), which keeps Greek accents (e.g. 'ΣΗΜΕΙΏΣΕΙΣ ΣΥΜΠΤΩΜΆΤΩΝ', 'ΤΡΊΤΗ'). Greek all-caps must drop the accent; use uppercased(with: .current) (the ICU Greek mapping removes it) or .textCase(.uppercase). Store headings are already correct (hard-coded caps without accents).",
+  "#729 Health settings path 'Πρόσβαση σε δεδομένα και συσκευές': could not confirm Apple's exact Greek label on support.apple.com/el-gr; kept.",
+  "#259 Shortcuts automation trigger 'Κατά την ενεργοποίηση' for 'When turning on': plausible, not verifiable headlessly; kept.",
+  "#148 'Certain days' = 'Κάποιες μέρες' (max 14): 'Ορισμένες μέρες' would be clearer but is 15 characters; kept.",
+  "#434/#436 'Νυχτ. εφίδρωση/εφιδρώσεις' abbreviations are forced by max 16; the full term appears everywhere else."
+ ]
+}

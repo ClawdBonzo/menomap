@@ -1,0 +1,69 @@
+{
+ "verdict": "Solid, natural Romanian translation: tu register held everywhere (formal forms only where Apple UI labels are quoted and where the user addresses her doctor), feminine forms applied sensibly, comma-below diacritics throughout, public patient terms (bufeuri, transpirații nocturne, THS, progestativ, sângerare după menopauză) used consistently, and every bleeding string correctly says «după menopauză» (after periods stopped). Plurals are correct one/few/other with «de» in every other form that carries a noun; multi-number strings use safe label/parenthesis forms. «Veghea de noapte» works well as a feature name and in the Siri phrase; id 577 quotes only the real phrases 368/369. Fixes: one safety-article nuance (reminder to get bleeding checked read as «check it yourself»), the calque «dovezi mixte» in two safety texts, the heads-up feature rendered as «avertizare» (warning) in four places, a grammatically ambiguous answer and question, two check-in scale anchors, and a widget countdown that lost its «in».",
+ "reviewedThrough": 844,
+ "extrasReviewed": true,
+ "strings": {
+  "479": {
+   "to": "Odată ce ai trecut de 12 luni fără menstruație, **orice sângerare vaginală trebuie verificată de un medic**, chiar dacă a apărut o singură dată și chiar dacă a fost doar o pătare sau o secreție roz-deschis ori maronie.\n\nDe cele mai multe ori, cauza se dovedește a nu fi gravă. Subțierea mucoasei vaginale sau a celei uterine este frecventă, de exemplu. Dar sângerarea după menopauză poate fi uneori un semn timpuriu al unei afecțiuni care se tratează mult mai ușor atunci când este descoperită devreme. De aceea, recomandările de sănătate publică spun să fie verificată, în loc să aștepți.\n\n**Dacă iei terapie hormonală,** unele tipare de sângerare pot fi de așteptat, în funcție de tipul pe care îl iei. Sângerarea neașteptată pentru tratamentul tău, mai abundentă decât de obicei sau care apare la momentul nepotrivit trebuie și ea verificată.\n\n**Ce să faci:**\n- Contactează-ți medicul sau serviciul de sănătate și spune că ai avut sângerare după menopauză.\n- Notează data, cât de abundentă a fost și orice altceva ai observat. MenoMap poate păstra aceste informații pentru tine (Profil → Ciclu).\n\nMenoMap nu îți poate spune de ce a apărut sângerarea. Îți va aminti să o verifici la un medic și o va include în notițele pentru consultație.",
+   "why": "Safety article: 'remind you to get it checked' was 'să o verifici' (check it yourself); now explicitly checked by a clinician."
+  },
+  "233": {
+   "to": "Dovezile sunt contradictorii pentru multe suplimente, iar unele interacționează cu medicamentele. Spune-i medicului sau farmacistului ce iei.",
+   "why": "Safety: 'dovezi mixte' is a calque; standard Romanian for mixed evidence is 'contradictorii'."
+  },
+  "293": {
+   "to": "Terapia hormonală nu este potrivită pentru toată lumea, iar unele persoane pur și simplu preferă alte căi. Există mai multe.\n\n**Opțiuni pe bază de rețetă.** Unele medicamente nehormonale au dovezi că reduc bufeurile. Printre ele se numără anumite medicamente dezvoltate inițial pentru alte afecțiuni și o clasă mai nouă, concepută special pentru bufeuri. Fiecare are propriile beneficii, efecte adverse și interacțiuni, așa că un medic te poate ajuta să le cântărești.\n\n**Terapii prin discuții și abordări minte-corp.** Terapia cognitiv-comportamentală (TCC) adaptată pentru menopauză are dovezi că face bufeurile și transpirațiile nocturne mai puțin supărătoare și că îmbunătățește somnul. A fost studiată și hipnoza clinică.\n\n**Schimbări practice pe care oamenii le găsesc utile:**\n- Straturi de haine pe care le poți da jos repede\n- Un ventilator la birou și lângă pat\n- Un dormitor mai răcoros și lenjerie de pat care respiră\n- Observarea și reducerea factorilor declanșatori personali (etichetele și experimentele din MenoMap ajută aici)\n- Mișcare regulată și un program de somn constant\n\n**Suplimente și produse din plante.** Dovezile sunt contradictorii sau limitate pentru multe dintre ele, calitatea variază, iar unele interacționează cu alte medicamente. Spune-i medicului sau farmacistului despre tot ce iei, inclusiv despre produsele fără rețetă.\n\n**Încearcă o singură schimbare pe rând.** Experimentele de două săptămâni din MenoMap compară propriile tale înregistrări dinainte și din timpul unei schimbări, ceea ce e mai ușor de judecat decât o impresie.",
+   "why": "Same calque as 233, kept consistent."
+  },
+  "277": {
+   "to": "Mesaje rapide",
+   "why": "Heads-up (iMessage tab for quick texts to friends) was 'Avertizare' = warning/alert; 13 chars ≤ 14."
+  },
+  "496": {
+   "to": "Deschide Mesaje sau orice aplicație alegi. MenoMap nu trimite nimic de la sine. În Mesaje, apasă pe aplicația MenoMap pentru autocolante și carduri cu mesaje rapide.",
+   "why": "Consistent with 277; heads-up cards are friendly texts, not warnings."
+  },
+  "807": {
+   "to": "Scrie-ți propriul mesaj rapid",
+   "why": "Consistent with 277."
+  },
+  "733": {
+   "to": "De reținut pentru la noapte",
+   "why": "'Avertizare' sounded alarming for a data note that is 'not a forecast'; heads-up here = something to keep in mind."
+  },
+  "813": {
+   "to": "Da. E o întrebare foarte rezonabilă să întrebi dacă terapia hormonală este o opțiune pentru tine și de ce da sau de ce nu.",
+   "why": "Original parsed as '...de ce nu este o întrebare' (why it is not a question); reordered to remove the ambiguity."
+  },
+  "790": {
+   "to": "La ce semne ar trebui să fiu atentă, ca să știu când să vă sun?",
+   "why": "Original relative clause was ungrammatical/stiff."
+  },
+  "453": {
+   "to": "Deloc",
+   "why": "'None' is the 0 anchor for both hot flashes and night sweats; 'Niciunul' is wrong gender for transpirații. 'Deloc' fits both scales."
+  },
+  "212": {
+   "to": "Udă leoarcă",
+   "why": "'Leoarcă' alone is only an intensifier (ud leoarcă); scale anchor needs the adjective. Feminine per register."
+  },
+  "101": {
+   "to": "Programare peste %1$lld z · notițe %2$lld%%",
+   "why": "'Programare: 5 z' lost the countdown meaning of 'in 5d'; abbreviation needs no 'de' at 20+."
+  },
+  "837": {
+   "to": "Valurile tale vor apărea aici, pe cadranul ceasului.",
+   "why": "'În jurul ceasului' is a calque of 'around the clock'; this is the surge-clock chart face."
+  }
+ },
+ "demo": {},
+ "store": {},
+ "glossary": {
+  "heads-up": "mesaj rapid (Mesaje rapide)"
+ },
+ "doubts": [
+  "id 291 keeps the acronym THM for MHT alongside THS; THM is rare in Romanian patient material but harmless as a gloss, left as is.",
+  "ids 434/436 use 'sudoare/sudori nocturne' only where max 16 forbids 'transpirație nocturnă'; accepted as a length compromise.",
+  "id 259 Shortcuts path words ('Automatizare', 'Când este activat') not verified against a Romanian iOS device."
+ ]
+}

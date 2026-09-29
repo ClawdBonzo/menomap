@@ -30,6 +30,35 @@ func serif(_ size: CGFloat) -> NSFont {
     return base.fontDescriptor.withDesign(.serif).flatMap { NSFont(descriptor: $0, size: size) } ?? base
 }
 
+/// Chinese and Japanese break between any two characters, which splits words ("夜の見|守り"). Group the text into
+/// phrases (a word plus its trailing particles, katakana compounds, a number with its counter) and glue each phrase
+/// with WORD JOINERs so CoreText can only break between phrases.
+func phraseGlued(_ text: String, lang: String) -> String {
+    guard lang == "ja" || lang.hasPrefix("zh") else { return text }
+    let ns = text as NSString, cf = text as CFString
+    let tok = CFStringTokenizerCreate(nil, cf, CFRange(location: 0, length: ns.length), kCFStringTokenizerUnitWordBoundary,
+                                      Locale(identifier: lang) as CFLocale)
+    func all(_ s: String, _ ranges: [ClosedRange<UInt32>]) -> Bool {
+        s.unicodeScalars.allSatisfy { u in ranges.contains { $0.contains(u.value) } }
+    }
+    let hiragana: [ClosedRange<UInt32>] = [0x3040...0x309F], katakana: [ClosedRange<UInt32>] = [0x30A0...0x30FF]
+    var chunks: [String] = [], last = "", cursor = 0
+    func attach(_ piece: String) { if chunks.isEmpty { chunks.append(piece) } else { chunks[chunks.count - 1] += piece } }
+    while !CFStringTokenizerAdvanceToNextToken(tok).isEmpty {
+        let r = CFStringTokenizerGetCurrentTokenRange(tok)
+        if r.location > cursor { attach(ns.substring(with: NSRange(location: cursor, length: r.location - cursor))) }  // punctuation
+        let t = ns.substring(with: NSRange(location: r.location, length: r.length))
+        let joins = lang == "ja" && ((all(t, hiragana) && t.count <= 2)
+            || (all(t, katakana) && all(last, katakana))
+            || (last.last?.isNumber ?? false))
+        if joins { attach(t) } else { chunks.append(t) }
+        last = t
+        cursor = r.location + r.length
+    }
+    if cursor < ns.length { attach(ns.substring(from: cursor)) }
+    return chunks.map { $0.map(String.init).joined(separator: "\u{2060}") }.joined()
+}
+
 /// "Log a hot flash in *one tap*." → attributed string with the starred words in ember.
 func headline(_ text: String, size: CGFloat, rtl: Bool) -> NSAttributedString {
     let result = NSMutableAttributedString()
@@ -105,7 +134,8 @@ for (lang, frame) in frames.sorted(by: { $0.key < $1.key }) {
         }
         // Headline block: top 150…700.
         let box = CGSize(width: 1140, height: 520)
-        let (fs, need) = fitted(text, box: box, rtl: frame.rtl ?? false)
+        let kept = text.replacingOccurrences(of: "Apple Watch", with: "Apple\u{00A0}Watch").replacingOccurrences(of: "Apple Health", with: "Apple\u{00A0}Health")
+        let (fs, need) = fitted(phraseGlued(kept, lang: lang), box: box, rtl: frame.rtl ?? false)
         let top: CGFloat = 170
         let rect = CGRect(x: (CGFloat(W) - box.width) / 2, y: CGFloat(H) - top - need.height, width: box.width, height: need.height + 4)
         CTFrameDraw(CTFramesetterCreateFrame(fs, CFRange(), CGPath(rect: rect, transform: nil), nil), ctx)

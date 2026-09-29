@@ -1,0 +1,53 @@
+{
+ "demo": {
+  "d1": "Lan",
+  "d2": "BS. Trần Hà",
+  "d3": "Gel estradiol",
+  "d4": "Progesterone dạng vi hạt",
+  "d5": "1 lần bơm",
+  "d6": "Bôi ngoài da",
+  "d7": "Mỗi sáng",
+  "d8": "100 mg",
+  "d9": "Đường uống",
+  "d10": "Trước khi ngủ",
+  "d11": "Tái khám mãn kinh"
+ },
+ "store": {
+  "name": "MenoMap: Theo dõi mãn kinh",
+  "subtitle": "Ghi bốc hỏa & báo cáo bác sĩ",
+  "keywords": "tiền,đổ mồ hôi đêm,nội tiết tố,hormone,hrt,nhật ký,triệu chứng,giấc ngủ,mất ngủ,phụ nữ,trung niên",
+  "promotionalText": "Ghi cơn bốc hỏa chỉ với một chạm từ Màn hình khóa hoặc Apple Watch. Xem mẫu hình của bạn. Đến buổi khám với ghi chú rõ ràng. Không tài khoản, không quảng cáo.",
+  "description": "Ghi lại cơn bốc hỏa chỉ với một chạm. Xem điều gì đang thay đổi. Đến buổi khám với ghi chú trong tay.\n\nMenoMap được tạo ra cho chính khoảnh khắc đó. Khi một cơn bốc hỏa hoặc đổ mồ hôi ban đêm bắt đầu, hãy chạm một lần từ Màn hình khóa, Trung tâm điều khiển, nút Tác vụ hoặc Apple Watch. MenoMap tính giờ, hít thở cùng bạn nếu bạn muốn, và lưu lại. Vào ban đêm, Canh đêm giữ một nút đổ mồ hôi đêm một chạm, ánh sáng dịu, trên Màn hình khóa cho đến sáng.\n\nHOẠT ĐỘNG VỚI ỨNG DỤNG SỨC KHỎE\nMenoMap đọc các triệu chứng và giai đoạn mãn kinh bạn đã ghi trong ứng dụng Sức khỏe, để lịch sử của bạn hiện ra ngay từ ngày đầu, và lưu mọi cơn nóng bạn ghi trở lại ứng dụng Sức khỏe.\n\nTHỜI TIẾT CỦA BẠN, TRÊN BẢN ĐỒ\n• Bản đồ nhiệt các ngày của bạn, đồng hồ cơn nóng cho thấy chúng hay dồn vào lúc nào, và các yếu tố khởi phát được gắn thẻ nhiều nhất\n• Nhật ký tối 30 giây cho giấc ngủ, tâm trạng và năng lượng\n• Mẫu hình trong chính ghi nhận của bạn, như giấc ngủ trông thế nào sau những đêm nặng nề, luôn là kiểm tra sự trùng hợp, không bao giờ là nguyên nhân\n• Thử nghiệm hai tuần: thử một thay đổi và so sánh giai đoạn trước và trong của chính bạn\n\nĐẾN BUỔI KHÁM VỚI GHI CHÚ\nThêm lịch hẹn và MenoMap cho biết ghi chú của bạn đã sẵn sàng đến đâu. Chọn câu hỏi, rồi tạo một tệp PDF một trang gọn gàng cho bác sĩ, bằng ngôn ngữ bác sĩ sử dụng.\n\nRIÊNG TƯ NGAY TỪ THIẾT KẾ\nKhông tài khoản. Không quảng cáo. Không đám mây. Dữ liệu sức khỏe của bạn ở lại trên iPhone.\n\nMENOMAP PRO\nLịch sử dài hơn (30, 90 và 365 ngày), mẫu hình, thử nghiệm, Báo cáo nhiệt hằng tháng đầy đủ, ghi chú cho bác sĩ và nhắc dùng thuốc. Theo tháng, theo năm (có dùng thử miễn phí) hoặc trọn đời. Hoặc mua một Báo cáo buổi khám cho một lần khám.\n\nMenoMap là công cụ theo dõi sức khỏe tổng quát và giáo dục sức khỏe. Ứng dụng không chẩn đoán mãn kinh hay bất kỳ bệnh lý nào khác, không kê đơn hay thay đổi điều trị, và không thay thế việc chăm sóc từ bác sĩ có chuyên môn.\n\nQuyền riêng tư: https://gwlabs.app/menomap/privacy\nĐiều khoản sử dụng: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+  "whatsNew": "Phiên bản đầu tiên của MenoMap.",
+  "iap": {
+   "groupName": "MenoMap Pro",
+   "monthly": {
+    "name": "MenoMap Pro theo tháng",
+    "description": "Mẫu hình, thống kê và ghi chú cho bác sĩ."
+   },
+   "yearly": {
+    "name": "MenoMap Pro theo năm",
+    "description": "Mẫu hình, thống kê và ghi chú cho bác sĩ."
+   },
+   "lifetime": {
+    "name": "MenoMap Pro trọn đời",
+    "description": "Mọi tính năng Pro, mãi mãi."
+   },
+   "visitReport": {
+    "name": "Báo cáo buổi khám",
+    "description": "Một PDF đầy đủ cho bác sĩ, tối đa 90 ngày."
+   }
+  },
+  "screenshots": {
+   "1": "Ghi cơn bốc hỏa chỉ *một chạm*.",
+   "2": "*Canh đêm* trên Màn hình khóa.",
+   "3": "Xem *bản đồ nhiệt* của bạn.",
+   "4": "Tìm mẫu hình *của riêng bạn*.",
+   "5": "Đi khám với *ghi chú* trong tay.",
+   "6": "Kết nối *ứng dụng Sức khỏe*.",
+   "7": "Ngay trên *Apple Watch*.",
+   "8": "Thử một thay đổi trong *hai tuần*.",
+   "9": "Dữ liệu của bạn là *của bạn*."
+  }
+ }
+}

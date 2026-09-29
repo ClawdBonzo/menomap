@@ -1,0 +1,83 @@
+{
+ "verdict": "Solid, natural Finnish: sinä-register and gender-neutral wording held throughout; Terveyskirjasto terms used consistently (kuuma aalto, yöhikoilu, perimenopaussi/menopaussi/postmenopaussi, hormonihoito, keltarauhashormoni, emättimen kuivuus, tiputteluvuoto); glossary (aalto, Yövahti, Lämpöraportti, Viikkokooste, tyyni jakso, oma kesä) consistent across UI, widgets, Watch, Siri and store; wry lines genuinely funny ('Sisäinen sauna: päällä', 'Ei nyt, sulan parhaillaan', 'Niin ja näin'). Known trap checked: every bleeding string and the article use 'menopaussin jälkeen' (after the final period), never 'vaihdevuosien jälkeen'. Safety strings faithful and complete; all hedges intact. Apple terms verified against the support.apple.com/fi-fi iPhone guide TOC: Toimintopainike, lukittu näyttö, Koti-valikko, Keskity-tila, Liveseuranta, Pikakomennot, StandBy-tila, widgetit, Terveys-appi. The Health settings path (third-party source) was replaced by the in-app path Apple documents. Fixes: case/number agreement and meaning in placeholder sentences (474 counted nights, 819 weekday, 24 counted sweats), three calques ('tarvitsevat iltakyselyt', 'liian … jotta', 'sydämen tiheä lyönti'), two ungrammatical fragments (120, 250), 'Apple Terveys' aligned to Terveys-appi, plan-label parallelism, and 'vaihdevuodet' added to store keywords. Siri phrases with '${applicationName}-appiin/-apissa' keep the name uninflected, the standard Finnish way to attach case to a foreign name; natural to say.",
+ "reviewedThrough": 844,
+ "extrasReviewed": true,
+ "strings": {
+  "24": {
+   "to": "Kuumia aaltoja %1$lld · yöhikoilukertoja %2$lld",
+   "why": "Counted night sweats use the glossary form 'yöhikoilukerta'; 'yöhikoilua 3' reads as 'sweating: 3'."
+  },
+  "42": {
+   "to": "**Menopaussi** on yksittäinen ajankohta: päivä, jona on kulunut 12 kuukautta peräkkäin ilman kuukautisia, kun sitä ei selitä jokin muu syy (kuten raskaus, jotkin lääkkeet tai leikkaus). Monissa maissa se ajoittuu keskimäärin hieman yli 50 vuoden ikään, mutta tavallista on mikä tahansa ikä noin 45 ja 55 vuoden välillä.\n\n**Perimenopaussi** on sitä edeltävä vuosien jakso. Hormonitasot nousevat ja laskevat epätasaisesti, joten kuukautiset voivat muuttua epäsäännöllisiksi, runsaammiksi tai niukemmiksi ja tulla tiheämmin tai harvemmin. Monet vaihdevuosiin liitetyt muutokset, kuten kuumat aallot, yöhikoilu, unen muutokset ja mielialan muutokset, alkavat usein jo tässä vaiheessa, kun kuukautiset vielä tulevat. Perimenopaussi voi kestää muutaman vuoden tai selvästi pidempään, ja se on jokaisella erilainen.\n\n**Postmenopaussi** on kaikki tuon 12 kuukauden rajan jälkeen. Jotkin oireet tasaantuvat ajan myötä, toiset voivat jatkua vuosia.\n\nMenopaussi voi tulla myös aiemmin munasarjat poistavan leikkauksen, joidenkin syöpähoitojen tai muiden sairauksien vuoksi. Ennen 40 ikävuotta tulevaa menopaussia kutsutaan joskus ennenaikaiseksi munasarjojen vajaatoiminnaksi, ja siitä kannattaa keskustella lääkärin kanssa.\n\n**Miten se tunnistetaan.** Monilla yli 45-vuotiailla lääkäri tunnistaa perimenopaussin tai menopaussin esitietojen ja oireiden perusteella. Verikokeita ei aina tarvita, koska hormonitasot heittelevät päivästä toiseen. Niitä käytetään todennäköisemmin, jos henkilö on nuorempi tai tilanne on epäselvä.\n\n**Mitä MenoMap tekee ja mitä ei.** MenoMap ei voi kertoa, missä vaiheessa olet. Se voi kuitenkin pitää rehellistä kirjaa siitä, mitä huomaat: aallot, uni, mieliala ja hoito, jotta sinä ja lääkärisi voitte katsoa samaa kokonaiskuvaa.",
+   "why": "'50 ikävuoden alkupuolelle' is an odd, ambiguous rendering of 'early 50s'; 'hieman yli 50 vuoden ikään' is plain and faithful."
+  },
+  "94": {
+   "to": "Terveys-appi",
+   "why": "Apple's official Finnish name is the Terveys app ('Terveys-appi' on support.apple.com/fi-fi); 'Apple Terveys' is not an Apple term and was the only place it differed."
+  },
+  "120": {
+   "to": "Iltamuistutus Yövahdin kytkemisestä päälle",
+   "why": "'Iltamuistutus kytkeä se päälle' (noun + bare infinitive) is ungrammatical."
+  },
+  "162": {
+   "to": "Lääkärit kutsuvat kuumia aaltoja ja yöhikoilua **vasomotorisiksi oireiksi**. Kuuma aalto on äkillinen kuumuuden tunne, usein kasvoilla, kaulalla ja rinnassa, joskus punastumisen, hikoilun, nopean sykkeen tai jälkikäteen tulevien vilunväreiden kera. Yöhikoilu on sama asia unen aikana, ja se voi olla niin voimakasta, että se herättää tai kastelee lakanat.\n\nNe ovat vaihdevuosien yleisimpiä muutoksia. Joillakin niitä on muutama lievä, toisilla monta päivässä, ja ne haittaavat työtä ja unta. Joillakin ne hiipuvat muutamassa vuodessa, toisilla ne kestävät paljon pidempään.\n\n**Mikä voi tehdä niistä todennäköisempiä.** Moni huomaa yhteyksiä alkoholiin, kofeiiniin, tuliseen ruokaan, kuumiin huoneisiin, stressiin tai paksuihin vuodevaatteisiin. Nämä vaihtelevat paljon ihmisestä toiseen, minkä vuoksi omien tunnisteiden seuraaminen voi olla hyödyllisempää kuin yleinen lista.\n\n**Muitakin syitä on.** Punoitusta ja hikoilua voivat aiheuttaa myös kilpirauhasen ongelmat, infektiot, jotkin lääkkeet, ahdistus ja muut sairaudet. Jos oireesi eivät sovi tavalliseen kuvaan tai niihin liittyy laihtumista, kuumetta tai huonovointisuutta, kerro siitä lääkärille.\n\n**Kuvaa ne hyvin.** Käynnillä hyödyllisiä tietoja:\n- Kuinka monta päivässä ja yössä, suunnilleen\n- Kuinka voimakkailta ne tuntuvat ja kuinka kauan ne kestävät\n- Mitä ne keskeyttävät: unen, työn, keskustelut, liikunnan\n- Mitä niitä näyttää edeltävän\n- Mitä olet kokeillut ja muuttiko se mitään\n\nMenoMapin Aalto-painike ja jälkikäteen kirjaaminen on tehty tallentamaan juuri tämä ilman suurta vaivaa.\n\n**Apua on saatavilla.** On olemassa hormonaalisia ja muita kuin hormonaalisia hoitovaihtoehtoja sekä käytännön keinoja. Se, mitkä niistä sopivat sinulle, on asia, josta kannattaa keskustella lääkärin kanssa.",
+   "why": "'sydämen tiheän lyönnin' is a stiff calque of 'racing heart'; 'nopea syke' is the plain patient-facing term."
+  },
+  "250": {
+   "to": "Joillakin se pahentaa oireita. Merkitse alkoholi iltakyselyyn; kahden viikon jälkeen MenoMap voi verrata öitäsi alkoholin kanssa ja ilman.",
+   "why": "'Joillakin pahentaa' lacks subject and object; clipped to the point of being ungrammatical in written Finnish."
+  },
+  "331": {
+   "to": "Jos yhdistät Terveys-apin, MenoMap lukee sallimasi tietotyypit ja kirjoittaa sinne vain täällä kirjaamasi aallot ja verenvuodot. Niitä tietoja hallinnoi Terveys-appi, emme me.",
+   "why": "Consistency with Apple's name for the Health app (see 94); meaning unchanged."
+  },
+  "412": {
+   "to": "Kuukausitilaus",
+   "why": "Parallel with 'Vuositilaus' (811) in the same plan picker; 14 chars, within max."
+  },
+  "474": {
+   "to": "Merkitsit alkoholin %1$lld iltana, ja niitä seuranneista öistä yöhikoilua kirjattiin %2$lld yönä. Ilman alkoholia olleita iltoja oli %3$lld, ja niitä seuranneista öistä yöhikoilua kirjattiin %4$lld yönä.",
+   "why": "Meaning: '%2$lld kertaa seuraavana yönä' said 'N times on the following night'; English counts nights. Essive 'N iltana/yönä' is correct for every value incl. 1."
+  },
+  "511": {
+   "to": "Kuvioiden löytämiseen tarvitaan noin kahden viikon ajalta iltakyselyjä.",
+   "why": "'Kuviot tarvitsevat … iltakyselyt' personifies patterns and reads as a calque."
+  },
+  "529": {
+   "to": "Huono uni on yksi keski-iän yleisimmistä vaivoista, ja sillä on harvoin vain yksi syy.\n\n**Yöhikoilu** voi herättää suoraan tai jättää olon niin kuumaksi tai kosteaksi, että on vaikea nukahtaa uudelleen.\n\n**Muita yleisiä tekijöitä:**\n- Virtsaamistarve yöllä\n- Ahdistus tai laukkaavat ajatukset\n- Alkoholi, joka voi auttaa nukahtamaan mutta rikkoo usein yön jälkimmäisen puoliskon\n- Kofeiini myöhään päivällä\n- Kipu, levottomat jalat tai kumppanin kuorsaus\n- Kuorsaus tai hengityskatkokset, jotka voivat olla merkki uniapneasta (kannattaa ottaa puheeksi, varsinkin jos olet päivisin hyvin uninen)\n\n**Mikä ihmisiä yleensä auttaa.** Viileä, pimeä huone; hengittävät vuodevaatteet ja kerrokset, joita voi riisua; säännöllinen heräämisaika; ja vähemmän alkoholia lähellä nukkumaanmenoa. Unettomuuden kognitiivinen käyttäytymisterapia (CBT-I) on jäsennelty ja hyvin tutkittu menetelmä, ja moni lääkäri voi ohjata sinut sen pariin.\n\n**Mitä seurata.** Kirjaa viikon tai kahden ajan unipisteesi, yölliset aallot, alkoholi ja myöhäinen kofeiini. MenoMapin iltakysely ja aaltoloki hoitavat tämän muutamalla napautuksella. Jos käytät Apple Watchia, MenoMap voi näyttää Terveys-apin uni- ja ranteen lämpötilatiedot yöhikoilusi rinnalla taustatietona eikä selityksenä.\n\n**Milloin hakeutua tutkimuksiin.** Puhu lääkärin kanssa, jos huono uni vaikuttaa turvallisuuteesi (esimerkiksi autolla ajaessa), mielialaasi tai arkeesi tai jos huomaat hengityskatkoksia tai haukkovaa hengitystä öisin.",
+   "why": "'liian …, jotta uni tulisi' is an English 'too … to' calque; rephrased naturally, same meaning."
+  },
+  "714": {
+   "to": "Niiden löytämiseen tarvitaan noin kahden viikon ajalta iltakyselyjä ja aaltoja. Ne vertaavat aina omia merkintöjäsi, eivät koskaan muiden ihmisten.",
+   "why": "Same calque as 511 ('Ne tarvitsevat … iltakyselyt ja aallot')."
+  },
+  "729": {
+   "to": "Muuta MenoMapin luku- ja kirjoitusoikeuksia Terveys-apissa: Yhteenveto → kuvasi tai nimikirjaimesi → Tietosuoja → Apit → MenoMap.",
+   "why": "The Settings path came from a third-party page. Replaced with the path Apple documents on support.apple.com/fi-fi ('Tietojesi jakaminen iPhonen Terveys-apissa': Yhteenveto → kuva/nimikirjaimet → Tietosuoja → Apit), which works on all current iOS versions."
+  },
+  "743": {
+   "to": "Kytke Yövahti pois päältä",
+   "why": "'Kytke … pois' is incomplete; standard is 'pois päältä' (matches 'päälle' in 746 and 744)."
+  },
+  "819": {
+   "to": "Viimeisten 8 viikon aikana kirjasit keskimäärin %1$@ aaltoa päivinä, jolloin oli %2$@, ja muina päivinä %3$@.",
+   "why": "%2$@ is a weekday name (weekdaySymbols, nominative 'maanantai'); 'viikonpäivänä maanantai' is clumsy. 'päivinä, jolloin oli maanantai' is grammatical for every weekday."
+  }
+ },
+ "demo": {},
+ "store": {
+  "keywords": {
+   "to": "vaihdevuodet,menopaussi,perimenopaussi,yöhikoilu,hormonihoito,oirepäiväkirja,uni,hormonit,unettomuus",
+   "why": "'vaihdevuodet' is the most common Finnish search word for menopause and only appeared inside the compound in the name (compounds don't match word searches); dropped 'kuukautiset' (period tracking, off-target) to stay at 100 characters."
+  }
+ },
+ "glossary": {
+  "Apple Health": "Terveys-appi (also as standalone label; not 'Apple Terveys')",
+  "Settings path Health": "Terveys-appi → Yhteenveto → kuva/nimikirjaimet → Tietosuoja → Apit (Apple fi-fi support)"
+ },
+ "doubts": [
+  "Siri phrases (108, 222, 368, 369) use '${applicationName}-apissa/-appiin'. This is natural spoken Finnish and keeps the token intact, but whether Siri's matcher treats the hyphenated suffix as a separate word could only be confirmed on a Finnish-language device.",
+  "'Ohjauskeskus' (Control Center) did not appear in the fi-fi guide TOC excerpt checked; it is the long-standing Finnish iOS term and was kept.",
+  "IAP names ('MenoMap Pro kuukausi/vuosi') are lowercase period words after the brand; acceptable, 'MenoMap Pro, kuukausi' would be an alternative if ASC review prefers."
+ ]
+}

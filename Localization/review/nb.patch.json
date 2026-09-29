@@ -1,0 +1,117 @@
+{
+ "verdict": "A solid, natural Bokmål translation: consistent du-address, helsenorge.no patient terms (hetetokt, nattesvette, hormonbehandling, gestagen, hjertebank, tørrhet i skjeden), a steady glossary (bølge, Nattevakt, privat hetebølge, Heterapport, Uka som gikk, Legetimerapport) and Apple's Norwegian platform terms (låst skjerm, Kontrollsenter, handlingsknappen, Oppdatering i sanntid – checked on support.apple.com/no-no, Helse-appen, Snarveier). The uncountable-nattesvette workaround holds up: counted forms use 'episoder med nattesvette' and mixed counts use label: value, with no broken agreement. The one systematic problem was the known trap: every 'bleeding after menopause' string used 'etter overgangsalderen' (after the transition years) and was changed to 'etter menopausen' in the UI, PDF, disclaimer and article. Other fixes: the setup Siri tip quoted a non-existent phrase, a few calques and clumsy constructions (Best verdi, Privat fra grunnen av, fortsatt for 'continued', natten i natt, double 'fra'), and two ambiguous labels (Tracking header, Peak). Hedges, safety wording, placeholders and plural forms were otherwise intact.",
+ "reviewedThrough": 844,
+ "extrasReviewed": true,
+ "strings": {
+  "91": {
+   "to": "All blødning etter menopausen bør undersøkes av lege.",
+   "why": "Known trap: 'overgangsalderen' is the multi-year transition, so 'etter overgangsalderen' can read as 'after the change years are over'; 'etter menopausen' = after the final period, as article 42 defines it."
+  },
+  "127": {
+   "to": "Blødning etter menopausen",
+   "why": "Known trap: 'overgangsalderen' is the multi-year transition, so 'etter overgangsalderen' can read as 'after the change years are over'; 'etter menopausen' = after the final period, as article 42 defines it."
+  },
+  "128": {
+   "to": {
+    "one": "Blødning etter menopausen registrert i Helse-appen: %lld gang.",
+    "other": "Blødning etter menopausen registrert i Helse-appen: %lld ganger."
+   },
+   "why": "Known trap: 'overgangsalderen' is the multi-year transition, so 'etter overgangsalderen' can read as 'after the change years are over'; 'etter menopausen' = after the final period, as article 42 defines it."
+  },
+  "129": {
+   "to": "Blødning etter menopausen bør undersøkes",
+   "why": "Known trap: 'overgangsalderen' is the multi-year transition, so 'etter overgangsalderen' can read as 'after the change years are over'; 'etter menopausen' = after the final period, as article 42 defines it."
+  },
+  "130": {
+   "to": "Blødning etter menopausen – selv én gang, selv om den er svak – bør undersøkes av lege. MenoMap kan ikke fortelle deg hvorfor det skjedde.",
+   "why": "Known trap: 'overgangsalderen' is the multi-year transition, so 'etter overgangsalderen' can read as 'after the change years are over'; 'etter menopausen' = after the final period, as article 42 defines it."
+  },
+  "321": {
+   "to": "Jeg har hatt blødning etter menopausen",
+   "why": "Known trap: 'overgangsalderen' is the multi-year transition, so 'etter overgangsalderen' can read as 'after the change years are over'; 'etter menopausen' = after the final period, as article 42 defines it."
+  },
+  "375": {
+   "to": "registrert etter menopausen",
+   "why": "Known trap: 'overgangsalderen' is the multi-year transition, so 'etter overgangsalderen' can read as 'after the change years are over'; 'etter menopausen' = after the final period, as article 42 defines it."
+  },
+  "479": {
+   "to": "Når det har gått 12 måneder uten menstruasjon, **bør all blødning fra skjeden undersøkes av lege**, selv om det bare skjedde én gang, og selv om det bare var sporblødning eller lyserosa eller brun utflod.\n\nSom oftest viser det seg at årsaken ikke er alvorlig. Tynnere slimhinne i skjeden eller livmoren er for eksempel vanlig. Men blødning etter menopausen kan noen ganger være et tidlig tegn på en tilstand som er mye lettere å behandle når den oppdages tidlig. Derfor sier offentlige helseråd at du bør få det undersøkt i stedet for å vente.\n\n**Hvis du bruker hormonbehandling,** kan noen blødningsmønstre være forventet, avhengig av hvilken type du bruker. Blødning som er uventet for behandlingen din, kraftigere enn vanlig eller kommer på feil tidspunkt, bør også undersøkes.\n\n**Hva du bør gjøre:**\n- Kontakt legen din eller helsetjenesten og si at du har hatt blødning etter menopausen.\n- Noter datoen, hvor mye, og alt annet du la merke til. MenoMap kan ta vare på dette for deg (Deg → Syklus).\n\nMenoMap kan ikke fortelle deg hvorfor blødningen skjedde. Appen minner deg på å få det undersøkt og tar det med i notatene til legetimen.",
+   "why": "Known trap: 'overgangsalderen' is the multi-year transition, so 'etter overgangsalderen' can read as 'after the change years are over'; 'etter menopausen' = after the final period, as article 42 defines it."
+  },
+  "403": {
+   "to": "MenoMap er et verktøy for å følge med på egen helse og et opplæringsverktøy. Appen stiller ikke diagnosen overgangsalder eller noen annen tilstand, foreskriver eller endrer ikke behandling, og erstatter ikke oppfølging fra en kvalifisert lege. Hvis symptomer bekymrer deg, eller hvis du har blødning etter menopausen, brystsmerter, plutselig kraftig hodepine, svakhet i den ene siden av kroppen, pustevansker eller besvimelse, oppsøk helsehjelp personlig eller få akutt hjelp.",
+   "why": "Known trap: 'overgangsalderen' is the multi-year transition, so 'etter overgangsalderen' can read as 'after the change years are over'; 'etter menopausen' = after the final period, as article 42 defines it. Also 'oppsøk helsehjelp ved personlig oppmøte eller akutthjelp' was stiff and grammatically loose; now 'oppsøk helsehjelp personlig eller få akutt hjelp' (in-person or emergency care)."
+  },
+  "577": {
+   "to": "Si «Registrer en hetetokt i MenoMap» eller «Registrer nattesvette i MenoMap».",
+   "why": "Must quote only real Siri phrases (ids 368/369); «Start nattesvette i MenoMap» does not exist and would not work."
+  },
+  "685": {
+   "to": "Symptomnotater (forts.)",
+   "why": "'fortsatt' means 'still'; a continued PDF page is '(forts.)'."
+  },
+  "823": {
+   "to": "Registreringene dine har noe å si om natten som kommer.",
+   "why": "'natten i natt' is redundant and clumsy."
+  },
+  "791": {
+   "to": "Hva skal fanen I dag vise?",
+   "why": "'Hva skal I dag vise?' parses as 'What shall I show today'; name the tab explicitly."
+  },
+  "737": {
+   "to": "Registrering",
+   "why": "Section header in You (check-in questions, medications, cycle, Night Watch); 'Følger med på' is a dangling verb phrase as a header."
+  },
+  "513": {
+   "to": "Topptid",
+   "why": "Stat label for the busiest time of day; 'Toppunkt' is a geometric peak point. Matches 'Travleste time'."
+  },
+  "514": {
+   "to": "Topptid %@",
+   "why": "Same as 513."
+  },
+  "121": {
+   "to": "Gunstigst",
+   "why": "'Best verdi' is a calque; 'Gunstigst' is the natural Norwegian price badge (max 14)."
+  },
+  "255": {
+   "to": "Gratis: en forhåndsvisning av tallene dine for 7 dager, med vannmerke. Pro eller én enkelt Legetimerapport låser opp de fullstendige notatene.",
+   "why": "'en engangs Legetimerapport' is colloquial/ungrammatical attributive; 'én enkelt' matches the store text."
+  },
+  "538": {
+   "to": "Innebygd personvern",
+   "why": "'Privat fra grunnen av' is a calque; 'innebygd personvern' is the established Norwegian term for privacy by design (Datatilsynet)."
+  },
+  "477": {
+   "to": "På %1$lld netter med registrert nattesvette avvek håndleddstemperaturen din (fra Helse-appen) i gjennomsnitt %2$@ fra det vanlige, mot %3$@ på %4$lld andre netter.",
+   "why": "Two 'fra' phrases in a row made the source read as the deviation; bracket the data source."
+  },
+  "806": {
+   "to": "Håndleddstemperatur %1$@%2$@° i forhold til det vanlige · fra Helse-appen",
+   "why": "Avoid double 'fra … fra'."
+  },
+  "307": {
+   "to": "Hvordan kan jeg sove kjøligere?",
+   "why": "'Hvordan sover jeg kjøligere?' reads as asking how one currently sleeps; natural question form."
+  },
+  "576": {
+   "to": "Lagret. %@ med eget vær er registrert.",
+   "why": "Trailing ', registrert' is an English word-order calque."
+  }
+ },
+ "demo": {},
+ "store": {
+  "description": {
+   "to": "Logg en hetetokt med ett trykk. Se hva som endrer seg. Gå til legetimen med notater.\n\nMenoMap er laget for selve øyeblikket. Når en hetetokt eller nattesvette starter, trykker du én gang fra låst skjerm, Kontrollsenter, handlingsknappen eller Apple Watch. MenoMap tar tiden, puster med deg hvis du vil, og lagrer den. Om natten holder Nattevakt en dempet ettrykksknapp for nattesvette på låst skjerm fram til morgenen.\n\nFUNGERER MED HELSE-APPEN\nMenoMap leser symptomene og fasen i overgangsalderen som du har registrert i Helse-appen, slik at historikken din vises fra første dag, og lagrer hver bølge du registrerer tilbake i Helse-appen.\n\nDITT VÆR, KARTLAGT\n• Et hetekart over dagene dine, en bølgeklokke som viser når de samler seg, og utløserne du oftest merker\n• En kveldsinnsjekk på 30 sekunder for søvn, humør og energi\n• Mønstre i dine egne registreringer, for eksempel hvordan søvnen ser ut etter tunge netter, alltid som en sjekk av sammenfall, aldri som en årsak\n• Eksperimenter i to uker: prøv én endring og sammenlign dine egne registreringer før og under\n\nMØT OPP MED NOTATER\nLegg inn legetimen, så viser MenoMap hvor klare notatene dine er. Velg spørsmålene dine, og lag en ryddig PDF på én side til legen din, på språket legen snakker.\n\nINNEBYGD PERSONVERN\nIngen konto. Ingen reklame. Ingen sky. Helsedataene dine blir på iPhonen din.\n\nMENOMAP PRO\nLengre historikk (30, 90 og 365 dager), mønstre, eksperimenter, hele den månedlige Heterapporten, notater til legen og medisinpåminnelser. Månedlig, årlig (med gratis prøveperiode) eller livstid. Eller kjøp én enkelt Legetimerapport for én legetime.\n\nMenoMap er et verktøy for å følge med på egen helse og et opplæringsverktøy. Appen stiller ikke diagnosen overgangsalder eller noen annen tilstand, foreskriver eller endrer ikke behandling, og erstatter ikke oppfølging fra en kvalifisert lege.\n\nPersonvern: https://gwlabs.app/menomap/privacy\nBruksvilkår: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+   "why": "Consistent with string 538 ('innebygd personvern' = privacy by design)."
+  }
+ },
+ "glossary": {
+  "bleeding after menopause": "blødning etter menopausen"
+ },
+ "doubts": [
+  "'Blødning etter overgangsalderen' is common in Norwegian lay sources (NHI); switched to 'etter menopausen' per the brief's known trap. Article 42 defines menopause as the final period, so the term is explained in-app.",
+  "Id 70 singular form 'I 1 syklus registrerte du …' is understandable but stiff; kept because every plural form must carry the placeholder.",
+  "Strings 473/474 ('På %lld dager …', 'Etter %lld kvelder …') assume counts above 1, as the English does."
+ ]
+}

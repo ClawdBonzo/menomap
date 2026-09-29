@@ -1,0 +1,53 @@
+{
+ "demo": {
+  "d1": "Vesna",
+  "d2": "dr. Horvat",
+  "d3": "Estradiol gel",
+  "d4": "Mikronizirani progesteron",
+  "d5": "1 potisak",
+  "d6": "Na kožu",
+  "d7": "Svako jutro",
+  "d8": "100 mg",
+  "d9": "Kroz usta",
+  "d10": "Prije spavanja",
+  "d11": "Pregled zbog menopauze"
+ },
+ "store": {
+  "name": "MenoMap: praćenje menopauze",
+  "subtitle": "Valunzi, bilješke za liječnika",
+  "keywords": "perimenopauza,noćno,znojenje,hormoni,hnt,simptomi,dnevnik,spavanje,ciklus,klimakterij,žene,nesanica",
+  "promotionalText": "Zabilježi valung jednim dodirom sa zaključanog zaslona ili Apple Watcha. Uoči svoje obrasce. Dođi na termin s jasnim bilješkama. Bez računa, bez oglasa.",
+  "description": "Zabilježi valung jednim dodirom. Pogledaj što se mijenja. Dođi na termin s bilješkama.\n\nMenoMap je izrađen za sam trenutak. Kad počne valung ili noćno znojenje, dodirni jednom na zaključanom zaslonu, u Kontrolnom centru, tipkom postupka ili na Apple Watchu. MenoMap mjeri trajanje, diše s tobom ako želiš i sprema zapis. Noću Noćna straža drži prigušeni gumb za noćno znojenje na zaključanom zaslonu do jutra.\n\nRADI S APLIKACIJOM ZDRAVLJE\nMenoMap čita simptome i fazu menopauze koje si zabilježila u aplikaciji Zdravlje, pa se tvoja povijest pojavljuje već prvog dana, a svaki val koji zabilježiš sprema natrag u Zdravlje.\n\nTVOJE VRIJEME NA KARTI\n• Toplinska karta tvojih dana, sat valova koji pokazuje kada se gomilaju i tvoji najčešće označeni okidači\n• Večernji upis od 30 sekundi za spavanje, raspoloženje i energiju\n• Obrasci u tvojim vlastitim unosima, poput toga kako izgleda tvoj san nakon teških noći, uvijek kao provjera podudarnosti, nikad kao uzrok\n• Dvotjedni eksperimenti: isprobaj jednu promjenu i usporedi svoje unose prije i tijekom\n\nDOĐI S BILJEŠKAMA\nDodaj termin i MenoMap pokazuje koliko su tvoje bilješke spremne. Odaberi pitanja, zatim izradi uredan PDF od jedne stranice za liječnika, na jeziku koji on govori.\n\nPRIVATNOST OD SAMOG POČETKA\nBez računa. Bez oglasa. Bez oblaka. Tvoji zdravstveni podaci ostaju na tvom iPhoneu.\n\nMENOMAP PRO\nDulja povijest (30, 90 i 365 dana), obrasci, eksperimenti, cijelo mjesečno toplinsko izvješće, bilješke za liječnika i podsjetnici za lijekove. Mjesečno, godišnje (s besplatnom probom) ili doživotno. Ili kupi jedno Izvješće za posjet za jedan termin.\n\nMenoMap je alat za praćenje dobrobiti i edukativni alat. Ne dijagnosticira menopauzu ni bilo koje drugo stanje, ne propisuje niti mijenja liječenje i ne zamjenjuje skrb kvalificiranog liječnika.\n\nPrivatnost: https://gwlabs.app/menomap/privacy\nUvjeti korištenja: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+  "whatsNew": "Prvo izdanje aplikacije MenoMap.",
+  "iap": {
+   "groupName": "MenoMap Pro",
+   "monthly": {
+    "name": "MenoMap Pro mjesečno",
+    "description": "Obrasci, statistika i bilješke za liječnika."
+   },
+   "yearly": {
+    "name": "MenoMap Pro godišnje",
+    "description": "Obrasci, statistika i bilješke za liječnika."
+   },
+   "lifetime": {
+    "name": "MenoMap Pro doživotno",
+    "description": "Sve Pro značajke, zauvijek."
+   },
+   "visitReport": {
+    "name": "Izvješće za posjet",
+    "description": "Jedan cijeli PDF za liječnika, do 90 dana."
+   }
+  },
+  "screenshots": {
+   "1": "Zabilježi valung *jednim dodirom*.",
+   "2": "*Noćna straža*, bez otključavanja.",
+   "3": "Pogledaj svoju *toplinsku kartu*.",
+   "4": "Pronađi *svoje* obrasce.",
+   "5": "Dođi na termin s *bilješkama*.",
+   "6": "Radi s aplikacijom *Zdravlje*.",
+   "7": "Izravno na *Apple Watchu*.",
+   "8": "Isprobaj promjenu *dva tjedna*.",
+   "9": "Tvoji podaci ostaju *tvoji*."
+  }
+ }
+}

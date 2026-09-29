@@ -125,8 +125,8 @@ struct ShareCard: View {
 
     private var subtitle: String {
         switch kind {
-        case .week(let s): "\(Copy.date(s.window.start)) – \(Copy.date(s.window.end))".uppercased()
-        case .month(_, _, let title): title.uppercased()
+        case .week(let s): Copy.caps("\(Copy.date(s.window.start)) – \(Copy.date(s.window.end))")
+        case .month(_, _, let title): Copy.caps(title)
         case .experiment: String(localized: "EXPERIMENT")
         case .calmStretch: String(localized: "RECORD")
         }
@@ -181,7 +181,7 @@ struct ShareCard: View {
                 Text(Copy.experiment(k)).font(.system(size: format == .story ? 32 : 24, weight: .semibold, design: .serif)).foregroundStyle(CardPalette.ink)
                 HStack(alignment: .bottom, spacing: 24) {
                     bigNumber("\(b)", String(localized: "\(bDays) days before"), CardPalette.ember)
-                    Image(systemName: "arrow.right").font(.title2).foregroundStyle(CardPalette.ink2)
+                    Image(systemName: "arrow.forward").font(.title2).foregroundStyle(CardPalette.ink2)
                     bigNumber("\(d)", String(localized: "\(dDays) days during"), CardPalette.teal)
                 }
                 Text(measure == .nightSurges ? String(localized: "night surges logged") : String(localized: "surges logged"))
@@ -206,7 +206,7 @@ struct ShareCard: View {
         HStack(alignment: .top) {
             ForEach(items, id: \.0) { title, value in
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(title.uppercased()).font(.system(size: 10, weight: .semibold)).tracking(0.8).foregroundStyle(CardPalette.ink2)
+                    Text(Copy.caps(title)).font(.system(size: 10, weight: .semibold)).tracking(0.8).foregroundStyle(CardPalette.ink2)
                     Text(value).font(.system(size: 18, weight: .semibold, design: .serif)).foregroundStyle(CardPalette.ink)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)

@@ -21,6 +21,7 @@
 		39A17521F6BDD80068825454 /* MenoMapMessages.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F8EA95507B9CDE06D2997363 /* MenoMapMessages.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3B125351DDF772274BA5D431 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E97EA173A8A5FFDC0E59D45 /* SubscriptionManager.swift */; };
 		3F36B7D2F90B618570ACCE55 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76D82BE53444BF2BB628D2D /* MessagesViewController.swift */; };
+		3FE01CE4CF6F2C6C9A42515A /* DebugArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6985C1CD61DD30654FB430C2 /* DebugArgs.swift */; };
 		4222151174D3E4DD2D0E2751 /* WatchBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B078B6C5C62A170508EEFE /* WatchBridge.swift */; };
 		44285203DE30769B2888E13C /* SharedStores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856588FAA6A23F3CC259133F /* SharedStores.swift */; };
 		4812A3BF1F4860B210A6A086 /* MenoMapWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26400E5F884A7EF7F4125690 /* MenoMapWatchApp.swift */; };
@@ -34,6 +35,7 @@
 		65B7439A4AE99684F9566D6D /* CommerceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F7959D63439DEE178BA8CD /* CommerceProtocols.swift */; };
 		66D27823B221D6CEB5586CC1 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1D85B9AEBA8EFF055F299464 /* InfoPlist.xcstrings */; };
 		6816B4A1AF3C63BB26F05DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C17CEDEC32A9D6B405262BEF /* Assets.xcassets */; };
+		68ADDC5A27918B264DFE694E /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82A7CAEBC8F09B1DB48FAA0 /* Clock.swift */; };
 		6AE54D90C1C281B635A50B01 /* MenoMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2338F3989D9480E279BADEE1 /* MenoMapTests.swift */; };
 		6AF1EF7D722DE7054EC1C5A1 /* YouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9976BDB5AE1DBAF8D2FA8D /* YouView.swift */; };
 		6B7C8B8732B5CAEF6716EDEB /* StoryVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67E189B5CC34ABC2A15B94 /* StoryVideo.swift */; };
@@ -46,6 +48,7 @@
 		8270EFDC4E66329D077B8DAF /* HeadsUpTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74730FA743459A17A0A5E006 /* HeadsUpTexts.swift */; };
 		8615114BE5513180851D7E50 /* MenoCore in Frameworks */ = {isa = PBXBuildFile; productRef = DA29C6D357E679F8F297D5AB /* MenoCore */; };
 		907BCFDEBA9040EB833B2913 /* MenoCore in Frameworks */ = {isa = PBXBuildFile; productRef = DDE0391D085A5E0CCB7490E8 /* MenoCore */; };
+		92A2EF3D971DF031CF81A8ED /* Showcase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B827848E95DBC97092FEA /* Showcase.swift */; };
 		990CEE9ED61551BE568E2731 /* SurgeSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B9CB0F730F2ACCB414C05 /* SurgeSetupView.swift */; };
 		9DD44F830767F8210D9F315C /* MenoCore in Frameworks */ = {isa = PBXBuildFile; productRef = 34DC779D668B33AD39C140EF /* MenoCore */; };
 		A31AC4F28229062D86F9F86F /* SurgeViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A79CEA7680F91305DCE87F0 /* SurgeViews.swift */; };
@@ -207,6 +210,7 @@
 		61DAF3503554FC2DBE3CA0F9 /* handout.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = handout.html; sourceTree = "<group>"; };
 		6291A81DAE562A9A84E24438 /* NightWatchSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightWatchSettingsView.swift; sourceTree = "<group>"; };
 		654E70B4A02F772B7DE58C24 /* make_icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = make_icon.swift; sourceTree = "<group>"; };
+		6985C1CD61DD30654FB430C2 /* DebugArgs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugArgs.swift; sourceTree = "<group>"; };
 		6CFDBAD36C28528D7A910FD6 /* HeatMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatMap.swift; sourceTree = "<group>"; };
 		6F1AB0D1A4825962256D965C /* Copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copy.swift; sourceTree = "<group>"; };
 		6F3B502418E031D67BE95E34 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
@@ -247,9 +251,11 @@
 		CD3A039E3BA6E2B0A774BC07 /* MenoMap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MenoMap.entitlements; sourceTree = "<group>"; };
 		D225C9016DCB689375501188 /* MenoMapWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenoMapWidgets.swift; sourceTree = "<group>"; };
 		D47FA3FFC9E94675EB7045B5 /* InsightCopy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightCopy.swift; sourceTree = "<group>"; };
+		D82A7CAEBC8F09B1DB48FAA0 /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
 		D86BFBC8412C5563CE44990D /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
 		DA10093BDC74BAC42C5FC6B7 /* ShareCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCards.swift; sourceTree = "<group>"; };
 		E262DA18D0BADB2B72195BED /* AskMenoMapService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskMenoMapService.swift; sourceTree = "<group>"; };
+		E26B827848E95DBC97092FEA /* Showcase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Showcase.swift; sourceTree = "<group>"; };
 		E432B5BD59BE821318E7FA36 /* MenoMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenoMapApp.swift; sourceTree = "<group>"; };
 		E4527353C2AB8CBCE8591023 /* CheckInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInView.swift; sourceTree = "<group>"; };
 		E515969BA36B2C1DCFB8C83A /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
@@ -393,7 +399,9 @@
 			isa = PBXGroup;
 			children = (
 				E2151B5B29F50D813D8D769D /* Components */,
+				D82A7CAEBC8F09B1DB48FAA0 /* Clock.swift */,
 				6F1AB0D1A4825962256D965C /* Copy.swift */,
+				6985C1CD61DD30654FB430C2 /* DebugArgs.swift */,
 				34A1259E340E65AF6CCE6EE0 /* MenoTheme.swift */,
 			);
 			path = DesignSystem;
@@ -549,6 +557,7 @@
 			isa = PBXGroup;
 			children = (
 				13F9DAE5682EF700409CB7F4 /* DemoData.swift */,
+				E26B827848E95DBC97092FEA /* Showcase.swift */,
 			);
 			path = SampleData;
 			sourceTree = "<group>";
@@ -1040,8 +1049,10 @@
 				C8975B9A592F7E1243653281 /* Articles.swift in Sources */,
 				B7288147DB4CE3D3BFF5C247 /* AskMenoMapService.swift in Sources */,
 				74990DE7A0A4F7F4425C796E /* CheckInView.swift in Sources */,
+				68ADDC5A27918B264DFE694E /* Clock.swift in Sources */,
 				65B7439A4AE99684F9566D6D /* CommerceProtocols.swift in Sources */,
 				75EBD60FE353012E7A5356E3 /* Copy.swift in Sources */,
+				3FE01CE4CF6F2C6C9A42515A /* DebugArgs.swift in Sources */,
 				D48DCD4E1067A090232B8814 /* DemoData.swift in Sources */,
 				6C10289DE0AC7D1FA7F98145 /* GrowthCards.swift in Sources */,
 				8270EFDC4E66329D077B8DAF /* HeadsUpTexts.swift in Sources */,
@@ -1067,6 +1078,7 @@
 				C9A114405E069C00B50571C8 /* ReviewPrompt.swift in Sources */,
 				D6F3AC89B11CDC923423EBB6 /* ShareCards.swift in Sources */,
 				44285203DE30769B2888E13C /* SharedStores.swift in Sources */,
+				92A2EF3D971DF031CF81A8ED /* Showcase.swift in Sources */,
 				6B7C8B8732B5CAEF6716EDEB /* StoryVideo.swift in Sources */,
 				3B125351DDF772274BA5D431 /* SubscriptionManager.swift in Sources */,
 				DA691D4519B60460DA9B44AF /* SurgeActivity.swift in Sources */,

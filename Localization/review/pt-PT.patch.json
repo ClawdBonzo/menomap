@@ -1,0 +1,15 @@
+{
+ "verdict": "A very clean, natural European Portuguese translation. The tu register is held everywhere with no você slips. There are no Brazilianisms (ecrã, telemóvel, registar/registo, ficheiro, guardar, partilhar, casa de banho, camisola, 'estar a + infinitivo'), and AO90 spelling is consistent. Patient terms match Portuguese public-health usage: afrontamentos, suores noturnos, perimenopausa/pós-menopausa, terapêutica hormonal (THS/THM), progestativo, estrogénio, secura vaginal. Bleeding strings say 'hemorragia depois da menopausa', which clearly means after the final period and avoids the climatério trap. The article defines the 12-month mark, and every 'even once, even light' hedge is intact. Apple terms match support.apple.com/pt-pt (ecrã bloqueado, central de controlo, botão de ação, atividade em tempo real, Definições, aplicação Saúde, modo de concentração Dormir). Safety strings are faithful and complete. The wry lines land ('Que falta de chá', 'a meio gás', 'Camisola: tira, põe, tira'). Tu is right for a Portuguese consumer wellness app, and the clinician is correctly addressed formally ('trazer-lhe'). Changes are few: Apple's 'ou posterior' device wording, 'no iCloud', an ambiguous 'carregado' for 'uploaded', and one pattern sentence that would have started with a lowercase weekday name.",
+ "reviewedThrough": 844,
+ "extrasReviewed": true,
+ "strings": {
+  "340": {"to": "iPhone 15 Pro ou posterior", "why": "Apple Portugal's device-compatibility wording is 'ou posterior'."},
+  "348": {"to": "Fica no teu iPhone. Nada é enviado. Podes exportar ou apagar tudo em Perfil → Privacidade.", "why": "'carregado' is ambiguous in pt-PT (loaded or charged). 'enviado' plainly says nothing leaves the phone and matches ids 466 and 710."},
+  "710": {"to": "Não há início de sessão. O MenoMap nunca envia os teus dados de saúde, e a aplicação não guarda nada no iCloud.", "why": "Apple pt-PT always uses the article: 'no iCloud'."},
+  "819": {"to": "Nas últimas 8 semanas, registaste em média %1$@ ondas por %2$@, em comparação com %3$@ nos outros dias.", "why": "%2$@ is a system weekday name in lowercase ('segunda-feira', 'domingo'), so the old label form began the sentence with a lowercase word. 'por %2$@' works for both masculine and feminine weekdays."}
+ },
+ "demo": {},
+ "store": {},
+ "glossary": {},
+ "doubts": ["'Hemorragia' for bleeding matches Portuguese clinical and patient sources ('hemorragia pós-menopausa'). Some readers may associate it with heavy bleeding, but every safety string pairs it with 'mesmo que ligeira' or 'pequenas perdas', so it stays. If user testing shows people don't log light spotting, 'perdas de sangue' is the softer alternative."]
+}

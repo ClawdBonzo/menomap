@@ -68,7 +68,7 @@ struct TodayView: View {
 
     private func header(_ profile: UserProfile) -> some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(Date.now.formatted(.dateTime.weekday(.wide).day().month(.wide)).uppercased())
+            Text(Copy.caps(Date.now.formatted(.dateTime.weekday(.wide).day().month(.wide))))
                 .font(.caption.weight(.semibold))
                 .tracking(1.2)
                 .foregroundStyle(MenoTheme.inkSecondary)

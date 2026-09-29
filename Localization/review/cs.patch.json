@@ -1,0 +1,72 @@
+{
+ "verdict": "Very good, natural Czech in a consistent ty-register with feminine forms, patient-leaflet terms matching NZIP (návaly horka, noční pocení, menopauza/perimenopauza/postmenopauza, hormonální léčba, gestagen, suchost pochvy, bušení srdce). Plurals are correct in all four CLDR categories, with 'many' (decimals) using the genitive singular (1,5 dne, vlny, návalu horka, noci). Every bleeding string uses 'po menopauze' and the article defines it as 12 months without a period, so the known trap is avoided. Hedges and safety strings are faithful. Apple terms were checked against Apple CZ support: zamknutá obrazovka, Ovládací centrum, akční tlačítko and živé aktivity are correct, but Double Tap is 'dvojí sepnutí prstů', not 'poklepání'. Fixes: that Apple term, a price placeholder that could not agree with 's' (Pokračovat za %@), a VoiceOver percent string that broke for 1–4 (now label form), one safety line where 'often' became 'usually', 'premature ovarian insufficiency', the trial-eligibility sentence, and a handful of calques or awkward word order.",
+ "reviewedThrough": 844,
+ "extrasReviewed": true,
+ "strings": {
+  "5": {
+   "to": "%@ probíhá",
+   "why": "%@ is the surge kind ('Nával horka', 'Noční pocení'); 'nával horka běží' is unidiomatic, 'probíhá' is natural."
+  },
+  "42": {
+   "to": "**Menopauza** je jediný okamžik: den, kdy uplyne 12 měsíců v řadě bez menstruace, pokud to nevysvětluje něco jiného (například těhotenství, některé léky nebo operace). V mnoha zemích nastává v průměru na začátku padesátky, ale běžné je cokoli od poloviny čtyřicítky do poloviny padesátky.\n\n**Perimenopauza** je období let, které tomuto okamžiku předchází. Hladiny hormonů nerovnoměrně stoupají a klesají, takže menstruace může být nepravidelná, silnější, slabší, častější nebo řidší. Mnoho změn, které si lidé spojují s přechodem, jako návaly horka, noční pocení, změny spánku a změny nálady, často začíná už tady, kdy menstruace ještě přichází. Perimenopauza může trvat několik let nebo i výrazně déle a u každého probíhá jinak.\n\n**Postmenopauza** je vše po této dvanáctiměsíční hranici. Některé potíže časem odezní, jiné mohou trvat roky.\n\nMenopauza může nastat i dříve, a to kvůli operaci, při které se odstraní vaječníky, některé léčbě rakoviny nebo jiným zdravotním stavům. Menopauze před 40. rokem se někdy říká předčasná ovariální insuficience a stojí za to ji probrat s lékařem.\n\n**Jak se pozná.** U mnoha lidí nad 45 let lékař pozná perimenopauzu nebo menopauzu podle tvé zdravotní historie a příznaků. Krevní testy nejsou vždy potřeba, protože hladiny hormonů kolísají ze dne na den. Spíše se použijí, když je někdo mladší nebo když obraz není jasný.\n\n**Co MenoMap umí a co ne.** MenoMap ti nedokáže říct, v jaké fázi jsi. Umí ale poctivě zaznamenávat, čeho si všímáš: vlny, spánek, náladu a léčbu, abyste se ty i tvůj lékař mohli dívat na stejný obraz.",
+   "why": "English names 'premature ovarian insufficiency' (the term that replaced 'failure'); Czech equivalent is 'předčasná ovariální insuficience', not 'selhání'."
+  },
+  "64": {
+   "to": "Tlačítko na jedno klepnutí pro noční pocení na zamknuté obrazovce, od večerky do rána. Žádné odemykání, žádná jasná obrazovka ve tři ráno.",
+   "why": "Word order: 'na zamknuté obrazovce na jedno klepnutí' stacked two 'na' phrases awkwardly."
+  },
+  "172": {
+   "to": "Pokračovat za %@",
+   "why": "%@ is the price (p.displayPrice); 's %@' cannot take instrumental with a price. 'Pokračovat za 1 290 Kč' is correct for any value."
+  },
+  "211": {
+   "to": "Ukonči dvojím sepnutím prstů",
+   "why": "Apple CZ support (support.apple.com/cs-cz/108413) calls the Watch Double Tap gesture 'gesto dvojího sepnutí prstů', not 'poklepání'."
+  },
+  "291": {
+   "to": "Hormonální léčba (často označovaná jako HRT nebo MHT) nahrazuje část estrogenu, kterého tělo kolem menopauzy tvoří méně. Hlavní odborná doporučení ji popisují jako účinnou léčbu návalů horka a nočního pocení u mnoha lidí a může pomoci i s dalšími příznaky.\n\n**Existuje v různých formách:** náplasti, gely, spreje, tablety a nízkodávkové vaginální přípravky na místní potíže, jako je suchost. Těm, kdo ještě mají dělohu, se obvykle spolu s estrogenem předepisuje gestagen, který chrání děložní sliznici.\n\n**Přínosy a rizika závisí na konkrétním člověku:** na věku, na tom, jak dlouho už nemáš menstruaci, na tvé osobní a rodinné zdravotní historii (například rakovina prsu, krevní sraženiny, mrtvice nebo onemocnění srdce) a na typu a způsobu podávání léčby. Proto je to rozhodnutí, které se dělá s lékařem, který zná tvou historii, ne něco, o čem může rozhodnout aplikace.\n\n**Na co se lidé často ptají:**\n- Je pro mě hormonální léčba vhodná možnost? Proč ano, nebo proč ne?\n- Jaký typ a jakou formu mi doporučujete a proč?\n- Jaké přínosy můžu čekat a jak brzy?\n- Jaká jsou moje osobní rizika a jak vypadají ve srovnání s tím, když se léčit nebudu?\n- Na co si mám dávat pozor a kdy to spolu znovu zhodnotíme?\n\n**Pokud ji už užíváš,** zapiš ji do aplikace MenoMap (Já → Léky). MenoMap ukáže tvoje vlny před zahájením léčby a po něm, jako kontrolu souběhu, ne důkaz, abys měla při kontrole o čem konkrétně mluvit.\n\nMenoMap nikdy nenavrhuje začít užívat, vysadit nebo změnit lék.",
+   "why": "'zdravotní historii tvé i tvé rodiny' is clumsy; natural Czech for personal and family history."
+  },
+  "293": {
+   "to": "Hormonální léčba není vhodná pro každého a někteří lidé prostě dávají přednost jiným cestám. Těch je několik.\n\n**Léky na předpis.** U některých nehormonálních léků jsou důkazy, že návaly horka zmírňují. Patří mezi ně některé léky původně vyvinuté na jiná onemocnění a novější skupina léků vyvinutá přímo na návaly horka. Každý má své přínosy, nežádoucí účinky a interakce, takže ti je lékař může pomoci zvážit.\n\n**Terapie rozhovorem a přístupy propojující mysl a tělo.** U kognitivně-behaviorální terapie (KBT) upravené pro menopauzu jsou důkazy, že díky ní návaly horka a noční pocení méně obtěžují a zlepšuje se spánek. Zkoumala se také klinická hypnóza.\n\n**Praktické změny, které lidem pomáhají:**\n- Vrstvy oblečení, které rychle sundáš\n- Ventilátor u pracovního stolu a u postele\n- Chladnější ložnice a prodyšné povlečení\n- Všímat si osobních spouštěčů a zmírňovat je (tady pomohou štítky a experimenty v aplikaci MenoMap)\n- Pravidelný pohyb a stálý spánkový režim\n\n**Doplňky stravy a bylinné přípravky.** U mnoha z nich jsou důkazy nejednoznačné nebo omezené, jejich kvalita se liší a některé mají interakce s jinými léky. Řekni lékaři nebo lékárníkovi o všem, co užíváš, včetně volně prodejných přípravků.\n\n**Zkoušej jednu změnu po druhé.** Dvoutýdenní experimenty v aplikaci MenoMap porovnávají tvoje vlastní záznamy před změnou a během ní, což se posuzuje snáz než pocit.",
+   "why": "'navzájem ... s jinými léky' is redundant/ungrammatical."
+  },
+  "307": {
+   "to": "Jak spát bez přehřívání?",
+   "why": "'Jak spát v chladu?' reads as 'how to sleep in the cold'; the question is how to sleep cooler."
+  },
+  "337": {
+   "to": "Nádech 4 · zádrž 4 · výdech 4",
+   "why": "Mixed noun/infinitive; 'nádech – zádrž – výdech' is the standard Czech breathing-exercise sequence."
+  },
+  "463": {
+   "to": "Připravenost poznámek v procentech: %lld",
+   "why": "'na %lld procent' is wrong for 1 (procento) and 2–4 (procenta); a label form works for every value (VoiceOver string, no %% allowed)."
+  },
+  "504": {
+   "to": "Náplast, dvakrát týdně (neděle a středa)",
+   "why": "Abbreviation 'ne' reads as the word 'no'; spell out the days."
+  },
+  "542": {
+   "to": "Měj tlačítko Vlna na jedno klepnutí",
+   "why": "'Měj vlnu na jedno klepnutí' reads as 'have a surge in one tap'; it is the Surge button that is one tap away."
+  },
+  "661": {
+   "to": "Předplatné se automaticky obnovuje, dokud ho nezrušíš v Nastavení → Apple účet → Předplatná. Zkušební verze zdarma platí pro nové předplatitele ročního předplatného. Tvoje data zůstávají na iPhonu v každém případě a vše, co jsi zaznamenala, ti zůstane i ve verzi zdarma.",
+   "why": "'pro roční předplatné a pro nové předplatitele' reads as two separate groups; the trial is for new subscribers to the yearly plan only."
+  },
+  "713": {
+   "to": "Často vyvrcholí a odezní během pár minut. Nejde o lékařskou léčbu.",
+   "why": "Safety string: English says 'often'; 'obvykle' (usually) strengthened the claim."
+  }
+ },
+ "demo": {},
+ "store": {},
+ "glossary": {
+  "Double Tap": "dvojí sepnutí prstů (Apple CZ)"
+ },
+ "doubts": [
+  "Share-card captions under big numbers (433 'zaznamenaných nočních vln', 672 'zaznamenaných vln', 523, 671, 670) use the genitive plural, which is right for 0 and 5+ and the usual Czech infographic style, but reads oddly under 1–4. Left as is because monthly and two-week counts are usually 5+.",
+  "774 'Budíček' for Wake: Apple's Clock/Sleep uses 'Večerka' for Bedtime (as used here); the Wake label may be 'Buzení' in Apple CZ. Left 'Budíček' because it is clear either way."
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "demo": {
+  "d1": "Karin",
+  "d2": "Dr Lindqvist",
+  "d3": "Estradiolgel",
+  "d4": "Mikroniserat progesteron",
+  "d5": "1 pumpning",
+  "d6": "På huden",
+  "d7": "Varje morgon",
+  "d8": "100 mg",
+  "d9": "Via munnen",
+  "d10": "Vid sänggåendet",
+  "d11": "Uppföljning av klimakteriebesvär"
+ },
+ "store": {
+  "name": "MenoMap: Koll på klimakteriet",
+  "subtitle": "Värmevallningar & läkarbesök",
+  "keywords": "menopaus,övergångsåldern,perimenopaus,nattsvettningar,hormonbehandling,mht,symtomdagbok,sömn,mens",
+  "promotionalText": "Logga en värmevallning med ett tryck från låsskärmen eller Apple Watch. Se dina mönster. Gå till läkarbesöket med tydliga anteckningar. Inget konto, ingen reklam.",
+  "description": "Logga en värmevallning med ett tryck. Se vad som förändras. Gå till läkarbesöket med anteckningar.\n\nMenoMap är byggd för själva ögonblicket. När en värmevallning eller nattsvettning börjar trycker du en gång från låsskärmen, Kontrollcenter, snabbknappen eller din Apple Watch. MenoMap tar tid, andas med dig om du vill och sparar den. På natten håller Nattvakt en dämpad knapp för nattsvettningar på låsskärmen till morgonen, ett tryck räcker.\n\nFUNGERAR MED APPEN HÄLSA\nMenoMap läser de symtom och den fas i klimakteriet som du har loggat i Hälsa, så att din historik syns redan första dagen, och sparar varje värmevallning och nattsvettning du loggar tillbaka i Hälsa.\n\nDITT VÄDER, KARTLAGT\n• En värmekarta över dina dagar, en vågklocka som visar när de samlas och dina vanligaste taggade utlösare\n• En kvällsincheckning på 30 sekunder för sömn, humör och energi\n• Mönster i dina egna registreringar, till exempel hur din sömn ser ut efter tunga nätter, alltid som en koll av sammanträffanden, aldrig som en orsak\n• Tvåveckorsexperiment: prova en förändring och jämför ditt eget före och under\n\nGÅ DIT MED ANTECKNINGAR\nLägg till ditt läkarbesök så visar MenoMap hur klara dina anteckningar är. Välj dina frågor och skapa sedan en tydlig PDF på en sida till din läkare, på det språk läkaren talar.\n\nPRIVAT FRÅN GRUNDEN\nInget konto. Ingen reklam. Inget moln. Dina hälsodata stannar på din iPhone.\n\nMENOMAP PRO\nLängre historik (30, 90 och 365 dagar), mönster, experiment, hela månadens värmerapport, anteckningar till läkaren och påminnelser om läkemedel. Månadsvis, årsvis (med gratis provperiod) eller livstid. Eller köp en enskild Besöksrapport för ett läkarbesök.\n\nMenoMap är ett verktyg för att följa ditt välmående och för att lära dig mer. Appen ställer inte diagnosen menopaus eller någon annan diagnos, skriver inte ut eller ändrar behandling och ersätter inte vård från en behörig läkare.\n\nIntegritet: https://gwlabs.app/menomap/privacy\nAnvändarvillkor: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+  "whatsNew": "Första versionen av MenoMap.",
+  "iap": {
+   "groupName": "MenoMap Pro",
+   "monthly": {
+    "name": "MenoMap Pro månadsvis",
+    "description": "Mönster, statistik och läkaranteckningar."
+   },
+   "yearly": {
+    "name": "MenoMap Pro årsvis",
+    "description": "Mönster, statistik och läkaranteckningar."
+   },
+   "lifetime": {
+    "name": "MenoMap Pro livstid",
+    "description": "Alla Pro-funktioner, för alltid."
+   },
+   "visitReport": {
+    "name": "Besöksrapport",
+    "description": "Full PDF till läkaren, upp till 90 dagar."
+   }
+  },
+  "screenshots": {
+   "1": "Värmevallning? *Ett tryck*.",
+   "2": "*Nattvakt* på din låsskärm.",
+   "3": "Se din *värmekarta*.",
+   "4": "Hitta *dina* mönster.",
+   "5": "Gå dit med *anteckningar*.",
+   "6": "Fungerar med appen *Hälsa*.",
+   "7": "Direkt på din *Apple Watch*.",
+   "8": "Testa en förändring i *två veckor*.",
+   "9": "Din data förblir *din*."
+  }
+ }
+}

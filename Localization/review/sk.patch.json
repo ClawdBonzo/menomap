@@ -1,0 +1,86 @@
+{
+ "verdict": "Solid, natural Slovak with correct patient-facing terms (nával tepla, nočné potenie, krvácanie po menopauze, progestagén, búšenie srdca), consistent ty register with feminine forms, correct CLDR one/few/many/other plurals and good wry transcreations (súkromné leto, Daj si ju zarámovať, Všelijako). Bleeding strings correctly say 'po menopauze' (after the final period), never 'po prechode'. Fixes: one safety title whose 'by sa malo dať skontrolovať' could read as 'should be possible to check'; Apple terms checked on support.apple.com/sk-sk (Live Activity = aktivita naživo, Focus = Môj čas, Sleep Focus = Môj čas na spánok; StandBy = pasívny režim, not used in strings); placeholder strings whose grammar broke for some values (1 tagged surge, 2–4 'percent', weekday name after 'v deň'); the calqued genitive 'tlačidlo nočného potenia'; one Czech-leaning 'pokiaľ' for 'unless'; small fluency fixes in the non-hormonal article and store description. No Czech vocabulary otherwise found.",
+ "reviewedThrough": 844,
+ "extrasReviewed": true,
+ "strings": {
+  "9": {
+   "to": "Značka %1$@: %2$lld %% z tvojich označených vĺn za posledných 30 dní (označené vlny: %3$lld).",
+   "why": "'z tvojich %3$lld označených vĺn' breaks for 1 (needs 'označenej vlny'); label form survives every number, and 'Značku … malo' was clumsy."
+  },
+  "63": {
+   "to": "Tlačidlo pre nočné potenie na zamknutej obrazovke celú noc",
+   "why": "'tlačidlo nočného potenia' is a calqued genitive ('the night sweat's button')."
+  },
+  "64": {
+   "to": "Tlačidlo pre nočné potenie na zamknutej obrazovke, na jedno ťuknutie, od času spánku do rána. Bez odomykania, bez jasnej obrazovky o tretej ráno.",
+   "why": "Same calque; smoother structure."
+  },
+  "129": {
+   "to": "Krvácanie po menopauze treba dať skontrolovať",
+   "why": "Safety title: 'by sa malo dať skontrolovať' can be read as 'it should be possible to check it'. 'treba dať skontrolovať' = it needs to be checked, unambiguous."
+  },
+  "252": {
+   "to": {
+    "one": "Našla sa %lld vlna za posledných 90 dní",
+    "few": "Našli sa %lld vlny za posledných 90 dní",
+    "many": "Našlo sa %lld vlny za posledných 90 dní",
+    "other": "Našlo sa %lld vĺn za posledných 90 dní"
+   },
+   "why": "'z posledných 90 dní' is unidiomatic for a time span; 'za posledných 90 dní'."
+  },
+  "259": {
+   "to": "Úplne automaticky: v apke Skratky ťukni na Automatizácia → + → Spánok (alebo Môj čas → Spánok) → Pri zapnutí → Zapnúť Nočnú stráž.",
+   "why": "Apple Slovak name for Focus is 'Môj čas' (support.apple.com/sk-sk), not 'Sústredenie'."
+  },
+  "293": {
+   "to": "Hormonálna liečba nie je vhodná pre každého a niektorí ľudia jednoducho uprednostňujú iné cesty. Je ich niekoľko.\n\n**Lieky na predpis.** Pri niektorých nehormonálnych liekoch existujú dôkazy, že znižujú návaly tepla. Patria sem niektoré lieky pôvodne vyvinuté na iné ochorenia a novšia skupina liekov vyvinutá priamo na návaly tepla. Každý z nich má vlastné prínosy, vedľajšie účinky a interakcie, preto ti ich lekár pomôže zvážiť.\n\n**Terapia rozhovorom a prístupy spájajúce myseľ a telo.** Pri kognitívno-behaviorálnej terapii (KBT) prispôsobenej menopauze existujú dôkazy, že vďaka nej sú návaly tepla a nočné potenie menej obťažujúce a zlepšuje sa spánok. Skúmala sa aj klinická hypnóza.\n\n**Praktické zmeny, ktoré ľuďom pomáhajú:**\n- Vrstvy oblečenia, ktoré sa dajú rýchlo vyzliecť\n- Ventilátor pri pracovnom stole a pri posteli\n- Chladnejšia spálňa a priedušná posteľná bielizeň\n- Všímanie si a zmierňovanie vlastných spúšťačov (pomôžu značky a experimenty v apke MenoMap)\n- Pravidelný pohyb a ustálený spánkový režim\n\n**Doplnky výživy a bylinné prípravky.** Pri mnohých z nich sú dôkazy nejednoznačné alebo obmedzené, ich kvalita sa líši a niektoré majú interakcie s inými liekmi. Povedz svojmu lekárovi alebo lekárnikovi o všetkom, čo užívaš, vrátane voľnopredajných prípravkov.\n\n**Skúšaj vždy len jednu zmenu.** Dvojtýždňové experimenty v apke MenoMap porovnávajú tvoje vlastné záznamy pred zmenou a počas nej, čo sa posudzuje ľahšie ako pocit.",
+   "why": "Subject shift ('a že zlepšuje spánok') made the CBT evidence sentence unclear; meaning unchanged, markdown intact."
+  },
+  "463": {
+   "to": "Pripravenosť poznámok v percentách: %lld",
+   "why": "'na %lld percent' is wrong for 1–4 (percento/percentá); label form works for every value (VoiceOver text)."
+  },
+  "489": {
+   "to": "Len čísla. Žiadne poznámky, názvy liekov ani zdravotné údaje neopustia tvoj telefón, ak ich sama neodošleš.",
+   "why": "Conditional 'pokiaľ' is a Czech-leaning usage (pokud); Slovak 'ak'."
+  },
+  "497": {
+   "to": "Voliteľné: v apke Skratky pridaj automatizáciu: keď sa zapne režim Môj čas na spánok → Zapnúť Nočnú stráž.",
+   "why": "Apple Slovak: Sleep Focus = 'režim Môj čas na spánok'."
+  },
+  "543": {
+   "to": "Pridá na zamknutú obrazovku tlačidlo pre nočné potenie na jedno ťuknutie, až do rána.",
+   "why": "Calqued genitive 'tlačidlo nočného potenia'."
+  },
+  "646": {
+   "to": "Spustí časovač a aktivitu naživo na zamknutej obrazovke",
+   "why": "Apple Slovak term for Live Activity is 'aktivita naživo' (support.apple.com/sk-sk), not 'živá aktivita'."
+  },
+  "694": {
+   "to": "Ťuknutím pridáš na zamknutú obrazovku tlačidlo pre nočné potenie na jedno ťuknutie, až do rána.",
+   "why": "Calqued genitive 'tlačidlo nočného potenia'."
+  },
+  "819": {
+   "to": "Za posledných 8 týždňov – priemerný počet vĺn za deň: %2$@ %1$@, ostatné dni %3$@.",
+   "why": "%2$@ is a weekday name ('pondelok'); 'v deň pondelok' was ungrammatical. Label form reads 'pondelok 2,3, ostatné dni 1,1'."
+  }
+ },
+ "demo": {},
+ "store": {
+  "description": {
+   "to": "Zaznamenaj nával tepla jedným ťuknutím. Pozri sa, čo sa mení. Príď na návštevu k lekárovi s poznámkami.\n\nMenoMap je vytvorený pre samotnú chvíľu. Keď začne nával tepla alebo nočné potenie, stačí raz ťuknúť zo zamknutej obrazovky, z Ovládacieho centra, akčným tlačidlom alebo na Apple Watch. MenoMap odmeria jeho trvanie, ak chceš, dýcha s tebou a uloží ho. V noci ti Nočná stráž nechá na zamknutej obrazovke tlmené tlačidlo pre nočné potenie na jedno ťuknutie až do rána.\n\nSPOLUPRACUJE S APKOU ZDRAVIE\nMenoMap číta príznaky a fázu menopauzy, ktoré máš zaznamenané v apke Zdravie, takže tvoja história sa zobrazí hneď prvý deň, a každú vlnu, ktorú zaznamenáš, uloží späť do apky Zdravie.\n\nTVOJE POČASIE NA MAPE\n• Tepelná mapa tvojich dní, hodiny vĺn, ktoré ukazujú, kedy sa hromadia, a tvoje najčastejšie označené spúšťače\n• 30-sekundové večerné zhodnotenie dňa: spánok, nálada a energia\n• Vzorce v tvojich vlastných záznamoch, napríklad ako vyzerá tvoj spánok po ťažkých nociach, vždy ako kontrola súbehu, nikdy ako príčina\n• Dvojtýždňové experimenty: vyskúšaj jednu zmenu a porovnaj svoje vlastné záznamy pred ňou a počas nej\n\nPRÍĎ S POZNÁMKAMI\nPridaj svoj termín a MenoMap ukáže, nakoľko sú tvoje poznámky pripravené. Vyber si otázky a potom vytvor prehľadné jednostranové PDF pre lekára v jazyku, ktorým hovorí.\n\nSÚKROMNÉ OD ZÁKLADU\nBez účtu. Bez reklám. Bez cloudu. Tvoje zdravotné údaje zostávajú v tvojom iPhone.\n\nMENOMAP PRO\nDlhšia história (30, 90 a 365 dní), vzorce, experimenty, celá mesačná Horúca správa, poznámky pre lekára a pripomenutia liekov. Mesačne, ročne (so skúšobným obdobím zadarmo) alebo doživotne. Alebo si kúp jednu Správu k návšteve na jeden termín.\n\nMenoMap je nástroj na sledovanie pohody a na vzdelávanie. Nediagnostikuje menopauzu ani žiadne iné ochorenie, nepredpisuje ani nemení liečbu a nenahrádza starostlivosť kvalifikovaného lekára.\n\nSúkromie: https://gwlabs.app/menomap/privacy\nPodmienky používania: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+   "why": "Stray comma before 'a uloží'; 'tlačidlo pre nočné potenie' instead of the calqued genitive. Disclaimer and both URLs unchanged."
+  }
+ },
+ "glossary": {
+  "Live Activity": "aktivita naživo (Apple sk)",
+  "Focus": "Môj čas (Sleep Focus = režim Môj čas na spánok; Apple sk)",
+  "StandBy": "pasívny režim (Apple sk; not used in current strings)",
+  "night sweat button": "tlačidlo pre nočné potenie"
+ },
+ "doubts": [
+  "'coincidence check' is rendered 'kontrola súbehu' throughout (9 strings incl. safety). It is accurate (súbeh = co-occurrence) though slightly formal; kept for consistency rather than rewriting safety strings.",
+  "Shortcuts automation labels in 259 ('Pri zapnutí') and the Watch app's 'Dostupné apky' (580) and 'Ovládacie prvky / Vybrať ovládací prvok' (682) could not be verified against the live Slovak UI; they are plausible Apple wording.",
+  "Bedtime/Wake rendered 'Čas spánku'/'Budenie'; iOS Slovak Sleep schedule may use 'Večierka' for Bedtime. Kept, since the strings are the app's own settings labels."
+ ]
+}

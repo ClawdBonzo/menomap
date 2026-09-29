@@ -173,6 +173,11 @@ enum Copy {
         day.startDate().formatted(.dateTime.day().month(.abbreviated))
     }
 
+    /// Small-caps labels in the app's display language: Greek drops accents on capitals, Turkish i → İ.
+    static func caps(_ text: String) -> String {
+        text.uppercased(with: Locale(identifier: Bundle.main.preferredLocalizations.first ?? "en"))
+    }
+
     // MARK: Voice
 
     /// Headline for a week's surge total on stats/share cards.

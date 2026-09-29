@@ -1,0 +1,114 @@
+{
+ "verdict": "Good, natural standard Croatian in a consistent ti-register with feminine forms, no Serbian or Bosnian vocabulary found (kava, tjedan, liječnik, zrak, u tijeku, je li). Patient terms match Croatian usage (valunzi, noćno znojenje, menopauza/perimenopauza/postmenopauza, progestagen, suhoća rodnice, lupanje srca, KBT, prijevremena insuficijencija jajnika). All plurals use one/few/other correctly (1 val, 2 vala, 5 valova; 1 put, 2/5 puta). Every bleeding string says 'krvarenje nakon menopauze' and the article defines menopause as the point 12 months after the last period, so the known trap is avoided. Safety strings and hedges are faithful. Main fixes: three insight strings (70, 473, 819) put a decimal %@ before 'valova', which breaks for 1, 2–4 and decimals, now label forms; two strings where %@ is the clinician's name (4, 305); the Focus trigger option in Shortcuts is 'Prilikom uključivanja' per Apple HR support; 'ti' restored in two bleeding safety lines; several calques (za + infinitive, 'na jedan dodir' tacked on, 'um-tijelo', 'mjesec dana noći').",
+ "reviewedThrough": 844,
+ "extrasReviewed": true,
+ "strings": {
+  "4": {
+   "to": {
+    "one": "Termin za %2$lld dan: %1$@",
+    "few": "Termin za %2$lld dana: %1$@",
+    "other": "Termin za %2$lld dana: %1$@"
+   },
+   "why": "%@ is the clinician's name (TodayCards: '\\(who) in \\(days) days'); 'dr. Horvat za 3 dana' reads oddly. Same label pattern as ids 7/8 ('Termin danas: %@')."
+  },
+  "70": {
+   "to": {
+    "one": "Broj ciklusa: %1$lld. Prosječan broj zabilježenih valova dnevno u 3 dana prije početka mjesečnice bio je %2$@, a ostalih dana %3$@.",
+    "few": "Broj ciklusa: %1$lld. Prosječan broj zabilježenih valova dnevno u 3 dana prije početka mjesečnice bio je %2$@, a ostalih dana %3$@.",
+    "other": "Broj ciklusa: %1$lld. Prosječan broj zabilježenih valova dnevno u 3 dana prije početka mjesečnice bio je %2$@, a ostalih dana %3$@."
+   },
+   "why": "%2$@ is a decimal (e.g. 1, 2,5); '%2$@ valova' is wrong for 1, 2–4 and decimals. Rephrased so no noun follows the number."
+  },
+  "130": {
+   "to": "Krvarenje nakon menopauze – čak i jednom, čak i slabo – treba provjeriti liječnik. MenoMap ti ne može reći zašto se dogodilo.",
+   "why": "Safety string: English 'cannot tell you why'; restore 'ti' (you), as in ids 400 and 347."
+  },
+  "215": {
+   "to": "Svaki valung često traje nekoliko minuta. Koliko se mjeseci ili godina nastavljaju, jako se razlikuje od osobe do osobe.",
+   "why": "Clitic 'se' belongs in second position in standard Croatian."
+  },
+  "259": {
+   "to": "Potpuno automatski: u aplikaciji Prečaci dodirni Automatizacija → + → Spavanje (ili Fokus → Spavanje) → Prilikom uključivanja → Uključi Noćnu stražu.",
+   "why": "Apple HR Shortcuts guide (support.apple.com/hr-hr/guide/shortcuts/apde31e9638b) names the Focus trigger option 'Prilikom uključivanja', not 'Kad se uključi'. 'Automatizacija' confirmed."
+  },
+  "293": {
+   "to": "Hormonska terapija nije prikladna za svakoga, a neke osobe jednostavno radije biraju druge puteve. Ima ih nekoliko.\n\n**Lijekovi na recept.** Za neke nehormonske lijekove postoje dokazi da smanjuju valunge. Među njima su određeni lijekovi izvorno razvijeni za druga stanja i novija skupina lijekova razvijena posebno za valunge. Svaki ima svoje koristi, nuspojave i interakcije, pa ti liječnik može pomoći da ih odvagneš.\n\n**Terapije razgovorom i pristupi koji povezuju um i tijelo.** Za kognitivno-bihevioralnu terapiju (KBT) prilagođenu menopauzi postoje dokazi da valunge i noćno znojenje čini manje neugodnima i poboljšava spavanje. Istraživana je i klinička hipnoza.\n\n**Praktične promjene koje ljudima pomažu:**\n- Slojevi odjeće koje možeš brzo skinuti\n- Ventilator na radnom stolu i uz krevet\n- Hladnija spavaća soba i prozračna posteljina\n- Uočavanje i ublažavanje osobnih okidača (tu pomažu oznake i eksperimenti u aplikaciji MenoMap)\n- Redovita tjelesna aktivnost i ustaljena rutina spavanja\n\n**Dodaci prehrani i biljni pripravci.** Dokazi su za mnoge od njih neujednačeni ili ograničeni, kvaliteta varira, a neki stupaju u interakciju s drugim lijekovima. Reci liječniku ili ljekarniku za sve što uzimaš, uključujući proizvode bez recepta.\n\n**Isprobavaj jednu po jednu promjenu.** Dvotjedni eksperimenti u aplikaciji MenoMap uspoređuju tvoje vlastite unose prije i tijekom promjene, što je lakše procijeniti nego osjećaj.",
+   "why": "'Razgovor i pristupi um-tijelo' is a calque; 'terapije razgovorom' is the Croatian term for talking therapies."
+  },
+  "305": {
+   "to": "Kako je prošao termin (%@)?",
+   "why": "%@ is the clinician's name; '%@: kako je prošao termin?' reads as if addressing the doctor. Parenthetical works for any name without case endings."
+  },
+  "381": {
+   "to": {
+    "one": "Najdulji mirni niz: %lld dan. Vrijedi uokviriti.",
+    "few": "Najdulji mirni niz: %lld dana. Vrijedi uokviriti.",
+    "other": "Najdulji mirni niz: %lld dana. Vrijedi uokviriti."
+   },
+   "why": "'Za uokviriti' (za + infinitive) is non-standard in Croatian; 'Vrijedi uokviriti' keeps the joke."
+  },
+  "416": {
+   "to": "Većina termina je kratka i teško je na licu mjesta prisjetiti se svih noći iz proteklog mjeseca. Ljudi se obično sjećaju najnovijih ili najgorih dana. Jednostavan zapis popunjava tu prazninu.\n\n**Što dnevnik daje tvom liječniku:**\n- Koliko se često simptomi javljaju i koliko su jaki, a ne samo da se javljaju\n- Poboljšava li se stanje, pogoršava ili ostaje isto\n- Što se događalo oko njih: spavanje, alkohol, stres, lijekovi\n- Polaznu točku za usporedbu ako isprobaš neko liječenje\n\n**Neka bude jednostavno.** Dnevnik pomaže samo ako ga vodiš. MenoMap je izgrađen oko gumba Val na jedan dodir i večernjeg upisa od četiri pitanja, pa traje nekoliko sekundi i ne treba ti bilježnica.\n\n**Dva tjedna dobar su početak.** Dva do četiri tjedna unosa obično pokazuju jasniju sliku od jednog lošeg tjedna.\n\n**Donesi i svoja pitanja.** Zapiši što ti je najvažnije: simptom koji te najviše muči, što želiš isprobati ili izbjeći i sve što te brine. Kartica Posjet u aplikaciji MenoMap pomaže ti odabrati pitanja i ispisuje ih uz tvoje bilješke.",
+   "why": "Two calques: 'prisjetiti se mjesec dana noći' and 'postaje li stanje bolje, gore'. Meaning unchanged, markdown intact."
+  },
+  "473": {
+   "to": "Dani s preskočenom dozom (%1$lld): prosječan broj zabilježenih valova dnevno bio je %2$@. Ostali dani (%4$lld): %3$@. To je provjera podudarnosti, a ne dokaz uzroka.",
+   "why": "%2$@ is a decimal; '%2$@ valova' breaks for 1, 2–4 and decimals. Label form kept, noun no longer follows the number; hedge intact."
+  },
+  "479": {
+   "to": "Nakon što prođe 12 mjeseci bez mjesečnice, **svako krvarenje iz rodnice treba provjeriti liječnik**, čak i ako se dogodilo samo jednom i čak i ako je bilo samo mrljanje ili svijetloružičasti ili smeđi iscjedak.\n\nNajčešće se pokaže da uzrok nije ozbiljan. Stanjivanje sluznice rodnice ili maternice, na primjer, često je. No krvarenje nakon menopauze ponekad može biti rani znak stanja koje je puno lakše liječiti kad se otkrije rano. Zato javnozdravstvene smjernice kažu da ga treba dati pregledati, a ne čekati.\n\n**Ako uzimaš hormonsku terapiju,** neki obrasci krvarenja mogu se očekivati, ovisno o vrsti koju uzimaš. Krvarenje koje je neočekivano za tvoje liječenje, obilnije nego inače ili se javlja u pogrešno vrijeme također treba provjeriti.\n\n**Što učiniti:**\n- Javi se svom liječniku ili zdravstvenoj službi i reci da si imala krvarenje nakon menopauze.\n- Zabilježi datum, količinu i sve drugo što si primijetila. MenoMap to može čuvati za tebe (Profil → Ciklus).\n\nMenoMap ti ne može reći zašto je došlo do krvarenja. Podsjetit će te da ga daš provjeriti i uvrstit će ga u bilješke za posjet.",
+   "why": "Safety article: restore 'ti' (English 'can't tell you why'), consistent with id 130."
+  },
+  "580": {
+   "to": "Pomakni se do odjeljka Dostupne aplikacije i dodirni Instaliraj pokraj aplikacije MenoMap.",
+   "why": "'Dostupne aplikacije' is a section name; without 'odjeljka' the case is wrong ('do Dostupne aplikacije')."
+  },
+  "64": {
+   "to": "Gumb na zaključanom zaslonu kojim jednim dodirom bilježiš noćno znojenje, od odlaska na spavanje do jutra. Bez otključavanja, bez jarkog zaslona u 3 ujutro.",
+   "why": "'…, na jedan dodir, …' tacked on is a calque of 'one-tap'; relative clause reads naturally."
+  },
+  "543": {
+   "to": "Do jutra stavlja na zaključani zaslon gumb kojim jednim dodirom bilježiš noćno znojenje.",
+   "why": "Same calque as 64 ('…do jutra, na jedan dodir')."
+  },
+  "694": {
+   "to": "Dodirni i do jutra ćeš na zaključanom zaslonu imati gumb kojim jednim dodirom bilježiš noćno znojenje.",
+   "why": "Same calque as 64 ('…do jutra, na jedan dodir')."
+  },
+  "728": {
+   "to": "Vrijeme",
+   "why": "Section with Bedtime/Wake; plural 'Vremena' reads as 'times/eras' or 'weathers'. 'Vrijeme' is the natural section label."
+  },
+  "813": {
+   "to": "Da. Pitati je li hormonska terapija opcija za tebe i zašto da ili ne, sasvim je razumno pitanje.",
+   "why": "Missing comma after the long subject clause."
+  },
+  "819": {
+   "to": "U zadnjih 8 tjedana prosječan broj zabilježenih valova bio je %1$@ (%2$@), a ostalih dana %3$@.",
+   "why": "%1$@ is a decimal and %2$@ a weekday name in nominative ('ponedjeljak'); the previous 'prosječno – %2$@: %1$@' was hard to parse. New form needs no agreement with either value."
+  },
+  "823": {
+   "to": "Tvoji unosi imaju što reći o večerašnjoj noći.",
+   "why": "'imaju nešto za reći' is a non-standard calque; standard Croatian is 'imaju što reći'."
+  },
+  "408": {
+   "to": "Usred valunga ne želiš tražiti aplikaciju. Dodaj MenoMap tamo gdje ti je palac ionako. Svako postavljanje traje oko 10 sekundi.",
+   "why": "'gdje ti je palac već' is a calque of 'where your thumb already is'; 'ionako' is idiomatic."
+  }
+ },
+ "demo": {},
+ "store": {
+  "description": {
+   "to": "Zabilježi valung jednim dodirom. Pogledaj što se mijenja. Dođi na termin s bilješkama.\n\nMenoMap je izrađen za sam trenutak. Kad počne valung ili noćno znojenje, dodirni jednom na zaključanom zaslonu, u Kontrolnom centru, tipkom postupka ili na Apple Watchu. MenoMap mjeri trajanje, diše s tobom ako želiš i sprema zapis. Noću Noćna straža drži prigušeni gumb za noćno znojenje na zaključanom zaslonu do jutra.\n\nRADI S APLIKACIJOM ZDRAVLJE\nMenoMap čita simptome i fazu menopauze koje si zabilježila u aplikaciji Zdravlje, pa se tvoja povijest pojavljuje već prvog dana, a svaki val koji zabilježiš sprema natrag u Zdravlje.\n\nTVOJE VRIJEME NA KARTI\n• Toplinska karta tvojih dana, sat valova koji pokazuje kada se gomilaju i tvoji najčešće označeni okidači\n• Večernji upis od 30 sekundi za spavanje, raspoloženje i energiju\n• Obrasci u tvojim vlastitim unosima, poput toga kako izgleda tvoj san nakon teških noći, uvijek kao provjera podudarnosti, nikad kao uzrok\n• Dvotjedni eksperimenti: isprobaj jednu promjenu i usporedi svoje unose prije i tijekom\n\nDOĐI S BILJEŠKAMA\nDodaj termin i MenoMap pokazuje koliko su tvoje bilješke spremne. Odaberi pitanja, zatim izradi uredan PDF od jedne stranice za liječnika, na jeziku koji govori.\n\nPRIVATNOST OD SAMOG POČETKA\nBez računa. Bez oglasa. Bez oblaka. Tvoji zdravstveni podaci ostaju na tvom iPhoneu.\n\nMENOMAP PRO\nDulja povijest (30, 90 i 365 dana), obrasci, eksperimenti, cijelo mjesečno toplinsko izvješće, bilješke za liječnika i podsjetnici za lijekove. Mjesečno, godišnje (s besplatnom probom) ili doživotno. Ili kupi jedno Izvješće za posjet za jedan termin.\n\nMenoMap je alat za praćenje dobrobiti i edukativni alat. Ne dijagnosticira menopauzu ni bilo koje drugo stanje, ne propisuje niti mijenja liječenje i ne zamjenjuje skrb kvalificiranog liječnika.\n\nPrivatnost: https://gwlabs.app/menomap/privacy\nUvjeti korištenja: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+   "why": "'on' assumes a male clinician; the verb alone is neutral and natural."
+  }
+ },
+ "glossary": {},
+ "doubts": [
+  "729 'Postavke → Zdravlje → Pristup podacima i uređaji': could not confirm the exact Croatian label of Settings → Health → Data Access & Devices on support.apple.com/hr-hr (the guide only describes the in-app path Privatnost → Aplikacije/Uređaji). Left as is; please check on a device set to Croatian.",
+  "682 'Odaberi kontrolu' (Choose a Control): Apple HR confirms 'Kontrole' and 'Dodaj kontrolu' but the Action Button picker label was not visible in the guide. Left as is; plausible.",
+  "259 Sleep trigger: Apple HR's Shortcuts guide inconsistently names the Sleep trigger ('Okidač Pripravno stanje' / 'okidača Spavanja'); kept 'Spavanje', which matches the fokus Spavanje name.",
+  "HRT: translator uses HNT (hormonska nadomjesna terapija). Croatian clinical texts also often use HNL (hormonsko nadomjesno liječenje); both are understood, HNT kept for consistency.",
+  "Share-card captions under big numbers (433 'zabilježeni noćni valovi', 523 'privatna ljeta prošlog mjeseca', 671, 672) are in nominative plural, a label style that is neutral to the number. Left as is."
+ ]
+}

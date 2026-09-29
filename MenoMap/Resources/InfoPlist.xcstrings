@@ -1,44 +1,450 @@
 {
-  "sourceLanguage": "en",
-  "strings": {
-    "CFBundleDisplayName": {
-      "shouldTranslate": false
+  "sourceLanguage" : "en",
+  "strings" : {
+    "CFBundleDisplayName" : {
+      "comment" : "Bundle display name",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "MenoMap"
+          }
+        }
+      },
+      "shouldTranslate" : false
     },
-    "CFBundleName": {
-      "shouldTranslate": false
+    "CFBundleName" : {
+      "comment" : "Bundle name",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "MenoMap"
+          }
+        }
+      },
+      "shouldTranslate" : false
     },
-    "NSHealthShareUsageDescription": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MenoMap reads the symptoms, sleep and menopause stage you choose to share, so your history shows up next to what you log here."
+    "NSHealthShareUsageDescription" : {
+      "comment" : "Privacy - Health Share Usage Description",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يقرأ MenoMap الأعراض والنوم ومرحلة انقطاع الطمث التي تختارين مشاركتها، ليظهر تاريخكِ إلى جانب ما تسجّلينه هنا."
           }
         },
-        "en-GB": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MenoMap reads the symptoms, sleep and menopause stage you choose to share, so your history shows up next to what you log here."
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap čte příznaky, spánek a fázi přechodu, které se rozhodneš sdílet, aby se tvoje historie zobrazila vedle toho, co zaznamenáš tady."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap læser de symptomer, den søvn og den fase i overgangsalderen, du vælger at dele, så din historik vises ved siden af det, du registrerer her."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap liest die Beschwerden, den Schlaf und die Wechseljahresphase, die du teilen möchtest, damit dein Verlauf neben deinen Einträgen hier erscheint."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το MenoMap διαβάζει τα συμπτώματα, τον ύπνο και το στάδιο εμμηνόπαυσης που επιλέγεις να μοιραστείς, ώστε το ιστορικό σου να εμφανίζεται δίπλα σε όσα καταγράφεις εδώ."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap reads the symptoms, sleep and menopause stage you choose to share, so your history shows up next to what you log here."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap reads the symptoms, sleep and menopause stage you choose to share, so your history shows up next to what you log here."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap lee los síntomas, el sueño y la etapa de la menopausia que decidas compartir, para que tu historial aparezca junto a lo que registras aquí."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap lee los síntomas, el sueño y la etapa de la menopausia que decidas compartir, para que tu historial aparezca junto a lo que registras aquí."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap lukee oireet, unen ja vaihdevuosien vaiheen, jotka valitset jakaa, jotta historiasi näkyy täällä kirjaamiesi tietojen rinnalla."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap lit les symptômes, le sommeil et le stade de la ménopause que vous choisissez de partager, afin que votre historique s’affiche à côté de ce que vous notez ici."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "היישום MenoMap קורא את התסמינים, השינה ושלב גיל המעבר שתבחרי לשתף, כדי שההיסטוריה שלך תופיע לצד מה שאת מתעדת כאן."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap वे लक्षण, नींद और रजोनिवृत्ति का चरण पढ़ता है जिन्हें आप शेयर करना चुनती हैं, ताकि आपका इतिहास यहाँ दर्ज जानकारी के साथ दिखे।"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap čita simptome, spavanje i fazu menopauze koje odlučiš podijeliti, kako bi se tvoja povijest prikazala uz ono što ovdje bilježiš."
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A MenoMap beolvassa a megosztásra kiválasztott tüneteket, alvásadatokat és menopauzális szakaszt, így az előzményeid az itt rögzítettek mellett jelennek meg."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap membaca gejala, tidur, dan tahap menopause yang kamu pilih untuk dibagikan, sehingga riwayatmu muncul di samping yang kamu catat di sini."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap legge i sintomi, il sonno e la fase della menopausa che scegli di condividere, così la tua storia compare accanto a ciò che registri qui."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMapは、あなたが共有を選んだ症状、睡眠、閉経の段階を読み取り、ここで記録した内容と並べて履歴を表示します。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap은 공유하기로 선택한 증상, 수면, 갱년기 단계를 읽어서, 여기에서 기록하는 내용 옆에 지난 기록을 함께 보여 줘요."
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap membaca simptom, tidur dan peringkat menopaus yang anda pilih untuk dikongsi, supaya sejarah anda dipaparkan di sebelah apa yang anda catat di sini."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap leser symptomene, søvnen og fasen i overgangsalderen som du velger å dele, slik at historikken din vises ved siden av det du registrerer her."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap leest de klachten, slaap en overgangsfase die je wilt delen, zodat je geschiedenis verschijnt naast wat je hier noteert."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap odczytuje objawy, sen i etap menopauzy, które zdecydujesz się udostępnić, aby twoja historia była widoczna obok tego, co zapisujesz tutaj."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O MenoMap lê os sintomas, o sono e a fase da menopausa que você escolher compartilhar, para que o seu histórico apareça ao lado do que você registra aqui."
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O MenoMap lê os sintomas, o sono e a fase da menopausa que escolheres partilhar, para que o teu histórico apareça ao lado do que registas aqui."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap citește simptomele, somnul și etapa menopauzei pe care alegi să le partajezi, astfel încât istoricul tău să apară lângă ce înregistrezi aici."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap číta príznaky, spánok a fázu menopauzy, ktoré sa rozhodneš zdieľať, aby sa tvoja história zobrazila vedľa toho, čo zaznamenáš tu."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap läser de symtom, den sömn och den fas i klimakteriet som du väljer att dela, så att din historik syns bredvid det du loggar här."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap อ่านอาการ การนอน และระยะวัยหมดประจำเดือนที่คุณเลือกแชร์ เพื่อให้ประวัติของคุณแสดงคู่กับสิ่งที่คุณบันทึกที่นี่"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap, paylaşmayı seçtiğin belirtileri, uykuyu ve menopoz evresini okur; böylece geçmişin burada kaydettiklerinin yanında görünür."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap читає симптоми, сон і етап менопаузи, якими ти вирішиш поділитися, щоб твоя історія відображалася поруч із тим, що ти записуєш тут."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap đọc các triệu chứng, giấc ngủ và giai đoạn mãn kinh mà bạn chọn chia sẻ, để lịch sử của bạn hiển thị bên cạnh những gì bạn ghi ở đây."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap 会读取你选择共享的症状、睡眠和更年期阶段数据，让你的历史记录显示在你在这里记录的内容旁边。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap 會讀取你選擇分享的症狀、睡眠和停經階段，讓你過去的紀錄顯示在你在這裡記錄的內容旁邊。"
           }
         }
       }
     },
-    "NSHealthUpdateUsageDescription": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MenoMap saves the hot flashes, night sweats and symptoms you log to Apple Health, so all your records stay in one place."
+    "NSHealthUpdateUsageDescription" : {
+      "comment" : "Privacy - Health Update Usage Description",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يحفظ MenoMap الهبّات الساخنة والتعرّق الليلي والأعراض التي تسجّلينها في تطبيق صحتي، لتبقى كل سجلاتكِ في مكان واحد."
           }
         },
-        "en-GB": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MenoMap saves the hot flushes, night sweats and symptoms you log to Apple Health, so all your records stay in one place."
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap ukládá návaly horka, noční pocení a příznaky, které zaznamenáš, do aplikace Zdraví, aby byly všechny tvoje záznamy na jednom místě."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap gemmer de hedeture, den nattesved og de symptomer, du registrerer, i Apple Sundhed, så alle dine data er samlet ét sted."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap speichert die Hitzewallungen, das nächtliche Schwitzen und die Beschwerden, die du erfasst, in Apple Health, damit alle deine Daten an einem Ort bleiben."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το MenoMap αποθηκεύει στην εφαρμογή Υγεία τις εξάψεις, τις νυχτερινές εφιδρώσεις και τα συμπτώματα που καταγράφεις, ώστε όλα τα αρχεία σου να βρίσκονται σε ένα μέρος."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap saves the hot flashes, night sweats and symptoms you log to Apple Health, so all your records stay in one place."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap saves the hot flushes, night sweats and symptoms you log to Apple Health, so all your records stay in one place."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap guarda en la app Salud los sofocos, los sudores nocturnos y los síntomas que registras, para que todos tus datos estén en un mismo sitio."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap guarda en la app Salud los bochornos, los sudores nocturnos y los síntomas que registras, para que todos tus registros estén en un solo lugar."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap tallentaa kirjaamasi kuumat aallot, yöhikoilun ja oireet Terveys-appiin, jotta kaikki tietosi pysyvät yhdessä paikassa."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap enregistre dans l’app Santé les bouffées de chaleur, les sueurs nocturnes et les symptômes que vous notez, pour que toutes vos données restent au même endroit."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "היישום MenoMap שומר ב״בריאות״ את גלי החום, הזעות הלילה והתסמינים שאת מתעדת, כדי שכל הרישומים שלך יישארו במקום אחד."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap आपके दर्ज किए हॉट फ़्लैश, रात के पसीने और लक्षण सेहत ऐप में सेव करता है, ताकि आपके सारे रिकॉर्ड एक जगह रहें।"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap sprema valunge, noćno znojenje i simptome koje zabilježiš u aplikaciju Zdravlje, kako bi svi tvoji zapisi bili na jednom mjestu."
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A MenoMap elmenti az Egészség appba a rögzített hőhullámokat, éjszakai izzadásokat és tüneteket, így minden adatod egy helyen marad."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap menyimpan rasa panas mendadak, keringat malam, dan gejala yang kamu catat ke app Kesehatan, sehingga semua catatanmu ada di satu tempat."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap salva nell'app Salute le vampate di calore, le sudorazioni notturne e i sintomi che registri, così tutti i tuoi dati restano in un unico posto."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMapは、記録したホットフラッシュ、寝汗、症状をヘルスケアに保存し、すべての記録を1か所にまとめます。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap은 기록한 안면홍조, 야간 발한, 증상을 건강 앱에 저장해서 모든 기록을 한곳에 모아 둬요."
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap menyimpan panas badan mendadak, peluh malam dan simptom yang anda catat ke app Kesihatan, supaya semua rekod anda kekal di satu tempat."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap lagrer hetetoktene, nattesvetten og symptomene du registrerer, i Helse-appen, slik at alle registreringene dine er samlet på ett sted."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap bewaart de opvliegers, het nachtelijk zweten en de klachten die je noteert in de Gezondheid-app, zodat al je gegevens op één plek staan."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap zapisuje w aplikacji Zdrowie uderzenia gorąca, nocne poty i objawy, które rejestrujesz, aby wszystkie twoje dane były w jednym miejscu."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O MenoMap salva no app Saúde os fogachos, suores noturnos e sintomas que você registra, para que todos os seus registros fiquem em um só lugar."
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O MenoMap guarda na aplicação Saúde os afrontamentos, os suores noturnos e os sintomas que registas, para que todos os teus registos fiquem no mesmo sítio."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap salvează în aplicația Sănătate bufeurile, transpirațiile nocturne și simptomele pe care le înregistrezi, ca toate datele tale să fie într-un singur loc."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap ukladá návaly tepla, nočné potenie a príznaky, ktoré zaznamenáš, do apky Zdravie, aby boli všetky tvoje záznamy na jednom mieste."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap sparar de värmevallningar, nattsvettningar och symtom du loggar till appen Hälsa, så att alla dina uppgifter finns på ett ställe."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap บันทึกอาการร้อนวูบวาบ เหงื่อออกตอนกลางคืน และอาการที่คุณบันทึกลงในแอปสุขภาพ เพื่อให้ข้อมูลทั้งหมดของคุณอยู่ในที่เดียว"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap, kaydettiğin sıcak basmalarını, gece terlemelerini ve belirtileri Sağlık uygulamasına kaydeder; böylece tüm kayıtların tek bir yerde kalır."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap зберігає припливи, нічну пітливість і симптоми, які ти записуєш, у програмі «Здоровʼя», щоб усі твої записи були в одному місці."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap lưu các cơn bốc hỏa, đổ mồ hôi ban đêm và triệu chứng bạn ghi vào ứng dụng Sức khỏe, để mọi hồ sơ của bạn ở cùng một nơi."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap 会把你记录的潮热、夜间盗汗和症状保存到健康 App，让你的所有记录都集中在一处。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MenoMap 會把你記錄的熱潮紅、夜間盜汗和症狀存到「健康」App，讓你所有的紀錄都集中在同一個地方。"
           }
         }
       }
     }
   },
-  "version": "1.0"
+  "version" : "1.0"
 }

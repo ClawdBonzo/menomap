@@ -15,6 +15,9 @@ OUT = ROOT / "Localization/out"
 PH = re.compile(r"%(?:(\d+)\$)?(lld|@|d|ld|f)")
 SKIP_CATALOGS = {"MenoMapMessages/InfoPlist.xcstrings", "MenoMapWatch/InfoPlist.xcstrings",
                  "MenoMapWatchWidgets/InfoPlist.xcstrings", "MenoMapWidgets/InfoPlist.xcstrings"}
+# Widget/Watch strings that the app's DEBUG Showcase (screenshots of the Lock Screen and Watch) also renders.
+APP_CATALOG = "MenoMap/Resources/Localizable.xcstrings"
+SHOWCASE_KEYS = {"In 4 · hold 4 · out 4", "End", "%lld tonight", "Until %@", "Today: %lld", "How strong?", "Turn the Crown"}
 
 
 def positional_like(english: str, text: str) -> str:
@@ -45,7 +48,8 @@ def main() -> int:
             languages[code] = json.loads(path.read_text())
     catalogs = {}
     for item in SOURCE["strings"]:
-        for cat in item["catalogs"]:
+        targets = item["catalogs"] + ([APP_CATALOG] if item["key"] in SHOWCASE_KEYS and APP_CATALOG not in item["catalogs"] else [])
+        for cat in targets:
             if cat in SKIP_CATALOGS:
                 continue
             path = ROOT / cat

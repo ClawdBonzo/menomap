@@ -1,0 +1,53 @@
+{
+ "demo": {
+  "d1": "Dewi",
+  "d2": "dr. Wulandari",
+  "d3": "Gel estradiol",
+  "d4": "Progesteron mikronisasi",
+  "d5": "1 pompa",
+  "d6": "Kulit",
+  "d7": "Setiap pagi",
+  "d8": "100 mg",
+  "d9": "Diminum",
+  "d10": "Sebelum tidur",
+  "d11": "Kontrol menopause"
+ },
+ "store": {
+  "name": "MenoMap: Pelacak Menopause",
+  "subtitle": "Rasa Panas & Catatan Dokter",
+  "keywords": "perimenopause,keringat,malam,hrt,hormon,gejala,jurnal,tidur,haid,siklus,wanita,insomnia,hot,flash",
+  "promotionalText": "Catat rasa panas mendadak dengan sekali ketuk dari Layar Terkunci atau Apple Watch. Lihat polamu. Datang ke janji temu dengan catatan jelas. Tanpa akun, tanpa iklan.",
+  "description": "Catat rasa panas mendadak dengan sekali ketuk. Lihat apa yang berubah. Datang ke janji temu dengan membawa catatan.\n\nMenoMap dibuat untuk saat itu juga. Saat rasa panas mendadak atau keringat malam datang, ketuk sekali dari Layar Terkunci, Pusat Kontrol, tombol Tindakan, atau Apple Watch. MenoMap menghitung waktunya, menemanimu bernapas jika kamu mau, lalu menyimpannya. Di malam hari, Jaga Malam menaruh tombol keringat malam sekali ketuk yang redup di Layar Terkunci sampai pagi.\n\nBEKERJA DENGAN APP KESEHATAN\nMenoMap membaca gejala dan tahap menopause yang sudah kamu catat di app Kesehatan, sehingga riwayatmu muncul sejak hari pertama, dan menyimpan setiap gelombang yang kamu catat kembali ke app Kesehatan.\n\nCUACAMU, DIPETAKAN\n• Peta panas harianmu, jam gelombang yang menunjukkan kapan gelombang paling sering muncul, dan pemicu yang paling sering kamu tandai\n• Check-in malam 30 detik untuk tidur, suasana hati, dan energi\n• Pola dalam entrimu sendiri, seperti bagaimana tidurmu setelah malam yang berat, selalu sebagai cek kebetulan, tidak pernah sebagai penyebab\n• Uji coba dua minggu: coba satu perubahan dan bandingkan entrimu sendiri sebelum dan selama\n\nDATANG DENGAN CATATAN\nTambahkan janji temumu, dan MenoMap menunjukkan seberapa siap catatanmu. Pilih pertanyaanmu, lalu buat PDF satu halaman yang rapi untuk doktermu, dalam bahasa yang ia gunakan.\n\nDIRANCANG UNTUK PRIVASI\nTanpa akun. Tanpa iklan. Tanpa cloud. Data kesehatanmu tetap di iPhone-mu.\n\nMENOMAP PRO\nRiwayat lebih panjang (30, 90, dan 365 hari), pola, uji coba, Laporan Panas bulanan lengkap, catatan untuk dokter, dan pengingat obat. Bulanan, tahunan (dengan masa coba gratis), atau seumur hidup. Atau beli satu Laporan Konsultasi untuk satu janji temu.\n\nMenoMap adalah alat pencatat kesehatan umum (wellness) dan alat edukasi. MenoMap tidak mendiagnosis menopause atau kondisi lain apa pun, tidak meresepkan atau mengubah pengobatan, dan tidak menggantikan perawatan dari dokter yang berkualifikasi.\n\nPrivasi: https://gwlabs.app/menomap/privacy\nKetentuan penggunaan: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+  "whatsNew": "Rilis pertama MenoMap.",
+  "iap": {
+   "groupName": "MenoMap Pro",
+   "monthly": {
+    "name": "MenoMap Pro Bulanan",
+    "description": "Pola, statistik, dan catatan untuk dokter."
+   },
+   "yearly": {
+    "name": "MenoMap Pro Tahunan",
+    "description": "Pola, statistik, dan catatan untuk dokter."
+   },
+   "lifetime": {
+    "name": "MenoMap Pro Seumur Hidup",
+    "description": "Semua fitur Pro, selamanya."
+   },
+   "visitReport": {
+    "name": "Laporan Konsultasi",
+    "description": "PDF lengkap untuk dokter, hingga 90 hari."
+   }
+  },
+  "screenshots": {
+   "1": "*Sekali ketuk* saat panas datang.",
+   "2": "*Jaga Malam* di Layar Terkunci.",
+   "3": "Lihat *peta panasmu*.",
+   "4": "Temukan pola *milikmu*.",
+   "5": "Datang dengan *catatan*.",
+   "6": "Bekerja dengan *app Kesehatan*.",
+   "7": "Langsung di *Apple Watch*.",
+   "8": "Uji satu perubahan *dua minggu*.",
+   "9": "Datamu tetap *milikmu*."
+  }
+ }
+}

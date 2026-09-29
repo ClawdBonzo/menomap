@@ -1,0 +1,53 @@
+{
+ "demo": {
+  "d1": "Minna",
+  "d2": "Lääkäri Virtanen",
+  "d3": "Estradioligeeli",
+  "d4": "Mikronisoitu progesteroni",
+  "d5": "1 painallus",
+  "d6": "Iholle",
+  "d7": "Joka aamu",
+  "d8": "100 mg",
+  "d9": "Suun kautta",
+  "d10": "Nukkumaan mennessä",
+  "d11": "Vaihdevuosien seurantakäynti"
+ },
+ "store": {
+  "name": "MenoMap: Vaihdevuosipäiväkirja",
+  "subtitle": "Kuumat aallot & lääkärikäynti",
+  "keywords": "menopaussi,perimenopaussi,yöhikoilu,hormonihoito,oirepäiväkirja,uni,hormonit,kuukautiset,unettomuus",
+  "promotionalText": "Kirjaa kuuma aalto yhdellä napautuksella lukitulta näytöltä tai Apple Watchista. Näe kuviosi. Mene vastaanotolle selkein muistiinpanoin. Ei tiliä, ei mainoksia.",
+  "description": "Kirjaa kuuma aalto yhdellä napautuksella. Näe, mikä muuttuu. Mene vastaanotolle muistiinpanojen kanssa.\n\nMenoMap on tehty juuri sitä hetkeä varten. Kun kuuma aalto tai yöhikoilu alkaa, napauta kerran lukitulta näytöltä, Ohjauskeskuksesta, Toimintopainikkeella tai Apple Watchista. MenoMap ottaa sille ajan, hengittää kanssasi, jos haluat, ja tallentaa sen. Öisin Yövahti pitää himmeän yhden napautuksen yöhikoilupainikkeen lukitulla näytölläsi aamuun asti.\n\nTOIMII TERVEYS-APIN KANSSA\nMenoMap lukee Terveys-appiin kirjaamasi oireet ja vaihdevuosien vaiheen, joten historiasi näkyy heti ensimmäisenä päivänä, ja tallentaa jokaisen kirjaamasi aallon takaisin Terveys-appiin.\n\nOMA SÄÄSI KARTALLA\n• Lämpökartta päivistäsi, aaltokello, joka näyttää, milloin aallot kasautuvat, ja useimmin merkitsemäsi laukaisevat tekijät\n• 30 sekunnin iltakysely unesta, mielialasta ja energiasta\n• Kuviot omissa merkinnöissäsi, kuten miltä unesi näyttää rankkojen öiden jälkeen – aina yhteensattuman tarkistuksena, ei koskaan syynä\n• Kahden viikon kokeilut: kokeile yhtä muutosta ja vertaa omia merkintöjäsi ennen ja aikana\n\nVASTAANOTOLLE MUISTIINPANOJEN KANSSA\nLisää käyntisi, niin MenoMap näyttää, kuinka valmiit muistiinpanosi ovat. Valitse kysymyksesi ja luo lääkärillesi selkeä yhden sivun PDF sillä kielellä, jota hän puhuu.\n\nYKSITYISYYS SISÄÄNRAKENNETTUNA\nEi tiliä. Ei mainoksia. Ei pilveä. Terveystietosi pysyvät iPhonessasi.\n\nMENOMAP PRO\nPidempi historia (30, 90 ja 365 päivää), kuviot, kokeilut, koko kuukauden Lämpöraportti, muistiinpanot lääkärille ja lääkemuistutukset. Kuukausitilaus, vuositilaus (maksuttomalla kokeilujaksolla) tai elinikäinen. Tai osta yksittäinen Käyntiraportti yhtä käyntiä varten.\n\nMenoMap on hyvinvoinnin seurantasovellus ja terveystiedon työkalu. Se ei diagnosoi menopaussia eikä mitään muuta tilaa, ei määrää eikä muuta hoitoa eikä korvaa pätevän lääkärin antamaa hoitoa.\n\nTietosuoja: https://gwlabs.app/menomap/privacy\nKäyttöehdot: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+  "whatsNew": "MenoMapin ensimmäinen versio.",
+  "iap": {
+   "groupName": "MenoMap Pro",
+   "monthly": {
+    "name": "MenoMap Pro kuukausi",
+    "description": "Kuviot, tilastot ja muistiinpanot lääkärille."
+   },
+   "yearly": {
+    "name": "MenoMap Pro vuosi",
+    "description": "Kuviot, tilastot ja muistiinpanot lääkärille."
+   },
+   "lifetime": {
+    "name": "MenoMap Pro elinikäinen",
+    "description": "Kaikki Pro-ominaisuudet, ikuisesti."
+   },
+   "visitReport": {
+    "name": "Käyntiraportti",
+    "description": "Yksi täysi PDF lääkärille, enintään 90 pv."
+   }
+  },
+  "screenshots": {
+   "1": "Kuuma aalto? *Yksi napautus*.",
+   "2": "*Yövahti* lukitulla näytölläsi.",
+   "3": "Näe *lämpökarttasi*.",
+   "4": "Löydä *omat* kuviosi.",
+   "5": "Vastaanotolle *muistiinpanoin*.",
+   "6": "Toimii *Terveys-apin* kanssa.",
+   "7": "Suoraan *Apple Watchissa*.",
+   "8": "Kokeile muutosta *kaksi viikkoa*.",
+   "9": "Tietosi ovat *sinun*."
+  }
+ }
+}

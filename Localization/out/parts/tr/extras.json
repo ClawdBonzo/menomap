@@ -1,0 +1,53 @@
+{
+ "demo": {
+  "d1": "Ayşe",
+  "d2": "Dr. Yılmaz",
+  "d3": "Estradiol jel",
+  "d4": "Mikronize progesteron",
+  "d5": "1 pompa",
+  "d6": "Cilde",
+  "d7": "Her sabah",
+  "d8": "100 mg",
+  "d9": "Ağızdan",
+  "d10": "Yatmadan önce",
+  "d11": "Menopoz kontrolü"
+ },
+ "store": {
+  "name": "MenoMap: Menopoz Takibi",
+  "subtitle": "Sıcak Basması & Doktor Notları",
+  "keywords": "perimenopoz,gece terlemesi,hrt,hormon,belirti günlüğü,uyku,adet,döngü,klimakteryum,östrojen,orta yaş",
+  "promotionalText": "Kilitli Ekrandan ya da Apple Watch'tan tek dokunuşla sıcak basması kaydet. Örüntülerini gör. Randevuna net notlarla gir. Hesap yok, reklam yok.",
+  "description": "Tek dokunuşla sıcak basması kaydet. Neyin değiştiğini gör. Randevuna notlarınla gir.\n\nMenoMap tam o an için tasarlandı. Bir sıcak basması ya da gece terlemesi başladığında Kilitli Ekrandan, Denetim Merkezi'nden, Eylem düğmesinden ya da Apple Watch'undan bir kez dokun. MenoMap süreyi tutar, istersen seninle birlikte nefes alır ve kaydeder. Geceleri Gece Nöbeti, Kilitli Ekranında sabaha kadar loş, tek dokunuşluk bir gece terlemesi düğmesi tutar.\n\nSAĞLIK UYGULAMASI İLE UYUMLU\nMenoMap, Sağlık uygulamasına kaydettiğin belirtileri ve menopoz evresini okur; böylece geçmişin ilk günden görünür. Kaydettiğin her dalgayı da Sağlık uygulamasına geri kaydeder.\n\nHAVA DURUMUN, HARİTADA\n• Günlerinin ısı haritası, dalgaların hangi saatlerde toplandığını gösteren bir dalga saati ve en çok etiketlediğin tetikleyiciler\n• Uyku, duygu durumu ve enerji için 30 saniyelik akşam yoklaması\n• Kendi kayıtlarındaki örüntüler, örneğin yoğun gecelerden sonra uykunun nasıl göründüğü; her zaman bir rastlantı kontrolü olarak, asla bir neden olarak değil\n• İki haftalık deneyler: bir değişikliği dene ve kendi kayıtlarının öncesini ve sırasını karşılaştır\n\nRANDEVUNA NOTLARINLA GİR\nRandevunu ekle, MenoMap notlarının ne kadar hazır olduğunu göstersin. Sorularını seç, ardından doktorun için, onun konuştuğu dilde tek sayfalık düzenli bir PDF oluştur.\n\nGİZLİLİK ODAKLI TASARIM\nHesap yok. Reklam yok. Bulut yok. Sağlık verilerin iPhone'unda kalır.\n\nMENOMAP PRO\nDaha uzun geçmiş (30, 90 ve 365 gün), örüntüler, deneyler, tam aylık Isı Raporu, doktor notları ve ilaç hatırlatıcıları. Aylık, yıllık (ücretsiz denemeli) ya da ömür boyu. Ya da tek bir randevu için tek bir Randevu Raporu satın al.\n\nMenoMap bir sağlıklı yaşam takip uygulaması ve eğitim aracıdır. Menopoza ya da başka herhangi bir duruma tanı koymaz, tedavi reçete etmez ya da tedaviyi değiştirmez ve yetkin bir doktorun sağladığı bakımın yerini tutmaz.\n\nGizlilik: https://gwlabs.app/menomap/privacy\nKullanım koşulları: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+  "whatsNew": "MenoMap'ın ilk sürümü.",
+  "iap": {
+   "groupName": "MenoMap Pro",
+   "monthly": {
+    "name": "MenoMap Pro Aylık",
+    "description": "Örüntüler, istatistikler ve doktor notları."
+   },
+   "yearly": {
+    "name": "MenoMap Pro Yıllık",
+    "description": "Örüntüler, istatistikler ve doktor notları."
+   },
+   "lifetime": {
+    "name": "MenoMap Pro Ömür Boyu",
+    "description": "Tüm Pro özellikleri, ömür boyu."
+   },
+   "visitReport": {
+    "name": "Randevu Raporu",
+    "description": "90 güne kadar tek bir tam doktor PDF'i."
+   }
+  },
+  "screenshots": {
+   "1": "Sıcak basmasına *tek dokunuş*.",
+   "2": "Kilitli Ekranda *Gece Nöbeti*.",
+   "3": "*Isı haritanı* gör.",
+   "4": "*Kendi* örüntülerini bul.",
+   "5": "Randevuna *notlarınla* gir.",
+   "6": "*Sağlık uygulaması* ile uyumlu.",
+   "7": "Doğrudan *Apple Watch*'unda.",
+   "8": "Bir değişikliği *iki hafta* dene.",
+   "9": "Verilerin *sende* kalır."
+  }
+ }
+}

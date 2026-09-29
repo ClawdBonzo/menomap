@@ -1,0 +1,53 @@
+{
+ "demo": {
+  "d1": "Hilde",
+  "d2": "Dr. Hansen",
+  "d3": "Østradiolgel",
+  "d4": "Mikronisert progesteron",
+  "d5": "1 pumpetrykk",
+  "d6": "På huden",
+  "d7": "Hver morgen",
+  "d8": "100 mg",
+  "d9": "Gjennom munnen",
+  "d10": "Ved leggetid",
+  "d11": "Oppfølging av overgangsalder"
+ },
+ "store": {
+  "name": "MenoMap: Overgangsalder-app",
+  "subtitle": "Hetetokt-logg og legenotater",
+  "keywords": "menopause,perimenopause,nattesvette,hormonbehandling,hrt,symptomdagbok,søvn,hormoner,syklus,østrogen",
+  "promotionalText": "Logg en hetetokt med ett trykk fra låst skjerm eller Apple Watch. Se mønstrene dine. Gå til legetimen med ryddige notater. Ingen konto, ingen reklame.",
+  "description": "Logg en hetetokt med ett trykk. Se hva som endrer seg. Gå til legetimen med notater.\n\nMenoMap er laget for selve øyeblikket. Når en hetetokt eller nattesvette starter, trykker du én gang fra låst skjerm, Kontrollsenter, handlingsknappen eller Apple Watch. MenoMap tar tiden, puster med deg hvis du vil, og lagrer den. Om natten holder Nattevakt en dempet ettrykksknapp for nattesvette på låst skjerm fram til morgenen.\n\nFUNGERER MED HELSE-APPEN\nMenoMap leser symptomene og fasen i overgangsalderen som du har registrert i Helse-appen, slik at historikken din vises fra første dag, og lagrer hver bølge du registrerer tilbake i Helse-appen.\n\nDITT VÆR, KARTLAGT\n• Et hetekart over dagene dine, en bølgeklokke som viser når de samler seg, og utløserne du oftest merker\n• En kveldsinnsjekk på 30 sekunder for søvn, humør og energi\n• Mønstre i dine egne registreringer, for eksempel hvordan søvnen ser ut etter tunge netter, alltid som en sjekk av sammenfall, aldri som en årsak\n• Eksperimenter i to uker: prøv én endring og sammenlign dine egne registreringer før og under\n\nMØT OPP MED NOTATER\nLegg inn legetimen, så viser MenoMap hvor klare notatene dine er. Velg spørsmålene dine, og lag en ryddig PDF på én side til legen din, på språket legen snakker.\n\nPRIVAT FRA GRUNNEN AV\nIngen konto. Ingen reklame. Ingen sky. Helsedataene dine blir på iPhonen din.\n\nMENOMAP PRO\nLengre historikk (30, 90 og 365 dager), mønstre, eksperimenter, hele den månedlige Heterapporten, notater til legen og medisinpåminnelser. Månedlig, årlig (med gratis prøveperiode) eller livstid. Eller kjøp én enkelt Legetimerapport for én legetime.\n\nMenoMap er et verktøy for å følge med på egen helse og et opplæringsverktøy. Appen stiller ikke diagnosen overgangsalder eller noen annen tilstand, foreskriver eller endrer ikke behandling, og erstatter ikke oppfølging fra en kvalifisert lege.\n\nPersonvern: https://gwlabs.app/menomap/privacy\nBruksvilkår: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+  "whatsNew": "Den første versjonen av MenoMap.",
+  "iap": {
+   "groupName": "MenoMap Pro",
+   "monthly": {
+    "name": "MenoMap Pro månedlig",
+    "description": "Mønstre, statistikk og notater til legen."
+   },
+   "yearly": {
+    "name": "MenoMap Pro årlig",
+    "description": "Mønstre, statistikk og notater til legen."
+   },
+   "lifetime": {
+    "name": "MenoMap Pro livstid",
+    "description": "Alle Pro-funksjoner, for alltid."
+   },
+   "visitReport": {
+    "name": "Legetimerapport",
+    "description": "Én full PDF til legen, opptil 90 dager."
+   }
+  },
+  "screenshots": {
+   "1": "Logg en hetetokt med *ett trykk*.",
+   "2": "*Nattevakt* på låst skjerm.",
+   "3": "Se *hetekartet* ditt.",
+   "4": "Finn *dine* mønstre.",
+   "5": "Møt opp med *notater*.",
+   "6": "Fungerer med *Helse-appen*.",
+   "7": "Rett på *Apple Watch*.",
+   "8": "Test én endring i *to uker*.",
+   "9": "Dataene dine forblir *dine*."
+  }
+ }
+}

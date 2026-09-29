@@ -1,0 +1,53 @@
+{
+ "demo": {
+  "d1": "Jana",
+  "d2": "MUDr. Nováková",
+  "d3": "Estradiol gel",
+  "d4": "Mikronizovaný progesteron",
+  "d5": "1 stisk pumpy",
+  "d6": "Na kůži",
+  "d7": "Každé ráno",
+  "d8": "100 mg",
+  "d9": "Ústy",
+  "d10": "Před spaním",
+  "d11": "Konzultace k přechodu"
+ },
+ "store": {
+  "name": "MenoMap: Menopauza a přechod",
+  "subtitle": "Deník návalů horka pro lékaře",
+  "keywords": "perimenopauza,noční,pocení,hrt,hormony,příznaky,spánek,klimakterium,cyklus,estrogen,ženy,nespavost",
+  "promotionalText": "Zaznamenej nával horka jedním klepnutím na zamknuté obrazovce nebo na Apple Watch. Sleduj své vzorce. Přijď k lékaři s přehlednými poznámkami. Bez účtu, bez reklam.",
+  "description": "Zaznamenej nával horka jedním klepnutím. Sleduj, co se mění. Přijď k lékaři s poznámkami.\n\nMenoMap je stavěný přímo na tu chvíli. Když začne nával horka nebo noční pocení, stačí jedno klepnutí na zamknuté obrazovce, v Ovládacím centru, akčním tlačítkem nebo na Apple Watch. MenoMap ho změří, pokud chceš, dýchá s tebou, a uloží ho. V noci Noční hlídka drží na zamknuté obrazovce až do rána tlumené tlačítko pro noční pocení na jedno klepnutí.\n\nFUNGUJE S APLIKACÍ ZDRAVÍ\nMenoMap čte příznaky a fázi přechodu, které máš zaznamenané v aplikaci Zdraví, takže tvoje historie se zobrazí hned první den, a každou vlnu, kterou zaznamenáš, uloží zpět do aplikace Zdraví.\n\nTVOJE POČASÍ NA MAPĚ\n• Tepelná mapa tvých dnů, hodiny vln, které ukazují, kdy se hromadí, a tvoje nejčastěji označované spouštěče\n• Třicetivteřinový večerní zápis pro spánek, náladu a energii\n• Vzorce ve tvých vlastních záznamech, třeba jak vypadá tvůj spánek po těžkých nocích, vždy jako kontrola souběhu, nikdy jako příčina\n• Dvoutýdenní experimenty: vyzkoušej jednu změnu a porovnej své vlastní záznamy před ní a během ní\n\nPŘIJĎ K LÉKAŘI S POZNÁMKAMI\nPřidej svou návštěvu a MenoMap ukáže, jak připravené jsou tvoje poznámky. Vyber otázky a pak vytvoř přehledné jednostránkové PDF pro lékaře, v jazyce, kterým mluví.\n\nSOUKROMÍ OD ZÁKLADU\nŽádný účet. Žádné reklamy. Žádný cloud. Tvoje zdravotní data zůstávají na tvém iPhonu.\n\nMENOMAP PRO\nDelší historie (30, 90 a 365 dní), vzorce, experimenty, celá měsíční Zpráva o horku, poznámky pro lékaře a připomenutí léků. Měsíčně, ročně (se zkušební verzí zdarma) nebo doživotně. Nebo si kup jednu Zprávu k návštěvě na jednu návštěvu.\n\nMenoMap je aplikace pro sledování zdraví a pohody a vzdělávací nástroj. Nediagnostikuje menopauzu ani žádné jiné onemocnění, nepředepisuje ani nemění léčbu a nenahrazuje péči kvalifikovaného lékaře.\n\nSoukromí: https://gwlabs.app/menomap/privacy\nPodmínky použití: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+  "whatsNew": "První verze aplikace MenoMap.",
+  "iap": {
+   "groupName": "MenoMap Pro",
+   "monthly": {
+    "name": "MenoMap Pro měsíčně",
+    "description": "Vzorce, statistiky a poznámky pro lékaře."
+   },
+   "yearly": {
+    "name": "MenoMap Pro ročně",
+    "description": "Vzorce, statistiky a poznámky pro lékaře."
+   },
+   "lifetime": {
+    "name": "MenoMap Pro doživotně",
+    "description": "Všechny funkce Pro, navždy."
+   },
+   "visitReport": {
+    "name": "Zpráva k návštěvě",
+    "description": "Jedno úplné PDF pro lékaře, až za 90 dní."
+   }
+  },
+  "screenshots": {
+   "1": "Nával horka *jedním klepnutím*.",
+   "2": "*Noční hlídka* na zamknutém iPhonu.",
+   "3": "Tvoje *tepelná mapa*.",
+   "4": "Najdi *svoje* vzorce.",
+   "5": "K lékaři s *poznámkami*.",
+   "6": "Funguje s aplikací *Zdraví*.",
+   "7": "Přímo na *Apple Watch*.",
+   "8": "Jedna změna, *dva týdny*.",
+   "9": "Tvoje data zůstanou *tvoje*."
+  }
+ }
+}

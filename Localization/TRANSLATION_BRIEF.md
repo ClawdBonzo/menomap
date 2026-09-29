@@ -126,3 +126,8 @@ glossary and continue with the first missing part.
 - **"Bleeding after menopause"** = after periods have stopped, not "after the whole change/transition".
 - **Short labels in context:** "Heat" (id 279) is the hot-surroundings trigger tag, not a surge; "Times" (id 728) is
   the Bedtime/Wake settings section; "Start" (id 636) is a button (verb).
+- **Apple terms in QUEUE.md are hints, not facts.** They were wrong for sv (Action Button = "snabbknappen") and nb
+  (Lock Screen = "låst skjerm"). Check Apple's own support pages in your language (support.apple.com/<locale>) for
+  Lock Screen, Control Center, Action Button, Live Activity, StandBy, Controls, Shortcuts, and the Health app name.
+- **Case endings on placeholders** (fi, tr, hu, pl, cs, sk, hr, uk, el …): a suffix glued to `%@` or to "MenoMap" must be
+  right for every possible value; otherwise rephrase to label: value.
