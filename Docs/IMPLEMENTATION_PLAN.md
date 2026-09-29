@@ -5,8 +5,8 @@ Milestones from `Docs/SPEC_ADDITIONS.md` §13. Each milestone ends with a green 
 **How to build and test**
 - `xcodegen generate`
 - `Tools/sim_run.sh -MMDemo -MMInMemory -MMPro` builds, installs and launches the demo.
-- `cd MenoCore && swift test` runs 31 tests on the Mac in under a second.
-- `xcodebuild … test` runs the 16 app tests in the simulator.
+- `cd MenoCore && swift test` runs 35 tests on the Mac in under a second.
+- `xcodebuild … test` runs the 20 app tests in the simulator.
 
 **Launch arguments (DEBUG):**
 - `-MMDemo` loads 60 days of fictional data.
@@ -25,11 +25,12 @@ Milestones from `Docs/SPEC_ADDITIONS.md` §13. Each milestone ends with a green 
 | F | Commerce + Learn | ✅ StoreKit 2 manager, paywall, restore, Visit Report consumable, offer-code redemption, RevenueCat observer hook; 8 articles with live-checked sources; local Ask (20 FAQs); notifications; JSON export. ⚠️ Purchases can't be tested headlessly (the WishLock `SKTestSession` issue); test them from Xcode with `MenoMap.storekit`. |
 | G | Watch + widgets | ✅ Watch app (start, haptic breathing, Double Tap, Crown rating, `WatchConnectivity`), verified in a watchOS simulator; Watch complications; iOS widgets (Surge button, 7-day heat, countdown, Lock Screen circular/rectangular/inline). ⚠️ Widget placement isn't verified headlessly. |
 | H | Share + growth | ✅ Share cards (week, month, experiment, calm stretch; story or square; QR toggle; free-tier watermark); "Tell my person"; friend-pass share (code `MENOFRIEND` must be created in App Store Connect); review prompt rules |
+| G+ | Growth items 1–12 (Docs/GROWTH.md) | ✅ Night Watch (verified on the simulator Lock Screen: arm → Night sweat → timer → End → "1 tonight"), iMessage stickers + heads-up cards, story video (verified 1080×1920, 6 s), clinic codes, review moments, cycle pattern, Tonight's heads-up, Weekly Wrap, sample preview, HRT schedules, notification tap routing |
 | I | Localization | ⏳ Next. About 32 languages plus English regional variants through the WishLock pipeline, with a third safety-string back-translation audit (`Docs/MARKETS.md`). |
 | J | Store | ⏳ Needs Rob: renew the developer membership; about a 20-minute App Store Connect / RevenueCat session; gwlabs.app/menomap pages; DSA trader status. |
 
 ## Tests
-- **MenoCore (31):**
+- **MenoCore (35):**
   - DST and window math
   - Every insight rule, with both insufficient data and fixture data
   - Stats and heat scale
@@ -37,7 +38,10 @@ Milestones from `Docs/SPEC_ADDITIONS.md` §13. Each milestone ends with a green 
   - Severity mapping
   - Watch message round trip
   - Paper size and emergency number
-- **App (16):**
+  - Cycle-phase pattern
+  - Tonight's heads-up
+  - Sample series
+- **App (20):**
   - Entitlement: lifetime, active, expired, revoked, and Visit Report alone
   - Ask fallback and matching
   - The post-menopause bleeding flag
@@ -46,3 +50,7 @@ Milestones from `Docs/SPEC_ADDITIONS.md` §13. Each milestone ends with a green 
   - The free preview is watermarked
   - Check-in merge keeps metrics that were turned off
   - Delete-all
+  - Story video export (6 s, 1080×1920)
+  - Patch schedule due days
+  - Cycle starts skip post-menopause and spotting
+  - Sticker and heads-up copy counts

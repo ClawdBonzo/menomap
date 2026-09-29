@@ -45,7 +45,8 @@ struct TodayView: View {
                                 .font(.caption2).foregroundStyle(MenoTheme.teal)
                                 .labelStyle(.titleAndIcon).imageScale(.small)
                         }
-                        Text(Copy.weekHeadline(count: week.total, voice: profile.voice))
+                        Text(week.loggedDays == 0 ? String(localized: "Your map starts with your first tap.")
+                             : Copy.weekHeadline(count: week.total, voice: profile.voice))
                             .font(MenoTheme.headline(.headline))
                             .foregroundStyle(MenoTheme.ink)
                     }

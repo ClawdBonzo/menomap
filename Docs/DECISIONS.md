@@ -30,3 +30,10 @@ Decisions made during the build. Product decisions from Rob are in `Docs/SPEC_AD
 | 24 | **China mainland off at launch** | Rob, 2026-09-29. No ICP filing. |
 | 25 | **Emergency numbers table** (`RegionInfo.emergencyNumbers`) needs a per-country check before release | It's safety copy; the fallback is "your local emergency number". |
 | 26 | **Review prompt** fires only after closing a full PDF, at most every 120 days | A positive moment, never after a surge. |
+| 27 | **Night Watch is one Live Activity for the whole night**; a surge started while it's on updates it instead of starting a second one | One Lock Screen element, and night mode stays dim. |
+| 28 | **Night Watch arms from the check-in, near-bedtime app opens, a notification tap, the Control, Siri or a Shortcuts Sleep Focus automation** | iOS can't start a Live Activity on a schedule without a push server, and we have no server. |
+| 29 | **Stickers are rendered on device** from localized strings (not a static sticker pack) | They translate along with the app. |
+| 30 | **The story video renders frames with ImageRenderer into AVAssetWriter** (6 s, 30 fps) | Same palette and components as the share cards; no third-party code. |
+| 31 | **The sample preview uses `SampleSeries`** (in MenoCore, shipped in Release) and is clearly labeled; it's never stored | Shows new users the payoff on day one without polluting their data. |
+| 32 | **Review prompts** fire after: a good appointment follow-up, an improved experiment (once each), a new calm-stretch record of 3+ days, or closing a full PDF. Max once per 120 days. | Only positive moments; nothing gates or filters reviews. |
+| 33 | **A surge is saved before its state is cleared** | Night Watch's "tonight" count must include the surge just ended (found in simulator testing). |
