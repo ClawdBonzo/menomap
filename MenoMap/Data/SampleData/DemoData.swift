@@ -10,6 +10,7 @@ import MenoCore
 ///   -MMInMemory        use an in-memory store
 ///   -MMPro / -MMFree   force the entitlement
 ///   -MMTab week|visit|you   open a tab
+///   -MMSheet surge|night|checkin|paywall|setup   present a sheet at launch
 @MainActor
 enum DemoData {
     static func applyLaunchArguments(to container: AppContainer) {
@@ -20,6 +21,22 @@ enum DemoData {
             p.onboardingDone = true
             p.hasSeenSurgeSetup = true
             container.store.save()
+        }
+        if let i = args.firstIndex(of: "-MMSheet"), i + 1 < args.count {
+            let sheet: AppSheet? = switch args[i + 1] {
+            case "surge": .surge(.hotFlash)
+            case "night": .surge(.nightSweat)
+            case "checkin": .checkIn
+            case "paywall": .paywall(.pdf)
+            case "setup": .surgeSetup
+            default: nil
+            }
+            if let sheet {
+                Task { @MainActor in
+                    try? await Task.sleep(for: .milliseconds(800))
+                    container.router.present(sheet)
+                }
+            }
         }
         if let i = args.firstIndex(of: "-MMTab"), i + 1 < args.count {
             switch args[i + 1] {
@@ -34,6 +51,7 @@ enum DemoData {
     static func load(into container: AppContainer) {
         let store = container.store
         store.deleteAll()
+        container.surges.cancel()
         var rng = SeededGenerator(seed: 42)
         let cal = Calendar.menoGregorian
         let today = DayKey.today()

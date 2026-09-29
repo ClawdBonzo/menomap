@@ -108,10 +108,12 @@ struct SurgeSessionView: View {
             } label: {
                 Text("It's easing. End it.")
                     .font(.title3.weight(.semibold))
+                    .foregroundStyle(isNightMode ? MenoTheme.nightGround : MenoTheme.onTeal)
                     .frame(maxWidth: .infinity, minHeight: 64)
+                    .background(isNightMode ? MenoTheme.nightInk.opacity(0.85) : MenoTheme.teal,
+                                in: RoundedRectangle(cornerRadius: MenoTheme.radiusButton, style: .continuous))
             }
-            .buttonStyle(MenoButtonStyle(kind: .primary))
-            .tint(isNightMode ? MenoTheme.nightInk : MenoTheme.teal)
+            .buttonStyle(.plain)
         }
         .padding(.horizontal, 24)
         .padding(.bottom, 12)
