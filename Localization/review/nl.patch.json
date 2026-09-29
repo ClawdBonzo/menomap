@@ -1,0 +1,100 @@
+{
+ "verdict": "A careful, faithful Dutch translation: Thuisarts.nl patient terms (opvlieger, nachtelijk zweten, overgang, bloedverlies na de overgang, hormoontherapie, progestageen), consistent je-address, Apple's official Dutch UI terms (toegangsscherm, bedieningspaneel, actieknop, Opdrachten, Gezondheid-app, Delen met gezin) and a steady glossary (golf, Nachtwacht, privézomer, Hitterapport, Afspraakverslag) across UI, widgets, Watch, Siri phrases and store. Changes are limited to a few safety strings whose grammar blurred the message (713, 715, 403), one misspelt medical term and ambiguity in the menopause article, calques ('Privé vanaf de basis', 'ik loop warm', 'Zie patronen'), and the Belgian-friendly 'noodnummer'; all hedges, placeholders and plurals were intact.",
+ "reviewedThrough": 844,
+ "extrasReviewed": true,
+ "strings": {
+  "42": {
+   "to": "**Menopauze** is één moment in de tijd: de dag waarop je 12 maanden achter elkaar niet ongesteld bent geweest, als daar geen andere verklaring voor is (zoals zwangerschap, sommige medicijnen of een operatie). In veel landen ligt dat gemiddeld begin vijftig, maar ergens tussen midden veertig en midden vijftig komt vaak voor.\n\n**Perimenopauze** is de periode van jaren naar dat moment toe. Hormoonspiegels stijgen en dalen ongelijkmatig, dus menstruaties kunnen onregelmatig worden, heviger, lichter, dichter op elkaar of verder uit elkaar. Veel veranderingen die mensen met de overgang verbinden, zoals opvliegers, nachtelijk zweten, veranderingen in slaap en in stemming, beginnen vaak al hier, terwijl je nog menstrueert. De perimenopauze kan een paar jaar duren of flink langer, en verloopt bij iedereen anders.\n\n**Postmenopauze** is alles na die grens van 12 maanden. Sommige klachten nemen na verloop van tijd af; andere kunnen jaren doorgaan.\n\nDe menopauze kan ook eerder komen door een operatie waarbij de eierstokken worden verwijderd, sommige kankerbehandelingen of andere aandoeningen. Menopauze vóór je 40e heet soms premature ovariële insufficiëntie (POI), en het is goed om dat met een arts te bespreken.\n\n**Hoe het wordt herkend.** Bij veel mensen boven de 45 herkent een arts de perimenopauze of menopauze aan je voorgeschiedenis en klachten. Bloedonderzoek is niet altijd nodig, omdat hormoonspiegels van dag tot dag schommelen. Het wordt eerder gedaan als iemand jonger is of als het beeld onduidelijk is.\n\n**Wat MenoMap wel en niet doet.** MenoMap kan je niet vertellen in welke fase je zit. Wat het wel kan: eerlijk bijhouden wat je merkt, zoals golven, slaap, stemming en behandeling, zodat jij en je arts naar hetzelfde beeld kunnen kijken.",
+   "why": "Spelling of the medical term (premature ovariële insufficiëntie); 'behandelingen tegen kanker of andere aandoeningen' misread as treatments against other conditions; 'is gewoon' -> 'komt vaak voor' (common, not normal)."
+  },
+  "135": {
+   "to": "Neem over wat je al hebt bijgehouden",
+   "why": "'Haal binnen' is a calque; matches 'Overgenomen uit de Gezondheid-app' on the same screen."
+  },
+  "139": {
+   "to": "Cafeïne later dan normaal?",
+   "why": "Natural word order."
+  },
+  "143": {
+   "to": "Rustigste",
+   "why": "Stat label; inflected form like 'Langste'/'Kortste' (the calmest day)."
+  },
+  "162": {
+   "to": "Artsen noemen opvliegers en nachtelijk zweten **vasomotorische klachten**. Een opvlieger is een plotselinge golf van warmte, vaak in je gezicht, hals en borst, soms met rood worden, zweten, hartkloppingen of daarna een koude rilling. Nachtelijk zweten is hetzelfde tijdens je slaap, en het kan zo sterk zijn dat je er wakker van wordt of dat je lakens doorweekt raken.\n\nZe horen bij de meest voorkomende veranderingen rond de overgang. Sommige mensen hebben er een paar lichte; anderen hebben er veel per dag, die werk en slaap verstoren. Bij sommigen verdwijnen ze binnen een paar jaar; bij anderen duren ze veel langer.\n\n**Wat ze waarschijnlijker kan maken.** Mensen merken vaak patronen met alcohol, cafeïne, pittig eten, warme kamers, stress of zwaar beddengoed. Dat verschilt sterk per persoon, en daarom kan het bijhouden van je eigen tags nuttiger zijn dan een algemeen lijstje.\n\n**Er zijn ook andere oorzaken.** Rood worden en zweten kunnen ook komen door schildklierproblemen, infecties, sommige medicijnen, angst en andere aandoeningen. Passen je klachten niet in het gebruikelijke patroon, of heb je daarnaast gewichtsverlies, koorts of voel je je ziek, vertel het dan aan een arts.\n\n**Ze goed beschrijven.** Nuttige details voor een afspraak:\n- Hoeveel per dag en per nacht, ongeveer\n- Hoe sterk ze voelen en hoe lang ze duren\n- Wat ze onderbreken: slaap, werk, gesprekken, sporten\n- Wat eraan vooraf lijkt te gaan\n- Wat je hebt geprobeerd, en of dat iets veranderde\n\nDe Golf-knop en het achteraf-logboek van MenoMap zijn er om precies dit zonder veel moeite vast te leggen.\n\n**Er is hulp.** Er zijn hormonale en niet-hormonale behandelingen, plus praktische aanpakken. Welke bij jou passen, bespreek je met een arts.",
+   "why": "'Het zijn een van' is ungrammatical; 'of je ziek voelen' dangling in the list. Meaning unchanged."
+  },
+  "276": {
+   "to": "Even een seintje: ik gloei vandaag. Het ligt niet aan jou, het ligt aan mij.",
+   "why": "'Vooraankondiging' is stiff; 'ik loop warm' reads as 'I'm getting enthusiastic' (warmlopen)."
+  },
+  "351": {
+   "to": "Het ebt weg. Stoppen.",
+   "why": "'Het zakt af' is odd for a hot flash easing; 'wegebben' fits the golf metaphor."
+  },
+  "371": {
+   "to": "Noteer een golf met één tik. Ontdek patronen. Ga met notities naar je afspraak.",
+   "why": "'Zie patronen' is a calque of 'spot patterns'."
+  },
+  "403": {
+   "to": "MenoMap is een app om je welzijn bij te houden en een hulpmiddel voor voorlichting. MenoMap stelt geen diagnose van de menopauze of van een andere aandoening, schrijft geen behandeling voor en verandert die niet, en vervangt niet de zorg van een bevoegde arts. Maak je je zorgen over klachten, of heb je bloedverlies na de overgang, pijn op de borst, plotselinge hevige hoofdpijn, krachtverlies aan één kant, moeite met ademhalen of flauwvallen, ga dan persoonlijk naar een arts of zoek spoedeisende hulp.",
+   "why": "Safety: 'zoek dan persoonlijk zorg bij een arts of spoedeisende hulp' was garbled; now plainly in-person care or emergency care, as in English."
+  },
+  "471": {
+   "to": "MenoMap leest de klachten, slaap en overgangsfase die je wilt delen, zodat je geschiedenis verschijnt naast wat je hier noteert.",
+   "why": "'die je kiest te delen' is an anglicism."
+  },
+  "535": {
+   "to": "Bekijk mijn notities vooraf",
+   "why": "'Voorbeeld notities' reads as 'sample notes'; this button previews the user's own notes."
+  },
+  "538": {
+   "to": "Privacy als uitgangspunt",
+   "why": "'Privé vanaf de basis' is a calque of 'private by design'. Store heading aligned."
+  },
+  "572": {
+   "to": "Ik gloei. Het ligt niet aan jou, het ligt aan mij.",
+   "why": "'Ik loop warm' reads as 'I'm getting enthusiastic'; same fix as 276."
+  },
+  "696": {
+   "to": "Laat het iemand weten",
+   "why": "'mijn mens' sounds like a pet talking; also shown in Privacy and You settings."
+  },
+  "708": {
+   "to": "De timer start op je toegangsscherm. Tik op Stop als het wegebt.",
+   "why": "Consistent with 351; 'afzakken' is odd for a hot flash."
+  },
+  "713": {
+   "to": "Ze bereiken vaak een piek en zakken binnen een paar minuten weer af. Dit is geen medische behandeling.",
+   "why": "Safety fidelity: in English 'within a couple of minutes' covers both cresting and easing; the translation put the time frame on the peak only."
+  },
+  "715": {
+   "to": "Het komt heel vaak voor rond de overgang. Zweet je en heb je daarbij koorts, val je af of voel je je ziek, dan is het goed om dat door een arts te laten nakijken.",
+   "why": "Safety string: 'Zweten met ... of je ziek voelen is goed om te laten nakijken' was ungrammatical; all three warning signs and 'worth checking' kept."
+  },
+  "718": {
+   "to": "Dit kan een noodgeval zijn. Neem contact op via je lokale noodnummer. MenoMap kan dit niet beoordelen.",
+   "why": "'noodnummer' works in both the Netherlands and Flanders ('alarmnummer' is Netherlands-only)."
+  },
+  "822": {
+   "to": "Alles staat klaar.",
+   "why": "'Je bent klaar' can read as 'you're finished'."
+  }
+ },
+ "demo": {},
+ "store": {
+  "description": {
+   "to": "Noteer een opvlieger met één tik. Zie wat er verandert. Ga met notities naar je afspraak.\n\nMenoMap is gemaakt voor het moment zelf. Begint een opvlieger of nachtelijk zweten, tik dan één keer vanaf je toegangsscherm, het bedieningspaneel, de actieknop of je Apple Watch. MenoMap houdt de tijd bij, ademt met je mee als je wilt, en bewaart het. 's Nachts zet Nachtwacht tot de ochtend een gedimde knop voor nachtelijk zweten op je toegangsscherm, met één tik.\n\nWERKT MET DE GEZONDHEID-APP\nMenoMap leest de klachten en de overgangsfase die je in Gezondheid hebt vastgelegd, zodat je geschiedenis vanaf dag één zichtbaar is, en bewaart elke golf die je noteert ook in Gezondheid.\n\nJOUW WEER, IN KAART\n• Een hittekaart van je dagen, een golfklok die laat zien wanneer ze zich opstapelen, en je meest getagde triggers\n• Een avondcheck-in van 30 seconden voor slaap, stemming en energie\n• Patronen in je eigen invoer, zoals hoe je slaap eruitziet na zware nachten, altijd als toevalscheck, nooit als oorzaak\n• Experimenten van twee weken: probeer één verandering en vergelijk je eigen invoer van ervoor en tijdens\n\nSTAP BINNEN MET NOTITIES\nVoeg je afspraak toe en MenoMap laat zien hoe compleet je notities zijn. Kies je vragen en maak dan een overzichtelijke pdf van één pagina voor je arts, in de taal die je arts spreekt.\n\nPRIVACY ALS UITGANGSPUNT\nGeen account. Geen advertenties. Geen cloud. Je gezondheidsgegevens blijven op je iPhone.\n\nMENOMAP PRO\nLangere geschiedenis (30, 90 en 365 dagen), patronen, experimenten, het volledige maandelijkse Hitterapport, notities voor je arts en medicatieherinneringen. Per maand, per jaar (met gratis proefperiode) of voor altijd. Of koop een los Afspraakverslag voor één afspraak.\n\nMenoMap is een app om je welzijn bij te houden en een hulpmiddel voor voorlichting. MenoMap stelt geen diagnose van de menopauze of van een andere aandoening, schrijft geen behandeling voor en verandert die niet, en vervangt niet de zorg van een bevoegde arts.\n\nPrivacy: https://gwlabs.app/menomap/privacy\nGebruiksvoorwaarden: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+   "why": "Heading matches the in-app string 538; 'Privé vanaf de basis' is a calque."
+  },
+  "screenshots.7": {
+   "to": "Direct op je *Apple Watch*.",
+   "why": "'Gewoon op' reads as 'simply/just on'; 'Right on your Apple Watch' = directly on it."
+  }
+ },
+ "glossary": {},
+ "doubts": [
+  "327 'Ik lig te zweten' (I'm having a night sweat) drops the word 'nacht' but reads naturally for a bedtime button; kept.",
+  "756 'Typisch' as a stat label can also mean 'odd' in Dutch; kept because the duration value next to it makes the sense clear.",
+  "d2 'Dr. De Vries': Dutch style writes 'dr.' in lower case mid-sentence; capitalised here as a stand-alone label, which is common in both NL and BE."
+ ]
+}

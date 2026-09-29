@@ -3,61 +3,194 @@
   "strings": {
     "": {},
     "3am club": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3am club"
+          }
+        }
+      }
     },
     "Could you turn the fan on?": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Could you turn the fan on?"
+          }
+        }
+      }
     },
     "Crack a window": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crack a window"
+          }
+        }
+      }
     },
     "Fan me": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fan me"
+          }
+        }
+      }
     },
     "Heads up: running hot today. Not you, it's me.": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heads up: running hot today. Not you, it's me."
+          }
+        }
+      }
     },
     "Heads-up": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heads-up"
+          }
+        }
+      }
     },
     "Hot flash, give me 3 minutes.": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hot flush, give me 3 minutes."
+          }
+        }
+      }
     },
     "Hot flash. Back in 3.": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hot flush. Back in 3."
+          }
+        }
+      }
     },
     "Internal sauna: on": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Internal sauna: on"
+          }
+        }
+      }
     },
     "Night shift survivor": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Night shift survivor"
+          }
+        }
+      }
     },
     "Night sweat. Cracking the window.": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Night sweat. Cracking the window."
+          }
+        }
+      }
     },
     "Not now, I'm molten": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not now, I'm molten"
+          }
+        }
+      }
     },
     "Personal summer in progress": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personal summer in progress"
+          }
+        }
+      }
     },
     "Recalibrating…": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recalibrating…"
+          }
+        }
+      }
     },
     "Rough night. I'll be slow this morning.": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rough night. I'll be slow this morning."
+          }
+        }
+      }
     },
     "Running hot. Not you, it's me.": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Running hot. Not you, it's me."
+          }
+        }
+      }
     },
     "Stickers": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stickers"
+          }
+        }
+      }
     },
     "Sweater on. Sweater off.": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sweater on. Sweater off."
+          }
+        }
+      }
     },
     "Thermostat: mine": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thermostat: mine"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

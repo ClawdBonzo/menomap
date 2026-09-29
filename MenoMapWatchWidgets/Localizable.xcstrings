@@ -5,19 +5,54 @@
       "shouldTranslate": false
     },
     "One tap to start timing a surge.": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One tap to start timing a surge."
+          }
+        }
+      }
     },
     "Surge": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Surge"
+          }
+        }
+      }
     },
     "Surge · %lld": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Surge · %lld"
+          }
+        }
+      }
     },
     "Surges today: %lld": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Surges today: %lld"
+          }
+        }
+      }
     },
     "Today: %lld": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Today: %lld"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

@@ -9,7 +9,7 @@ struct MorningCard: View {
 
     var body: some View {
         let today = DayKey.today()
-        let hour = Calendar.current.component(.hour, from: .now)
+        let hour = Clock.hour
         let nightSurges = store.surgeRecords(in: DayWindow(lastDays: 2, endingOn: today))
             .filter { $0.nightKey() == today && $0.isNight() }
         let health = store.healthNights().first { $0.morningKey == today.description }

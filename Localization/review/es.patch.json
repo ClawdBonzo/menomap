@@ -1,0 +1,72 @@
+{
+ "verdict": "Strong, natural Spain-Spanish translation: tú register held everywhere, standard patient terms (sofocos, sudores nocturnos, terapia hormonal/THM, progestágeno, sangrado después de la menopausia), glossary consistent across UI, widgets, Watch, Siri phrases and store, Apple ES platform terms correct, and all safety strings faithful and complete. Changes are limited to time placeholders that broke for 1 o'clock times (hacia/de las %@), two slight hedge drifts in safety text (debes, suelen), a misleading 'Sobrio' voice label, and a few calques.",
+ "reviewedThrough": 844,
+ "extrasReviewed": true,
+ "strings": {
+  "36": {
+   "to": "El %1$lld%% de tus oleadas de los últimos 30 días empezó en torno a una misma hora: %2$@.",
+   "why": "'hacia las %@' breaks for 1 o'clock times ('hacia las 1:05'); label-style ending works for every hour and keeps 'around'."
+  },
+  "162": {
+   "to": "Los profesionales sanitarios llaman a los sofocos y a los sudores nocturnos **síntomas vasomotores**. Un sofoco es una oleada repentina de calor, a menudo en la cara, el cuello y el pecho, a veces con enrojecimiento, sudor, el corazón acelerado o un escalofrío después. Un sudor nocturno es lo mismo durante el sueño, y puede ser tan intenso que te despierte o te empape las sábanas.\n\nEstán entre los cambios más frecuentes en torno a la menopausia. Algunas personas tienen unos pocos y leves; otras tienen muchos al día, que alteran el trabajo y el sueño. En algunas desaparecen en pocos años; en otras duran mucho más.\n\n**Qué puede hacerlos más probables.** Mucha gente nota patrones con el alcohol, la cafeína, las comidas picantes, las habitaciones calurosas, el estrés o la ropa de cama gruesa. Esto varía mucho de una persona a otra, y por eso registrar tus propias etiquetas puede ser más útil que una lista general.\n\n**Hay otras causas.** El enrojecimiento y el sudor también pueden deberse a problemas de tiroides, infecciones, algunos medicamentos, la ansiedad y otras afecciones. Si tus síntomas no encajan con el patrón habitual, o vienen con pérdida de peso, fiebre o malestar general, coméntaselo a un profesional sanitario.\n\n**Cómo describirlos bien.** Detalles útiles para la consulta:\n- Cuántos tienes al día y por la noche, más o menos\n- Qué intensidad tienen y cuánto duran\n- Qué interrumpen: el sueño, el trabajo, las conversaciones, el ejercicio\n- Qué parece ocurrir antes\n- Qué has probado y si cambió algo\n\nEl botón Oleada y el registro a posteriori de MenoMap existen para recoger justo esto sin mucho esfuerzo.\n\n**Hay ayuda.** Existen opciones de tratamiento hormonales y no hormonales, además de medidas prácticas. Cuáles te convienen es algo para hablar con un profesional sanitario.",
+   "why": "Safety article: 'debes' turned 'a conversation to have' into an instruction; neutral wording restores the English."
+  },
+  "417": {
+   "to": "Hora más frecuente: %@",
+   "why": "'hacia las %@' is ungrammatical for 1:xx times; 'Label: value' works for every hour."
+  },
+  "418": {
+   "to": "Hora con más oleadas: %@",
+   "why": "'hacia las %@' is ungrammatical for 1:xx times; 'Label: value' works for every hour."
+  },
+  "529": {
+   "to": "Dormir mal es una de las quejas más frecuentes en la mediana edad, y rara vez tiene una sola causa.\n\n**Los sudores nocturnos** pueden despertarte directamente, o dejarte con demasiado calor o demasiado húmeda para volver a dormirte.\n\n**Otros factores frecuentes:**\n- Tener que orinar por la noche\n- La ansiedad o la mente acelerada\n- El alcohol, que puede ayudarte a conciliar el sueño pero suele fragmentar la segunda mitad de la noche\n- La cafeína a última hora del día\n- El dolor, las piernas inquietas o los ronquidos de tu pareja\n- Los ronquidos o las pausas en la respiración, que pueden ser un signo de apnea del sueño (merece la pena comentarlo, sobre todo si tienes mucho sueño durante el día)\n\n**Lo que suele ayudar.** Una habitación fresca y a oscuras; ropa de cama transpirable y capas que puedas quitarte; una hora fija para levantarte, y menos alcohol cerca de la hora de dormir. La terapia cognitivo-conductual para el insomnio (TCC-I) es un enfoque estructurado y bien estudiado, y muchos profesionales sanitarios pueden orientarte hacia ella.\n\n**Qué registrar.** Durante una o dos semanas, apunta tu puntuación de sueño, las oleadas nocturnas, el alcohol y la cafeína a última hora. El repaso del día y el registro de oleadas de MenoMap lo hacen en unos pocos toques. Si usas Apple Watch, MenoMap puede mostrarte el sueño y la temperatura de la muñeca de la app Salud junto a tus sudores nocturnos, como contexto y no como explicación.\n\n**Cuándo consultarlo.** Habla con un profesional sanitario si dormir mal afecta a tu seguridad (por ejemplo, al conducir), a tu estado de ánimo o a tu día a día, o si notas pausas en la respiración o ahogos por la noche.",
+   "why": "'boqueas' (gasping) reads oddly in patient copy; 'ahogos' is the usual Spain patient term for gasping/choking at night."
+  },
+  "554": {
+   "to": "Valora tu sofoco (%@)",
+   "why": "'de las %@' breaks for 1 o'clock times ('de las 1:05'); parenthesised time works for every hour."
+  },
+  "555": {
+   "to": "Valora tu sudor nocturno (%@)",
+   "why": "'de las %@' breaks for 1 o'clock times; parenthesised time works for every hour."
+  },
+  "576": {
+   "to": "Guardada. %@ de clima interior, registrado.",
+   "why": "Participle now agrees with 'clima', so it also works for '1 min'."
+  },
+  "658": {
+   "to": "Neutro",
+   "why": "Voice setting 'Straight' vs 'Con humor'; 'Sobrio' reads as 'sober' in an app that tracks alcohol."
+  },
+  "159": {
+   "to": "Notas para el médico",
+   "why": "35 chars vs EN 15 (validator warning); glossary short form 'médico', matches store subtitle."
+  },
+  "803": {
+   "to": "¿Por qué me despierto a las 3?",
+   "why": "Question chip was 46 vs EN 21 chars; same wording as the search hint (111)."
+  },
+  "713": {
+   "to": "A menudo alcanzan su punto máximo y remiten en un par de minutos. Esto no es un tratamiento médico.",
+   "why": "Safety: 'Suelen' (usually) strengthened 'often'; restored the hedge."
+  }
+ },
+ "demo": {
+  "d6": {
+   "to": "Vía cutánea",
+   "why": "Route label parallel to d9 'Vía oral', as on Spanish packaging."
+  }
+ },
+ "store": {
+  "description": {
+   "to": "Registra un sofoco con un toque. Mira qué está cambiando. Llega a tu cita con notas.\n\nMenoMap está hecha para el momento en sí. Cuando empieza un sofoco o un sudor nocturno, toca una vez desde la pantalla bloqueada, el centro de control, el botón de acción o tu Apple Watch. MenoMap lo cronometra, respira contigo si quieres y lo guarda. Por la noche, la Guardia nocturna mantiene en la pantalla bloqueada, hasta la mañana, un botón tenue de sudores nocturnos de un solo toque.\n\nFUNCIONA CON LA APP SALUD\nMenoMap lee los síntomas y la etapa de la menopausia que hayas registrado en Salud, para que tu historial aparezca desde el primer día, y guarda en Salud cada oleada que registres.\n\nTU CLIMA, EN UN MAPA\n• Un mapa de calor de tus días, un reloj de oleadas que muestra cuándo se concentran y tus desencadenantes más etiquetados\n• Un repaso del día de 30 segundos, por la noche, para el sueño, el ánimo y la energía\n• Patrones en tus propios registros, como cómo es tu sueño después de noches intensas, siempre como comprobación de coincidencias, nunca como causa\n• Experimentos de dos semanas: prueba un cambio y compara tus propios registros de antes y de durante\n\nLLEGA A LA CONSULTA CON NOTAS\nAñade tu cita y MenoMap te muestra lo preparadas que están tus notas. Elige tus preguntas y crea un PDF limpio de una página para tu profesional sanitario, en el idioma que hable.\n\nPRIVACIDAD DESDE EL DISEÑO\nSin cuenta. Sin anuncios. Sin nube. Tus datos de salud se quedan en tu iPhone.\n\nMENOMAP PRO\nMás historial (30, 90 y 365 días), patrones, experimentos, el Informe de calor mensual completo, notas para el profesional sanitario y recordatorios de medicación. Mensual, anual (con prueba gratuita) o de por vida. O compra un único Informe de consulta para una cita.\n\nMenoMap es una herramienta de seguimiento del bienestar y de educación. No diagnostica la menopausia ni ninguna otra afección, no receta ni cambia tratamientos y no sustituye la atención de un profesional sanitario cualificado.\n\nPrivacidad: https://gwlabs.app/menomap/privacy\nCondiciones de uso: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+   "why": "'compara tu propio antes y durante' is a calque; natural Spanish, same meaning."
+  }
+ },
+ "glossary": {},
+ "doubts": [
+  "259/497: Shortcuts automation path uses 'Dormir (o Concentración → Dormir)' and 'Al activarse'; matches iOS ES wording as far as known but exact menu labels vary by iOS version.",
+  "765 'US Letter' kept as 'Carta' (max 12 prevents 'Carta EE. UU.')."
+ ]
+}

@@ -5,61 +5,187 @@
       "shouldTranslate": false
     },
     "Double tap your fingers to end": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Double tap your fingers to end"
+          }
+        }
+      }
     },
     "End": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "End"
+          }
+        }
+      }
     },
     "Hold": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hold"
+          }
+        }
+      }
     },
     "Hot flash": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hot flush"
+          }
+        }
+      }
     },
     "How strong?": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How strong?"
+          }
+        }
+      }
     },
     "In": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In"
+          }
+        }
+      }
     },
     "Intense": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intense"
+          }
+        }
+      }
     },
     "MenoMap": {
       "shouldTranslate": false
     },
     "Mild": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mild"
+          }
+        }
+      }
     },
     "Night sweat": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Night sweat"
+          }
+        }
+      }
     },
     "Noticeable": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noticeable"
+          }
+        }
+      }
     },
     "Out": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Out"
+          }
+        }
+      }
     },
     "Save": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save"
+          }
+        }
+      }
     },
     "Skip rating": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skip rating"
+          }
+        }
+      }
     },
     "Strong": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strong"
+          }
+        }
+      }
     },
     "Surge": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Surge"
+          }
+        }
+      }
     },
     "Today: %lld": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Today: %lld"
+          }
+        }
+      }
     },
     "Turn the Crown": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn the Crown"
+          }
+        }
+      }
     },
     "Very strong": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Very strong"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

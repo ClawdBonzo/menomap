@@ -20,3 +20,10 @@ Wording differences that keep the meaning are fine: do not fix style.
 ## Step 3
 Set `"verdict"` (one paragraph: pass, or what you fixed). Run `python3 Tools/loc_apply_review.py <lang>`; it
 applies review + audit fixes and must end with `0 problems`.
+
+## Known trap (found in German review)
+"Bleeding **after menopause**" means after the final period (12 months without one), NOT "after the whole
+menopause transition / change years". In many languages the everyday word for "the change" (Wechseljahre,
+klimakteriet, overgang, 更年期 …) names the multi-year transition, so "after the change" can read as "only years
+from now". Use the wording that clearly means after periods have stopped (e.g. "nach der Menopause", "après la
+ménopause", "閉経後"). Check every bleeding string and the article.

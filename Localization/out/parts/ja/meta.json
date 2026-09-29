@@ -1,0 +1,28 @@
+{"language": "ja",
+ "register": "丁寧語（です・ます調）で統一。落ち着いて温かく、控えめ。感嘆符・絵文字なし。全角句読点、引用は「」。ボタンや短いラベルは体言止め・「〜する」形。ユーモアの行は体を笑わず、自分ごととしてのやわらかい自虐にとどめる。",
+ "gender": "日本語は利用者の性別を文法上示さないため、中立の表現を使用。",
+ "glossary": {
+  "surge": "ほてり（ホットフラッシュと寝汗の総称。回数は「ほてり3回」、「今、ほてりが来ています」。ボタン名は「ほてりボタン」）",
+  "hot flash": "ホットフラッシュ",
+  "night sweat": "寝汗",
+  "check-in": "ふり返り（夜のふり返り）",
+  "heat map": "ヒートマップ（PDFでは「ほてりカレンダー」）",
+  "pattern": "傾向",
+  "experiment": "実験（2週間の実験）",
+  "Night Watch": "夜の見守り",
+  "Heat Report": "ヒートレポート",
+  "Weekly Wrap": "週のまとめ",
+  "calm stretch": "穏やか連続（ほてりのない日が続いた日数）",
+  "clinician": "医師（薬剤師と並ぶ文脈では「医師や薬剤師」）",
+  "Visit / notes": "受診／受診メモ",
+  "Apple Health": "ヘルスケア App（文中では「ヘルスケア」）",
+  "personal summer": "「私だけ真夏」",
+  "Apple terms": "ロック画面、コントロールセンター、アクションボタン、ホーム画面、ウィジェット、ライブアクティビティ、集中モード、ショートカット、Siri、Apple Watch、Digital Crown、ダブルタップ、スタンバイ",
+  "hormone therapy": "ホルモン補充療法（HRT）",
+  "progestogen": "黄体ホルモン",
+  "estrogen": "エストロゲン",
+  "bleeding after menopause": "閉経後の出血",
+  "perimenopause": "閉経前後の時期（更年期）",
+  "menopause": "閉経／更年期"
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "demo": {
+  "d1": "Sabine",
+  "d2": "Dr. Müller",
+  "d3": "Estradiol-Gel",
+  "d4": "Mikronisiertes Progesteron",
+  "d5": "1 Hub",
+  "d6": "Haut",
+  "d7": "Jeden Morgen",
+  "d8": "100 mg",
+  "d9": "Zum Einnehmen",
+  "d10": "Zur Nacht",
+  "d11": "Kontrolltermin Wechseljahre"
+ },
+ "store": {
+  "name": "MenoMap: Wechseljahre-Tracker",
+  "subtitle": "Hitzewallungen & Arztnotizen",
+  "keywords": "menopause,perimenopause,nachtschweiß,hrt,hormone,tagebuch,schlaf,zyklus,klimakterium,östrogen,frauen",
+  "promotionalText": "Hitzewallung mit einem Tippen erfassen, auf dem Sperrbildschirm oder der Apple Watch. Sieh deine Muster. Geh mit klaren Notizen zum Arzttermin. Kein Konto, keine Werbung.",
+  "description": "Hitzewallung mit einem Tippen erfassen. Sehen, was sich verändert. Mit Notizen in den Arzttermin gehen.\n\nMenoMap ist für genau den Moment gemacht. Wenn eine Hitzewallung oder ein nächtlicher Schweißausbruch beginnt, tippst du einmal: auf dem Sperrbildschirm, im Kontrollzentrum, mit der Aktionstaste oder auf deiner Apple Watch. MenoMap misst die Dauer, atmet mit dir, wenn du möchtest, und speichert alles. Nachts hält die Nachtwache bis zum Morgen eine gedimmte Nachtschweiß-Taste für ein Tippen auf deinem Sperrbildschirm bereit.\n\nFUNKTIONIERT MIT APPLE HEALTH\nMenoMap liest die Beschwerden und die Wechseljahresphase, die du in Health erfasst hast, damit dein Verlauf schon am ersten Tag da ist, und speichert jede Welle, die du erfasst, zurück in Health.\n\nDEIN WETTER, KARTIERT\n• Eine Hitzekarte deiner Tage, eine Wellen-Uhr, die zeigt, wann sie sich häufen, und deine am häufigsten markierten Auslöser\n• Ein 30-Sekunden-Check-in am Abend für Schlaf, Stimmung und Energie\n• Muster in deinen eigenen Einträgen, etwa wie dein Schlaf nach heftigen Nächten aussieht, immer als Blick auf zeitliches Zusammentreffen, nie als Ursache\n• Zwei-Wochen-Experimente: Probier eine Veränderung aus und vergleiche dein eigenes Davor und Währenddessen\n\nMIT NOTIZEN IN DEN TERMIN\nTrag deinen Termin ein, und MenoMap zeigt dir, wie weit deine Notizen sind. Wähle deine Fragen aus und erstelle dann ein übersichtliches, einseitiges PDF für deine Ärztin oder deinen Arzt, in der Sprache, die sie oder er spricht.\n\nPRIVAT VON GRUND AUF\nKein Konto. Keine Werbung. Keine Cloud. Deine Gesundheitsdaten bleiben auf deinem iPhone.\n\nMENOMAP PRO\nLängerer Verlauf (30, 90 und 365 Tage), Muster, Experimente, der vollständige monatliche Hitzebericht, Arztnotizen und Medikamenten-Erinnerungen. Monatlich, jährlich (mit kostenloser Testphase) oder lebenslang. Oder kauf einen einzelnen Terminbericht für einen Termin.\n\nMenoMap ist ein Wellness-Tracker und Informationsangebot. Es stellt keine Diagnose der Menopause oder einer anderen Erkrankung, verschreibt oder ändert keine Behandlung und ersetzt nicht die Versorgung durch qualifizierte Ärztinnen und Ärzte.\n\nDatenschutz: https://gwlabs.app/menomap/privacy\nNutzungsbedingungen: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+  "whatsNew": "Die erste Version von MenoMap.",
+  "iap": {
+   "groupName": "MenoMap Pro",
+   "monthly": {
+    "name": "MenoMap Pro monatlich",
+    "description": "Muster, Statistiken und Arztnotizen."
+   },
+   "yearly": {
+    "name": "MenoMap Pro jährlich",
+    "description": "Muster, Statistiken und Arztnotizen."
+   },
+   "lifetime": {
+    "name": "MenoMap Pro lebenslang",
+    "description": "Alle Pro-Funktionen, für immer."
+   },
+   "visitReport": {
+    "name": "Terminbericht",
+    "description": "Ein vollständiges Arzt-PDF, bis zu 90 Tage."
+   }
+  },
+  "screenshots": {
+   "1": "*Ein Tippen* pro Hitzewallung.",
+   "2": "*Nachtwache* am Sperrbildschirm.",
+   "3": "Sieh deine *Hitzekarte*.",
+   "4": "Finde *deine* Muster.",
+   "5": "Mit *Notizen* zum Arzttermin.",
+   "6": "Funktioniert mit *Apple Health*.",
+   "7": "Direkt auf deiner *Apple Watch*.",
+   "8": "Eine Veränderung, *zwei Wochen*.",
+   "9": "Deine Daten bleiben *deine*."
+  }
+ }
+}

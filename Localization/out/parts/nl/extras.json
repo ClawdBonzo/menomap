@@ -1,0 +1,53 @@
+{
+ "demo": {
+  "d1": "Marieke",
+  "d2": "Dr. De Vries",
+  "d3": "Estradiolgel",
+  "d4": "Gemicroniseerd progesteron",
+  "d5": "1 pompje",
+  "d6": "Op de huid",
+  "d7": "Elke ochtend",
+  "d8": "100 mg",
+  "d9": "Via de mond",
+  "d10": "Voor het slapengaan",
+  "d11": "Overgangsconsult"
+ },
+ "store": {
+  "name": "MenoMap: Overgang & Menopauze",
+  "subtitle": "Opvliegers bijhouden voor arts",
+  "keywords": "overgangsklachten,perimenopauze,nachtelijk,zweten,hormoontherapie,hrt,dagboek,slaap,hormonen,cyclus",
+  "promotionalText": "Noteer een opvlieger met één tik vanaf je toegangsscherm of Apple Watch. Zie je patronen. Ga met heldere notities naar je afspraak. Geen account, geen advertenties.",
+  "description": "Noteer een opvlieger met één tik. Zie wat er verandert. Ga met notities naar je afspraak.\n\nMenoMap is gemaakt voor het moment zelf. Begint een opvlieger of nachtelijk zweten, tik dan één keer vanaf je toegangsscherm, het bedieningspaneel, de actieknop of je Apple Watch. MenoMap houdt de tijd bij, ademt met je mee als je wilt, en bewaart het. 's Nachts zet Nachtwacht tot de ochtend een gedimde knop voor nachtelijk zweten op je toegangsscherm, met één tik.\n\nWERKT MET DE GEZONDHEID-APP\nMenoMap leest de klachten en de overgangsfase die je in Gezondheid hebt vastgelegd, zodat je geschiedenis vanaf dag één zichtbaar is, en bewaart elke golf die je noteert ook in Gezondheid.\n\nJOUW WEER, IN KAART\n• Een hittekaart van je dagen, een golfklok die laat zien wanneer ze zich opstapelen, en je meest getagde triggers\n• Een avondcheck-in van 30 seconden voor slaap, stemming en energie\n• Patronen in je eigen invoer, zoals hoe je slaap eruitziet na zware nachten, altijd als toevalscheck, nooit als oorzaak\n• Experimenten van twee weken: probeer één verandering en vergelijk je eigen invoer van ervoor en tijdens\n\nSTAP BINNEN MET NOTITIES\nVoeg je afspraak toe en MenoMap laat zien hoe compleet je notities zijn. Kies je vragen en maak dan een overzichtelijke pdf van één pagina voor je arts, in de taal die je arts spreekt.\n\nPRIVÉ VANAF DE BASIS\nGeen account. Geen advertenties. Geen cloud. Je gezondheidsgegevens blijven op je iPhone.\n\nMENOMAP PRO\nLangere geschiedenis (30, 90 en 365 dagen), patronen, experimenten, het volledige maandelijkse Hitterapport, notities voor je arts en medicatieherinneringen. Per maand, per jaar (met gratis proefperiode) of voor altijd. Of koop een los Afspraakverslag voor één afspraak.\n\nMenoMap is een app om je welzijn bij te houden en een hulpmiddel voor voorlichting. MenoMap stelt geen diagnose van de menopauze of van een andere aandoening, schrijft geen behandeling voor en verandert die niet, en vervangt niet de zorg van een bevoegde arts.\n\nPrivacy: https://gwlabs.app/menomap/privacy\nGebruiksvoorwaarden: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+  "whatsNew": "De eerste versie van MenoMap.",
+  "iap": {
+   "groupName": "MenoMap Pro",
+   "monthly": {
+    "name": "MenoMap Pro maandelijks",
+    "description": "Patronen, statistieken, notities voor je arts"
+   },
+   "yearly": {
+    "name": "MenoMap Pro jaarlijks",
+    "description": "Patronen, statistieken, notities voor je arts"
+   },
+   "lifetime": {
+    "name": "MenoMap Pro voor altijd",
+    "description": "Elke Pro-functie, voor altijd."
+   },
+   "visitReport": {
+    "name": "Afspraakverslag",
+    "description": "Eén volledige pdf voor je arts, tot 90 dagen."
+   }
+  },
+  "screenshots": {
+   "1": "Noteer een opvlieger met *één tik*.",
+   "2": "*Nachtwacht* op je toegangsscherm.",
+   "3": "Bekijk je *hittekaart*.",
+   "4": "Vind *jouw* patronen.",
+   "5": "Stap binnen met *notities*.",
+   "6": "Werkt met de *Gezondheid-app*.",
+   "7": "Gewoon op je *Apple Watch*.",
+   "8": "Test één verandering *twee weken*.",
+   "9": "Je gegevens blijven *van jou*."
+  }
+ }
+}

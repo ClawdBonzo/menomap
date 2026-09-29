@@ -1,0 +1,53 @@
+{
+ "demo": {
+  "d1": "Carmen",
+  "d2": "Dra. García",
+  "d3": "Estradiol en gel",
+  "d4": "Progesterona micronizada",
+  "d5": "1 pulsación",
+  "d6": "Cutánea",
+  "d7": "Todas las mañanas",
+  "d8": "100 mg",
+  "d9": "Vía oral",
+  "d10": "Al acostarse",
+  "d11": "Revisión de menopausia"
+ },
+ "store": {
+  "name": "MenoMap: Diario de menopausia",
+  "subtitle": "Sofocos y notas para el médico",
+  "keywords": "perimenopausia,sudores,nocturnos,thm,síntomas,sueño,hormonas,ciclo,climaterio,insomnio,regla,mujer",
+  "promotionalText": "Registra un sofoco con un toque desde la pantalla bloqueada o el Apple Watch. Descubre tus patrones. Llega a tu cita con notas claras. Sin cuenta y sin anuncios.",
+  "description": "Registra un sofoco con un toque. Mira qué está cambiando. Llega a tu cita con notas.\n\nMenoMap está hecha para el momento en sí. Cuando empieza un sofoco o un sudor nocturno, toca una vez desde la pantalla bloqueada, el centro de control, el botón de acción o tu Apple Watch. MenoMap lo cronometra, respira contigo si quieres y lo guarda. Por la noche, la Guardia nocturna mantiene en la pantalla bloqueada, hasta la mañana, un botón tenue de sudores nocturnos de un solo toque.\n\nFUNCIONA CON LA APP SALUD\nMenoMap lee los síntomas y la etapa de la menopausia que hayas registrado en Salud, para que tu historial aparezca desde el primer día, y guarda en Salud cada oleada que registres.\n\nTU CLIMA, EN UN MAPA\n• Un mapa de calor de tus días, un reloj de oleadas que muestra cuándo se concentran y tus desencadenantes más etiquetados\n• Un repaso del día de 30 segundos, por la noche, para el sueño, el ánimo y la energía\n• Patrones en tus propios registros, como cómo es tu sueño después de noches intensas, siempre como comprobación de coincidencias, nunca como causa\n• Experimentos de dos semanas: prueba un cambio y compara tu propio antes y durante\n\nLLEGA A LA CONSULTA CON NOTAS\nAñade tu cita y MenoMap te muestra lo preparadas que están tus notas. Elige tus preguntas y crea un PDF limpio de una página para tu profesional sanitario, en el idioma que hable.\n\nPRIVACIDAD DESDE EL DISEÑO\nSin cuenta. Sin anuncios. Sin nube. Tus datos de salud se quedan en tu iPhone.\n\nMENOMAP PRO\nMás historial (30, 90 y 365 días), patrones, experimentos, el Informe de calor mensual completo, notas para el profesional sanitario y recordatorios de medicación. Mensual, anual (con prueba gratuita) o de por vida. O compra un único Informe de consulta para una cita.\n\nMenoMap es una herramienta de seguimiento del bienestar y de educación. No diagnostica la menopausia ni ninguna otra afección, no receta ni cambia tratamientos y no sustituye la atención de un profesional sanitario cualificado.\n\nPrivacidad: https://gwlabs.app/menomap/privacy\nCondiciones de uso: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+  "whatsNew": "La primera versión de MenoMap.",
+  "iap": {
+   "groupName": "MenoMap Pro",
+   "monthly": {
+    "name": "MenoMap Pro mensual",
+    "description": "Patrones, estadísticas y notas para la cita."
+   },
+   "yearly": {
+    "name": "MenoMap Pro anual",
+    "description": "Patrones, estadísticas y notas para la cita."
+   },
+   "lifetime": {
+    "name": "MenoMap Pro de por vida",
+    "description": "Todas las funciones Pro, para siempre."
+   },
+   "visitReport": {
+    "name": "Informe de consulta",
+    "description": "Un PDF completo para la cita, hasta 90 días."
+   }
+  },
+  "screenshots": {
+   "1": "Registra un sofoco con *un toque*.",
+   "2": "*Guardia nocturna* toda la noche.",
+   "3": "Mira tu *mapa de calor*.",
+   "4": "Descubre *tus* patrones.",
+   "5": "Llega a la cita con *notas*.",
+   "6": "Funciona con la app *Salud*.",
+   "7": "Directo en tu *Apple Watch*.",
+   "8": "Prueba un cambio *dos semanas*.",
+   "9": "Tus datos son *tuyos*."
+  }
+ }
+}

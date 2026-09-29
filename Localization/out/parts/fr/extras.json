@@ -1,0 +1,53 @@
+{
+"demo": {
+"d1": "Nathalie",
+"d2": "Dr Martin",
+"d3": "Estradiol en gel",
+"d4": "Progestérone micronisée",
+"d5": "1 pression",
+"d6": "Voie cutanée",
+"d7": "Chaque matin",
+"d8": "100 mg",
+"d9": "Voie orale",
+"d10": "Au coucher",
+"d11": "Consultation ménopause"
+},
+"store": {
+"name": "MenoMap : Suivi ménopause",
+"subtitle": "Journal de bouffées de chaleur",
+"keywords": "périménopause,préménopause,sueurs,nocturnes,thm,symptômes,sommeil,hormones,cycle,règles,médecin,rdv",
+"promotionalText": "Notez une bouffée de chaleur d’un toucher sur l’écran verrouillé ou l’Apple Watch. Repérez vos tendances. Arrivez au rendez-vous avec des notes. Sans compte, sans pub.",
+"description": "Notez une bouffée de chaleur d’un seul toucher. Voyez ce qui change. Arrivez à votre rendez-vous avec des notes.\n\nMenoMap est conçu pour l’instant même. Quand une bouffée de chaleur ou des sueurs nocturnes commencent, touchez une fois l’écran verrouillé, le centre de contrôle, le bouton Action ou votre Apple Watch. MenoMap chronomètre, respire avec vous si vous le souhaitez, et enregistre. La nuit, la Veille de nuit garde sur l’écran verrouillé un bouton sueurs nocturnes discret, en un toucher, jusqu’au matin.\n\nCOMPATIBLE AVEC L’APP SANTÉ\nMenoMap lit les symptômes et le stade de la ménopause que vous avez notés dans Santé, pour que votre historique s’affiche dès le premier jour, et enregistre dans Santé chaque vague que vous notez.\n\nVOTRE MÉTÉO, CARTOGRAPHIÉE\n• Une carte de chaleur de vos journées, une horloge des vagues qui montre quand elles se concentrent, et vos déclencheurs les plus étiquetés\n• Un bilan du soir de 30 secondes pour le sommeil, l’humeur et l’énergie\n• Des tendances dans vos propres saisies, comme votre sommeil après les nuits chargées, toujours comme repérage de coïncidences, jamais comme cause\n• Des essais de deux semaines : essayez un changement et comparez vos propres données avant et pendant\n\nARRIVEZ AVEC VOS NOTES\nAjoutez votre rendez-vous et MenoMap indique où en sont vos notes. Choisissez vos questions, puis créez un PDF clair d’une page pour votre médecin, dans sa langue.\n\nCONFIDENTIALITÉ DÈS LA CONCEPTION\nPas de compte. Pas de pub. Pas de cloud. Vos données de santé restent sur votre iPhone.\n\nMENOMAP PRO\nUn historique plus long (30, 90 et 365 jours), les tendances, les essais, le Rapport chaleur mensuel complet, les notes pour le médecin et les rappels de médicaments. Mensuel, annuel (avec essai gratuit) ou à vie. Ou achetez un seul Rapport de rendez-vous pour un rendez-vous.\n\nMenoMap est un outil de suivi du bien-être et un outil éducatif. Il ne diagnostique pas la ménopause ni aucune autre maladie, ne prescrit pas et ne modifie pas de traitement, et ne remplace pas les soins d’un professionnel de santé qualifié.\n\nConfidentialité : https://gwlabs.app/menomap/privacy\nConditions d’utilisation : https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+"whatsNew": "La première version de MenoMap.",
+"iap": {
+"groupName": "MenoMap Pro",
+"monthly": {
+"name": "MenoMap Pro mensuel",
+"description": "Tendances, stats et notes pour le médecin."
+},
+"yearly": {
+"name": "MenoMap Pro annuel",
+"description": "Tendances, stats et notes pour le médecin."
+},
+"lifetime": {
+"name": "MenoMap Pro à vie",
+"description": "Toutes les fonctions Pro, pour toujours."
+},
+"visitReport": {
+"name": "Rapport de rendez-vous",
+"description": "Un PDF complet pour le médecin, 90 j max."
+}
+},
+"screenshots": {
+"1": "Une bouffée notée *d’un toucher*.",
+"2": "*Veille de nuit*, écran verrouillé.",
+"3": "Voyez votre *carte de chaleur*.",
+"4": "Trouvez *vos* tendances.",
+"5": "Arrivez avec des *notes*.",
+"6": "Compatible avec *l’app Santé*.",
+"7": "Même sur votre *Apple Watch*.",
+"8": "Un changement, *deux semaines*.",
+"9": "Vos données restent *à vous*."
+}
+}
+}

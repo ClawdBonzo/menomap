@@ -25,7 +25,7 @@ struct SurgeSessionView: View {
     private var kind: SurgeKind { surges.active?.kind ?? initialKind }
 
     private var isNightMode: Bool {
-        let h = Calendar.current.component(.hour, from: .now)
+        let h = Clock.hour
         return kind == .nightSweat || h >= 21 || h < 7
     }
 
@@ -274,7 +274,7 @@ struct AfterTheFactView: View {
     @Environment(\.dismiss) private var dismiss
 
     @State private var kind: SurgeKind = {
-        let h = Calendar.current.component(.hour, from: .now)
+        let h = Clock.hour
         return (h >= 21 || h < 9) ? .nightSweat : .hotFlash
     }()
     @State private var when = Date.now.addingTimeInterval(-15 * 60)

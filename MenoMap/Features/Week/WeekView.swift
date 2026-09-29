@@ -22,7 +22,7 @@ struct WeekView: View {
     @Environment(MenoStore.self) private var store
     @Environment(SubscriptionManager.self) private var subscription
     @Environment(AppRouter.self) private var router
-    @State private var range: StatsRange = .week
+    @State private var range: StatsRange = DebugArgs.value("-MMRange").flatMap { Int($0) }.flatMap(StatsRange.init(rawValue:)) ?? .week
     @State private var showShare = false
 
     var body: some View {

@@ -1,0 +1,141 @@
+{
+ "verdict": "A careful, faithful Korean translation in consistent 해요체 with correct Korean patient-facing terms (안면홍조, 야간 발한, 폐경 이행기, 폐경 후 출혈, 호르몬 대체 요법, 프로게스토겐, 조기 난소 부전), consistent 열감 / 밤 지킴이 across UI, widgets, Watch, Siri phrases and store, Apple's official Korean platform terms, and every safety string complete and faithful. Changes are mostly context errors (the 'Heat' trigger tag rendered as 열감, which clashed with the surge term; 'Times' as a count; the 'Already over' button; strength-scale label mismatch in the PDF), a Siri example quoting a phrase that has no Korean version, breathing-coach label consistency, 당신 in messages to other people, and a few calques; one safety-string wording fix (대면 진료) with no change of meaning.",
+ "reviewedThrough": 844,
+ "extrasReviewed": true,
+ "strings": {
+  "87": {
+   "to": "이미 끝났어요",
+   "why": "Button logs a surge that is already over; 지났어요 reads as 'already passed'."
+  },
+  "162": {
+   "to": "의료진은 안면홍조와 야간 발한을 **혈관운동 증상**이라고 불러요. 안면홍조는 갑자기 밀려오는 열기로, 주로 얼굴, 목, 가슴에 나타나며 때로 얼굴이 붉어지거나, 땀이 나거나, 심장이 빨리 뛰거나, 이후에 오한이 들기도 해요. 야간 발한은 자는 동안 같은 일이 일어나는 것으로, 잠에서 깨거나 침구가 흠뻑 젖을 만큼 심할 수 있어요.\n\n갱년기 무렵 가장 흔한 변화 중 하나예요. 가볍게 몇 번 겪는 사람도 있고, 하루에 여러 번 겪어 일과 수면에 지장을 받는 사람도 있어요. 몇 년 안에 사라지는 사람도 있고, 훨씬 오래 이어지는 사람도 있어요.\n\n**생기기 쉽게 만들 수 있는 것들.** 술, 카페인, 매운 음식, 더운 방, 스트레스, 두꺼운 침구와 관련된 패턴을 알아차리는 사람이 많아요. 이런 요인은 사람마다 크게 달라서, 일반적인 목록보다 내 태그를 기록하는 편이 더 유용할 수 있어요.\n\n**다른 원인도 있어요.** 얼굴이 붉어지고 땀이 나는 증상은 갑상선 문제, 감염, 일부 약, 불안, 다른 질환 때문일 수도 있어요. 증상이 흔한 양상과 맞지 않거나 체중 감소, 발열, 몸이 안 좋은 느낌이 함께 있다면 의료진에게 알리세요.\n\n**잘 설명하려면.** 진료에 도움이 되는 정보:\n- 낮과 밤에 대략 몇 번 있는지\n- 얼마나 강하게 느껴지고 얼마나 오래 가는지\n- 무엇을 방해하는지: 수면, 일, 대화, 운동\n- 그 전에 무엇이 있었던 것 같은지\n- 무엇을 시도해 봤고, 달라진 게 있었는지\n\nMenoMap의 열감 버튼과 나중에 기록하기 기능은 바로 이런 정보를 별 수고 없이 남기기 위해 있어요.\n\n**도움을 받을 수 있어요.** 호르몬 치료와 비호르몬 치료, 그리고 실생활에서 해 볼 수 있는 방법들이 있어요. 어떤 것이 나에게 맞는지는 의료진과 상의할 부분이에요.",
+   "why": "Heading was stiff and dropped the hedge 'can'; now 'things that can make them more likely'."
+  },
+  "170": {
+   "to": "끊임없음",
+   "why": "Hot-flash scale high end ('Constant'); 계속됨 reads as 'continued'."
+  },
+  "186": {
+   "to": "%2$lld일 중 %1$lld일째",
+   "why": "'3/14일째' is awkward; matches the phrasing of id 187."
+  },
+  "211": {
+   "to": "검지와 엄지를 두 번 맞대면 종료돼요",
+   "why": "Watch accessibility hint was clipped ('맞대 종료'); natural description of the Double Tap gesture."
+  },
+  "248": {
+   "to": "받는 분: %@",
+   "why": "PDF header 'For Dr. Park'; '%@ 대상' is unnatural with a clinician name (label: value form)."
+  },
+  "249": {
+   "to": "의료진을 위한 안내",
+   "why": "Link to a page for clinicians; '의료진께' reads like a letter salutation."
+  },
+  "266": {
+   "to": "편안한 저녁 되세요",
+   "why": "'편안한 저녁이에요' asserts the evening is comfortable; a greeting wishes it."
+  },
+  "267": {
+   "to": "편안한 저녁 되세요, %@ 님",
+   "why": "Same as 266."
+  },
+  "276": {
+   "to": "미리 말해 둘게요. 오늘 열이 좀 올라요. 누구 탓 아니고 제 몸 탓이에요.",
+   "why": "Message sent to a partner/colleague: '당신' is cold or confrontational in Korean; keeps the 'not you, it's me' joke."
+  },
+  "279": {
+   "to": "더위",
+   "why": "This is the surge TAG 'Heat' (hot environment, trigger), not a surge; 열감 is the glossary word for surge and caused a clash (cf. id 686 uses 더위)."
+  },
+  "286": {
+   "to": "저희를 도와주세요",
+   "why": "Section header (rate, feedback); bare '도와주세요' reads as a cry for help."
+  },
+  "289": {
+   "to": "참으세요",
+   "why": "Breathing coach 'hold the breath'. On iPhone it sits between 들이쉬세요/내쉬세요; made the Watch labels (336, 501) match."
+  },
+  "331": {
+   "to": "건강 앱을 연결하면 MenoMap은 허용한 항목을 읽고, 여기에서 기록한 열감과 출혈만 건강 앱에 저장해요. 그 데이터는 저희가 아니라 건강 앱이 관리해요.",
+   "why": "'writes' was rendered 기록해요, ambiguous with 'logs'; now explicitly 'saves to Health'. Otherwise faithful."
+  },
+  "336": {
+   "to": "들이쉬세요",
+   "why": "Watch breathing phase; made consistent with iPhone coach (132) and Hold (289). Fits max 8."
+  },
+  "376": {
+   "to": "%2$lld일 중 %1$lld일 기록됨. 강도는 1(약함)부터 5(극심함)까지 직접 평가한 값이에요.",
+   "why": "Scale end label must match the strength labels: 5 = Intense = 극심함 (매우 강함 is level 4)."
+  },
+  "382": {
+   "to": "가라앉음",
+   "why": "Mood scale low end; '낮음' is a calque for low mood."
+  },
+  "396": {
+   "to": "건망증",
+   "why": "PDF symptom label (Health 'Memory lapse'); '깜빡함' is too casual for a clinician document."
+  },
+  "403": {
+   "to": "MenoMap은 건강 관리 기록 및 교육 도구예요. 갱년기나 다른 어떤 질환도 진단하지 않고, 치료를 처방하거나 변경하지 않으며, 자격을 갖춘 의료진의 진료를 대신하지 않아요. 증상이 걱정되거나, 폐경 후 출혈, 가슴 통증, 갑작스러운 심한 두통, 한쪽 몸의 힘 빠짐, 호흡 곤란, 실신이 있다면 대면 진료나 응급 진료를 받으세요.",
+   "why": "'in-person care' is 대면 진료 in Korean; '직접 진료' is unidiomatic. Rest of the disclaimer unchanged and complete."
+  },
+  "416": {
+   "to": "대부분의 진료는 짧고, 한 달 동안의 밤을 그 자리에서 기억해 내기는 어려워요. 사람들은 가장 최근이나 가장 힘들었던 날을 떠올리는 경향이 있어요. 간단한 기록이 그 빈틈을 채워 줘요.\n\n**증상 일기가 의료진에게 주는 것:**\n- 증상이 있다는 사실만이 아니라, 얼마나 자주, 얼마나 강하게 나타나는지\n- 나아지고 있는지, 나빠지고 있는지, 그대로인지\n- 그 무렵 무슨 일이 있었는지: 수면, 음주, 스트레스, 약\n- 치료를 시도할 때 비교할 출발점\n\n**가볍게 하세요.** 일기는 꾸준히 써야 도움이 돼요. MenoMap은 한 번 탭하는 열감 버튼과 네 가지 질문의 저녁 체크인으로 만들어져서, 공책을 채울 필요 없이 몇 초면 충분해요.\n\n**2주면 좋은 출발이에요.** 2~4주 동안의 기록은 보통 힘들었던 한 주보다 더 분명한 그림을 보여 줘요.\n\n**질문도 함께 가져가세요.** 가장 중요한 것을 적어 두세요: 가장 괴로운 증상, 시도하거나 피하고 싶은 것, 걱정되는 모든 것. MenoMap의 진료 탭은 질문을 고르고 메모와 함께 인쇄하도록 도와줘요.",
+   "why": "'몇 초면 충분해요' after '공책이 아니라' was a calque; meaning unchanged."
+  },
+  "501": {
+   "to": "내쉬세요",
+   "why": "Watch breathing phase; consistent with iPhone coach (133) and Hold (289). Fits max 8."
+  },
+  "514": {
+   "to": "최다 시간 %@",
+   "why": "Share-card stat 'Peak 3:12 AM'; '최다 %@' reads as 'most 3:12 AM'. Matches the Peak label (513)."
+  },
+  "572": {
+   "to": "지금 열 오르는 중. 누구 탓 아니고 제 몸 탓이에요.",
+   "why": "Message to another person: avoid '당신'; keeps the 'not you, it's me' joke (cf. 276)."
+  },
+  "577": {
+   "to": "\"MenoMap에 안면홍조 기록해 줘\" 또는 \"MenoMap에 야간 발한 기록해 줘\"라고 말하세요.",
+   "why": "Quoted a Siri phrase ('Start a night sweat') that has no Korean translation in the catalogue; now quotes the two Korean phrases that exist (ids 368, 369)."
+  },
+  "641": {
+   "to": "시간을 재기 시작해요. 원하면 함께 호흡해요.",
+   "why": "'Breathe if you want' means the breathing exercise; '호흡해 보세요' literally tells people to breathe. Matches 134 '함께 호흡해요'."
+  },
+  "696": {
+   "to": "가까운 사람에게 알리기",
+   "why": "'내 사람' sounds possessive/romantic; the feature sends heads-ups to a partner, family or colleague."
+  },
+  "728": {
+   "to": "시간",
+   "why": "Night Watch settings section containing Bedtime and Wake times, not a count ('횟수')."
+  },
+  "815": {
+   "to": "나 → 한 번 탭으로 메뉴에서 다시 찾을 수 있어요.",
+   "why": "'한 번 탭으로에서' was ungrammatical; the section name needs a noun after it."
+  }
+ },
+ "demo": {
+  "d6": {
+   "to": "경피",
+   "why": "Route label; pairs with d9 '경구' (by mouth), as on Korean prescriptions. '피부' alone is just 'skin'."
+  }
+ },
+ "store": {
+  "keywords": {
+   "to": "폐경,완경,폐경기,폐경이행기,야간발한,식은땀,열감,상열감,hrt,호르몬,호르몬치료,에스트로겐,수면,불면증,일기,다이어리,생리,주기,여성건강,중년,건강관리",
+   "why": "Added 폐경이행기 (perimenopause, the standard Korean term and the first English keyword, was missing) and 호르몬치료; still within 100 characters, no words from name/subtitle."
+  },
+  "screenshots.8": {
+   "to": "*2주* 동안 한 가지 변화를 실험해요.",
+   "why": "Glossary: experiment = 실험 (the in-app feature name); 시험 was inconsistent."
+  }
+ },
+ "glossary": {},
+ "doubts": [
+  "396 Memory lapse → 건망증: chosen as the plain patient term; if Apple's Korean Health app uses a different label for this symptom type (e.g. 기억력 저하), match Apple's.",
+  "Siri: only the four phrases in the source (ids 108, 222, 368, 369) are translated; the extra English alternates in MenoShortcuts.swift ('Start a hot flash…', 'Start a night sweat…', 'Stop the … timer') have no Korean version, so id 577 now quotes only phrases that exist.",
+  "264/265 '좋은 오후예요' is a common but slightly translated-sounding greeting; left as is (widely used in Korean apps)."
+ ]
+}

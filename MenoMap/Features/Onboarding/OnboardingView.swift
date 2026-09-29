@@ -10,7 +10,7 @@ struct OnboardingView: View {
         case promise, why, health, metrics, stage, appointment, privacy, surgeSetup, first
     }
 
-    @State private var step: Step = .promise
+    @State private var step: Step = DebugArgs.value("-MMOnboardingStep").flatMap { name in Step.allCases.first { "\($0)" == name } } ?? .promise
     @State private var why: Set<String> = []
     @State private var metrics: Set<TrackedMetric> = [.hotFlashes, .nightSweats, .sleep]
     @State private var remind = false

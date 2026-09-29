@@ -8,11 +8,21 @@ struct AppRootView: View {
 
     var body: some View {
         Group {
+            #if DEBUG
+            if let kind = Showcase.kind {
+                ShowcaseView(kind: kind)
+            } else if store.profile().onboardingDone {
+                MainTabs()
+            } else {
+                OnboardingView()
+            }
+            #else
             if store.profile().onboardingDone {
                 MainTabs()
             } else {
                 OnboardingView()
             }
+            #endif
         }
         .sheet(item: Binding(get: { router.sheet.flatMap { $0.isFullScreen ? nil : $0 } },
                              set: { router.sheet = $0 })) { sheet in

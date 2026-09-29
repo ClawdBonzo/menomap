@@ -23,12 +23,48 @@
               }
             }
           }
+        },
+        "en-GB": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld day"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld days"
+                }
+              }
+            }
+          }
         }
       }
     },
     "%lld surges": {
       "localizations": {
         "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld surge"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld surges"
+                }
+              }
+            }
+          }
+        },
+        "en-GB": {
           "variations": {
             "plural": {
               "one": {
@@ -67,17 +103,56 @@
               }
             }
           }
+        },
+        "en-GB": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld tonight"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld tonight"
+                }
+              }
+            }
+          }
         }
       }
     },
     "Add your next appointment": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add your next appointment"
+          }
+        }
+      }
     },
     "Appointment": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appointment"
+          }
+        }
+      }
     },
     "Appointment countdown": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appointment countdown"
+          }
+        }
+      }
     },
     "Appointment in %lldd · notes %lld%%": {
       "localizations": {
@@ -86,92 +161,294 @@
             "state": "new",
             "value": "Appointment in %1$lldd · notes %2$lld%%"
           }
+        },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appointment in %1$lldd · notes %2$lld%%"
+          }
         }
       }
     },
     "Arm Night Watch": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arm Night Watch"
+          }
+        }
+      }
     },
     "Days to your next appointment and how ready your notes are.": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Days to your next appointment and how ready your notes are."
+          }
+        }
+      }
     },
     "End": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "End"
+          }
+        }
+      }
     },
     "End surge": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "End surge"
+          }
+        }
+      }
     },
     "Hot flash": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hot flush"
+          }
+        }
+      }
     },
     "I'm having a surge": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I'm having a surge"
+          }
+        }
+      }
     },
     "In 4 · hold 4 · out 4": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In 4 · hold 4 · out 4"
+          }
+        }
+      }
     },
     "Kind": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kind"
+          }
+        }
+      }
     },
     "Last 7 days": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last 7 days"
+          }
+        }
+      }
     },
     "Night Watch": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Night Watch"
+          }
+        }
+      }
     },
     "Night sweat": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Night sweat"
+          }
+        }
+      }
     },
     "Notes %lld%% ready": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notes %lld%% ready"
+          }
+        }
+      }
     },
     "Puts a one-tap night sweat button on your Lock Screen until morning.": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puts a one-tap night sweat button on your Lock Screen until morning."
+          }
+        }
+      }
     },
     "Quiet so far.": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quiet so far."
+          }
+        }
+      }
     },
     "Start a surge": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start a surge"
+          }
+        }
+      }
     },
     "Start timing a hot flash in one tap.": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start timing a hot flush in one tap."
+          }
+        }
+      }
     },
     "Starts timing a hot flash in MenoMap.": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starts timing a hot flush in MenoMap."
+          }
+        }
+      }
     },
     "Starts timing a hot flash or night sweat in MenoMap.": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starts timing a hot flush or night sweat in MenoMap."
+          }
+        }
+      }
     },
     "Stops the timer and saves the surge in MenoMap.": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stops the timer and saves the surge in MenoMap."
+          }
+        }
+      }
     },
     "Surge": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Surge"
+          }
+        }
+      }
     },
     "Surge button": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Surge button"
+          }
+        }
+      }
     },
     "Switch surge type": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Switch surge type"
+          }
+        }
+      }
     },
     "Tap to end": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap to end"
+          }
+        }
+      }
     },
     "Today": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Today"
+          }
+        }
+      }
     },
     "Today: %lld": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Today: %lld"
+          }
+        }
+      }
     },
     "Turn off Night Watch": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn off Night Watch"
+          }
+        }
+      }
     },
     "Until %@": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Until %@"
+          }
+        }
+      }
     },
     "Your heat map, with a surge button.": {
-      "localizations": {}
+      "localizations": {
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your heat map, with a surge button."
+          }
+        }
+      }
     }
   },
   "version": "1.0"

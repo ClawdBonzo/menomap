@@ -85,6 +85,39 @@ targets:
               - menomap
         CFBundleLocalizations:
           - en
+          - en-GB
+          - de
+          - fr
+          - es
+          - es-419
+          - ja
+          - ko
+          - it
+          - nl
+          - pt-BR
+          - pt-PT
+          - sv
+          - da
+          - nb
+          - fi
+          - pl
+          - zh-Hant
+          - zh-Hans
+          - he
+          - ar
+          - tr
+          - cs
+          - sk
+          - hu
+          - ro
+          - hr
+          - el
+          - uk
+          - th
+          - vi
+          - id
+          - ms
+          - hi
         # RevenueCat public SDK key (observer mode). Empty until the RevenueCat project exists (Milestone J).
         RevenueCatAPIKey: ""
         # Numeric App Store ID, filled in once the App Store Connect record exists (Milestone J). Empty hides "Rate MenoMap".

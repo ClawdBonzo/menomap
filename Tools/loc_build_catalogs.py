@@ -68,6 +68,10 @@ def main() -> int:
                 locs[code] = localization(value, english)
     for cat, data in catalogs.items():
         (ROOT / cat).write_text(json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
+    # Screenshot demo data per language (names, medications, appointment), read by DemoData in DEBUG builds.
+    demo = {"en": {d["id"]: d["en"] for d in SOURCE["demo"]}}
+    demo.update({code: data.get("demo", {}) for code, data in languages.items()})
+    (ROOT / "MenoMap/Resources/DemoLocalized.json").write_text(json.dumps(demo, ensure_ascii=False, indent=1) + "\n")
     print(f"{len(catalogs)} catalogs, languages: {', '.join(sorted(languages)) or '(none yet: English plurals only)'}")
     return 0
 

@@ -81,7 +81,7 @@ struct TodayView: View {
     }
 
     private func greeting(_ name: String?) -> String {
-        let h = Calendar.current.component(.hour, from: .now)
+        let h = Clock.hour
         let n = name.flatMap { $0.isEmpty ? nil : $0 }
         switch h {
         case 5..<12: return n.map { String(localized: "Good morning, \($0)") } ?? String(localized: "Good morning")
@@ -98,7 +98,7 @@ struct SurgeHero: View {
     @Environment(\.dynamicTypeSize) private var dynamicType
 
     private var nightNow: Bool {
-        let h = Calendar.current.component(.hour, from: .now)
+        let h = Clock.hour
         return h >= 21 || h < 7
     }
 

@@ -1,0 +1,116 @@
+{
+ "verdict": "Strong, natural German throughout: du-register held everywhere (Sie only when the user addresses the clinician), glossary terms (Welle, Nachtwache, Hitzekarte, Hitzebericht, Wochenrückblick, Ruhephase, Privatsommer) consistent across UI, widgets, Watch, Siri phrases and store, Apple terms correct, all max budgets met, articles' markdown intact and hedges preserved. Main fix: 'bleeding after menopause' was rendered 'nach den Wechseljahren', which in German can mean after the whole multi-year transition and could delay a check; changed to 'nach der Menopause' in all safety strings and articles. Also fixed 'Arztnotizen' (reads as doctor-authored notes), two unidiomatic 'ein Medikament beginnen' safety lines, an ambiguous 'nicht sicher fühlen' in the mood/emergency line, and a few grammar slips.",
+ "reviewedThrough": 844,
+ "extrasReviewed": true,
+ "strings": {
+  "91": {
+   "to": "Jede Blutung nach der Menopause sollte von einer Ärztin oder einem Arzt abgeklärt werden.",
+   "why": "'Wechseljahre' (Klimakterium) spans years incl. early postmenopause, so 'nach den Wechseljahren' can read as 'once the whole transition is over' and delay the check; 'nach der Menopause' matches the app's own definition (12 months without a period) and the English."
+  },
+  "127": {
+   "to": "Blutung nach der Menopause",
+   "why": "'Wechseljahre' (Klimakterium) spans years incl. early postmenopause, so 'nach den Wechseljahren' can read as 'once the whole transition is over' and delay the check; 'nach der Menopause' matches the app's own definition (12 months without a period) and the English."
+  },
+  "128": {
+   "to": {
+    "one": "Blutung nach der Menopause in Apple Health erfasst: %lld-mal.",
+    "other": "Blutung nach der Menopause in Apple Health erfasst: %lld-mal."
+   },
+   "why": "'Wechseljahre' (Klimakterium) spans years incl. early postmenopause, so 'nach den Wechseljahren' can read as 'once the whole transition is over' and delay the check; 'nach der Menopause' matches the app's own definition (12 months without a period) and the English."
+  },
+  "129": {
+   "to": "Blutung nach der Menopause sollte abgeklärt werden",
+   "why": "'Wechseljahre' (Klimakterium) spans years incl. early postmenopause, so 'nach den Wechseljahren' can read as 'once the whole transition is over' and delay the check; 'nach der Menopause' matches the app's own definition (12 months without a period) and the English."
+  },
+  "130": {
+   "to": "Eine Blutung nach der Menopause – auch nur einmal, auch nur leicht – sollte von einer Ärztin oder einem Arzt abgeklärt werden. MenoMap kann dir nicht sagen, warum sie aufgetreten ist.",
+   "why": "'Wechseljahre' (Klimakterium) spans years incl. early postmenopause, so 'nach den Wechseljahren' can read as 'once the whole transition is over' and delay the check; 'nach der Menopause' matches the app's own definition (12 months without a period) and the English."
+  },
+  "321": {
+   "to": "Ich hatte eine Blutung nach der Menopause",
+   "why": "'Wechseljahre' (Klimakterium) spans years incl. early postmenopause, so 'nach den Wechseljahren' can read as 'once the whole transition is over' and delay the check; 'nach der Menopause' matches the app's own definition (12 months without a period) and the English."
+  },
+  "375": {
+   "to": "nach der Menopause erfasst",
+   "why": "Consistency with the safety strings: 'after menopause' = nach der Menopause."
+  },
+  "403": {
+   "to": "MenoMap ist ein Wellness-Tracker und Informationsangebot. Es stellt keine Diagnose der Menopause oder einer anderen Erkrankung, verschreibt oder ändert keine Behandlung und ersetzt nicht die Versorgung durch qualifizierte Ärztinnen und Ärzte. Wenn dich Beschwerden beunruhigen oder wenn du eine Blutung nach der Menopause, Schmerzen in der Brust, plötzliche starke Kopfschmerzen, eine einseitige Schwäche, Atemnot oder eine Ohnmacht hast, such dir ärztliche Hilfe vor Ort oder Notfallversorgung.",
+   "why": "'Wechseljahre' (Klimakterium) spans years incl. early postmenopause, so 'nach den Wechseljahren' can read as 'once the whole transition is over' and delay the check; 'nach der Menopause' matches the app's own definition (12 months without a period) and the English. Also 'persönlich' read as 'personally'; 'vor Ort' renders 'in-person' faithfully."
+  },
+  "479": {
+   "to": "Wenn du 12 Monate lang keine Periode hattest, **sollte jede vaginale Blutung von einer Ärztin oder einem Arzt abgeklärt werden**, auch wenn sie nur einmal aufgetreten ist und auch wenn es nur eine Schmierblutung oder ein hellrosa oder bräunlicher Ausfluss war.\n\nMeistens stellt sich die Ursache als nicht ernst heraus. Eine dünner werdende Scheiden- oder Gebärmutterschleimhaut ist zum Beispiel häufig. Eine Blutung nach der Menopause kann aber manchmal ein frühes Zeichen einer Erkrankung sein, die sich viel leichter behandeln lässt, wenn sie früh erkannt wird. Deshalb raten öffentliche Gesundheitsempfehlungen dazu, sie untersuchen zu lassen, statt abzuwarten.\n\n**Wenn du eine Hormonersatztherapie anwendest,** können je nach Präparat bestimmte Blutungsmuster zu erwarten sein. Eine Blutung, die für deine Behandlung unerwartet ist, stärker als gewohnt ist oder zur falschen Zeit auftritt, sollte ebenfalls abgeklärt werden.\n\n**Was zu tun ist:**\n- Wende dich an deine Ärztin, deinen Arzt oder deine Arztpraxis und sag, dass du eine Blutung nach der Menopause hattest.\n- Notiere das Datum, die Menge und alles andere, was dir aufgefallen ist. MenoMap kann das für dich festhalten (Ich → Zyklus).\n\nMenoMap kann dir nicht sagen, warum die Blutung aufgetreten ist. Es erinnert dich daran, sie abklären zu lassen, und nimmt sie in deine Terminnotizen auf.",
+   "why": "'Wechseljahre' (Klimakterium) spans years incl. early postmenopause, so 'nach den Wechseljahren' can read as 'once the whole transition is over' and delay the check; 'nach der Menopause' matches the app's own definition (12 months without a period) and the English."
+  },
+  "42": {
+   "to": "Die **Menopause** ist ein einzelner Zeitpunkt: der Tag, an dem 12 Monate in Folge keine Periode mehr kam, ohne dass etwas anderes das erklärt (etwa eine Schwangerschaft, manche Medikamente oder eine Operation). In vielen Ländern liegt sie im Durchschnitt Anfang 50, aber alles zwischen Mitte 40 und Mitte 50 ist häufig.\n\nDie **Perimenopause** umfasst die Jahre bis zu diesem Zeitpunkt. Die Hormonspiegel steigen und fallen ungleichmäßig, deshalb kann die Periode unregelmäßig, stärker, schwächer, häufiger oder seltener werden. Viele Veränderungen, die man mit den Wechseljahren verbindet, wie Hitzewallungen, nächtliches Schwitzen, veränderter Schlaf und Stimmungsschwankungen, beginnen oft schon hier, während die Periode noch kommt. Die Perimenopause kann ein paar Jahre dauern oder auch deutlich länger, und sie verläuft bei jeder Person anders.\n\nDie **Postmenopause** ist alles nach dieser 12-Monats-Marke. Manche Beschwerden legen sich mit der Zeit, andere können jahrelang anhalten.\n\nDie Menopause kann auch früher eintreten, etwa durch eine Operation, bei der die Eierstöcke entfernt werden, durch manche Krebsbehandlungen oder durch andere Erkrankungen. Eine Menopause vor 40 wird manchmal als vorzeitige Ovarialinsuffizienz bezeichnet, und es lohnt sich, mit einer Ärztin oder einem Arzt darüber zu sprechen.\n\n**Wie sie erkannt wird.** Bei vielen Menschen über 45 erkennen Ärztinnen und Ärzte die Perimenopause oder Menopause an deiner Vorgeschichte und deinen Beschwerden. Bluttests sind nicht immer nötig, weil die Hormonspiegel von Tag zu Tag schwanken. Sie werden eher eingesetzt, wenn jemand jünger ist oder das Bild unklar ist.\n\n**Was MenoMap kann und was nicht.** MenoMap kann dir nicht sagen, in welcher Phase du bist. Was es kann: ehrlich festhalten, was du bemerkst, also Wellen, Schlaf, Stimmung und Behandlung, damit du und deine Ärztin oder dein Arzt auf dasselbe Bild schauen könnt.",
+   "why": "Grammar: singular subject with 'sind' reads wrong; 'umfasst' is natural and faithful."
+  },
+  "291": {
+   "to": "Die Hormonersatztherapie (oft HRT oder MHT genannt) ersetzt einen Teil des Östrogens, das der Körper rund um die Wechseljahre weniger bildet. Wichtige Leitlinien beschreiben sie für viele Menschen als wirksame Behandlung gegen Hitzewallungen und nächtliches Schwitzen, und sie kann auch bei anderen Beschwerden helfen.\n\n**Es gibt sie in verschiedenen Formen:** Pflaster, Gele, Sprays, Tabletten und niedrig dosierte vaginale Präparate bei örtlichen Beschwerden wie Trockenheit. Wer noch eine Gebärmutter hat, bekommt meist zusätzlich zum Östrogen ein Gestagen verschrieben, um die Gebärmutterschleimhaut zu schützen.\n\n**Nutzen und Risiken hängen von der Person ab:** Alter, wie lange die letzte Periode her ist, eigene Vorgeschichte und Familiengeschichte (zum Beispiel mit Brustkrebs, Blutgerinnseln, Schlaganfall oder Herzerkrankungen) sowie Art und Anwendungsweg der Behandlung. Deshalb ist es eine Entscheidung, die du mit einer Ärztin oder einem Arzt triffst, die oder der deine Vorgeschichte kennt, und nichts, was eine App entscheiden kann.\n\n**Fragen, die oft gestellt werden:**\n- Ist eine Hormonersatztherapie für mich eine Option, und warum oder warum nicht?\n- Welche Art und Form würden Sie vorschlagen, und warum?\n- Welchen Nutzen könnte ich erwarten, und wie schnell?\n- Welche Risiken habe ich persönlich, und wie verhalten sie sich im Vergleich zu keiner Behandlung?\n- Worauf sollte ich achten, und wann sollten wir das überprüfen?\n\n**Wenn du sie schon anwendest,** trag sie in MenoMap ein (Ich → Medikamente). MenoMap zeigt deine Wellen vor und nach dem Beginn, als Blick auf zeitliches Zusammentreffen und nicht als Beweis, damit du bei der Kontrolle etwas Konkretes besprechen kannst.\n\nMenoMap schlägt nie vor, mit einem Medikament anzufangen, es abzusetzen oder etwas daran zu ändern.",
+   "why": "'ein Medikament beginnen' is not idiomatic German; same meaning, all three verbs kept."
+  },
+  "293": {
+   "to": "Eine Hormonersatztherapie ist nicht für alle geeignet, und manche bevorzugen einfach andere Wege. Davon gibt es mehrere.\n\n**Verschreibungspflichtige Möglichkeiten.** Für einige nicht hormonelle Medikamente gibt es Belege, dass sie Hitzewallungen verringern. Dazu gehören bestimmte Medikamente, die ursprünglich für andere Erkrankungen entwickelt wurden, und eine neuere Wirkstoffklasse, die speziell für Hitzewallungen entwickelt wurde. Jedes hat eigene Vorteile, Nebenwirkungen und Wechselwirkungen, deshalb kann eine Ärztin oder ein Arzt dir helfen, sie abzuwägen.\n\n**Gesprächstherapie und Mind-Body-Ansätze.** Für eine an die Wechseljahre angepasste kognitive Verhaltenstherapie (KVT) gibt es Belege, dass sie Hitzewallungen und nächtliches Schwitzen weniger belastend macht und den Schlaf verbessert. Auch klinische Hypnose wurde untersucht.\n\n**Praktische Veränderungen, die viele hilfreich finden:**\n- Kleidung in Schichten, die du schnell ablegen kannst\n- Ein Ventilator am Schreibtisch und am Bett\n- Ein kühleres Schlafzimmer und atmungsaktives Bettzeug\n- Persönliche Auslöser erkennen und abschwächen (dabei helfen die Markierungen und Experimente in MenoMap)\n- Regelmäßige Bewegung und ein gleichmäßiger Schlafrhythmus\n\n**Nahrungsergänzungsmittel und pflanzliche Mittel.** Bei vielen davon ist die Studienlage uneinheitlich oder dünn, die Qualität schwankt, und manche haben Wechselwirkungen mit anderen Medikamenten. Sag deiner Ärztin, deinem Arzt oder deiner Apotheke, was du einnimmst, auch rezeptfreie Produkte.\n\n**Probier eine Veränderung nach der anderen aus.** Die Zwei-Wochen-Experimente in MenoMap vergleichen deine eigenen Einträge vor und während einer Veränderung, und das lässt sich leichter beurteilen als ein Gefühl.",
+   "why": "'passt nicht für alle' is unidiomatic; 'ist nicht für alle geeignet' = isn't right for everyone."
+  },
+  "388": {
+   "to": "Viele bemerken in dieser Zeit Stimmungsveränderungen, Reizbarkeit oder Angst. Wenn die Niedergeschlagenheit anhält oder du dich nicht in Sicherheit fühlst, wende dich an eine Ärztin oder einen Arzt oder an die örtlichen Notfalldienste.",
+   "why": "Safety: 'mood changes' is Stimmungsveränderungen (Schwankungen = swings, a narrower claim); 'dich nicht sicher fühlst' also reads as 'feel unsure' – 'nicht in Sicherheit' is unambiguously 'unsafe'."
+  },
+  "400": {
+   "to": "MenoMap kann dir nicht sagen, dass du ein Medikament anfangen, absetzen oder ändern sollst. Nimm deine Liste mit zu einer Ärztin oder einem Arzt.",
+   "why": "Safety: 'jemandem sagen, ein Medikament zu beginnen' is unidiomatic; faithful rephrase keeping start/stop/change ('anfangen, absetzen oder ändern')."
+  },
+  "790": {
+   "to": "Auf welche Warnzeichen sollte ich achten, und wann sollte ich mich melden?",
+   "why": "Double 'sollte' relative clause is clumsy; natural question to the practice, same meaning."
+  },
+  "159": {
+   "to": "Notizen für den Arzttermin",
+   "why": "'Arztnotizen' reads as notes written by a doctor (medical-authority implication); these are the user's own notes for the appointment."
+  },
+  "160": {
+   "to": "Notizen für den Arzttermin als PDF, in jeder unterstützten Sprache",
+   "why": "'Arztnotizen' reads as notes written by a doctor (medical-authority implication); these are the user's own notes for the appointment."
+  },
+  "700": {
+   "to": "Das reicht für Notizen zum Arzttermin, wann immer du sie brauchst.",
+   "why": "'Arztnotizen' reads as notes written by a doctor (medical-authority implication); these are the user's own notes for the appointment."
+  }
+ },
+ "demo": {
+  "d6": {
+   "to": "Auf die Haut",
+   "why": "Route label: bare 'Haut' is odd next to 'Zum Einnehmen'; package-leaflet style."
+  }
+ },
+ "store": {
+  "subtitle": {
+   "to": "Hitzewallungen & Arzttermin",
+   "why": "'Arztnotizen' reads as notes written by a doctor (medical-authority implication); these are the user's own notes for the appointment. 'Arzttermin' is also a strong search term; 27 chars."
+  },
+  "description": {
+   "to": "Hitzewallung mit einem Tippen erfassen. Sehen, was sich verändert. Mit Notizen in den Arzttermin gehen.\n\nMenoMap ist für genau den Moment gemacht. Wenn eine Hitzewallung oder ein nächtlicher Schweißausbruch beginnt, tippst du einmal: auf dem Sperrbildschirm, im Kontrollzentrum, mit der Aktionstaste oder auf deiner Apple Watch. MenoMap misst die Dauer, atmet mit dir, wenn du möchtest, und speichert alles. Nachts hält die Nachtwache bis zum Morgen eine gedimmte Nachtschweiß-Taste für ein Tippen auf deinem Sperrbildschirm bereit.\n\nFUNKTIONIERT MIT APPLE HEALTH\nMenoMap liest die Beschwerden und die Wechseljahresphase, die du in Health erfasst hast, damit dein Verlauf schon am ersten Tag da ist, und speichert jede Welle, die du erfasst, zurück in Health.\n\nDEIN WETTER, KARTIERT\n• Eine Hitzekarte deiner Tage, eine Wellen-Uhr, die zeigt, wann sie sich häufen, und deine am häufigsten markierten Auslöser\n• Ein 30-Sekunden-Check-in am Abend für Schlaf, Stimmung und Energie\n• Muster in deinen eigenen Einträgen, etwa wie dein Schlaf nach heftigen Nächten aussieht, immer als Blick auf zeitliches Zusammentreffen, nie als Ursache\n• Zwei-Wochen-Experimente: Probier eine Veränderung aus und vergleiche dein eigenes Davor und Währenddessen\n\nMIT NOTIZEN IN DEN TERMIN\nTrag deinen Termin ein, und MenoMap zeigt dir, wie weit deine Notizen sind. Wähle deine Fragen aus und erstelle dann ein übersichtliches, einseitiges PDF für deine Ärztin oder deinen Arzt, in der Sprache, die sie oder er spricht.\n\nPRIVAT VON GRUND AUF\nKein Konto. Keine Werbung. Keine Cloud. Deine Gesundheitsdaten bleiben auf deinem iPhone.\n\nMENOMAP PRO\nLängerer Verlauf (30, 90 und 365 Tage), Muster, Experimente, der vollständige monatliche Hitzebericht, Notizen für den Arzttermin und Medikamenten-Erinnerungen. Monatlich, jährlich (mit kostenloser Testphase) oder lebenslang. Oder kauf einen einzelnen Terminbericht für einen Termin.\n\nMenoMap ist ein Wellness-Tracker und Informationsangebot. Es stellt keine Diagnose der Menopause oder einer anderen Erkrankung, verschreibt oder ändert keine Behandlung und ersetzt nicht die Versorgung durch qualifizierte Ärztinnen und Ärzte.\n\nDatenschutz: https://gwlabs.app/menomap/privacy\nNutzungsbedingungen: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+   "why": "'Arztnotizen' reads as notes written by a doctor (medical-authority implication); these are the user's own notes for the appointment. Consistent with the paywall."
+  },
+  "iap.monthly.description": {
+   "to": "Muster, Statistiken, Notizen zum Arzttermin.",
+   "why": "'Arztnotizen' reads as notes written by a doctor (medical-authority implication); these are the user's own notes for the appointment. 44 chars."
+  },
+  "iap.yearly.description": {
+   "to": "Muster, Statistiken, Notizen zum Arzttermin.",
+   "why": "'Arztnotizen' reads as notes written by a doctor (medical-authority implication); these are the user's own notes for the appointment. 44 chars."
+  }
+ },
+ "glossary": {
+  "bleeding after menopause": "Blutung nach der Menopause",
+  "clinician notes": "Notizen für den Arzttermin (tight: Notizen zum Arzttermin)"
+ },
+ "doubts": [
+  "#259 Shortcuts path: Apple's German label for the Focus automation trigger 'When turning on' may be 'Beim Aktivieren' or 'Wenn aktiviert'; kept the translator's 'Beim Aktivieren' (cannot verify against iOS UI headlessly).",
+  "'coincidence check' is rendered 'Blick auf zeitliches Zusammentreffen' everywhere: a bit wordy but faithful, never strengthened, and consistent, so kept.",
+  "#365 / IAP 'Lifetime' = 'Lebenslang': common on German paywalls despite a faint prison-sentence ring; kept (alternative: 'Dauerhaft').",
+  "IAP visitReport description 'Arzt-PDF' kept for the 45-char limit; context (PDF, 90 days) makes clear it is the user's own summary."
+ ]
+}

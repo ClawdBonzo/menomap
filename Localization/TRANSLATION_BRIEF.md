@@ -117,3 +117,12 @@ Read `Localization/source/strings_for_translation.json` (one string per line). A
 `python3 Tools/loc_merge_parts.py <code>`; it validates and lists what's left. Done = it prints `0 problems`.
 Fix problems in the part files. If parts already exist, a previous session was interrupted: keep its register and
 glossary and continue with the first missing part.
+
+## Notes from earlier languages (apply them)
+- **id 577** (Siri tip in the setup guide) must quote only Siri phrases that exist in your language: ids 108, 222,
+  368, 369 (the AppShortcuts phrases). English quotes "Start a night sweat in MenoMap", which only exists in English.
+- **Times:** strings with a time `%@` must read correctly for every hour, including 1 o'clock (Romance languages:
+  "a la 1:05" vs "a las 2:05"). Prefer label forms ("Peak time: %@").
+- **"Bleeding after menopause"** = after periods have stopped, not "after the whole change/transition".
+- **Short labels in context:** "Heat" (id 279) is the hot-surroundings trigger tag, not a surge; "Times" (id 728) is
+  the Bedtime/Wake settings section; "Start" (id 636) is a button (verb).

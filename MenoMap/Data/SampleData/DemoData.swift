@@ -54,6 +54,15 @@ enum DemoData {
         }
     }
 
+    /// Localized demo strings (Localization pipeline → Resources/DemoLocalized.json), keyed d1…d11.
+    static func text(_ id: String, _ fallback: String) -> String {
+        guard let url = Bundle.main.url(forResource: "DemoLocalized", withExtension: "json"),
+              let data = try? Data(contentsOf: url),
+              let all = try? JSONDecoder().decode([String: [String: String]].self, from: data) else { return fallback }
+        let code = Bundle.main.preferredLocalizations.first ?? "en"
+        return all[code]?[id] ?? all["en"]?[id] ?? fallback
+    }
+
     static func load(into container: AppContainer) {
         let store = container.store
         store.deleteAll()
@@ -63,7 +72,7 @@ enum DemoData {
         let today = DayKey.today()
 
         let p = store.profile()
-        p.firstName = "Dana"
+        p.firstName = text("d1", "Dana")
         p.stage = .perimenopause
         p.stageSource = "user"
         p.onboardingDone = true
@@ -72,15 +81,15 @@ enum DemoData {
 
         let medStart = cal.date(from: DateComponents(year: today.adding(days: -24).year, month: today.adding(days: -24).month,
                                                      day: today.adding(days: -24).day, hour: 9))!
-        let med = Medication(name: "Estradiol gel", category: .estrogen, startDate: medStart)
-        med.doseText = "1 pump"
-        med.route = "Skin"
-        med.scheduleText = "Every morning"
+        let med = Medication(name: text("d3", "Estradiol gel"), category: .estrogen, startDate: medStart)
+        med.doseText = text("d5", "1 pump")
+        med.route = text("d6", "Skin")
+        med.scheduleText = text("d7", "Every morning")
         store.context.insert(med)
-        let prog = Medication(name: "Micronized progesterone", category: .progestogen, startDate: medStart)
-        prog.doseText = "100 mg"
-        prog.route = "By mouth"
-        prog.scheduleText = "At bedtime"
+        let prog = Medication(name: text("d4", "Micronized progesterone"), category: .progestogen, startDate: medStart)
+        prog.doseText = text("d8", "100 mg")
+        prog.route = text("d9", "By mouth")
+        prog.scheduleText = text("d10", "At bedtime")
         store.context.insert(prog)
 
         for offset in -59...0 {
@@ -142,8 +151,8 @@ enum DemoData {
 
         let apptDay = today.adding(days: 9)
         let appt = Appointment(date: cal.date(from: DateComponents(year: apptDay.year, month: apptDay.month, day: apptDay.day, hour: 10, minute: 30))!,
-                               title: "Menopause review")
-        appt.clinicianName = "Dr. Patel"
+                               title: text("d11", "Menopause review"))
+        appt.clinicianName = text("d2", "Dr. Patel")
         appt.topics = [.hotFlashes, .nightSweats, .sleep, .currentTreatment]
         appt.questions = ["disruptive", "changed", "watchFor", "medsFit"]
         store.context.insert(appt)

@@ -14,6 +14,12 @@
             "state": "translated",
             "value": "MenoMap reads the symptoms, sleep and menopause stage you choose to share, so your history shows up next to what you log here."
           }
+        },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MenoMap reads the symptoms, sleep and menopause stage you choose to share, so your history shows up next to what you log here."
+          }
         }
       }
     },
@@ -23,6 +29,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "MenoMap saves the hot flashes, night sweats and symptoms you log to Apple Health, so all your records stay in one place."
+          }
+        },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MenoMap saves the hot flushes, night sweats and symptoms you log to Apple Health, so all your records stay in one place."
           }
         }
       }

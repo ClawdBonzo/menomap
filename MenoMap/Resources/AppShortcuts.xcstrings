@@ -8,12 +8,24 @@
             "state": "translated",
             "value": "Arm Night Watch in ${applicationName}"
           }
+        },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arm Night Watch in ${applicationName}"
+          }
         }
       }
     },
     "End my surge in ${applicationName}": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "End my surge in ${applicationName}"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "End my surge in ${applicationName}"
@@ -28,12 +40,24 @@
             "state": "translated",
             "value": "Log a hot flash in ${applicationName}"
           }
+        },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log a hot flush in ${applicationName}"
+          }
         }
       }
     },
     "Log a night sweat in ${applicationName}": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log a night sweat in ${applicationName}"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Log a night sweat in ${applicationName}"

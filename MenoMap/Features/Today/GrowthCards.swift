@@ -56,7 +56,7 @@ struct TonightHeadsUpCard: View {
     @Environment(AppRouter.self) private var router
 
     var body: some View {
-        let hour = Calendar.current.component(.hour, from: .now)
+        let hour = Clock.hour
         if hour >= 17, let h = InsightEngine().tonightHeadsUp(store.insightInput(), today: .today()) {
             MenoCard {
                 Label("Tonight's heads-up", systemImage: "moon.haze").font(MenoTheme.headline(.headline)).foregroundStyle(MenoTheme.ink)
@@ -85,7 +85,7 @@ struct WeeklyWrapCard: View {
     /// The Sunday that ends the week being wrapped (yesterday on Monday, today on Sunday).
     private var weekEnd: DayKey? {
         let today = DayKey.today()
-        let hour = Calendar.current.component(.hour, from: .now)
+        let hour = Clock.hour
         switch today.weekday() {
         case 1 where hour >= 12: return today
         case 2: return today.adding(days: -1)
