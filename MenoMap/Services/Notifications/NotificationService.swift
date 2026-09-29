@@ -4,13 +4,30 @@ import MenoCore
 
 /// Local notifications only, all opt-in. No streak shame, no "falling behind".
 @MainActor
-final class NotificationService {
+final class NotificationService: NSObject, UNUserNotificationCenterDelegate {
     private let center = UNUserNotificationCenter.current()
+
+    override init() {
+        super.init()
+        center.delegate = self
+    }
+
+    /// Tapping a notification opens the screen named in its `url` (menomap://checkin, visit, nightwatch…).
+    nonisolated func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse) async {
+        guard let s = response.notification.request.content.userInfo["url"] as? String, let url = URL(string: s) else { return }
+        await MainActor.run { AppContainer.shared.router.handle(url: url) }
+    }
+
+    nonisolated func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification) async -> UNNotificationPresentationOptions {
+        [.banner, .sound]
+    }
 
     enum ID {
         static let eveningCheckIn = "checkin.evening"
         static let heatReport = "heatreport.monthly"
         static let thirtyDays = "nudge.thirtydays"
+        static let nightWatch = "nightwatch.bedtime"
+        static let weeklyWrap = "weeklywrap.sunday"
         static func appointment(_ id: UUID, _ slot: String) -> String { "appt.\(id.uuidString).\(slot)" }
         static func experiment(_ id: UUID) -> String { "exp.\(id.uuidString)" }
         static func medication(_ id: UUID) -> String { "med.\(id.uuidString)" }
@@ -116,16 +133,49 @@ final class NotificationService {
     // MARK: Medications
 
     func scheduleMedication(_ med: Medication) {
-        center.removePendingNotificationRequests(withIdentifiers: [ID.medication(med.id)])
+        cancelMedication(med.id)
         guard med.reminderOn else { return }
-        add(ID.medication(med.id),
-            title: String(localized: "Medication reminder"),
-            body: String(localized: "Time for \(med.name). Tap to mark it taken or skipped."),
-            trigger: UNCalendarNotificationTrigger(dateMatching: DateComponents(hour: med.reminderHour, minute: med.reminderMinute), repeats: true))
+        let body = String(localized: "Time for \(med.name). Tap to mark it taken or skipped.")
+        switch med.schedule {
+        case .asNeeded:
+            return
+        case .daily:
+            add(ID.medication(med.id), title: String(localized: "Medication reminder"), body: body,
+                trigger: UNCalendarNotificationTrigger(dateMatching: DateComponents(hour: med.reminderHour, minute: med.reminderMinute), repeats: true),
+                url: "menomap://meds")
+        case .days:
+            for wd in med.weekdays {
+                add("\(ID.medication(med.id)).\(wd)", title: String(localized: "Medication reminder"), body: body,
+                    trigger: UNCalendarNotificationTrigger(dateMatching: DateComponents(hour: med.reminderHour, minute: med.reminderMinute, weekday: wd), repeats: true),
+                    url: "menomap://meds")
+            }
+        }
     }
 
     func cancelMedication(_ id: UUID) {
-        center.removePendingNotificationRequests(withIdentifiers: [ID.medication(id)])
+        center.removePendingNotificationRequests(withIdentifiers: [ID.medication(id)] + (1...7).map { "\(ID.medication(id)).\($0)" })
+    }
+
+    // MARK: Night Watch / Weekly Wrap
+
+    func scheduleNightWatch(hour: Int, minute: Int, enabled: Bool) {
+        center.removePendingNotificationRequests(withIdentifiers: [ID.nightWatch])
+        guard enabled else { return }
+        add(ID.nightWatch,
+            title: String(localized: "Night Watch"),
+            body: String(localized: "Tap to put a one-tap night sweat button on your Lock Screen until morning."),
+            trigger: UNCalendarNotificationTrigger(dateMatching: DateComponents(hour: hour, minute: minute), repeats: true),
+            url: "menomap://nightwatch")
+    }
+
+    func scheduleWeeklyWrap(enabled: Bool) {
+        center.removePendingNotificationRequests(withIdentifiers: [ID.weeklyWrap])
+        guard enabled else { return }
+        add(ID.weeklyWrap,
+            title: String(localized: "Your week, wrapped"),
+            body: String(localized: "Seven days in one card."),
+            trigger: UNCalendarNotificationTrigger(dateMatching: DateComponents(hour: 18, minute: 0, weekday: 1), repeats: true),
+            url: "menomap://today")
     }
 
     func cancelAll() {

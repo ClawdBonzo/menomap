@@ -39,6 +39,7 @@ struct MenoMapApp: App {
         .onChange(of: scenePhase) { _, phase in
             guard phase == .active else { return }
             container.surges.reconcile()
+            container.nightWatch.reconcile()
             container.importPendingSurges()
             container.health.startIfAuthorized()
             container.refreshSnapshot()

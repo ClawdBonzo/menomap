@@ -29,9 +29,12 @@ struct TodayView: View {
                         RateLaterCard(event: unrated) { router.present(.rate(unrated.id)) }
                     }
                     MorningCard()
+                    AppointmentFollowUpCard()
+                    TonightHeadsUpCard()
                     BleedingReminderCard()
                     CheckInCard(day: today)
                     AppointmentCard()
+                    WeeklyWrapCard()
                     MenoCard {
                         SectionHeader(title: "Last 7 days", trailing: "See more") { router.tab = .week }
                         HeatStrip(days: week.days)
@@ -250,6 +253,8 @@ struct PatternSlot: View {
             } else {
                 EmptyState(systemImage: "sparkle.magnifyingglass", title: "No pattern yet",
                            message: "Patterns need about two weeks of check-ins.")
+                Button("See what two weeks looks like") { router.present(.samplePreview) }
+                    .buttonStyle(.menoQuiet)
             }
         }
     }

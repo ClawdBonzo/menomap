@@ -13,6 +13,9 @@ struct MenoShortcuts: AppShortcutsProvider {
                     phrases: ["Log a night sweat in \(.applicationName)",
                               "Start a night sweat in \(.applicationName)"],
                     shortTitle: "Night sweat", systemImageName: "moon.haze")
+        AppShortcut(intent: ArmNightWatchIntent(),
+                    phrases: ["Arm Night Watch in \(.applicationName)", "Start Night Watch in \(.applicationName)"],
+                    shortTitle: "Night Watch", systemImageName: "moon.stars")
         AppShortcut(intent: EndSurgeIntent(),
                     phrases: ["End my surge in \(.applicationName)", "Stop the \(.applicationName) timer"],
                     shortTitle: "End surge", systemImageName: "stop.circle")

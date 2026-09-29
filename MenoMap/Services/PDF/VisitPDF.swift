@@ -53,7 +53,7 @@ struct VisitPDFInput {
         let from = window.start.startDate()
         let bleeding = store.cycleNotes().filter { $0.start >= from }.map { ($0.start, $0.flow, $0.isPostMenopauseFlag) }
         let symptoms = store.healthSymptoms().filter { $0.date >= from }
-        let grouped = Dictionary(grouping: symptoms.filter { !$0.typeRaw.contains("BleedingAfterMenopause") }, by: \.typeRaw)
+        let grouped = Dictionary(grouping: symptoms.filter { !$0.typeRaw.contains("BleedingAfterMenopause") && $0.typeRaw != HealthSymptomType.cycleStart }, by: \.typeRaw)
             .map { (HealthSymptomNames.name($0.key), Set($0.value.map { DayKey($0.date) }).count) }
             .sorted { $0.1 > $1.1 }
         let nights = store.healthNights().filter { n in DayKey(string: n.morningKey).map(window.contains) ?? false }.compactMap(\.minutesAsleep)

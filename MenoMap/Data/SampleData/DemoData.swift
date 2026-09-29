@@ -22,6 +22,12 @@ enum DemoData {
             p.hasSeenSurgeSetup = true
             container.store.save()
         }
+        if args.contains("-MMArmNightWatch") {
+            Task { @MainActor in
+                try? await Task.sleep(for: .seconds(1))
+                container.nightWatch.arm()
+            }
+        }
         if let i = args.firstIndex(of: "-MMSheet"), i + 1 < args.count {
             let sheet: AppSheet? = switch args[i + 1] {
             case "surge": .surge(.hotFlash)

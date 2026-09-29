@@ -68,6 +68,12 @@ struct WeekView: View {
                     .allowsHitTesting(!locked)
                     .overlay { if locked { Color.clear.contentShape(Rectangle()).onTapGesture { router.present(.paywall(.stats)) } } }
 
+                    if stats.loggedDays < 7 && range == .week {
+                        Button { router.present(.samplePreview) } label: {
+                            Label("See what two weeks looks like", systemImage: "eye")
+                        }
+                        .buttonStyle(.menoQuiet)
+                    }
                     PatternsSection(insights: insights)
                     ExperimentsSection()
                     HeatReportEntry()
@@ -81,6 +87,18 @@ struct WeekView: View {
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
                     Button { showShare = true } label: { Label("Share", systemImage: "square.and.arrow.up") }
+                }
+            }
+            .onAppear {
+                // A new calm-stretch record (3+ days) is a positive moment for a review prompt.
+                let p = store.profile()
+                let best = StatsCalculator.compute(window: DayWindow(lastDays: 90, endingOn: today),
+                                                   surges: store.surgeRecords(in: DayWindow(lastDays: 90, endingOn: today)),
+                                                   checkIns: store.checkInRecords(in: DayWindow(lastDays: 90, endingOn: today))).longestCalmStretch
+                if best >= 3 && best > p.bestCalmStretch {
+                    p.bestCalmStretch = best
+                    store.save()
+                    ReviewPrompt.recordPositiveMoment()
                 }
             }
             .sheet(isPresented: $showShare) {

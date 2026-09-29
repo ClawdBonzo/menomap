@@ -35,7 +35,12 @@ final class SurgeController: SurgeIntentHandling {
         startSource = source
         ActiveSurgeStore.write(a)
         UIImpactFeedbackGenerator(style: .soft).impactOccurred()
-        startLiveActivity(a)
+        // With Night Watch on, the night activity shows the timer; no second Live Activity.
+        if container?.nightWatch.isArmed == true {
+            container?.nightWatch.update(activeSurgeStart: a.startedAt)
+        } else {
+            startLiveActivity(a)
+        }
         container?.refreshSnapshot()
         MenoLog.surge.info("surge started")
         return a
@@ -58,11 +63,14 @@ final class SurgeController: SurgeIntentHandling {
         let secs = durationOverride ?? min(elapsed(), Int(Self.staleAfter))
         let record = SurgeRecord(id: a.id, kind: a.kind, startedAt: a.startedAt, durationSec: max(secs, 1),
                                  intensity: intensity, tags: tags, source: source ?? startSource)
+        // Save first so Night Watch's "tonight" count includes this surge when clear() refreshes it.
+        let event = container?.log(record)
         clear()
+        container?.refreshSnapshot()
         if let c = container {
             c.router.toast = Copy.savedLine(seconds: record.durationSec, voice: c.store.profile().voice)
         }
-        return container?.log(record)
+        return event
     }
 
     /// Discard without saving (e.g. started by mistake).
@@ -75,6 +83,7 @@ final class SurgeController: SurgeIntentHandling {
         active = nil
         ActiveSurgeStore.clear()
         endLiveActivities()
+        container?.nightWatch.update(activeSurgeStart: nil)
     }
 
     /// Called at launch/foreground: adopts a surge started by an extension, closes forgotten ones.
@@ -89,9 +98,10 @@ final class SurgeController: SurgeIntentHandling {
             // Forgotten timer: save it unrated with unknown duration rather than inventing one.
             let record = SurgeRecord(id: a.id, kind: a.kind, startedAt: a.startedAt, durationSec: 0,
                                      intensity: nil, source: .liveActivity)
-            clear()
             container?.log(record)
-        } else if Activity<SurgeActivityAttributes>.activities.isEmpty {
+            clear()
+            container?.refreshSnapshot()
+        } else if Activity<SurgeActivityAttributes>.activities.isEmpty, container?.nightWatch.isArmed != true {
             startLiveActivity(a)
         }
     }

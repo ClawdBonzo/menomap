@@ -212,8 +212,16 @@ final class MenoStore: SurgeStoreing, CheckInStoreing {
                 guard let t = n.wristTempDelta, let d = DayKey(string: n.morningKey) else { return nil }
                 return WristTempNight(morning: d, deviationCelsius: t)
             },
-            experiments: experiments().filter { !$0.abandoned }.map(\.record)
+            experiments: experiments().filter { !$0.abandoned }.map(\.record),
+            cycleStarts: cycleStarts()
         )
+    }
+
+    /// Period start days from the MenoMap cycle log (not post-menopause bleeding, not spotting) plus Apple Health.
+    func cycleStarts() -> [DayKey] {
+        let logged = cycleNotes().filter { !$0.isPostMenopauseFlag && $0.flow != .spotting }.map { DayKey($0.start) }
+        let health = healthSymptoms().filter { $0.typeRaw == HealthSymptomType.cycleStart }.map { DayKey($0.date) }
+        return Array(Set(logged + health)).sorted()
     }
 
     /// Days with a surge or a check-in.

@@ -206,6 +206,13 @@ final class HealthService {
                 container.store.context.insert(HealthSymptom(typeRaw: id.rawValue, date: s.startDate, severityRaw: s.value, hkSampleUUID: s.uuid))
             }
         }
+        // Period starts (for the perimenopause cycle pattern). Not written anywhere; context only.
+        for s in await samples(.menstrualFlow, since: since) where !isOurs(s) {
+            guard (s.metadata?[HKMetadataKeyMenstrualCycleStart] as? Bool) == true,
+                  !container.store.hasHealthSymptom(sampleUUID: s.uuid) else { continue }
+            container.store.context.insert(HealthSymptom(typeRaw: HealthSymptomType.cycleStart, date: s.startDate,
+                                                         severityRaw: s.value, hkSampleUUID: s.uuid))
+        }
         container.store.save()
         lastImportCount = added
         if added > 0 { container.refreshSnapshot() }

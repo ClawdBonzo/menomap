@@ -37,6 +37,17 @@ final class UserProfile {
     var checkInCount: Int = 0
     var hasSeenSurgeSetup: Bool = false
     var healthImportDone: Bool = false
+    // Night Watch (bedtime → morning Lock Screen button)
+    var nightWatchOn: Bool = false
+    var bedtimeHour: Int = 22
+    var bedtimeMinute: Int = 30
+    var wakeHour: Int = 6
+    var wakeMinute: Int = 30
+    /// Best calm stretch the user has seen, so a new record can trigger a (positive-moment) review prompt.
+    var bestCalmStretch: Int = 0
+    /// Weekly Wrap card dismissed for this week (Gregorian "YYYY-MM-DD" of the week's Sunday).
+    var weeklyWrapDismissed: String?
+    var weeklyWrapNotify: Bool = false
 
     init() {}
 
@@ -179,6 +190,10 @@ final class Medication {
     var reminderOn: Bool = false
     var reminderHour: Int = 9
     var reminderMinute: Int = 0
+    /// "daily", "days" (specific weekdays, e.g. a twice-weekly patch) or "asNeeded".
+    var scheduleKindRaw: String = MedicationSchedule.daily.rawValue
+    /// Gregorian weekdays 1 (Sun)…7 (Sat) when `scheduleKindRaw == "days"`.
+    var weekdays: [Int] = []
 
     init(name: String, category: MedicationCategory, startDate: Date) {
         self.name = name
@@ -187,6 +202,10 @@ final class Medication {
     }
 
     var category: MedicationCategory { MedicationCategory(rawValue: categoryRaw) ?? .other }
+    var schedule: MedicationSchedule {
+        get { MedicationSchedule(rawValue: scheduleKindRaw) ?? .daily }
+        set { scheduleKindRaw = newValue.rawValue }
+    }
 
     var record: MedicationRecord {
         MedicationRecord(id: id, name: name, category: category, startDate: startDate, endDate: endDate)
@@ -212,6 +231,10 @@ final class MedicationDose {
     var record: DoseRecord { DoseRecord(medicationID: medicationID, at: takenAt, skipped: skipped) }
 }
 
+enum MedicationSchedule: String, Codable, CaseIterable {
+    case daily, days, asNeeded
+}
+
 enum VisitTopic: String, Codable, CaseIterable {
     case hotFlashes, nightSweats, sleep, mood, bleeding, currentTreatment, vaginalUrinary, weight, other
 }
@@ -230,6 +253,8 @@ final class Appointment {
     var questions: [String] = []
     /// Language code for the PDF; nil = app language.
     var pdfLanguage: String?
+    /// Follow-up answer the day after: "good", "mixed", "missed".
+    var outcome: String?
 
     init(date: Date, title: String = "") {
         self.date = date
@@ -284,6 +309,11 @@ final class HealthSymptom {
         self.severityRaw = severityRaw
         self.hkSampleUUID = hkSampleUUID
     }
+}
+
+enum HealthSymptomType {
+    /// Marker row for a period start read from Apple Health (menstrual flow with the cycle-start flag).
+    static let cycleStart = "meno.cycleStart"
 }
 
 /// Cached nightly values from Apple Health, keyed by the morning.

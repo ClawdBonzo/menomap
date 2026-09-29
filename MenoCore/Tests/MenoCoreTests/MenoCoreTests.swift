@@ -384,3 +384,53 @@ final class SharedTests: XCTestCase {
         XCTAssertEqual(DurationBucket(seconds: 900), .overFifteen)
     }
 }
+
+final class GrowthRuleTests: XCTestCase {
+    private let f = Fixture()
+    private let engine = InsightEngine()
+
+    func testCyclePhase() {
+        var surges: [SurgeRecord] = []
+        var checkIns: [CheckInRecord] = []
+        let starts = [f.day(-60), f.day(-32), f.day(-4)]
+        let before = Set(starts.flatMap { s in (1...3).map { s.adding(days: -$0) } })
+        for o in -70...0 {
+            let d = f.day(o)
+            checkIns.append(CheckInRecord(day: d, scores: [.sleep: 6]))
+            let n = before.contains(d) ? 3 : 1
+            surges += (0..<n).map { k in f.surge(o, hour: 10 + k) }
+        }
+        let i = engine.cyclePhase(InsightInput(surges: surges, checkIns: checkIns, cycleStarts: starts), today: f.today)
+        guard case .cyclePhase(let cycles, let b, let o)? = i?.kind else { return XCTFail("expected insight") }
+        XCTAssertEqual(cycles, 3)
+        XCTAssertEqual(b, 3.0)
+        XCTAssertEqual(o, 1.0)
+    }
+
+    func testCyclePhaseNeedsTwoCycles() {
+        let surges = (-40...0).map { f.surge($0, hour: 10) }
+        XCTAssertNil(engine.cyclePhase(InsightInput(surges: surges, cycleStarts: [f.day(-10)]), today: f.today))
+    }
+
+    func testTonightHeadsUp() {
+        var surges: [SurgeRecord] = []
+        var checkIns: [CheckInRecord] = []
+        for o in -14 ... -1 {
+            let a = o % 3 == 0
+            checkIns.append(CheckInRecord(day: f.day(o), scores: [:], alcohol: a))
+            if a { surges.append(f.surge(o + 1, hour: 3, kind: .nightSweat)) }
+        }
+        var input = InsightInput(surges: surges, checkIns: checkIns)
+        XCTAssertNil(engine.tonightHeadsUp(input, today: f.today), "no alcohol today")
+        input.checkIns.append(CheckInRecord(day: f.today, scores: [:], alcohol: true))
+        let h = engine.tonightHeadsUp(input, today: f.today)
+        XCTAssertEqual(h?.alcoholEvenings, 4)
+        XCTAssertEqual(h?.sweatNights, 4)
+    }
+
+    func testSampleSeriesProducesInsightsAndIsDeterministic() {
+        let a = SampleSeries.twoWeeks(endingOn: f.today), b = SampleSeries.twoWeeks(endingOn: f.today)
+        XCTAssertEqual(a.surges.map(\.startedAt), b.surges.map(\.startedAt))
+        XCTAssertFalse(engine.compute(a, today: f.today).isEmpty)
+    }
+}

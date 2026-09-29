@@ -9,7 +9,7 @@ struct PaywallView: View {
     @Environment(SubscriptionManager.self) private var subscription
     @Environment(\.dismiss) private var dismiss
     @State private var selected = ProductID.yearly
-    @State private var showDownsell = false
+    @State private var showRedeem = false
 
     private var headline: LocalizedStringKey {
         switch trigger {
@@ -65,6 +65,10 @@ struct PaywallView: View {
                         .buttonStyle(.menoSecondary)
                     }
 
+                    Button("Have a code from your clinic or a friend?") { showRedeem = true }
+                        .font(.subheadline.weight(.semibold))
+                        .frame(maxWidth: .infinity, minHeight: MenoTheme.minHit)
+
                     HStack(spacing: 18) {
                         Button("Restore") { Task { await subscription.restore(); if subscription.isPro { dismiss() } } }
                         Link("Terms", destination: LegalLinks.terms)
@@ -90,6 +94,12 @@ struct PaywallView: View {
             .accessibilityLabel(Text("Close"))
         }
         .background(MenoTheme.ground.ignoresSafeArea())
+        .offerCodeRedemption(isPresented: $showRedeem) { result in
+            Task {
+                await subscription.refreshEntitlements()
+                if subscription.isPro { dismiss() }
+            }
+        }
         .task { if subscription.products.isEmpty { await subscription.loadProducts() } }
     }
 

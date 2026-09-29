@@ -11,7 +11,9 @@ struct MenoMapWidgetsBundle: WidgetBundle {
         HeatWeekWidget()
         CountdownWidget()
         SurgeControl()
+        NightWatchControl()
         SurgeLiveActivity()
+        NightWatchLiveActivity()
     }
 }
 
@@ -259,6 +261,85 @@ struct SurgeControl: ControlWidget {
         }
         .displayName("Start a surge")
         .description("Starts timing a hot flash in MenoMap.")
+    }
+}
+
+struct NightWatchControl: ControlWidget {
+    var body: some ControlWidgetConfiguration {
+        StaticControlConfiguration(kind: "app.gwlabs.menomap.control.nightwatch") {
+            ControlWidgetButton(action: ArmNightWatchIntent()) {
+                Label("Night Watch", systemImage: "moon.stars.fill")
+            }
+        }
+        .displayName("Night Watch")
+        .description("Puts a one-tap night sweat button on your Lock Screen until morning.")
+    }
+}
+
+// MARK: - Night Watch Live Activity
+
+/// Deliberately dark and dim: it sits on the Lock Screen all night.
+struct NightWatchLiveActivity: Widget {
+    private let ink = Color(hex: 0xC9503A)
+
+    var body: some WidgetConfiguration {
+        ActivityConfiguration(for: NightWatchAttributes.self) { context in
+            HStack(spacing: 14) {
+                if let start = context.state.activeSurgeStart {
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Night sweat").font(.headline).foregroundStyle(ink)
+                        Text(timerInterval: start...Date.distantFuture, countsDown: false)
+                            .font(.system(.title, design: .serif).monospacedDigit()).foregroundStyle(ink)
+                        Text("In 4 · hold 4 · out 4").font(.caption).foregroundStyle(ink.opacity(0.7))
+                    }
+                    Spacer()
+                    Button(intent: EndSurgeIntent()) {
+                        Text("End").font(.title3.weight(.semibold)).frame(minWidth: 90, minHeight: 50)
+                    }
+                    .tint(ink)
+                } else {
+                    VStack(alignment: .leading, spacing: 3) {
+                        Label("Night Watch", systemImage: "moon.stars.fill").font(.subheadline.weight(.semibold)).foregroundStyle(ink)
+                        Text(context.state.tonightCount == 0 ? String(localized: "Quiet so far.")
+                             : String(localized: "\(context.state.tonightCount) tonight"))
+                            .font(.caption).foregroundStyle(ink.opacity(0.7))
+                        Text("Until \(context.attributes.wakeAt, style: .time)").font(.caption2).foregroundStyle(ink.opacity(0.6))
+                    }
+                    Spacer()
+                    Button(intent: StartSurgeIntent(kind: .nightSweat)) {
+                        Label("Night sweat", systemImage: "drop.fill")
+                            .font(.title3.weight(.semibold))
+                            .frame(minWidth: 150, minHeight: 56)
+                    }
+                    .tint(ink)
+                }
+            }
+            .padding()
+            .activityBackgroundTint(Color.black)
+            .activitySystemActionForegroundColor(ink)
+        } dynamicIsland: { context in
+            DynamicIsland {
+                DynamicIslandExpandedRegion(.leading) { Image(systemName: "moon.stars.fill").foregroundStyle(ink) }
+                DynamicIslandExpandedRegion(.center) { Text("Night Watch").font(.headline) }
+                DynamicIslandExpandedRegion(.bottom) {
+                    if context.state.activeSurgeStart != nil {
+                        Button(intent: EndSurgeIntent()) { Text("End").frame(maxWidth: .infinity) }.tint(ink)
+                    } else {
+                        Button(intent: StartSurgeIntent(kind: .nightSweat)) { Text("Night sweat").frame(maxWidth: .infinity) }.tint(ink)
+                    }
+                }
+            } compactLeading: {
+                Image(systemName: "moon.stars.fill").foregroundStyle(ink)
+            } compactTrailing: {
+                if let start = context.state.activeSurgeStart {
+                    Text(timerInterval: start...Date.distantFuture, countsDown: false).monospacedDigit().frame(width: 44)
+                } else {
+                    Text("\(context.state.tonightCount)").monospacedDigit()
+                }
+            } minimal: {
+                Image(systemName: "moon.stars.fill").foregroundStyle(ink)
+            }
+        }
     }
 }
 

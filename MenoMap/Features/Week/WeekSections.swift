@@ -109,6 +109,7 @@ struct ExperimentsSection: View {
             }
             ForEach(results) { r in
                 let t = InsightCopy.text(r)
+                let _ = Self.celebrateIfImproved(r)
                 MenoCard {
                     Label(t.title, systemImage: "flask.fill").font(.headline)
                     if subscription.isPro {
@@ -124,6 +125,18 @@ struct ExperimentsSection: View {
         }
         .sheet(isPresented: $picking) { ExperimentPicker() }
         .sheet(item: $sharing) { r in ShareCardSheet(kind: .experiment(r)) }
+    }
+}
+
+extension ExperimentsSection {
+    /// Fewer surges during an experiment than before it is a positive moment (asked once per experiment).
+    static func celebrateIfImproved(_ r: Insight) {
+        guard case let .experimentResult(id, _, _, b, bDays, d, dDays) = r.kind,
+              Double(d) / Double(max(dDays, 1)) < Double(b) / Double(max(bDays, 1)) else { return }
+        let key = "meno.review.exp.\(id.uuidString)"
+        guard !UserDefaults.standard.bool(forKey: key) else { return }
+        UserDefaults.standard.set(true, forKey: key)
+        Task { @MainActor in ReviewPrompt.recordPositiveMoment() }
     }
 }
 

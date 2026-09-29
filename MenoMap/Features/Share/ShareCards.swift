@@ -26,7 +26,7 @@ enum CardFormat: String, CaseIterable, Identifiable {
 }
 
 /// Fixed palette so cards look the same in light and dark mode.
-private enum CardPalette {
+enum CardPalette {
     static let ground = Color(hex: 0xF3EEE7)
     static let ink = Color(hex: 0x1E2524)
     static let ink2 = Color(hex: 0x5E6663)
@@ -70,6 +70,9 @@ struct ShareCardSheet: View {
                         Label("Share", systemImage: "square.and.arrow.up")
                     }
                     .buttonStyle(.menoPrimary)
+                }
+                if case .week(let stats) = kind {
+                    StoryVideoButton(stats: stats, title: String(localized: "This week"), headline: Copy.weekHeadline(count: stats.total, voice: profile.voice))
                 }
                 Text("Only numbers. No notes, medication names or health details leave your phone unless you send them.")
                     .font(.caption).foregroundStyle(MenoTheme.inkSecondary).multilineTextAlignment(.center)
@@ -229,7 +232,7 @@ struct ShareCard: View {
     }
 }
 
-private struct MiniCalendar: View {
+struct MiniCalendar: View {
     let days: [DayHeat]
     var body: some View {
         let cols = Array(repeating: GridItem(.flexible(), spacing: 4), count: 7)
@@ -241,7 +244,7 @@ private struct MiniCalendar: View {
     }
 }
 
-private struct ContourBackdrop: View {
+struct ContourBackdrop: View {
     var body: some View {
         GeometryReader { geo in
             ZStack {
@@ -304,6 +307,8 @@ struct HeatReportView: View {
                     Label("Share the cover", systemImage: "square.and.arrow.up")
                 }
                 .buttonStyle(.menoSecondary)
+                StoryVideoButton(stats: stats, title: title,
+                                 headline: voice == .wry ? String(localized: "personal summers last month") : String(localized: "surges last month"))
                 Group {
                     SurgeClockCard(stats: stats, voice: voice)
                     TriggerPodiumCard(stats: stats)

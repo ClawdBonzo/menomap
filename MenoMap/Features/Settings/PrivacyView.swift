@@ -122,15 +122,7 @@ enum DataExporter {
 struct TellMyPersonView: View {
     @AppStorage("meno.tell.custom") private var custom = ""
 
-    private var templates: [String] {
-        [
-            String(localized: "Night sweat. Cracking the window."),
-            String(localized: "Hot flash, give me 3 minutes."),
-            String(localized: "Rough night. I'll be slow this morning."),
-            String(localized: "Could you turn the fan on?"),
-            String(localized: "Heads up: running hot today. Not you, it's me."),
-        ]
-    }
+    private var templates: [String] { HeadsUpTexts.headsUps }
 
     var body: some View {
         List {
@@ -145,7 +137,7 @@ struct TellMyPersonView: View {
                     }
                 }
             } footer: {
-                Text("Opens Messages or any app you choose. MenoMap doesn't send anything by itself.")
+                Text("Opens Messages or any app you choose. MenoMap doesn't send anything by itself. In Messages, tap the MenoMap app for stickers and heads-up cards.")
             }
             Section("Your own") {
                 TextField("Write your own heads-up", text: $custom)

@@ -22,6 +22,8 @@ enum AppSheet: Identifiable, Equatable {
     case surgeSetup
     case medication(UUID?)
     case bleeding
+    case samplePreview
+    case medications
 
     var isFullScreen: Bool {
         if case .surge = self { return true }
@@ -38,6 +40,8 @@ enum AppSheet: Identifiable, Equatable {
         case .surgeSetup: "setup"
         case .medication(let id): "med-\(id?.uuidString ?? "new")"
         case .bleeding: "bleeding"
+        case .samplePreview: "sample"
+        case .medications: "meds"
         }
     }
 }
@@ -63,6 +67,8 @@ final class AppRouter {
         case "surge": present(.surge(url.lastPathComponent == "night" ? .nightSweat : .hotFlash))
         case "checkin": present(.checkIn)
         case "visit": tab = .visit; sheet = nil
+        case "nightwatch": AppContainer.shared.nightWatch.arm()
+        case "meds": present(.medications)
         case "week": tab = .week; sheet = nil
         case "rate":
             if let id = UUID(uuidString: url.lastPathComponent) { present(.rate(id)) }
@@ -85,6 +91,7 @@ final class AppContainer {
     let health: HealthService
     let notifications: NotificationService
     let watch: WatchBridge
+    let nightWatch: NightWatchController
 
     private init() {
         let modelContainer: ModelContainer
@@ -100,10 +107,12 @@ final class AppContainer {
         health = HealthService()
         notifications = NotificationService()
         watch = WatchBridge()
+        nightWatch = NightWatchController()
         surges = SurgeController()
         surges.container = self
         health.container = self
         watch.container = self
+        nightWatch.container = self
         #if DEBUG
         DemoData.applyLaunchArguments(to: self)
         #endif
@@ -114,6 +123,7 @@ final class AppContainer {
         watch.activate()
         importPendingSurges()
         health.startIfAuthorized()
+        nightWatch.reconcile()
         refreshSnapshot()
     }
 

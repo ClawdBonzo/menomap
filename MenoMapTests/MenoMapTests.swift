@@ -124,3 +124,50 @@ import PDFKit
 enum PDFDocumentText {
     static func text(from data: Data) -> String? { PDFDocument(data: data)?.string }
 }
+
+import AVFoundation
+
+@MainActor
+final class GrowthFeatureTests: XCTestCase {
+    func testStoryVideoExportsSixSecondVerticalMP4() async throws {
+        let input = SampleSeries.twoWeeks()
+        let stats = StatsCalculator.compute(window: DayWindow(lastDays: 14, endingOn: .today()), surges: input.surges, checkIns: input.checkIns)
+        let url = try await StoryVideoExporter.export(stats: stats, title: "Test", headline: "surges") { _ in }
+        let asset = AVURLAsset(url: url)
+        let duration = try await asset.load(.duration).seconds
+        XCTAssertEqual(duration, 6, accuracy: 0.2)
+        let tracks = try await asset.loadTracks(withMediaType: .video)
+        let track = try XCTUnwrap(tracks.first)
+        let size = try await track.load(.naturalSize)
+        XCTAssertEqual(size.width, 1080)
+        XCTAssertEqual(size.height, 1920)
+    }
+
+    func testTwiceWeeklyPatchScheduleIsDueOnlyOnItsDays() throws {
+        let container = try MenoSchema.makeContainer(inMemory: true)
+        let m = Medication(name: "Patch", category: .estrogen, startDate: .now)
+        container.mainContext.insert(m)
+        m.schedule = .days
+        let today = DayKey.today().weekday()
+        m.weekdays = [today]
+        XCTAssertTrue(MedicationText.isDueToday(m))
+        m.weekdays = [today % 7 + 1]
+        XCTAssertFalse(MedicationText.isDueToday(m))
+    }
+
+    func testCycleStartsSkipPostMenopauseAndSpotting() throws {
+        let store = MenoStore(container: try MenoSchema.makeContainer(inMemory: true))
+        let a = CycleNote(start: .now.addingTimeInterval(-40 * 86400), flow: .medium)
+        let b = CycleNote(start: .now.addingTimeInterval(-10 * 86400), flow: .spotting)
+        let c = CycleNote(start: .now.addingTimeInterval(-5 * 86400), flow: .light)
+        c.isPostMenopauseFlag = true
+        [a, b, c].forEach { store.context.insert($0) }
+        store.save()
+        XCTAssertEqual(store.cycleStarts(), [DayKey(a.start)])
+    }
+
+    func testHeadsUpAndStickerCopyExist() {
+        XCTAssertEqual(HeadsUpTexts.stickers.count, 12)
+        XCTAssertEqual(HeadsUpTexts.headsUps.count, 5)
+    }
+}

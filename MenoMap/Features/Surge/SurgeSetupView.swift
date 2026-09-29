@@ -8,10 +8,10 @@ struct SurgeSetupView: View {
     var onDone: (() -> Void)?
 
     @Environment(\.dismiss) private var dismiss
-    @State private var expanded: Place? = .controlCenter
+    @State private var expanded: Place? = .nightWatch
 
     enum Place: String, CaseIterable, Identifiable {
-        case controlCenter, lockScreen, actionButton, widget, watch, siri
+        case nightWatch, controlCenter, lockScreen, actionButton, widget, watch, siri
         var id: String { rawValue }
     }
 
@@ -106,6 +106,7 @@ private struct PlaceRow: View {
 
     private var symbol: String {
         switch place {
+        case .nightWatch: "moon.stars.fill"
         case .controlCenter: "switch.2"
         case .lockScreen: "lock.iphone"
         case .actionButton: "button.vertical.left.press"
@@ -117,6 +118,7 @@ private struct PlaceRow: View {
 
     private var title: LocalizedStringKey {
         switch place {
+        case .nightWatch: "Night Watch"
         case .controlCenter: "Control Center"
         case .lockScreen: "Lock Screen"
         case .actionButton: "Action Button"
@@ -128,6 +130,7 @@ private struct PlaceRow: View {
 
     private var subtitle: LocalizedStringKey {
         switch place {
+        case .nightWatch: "A night sweat button on your Lock Screen all night"
         case .controlCenter: "Swipe down, tap, done"
         case .lockScreen: "Start without unlocking"
         case .actionButton: "iPhone 15 Pro and later"
@@ -139,6 +142,10 @@ private struct PlaceRow: View {
 
     private var steps: [LocalizedStringKey] {
         switch place {
+        case .nightWatch:
+            ["Turn it on in You → Night Watch and set your bedtime.",
+             "It switches on by itself after your evening check-in.",
+             "Optional: in Shortcuts, add an automation: when Sleep Focus turns on → Arm Night Watch."]
         case .controlCenter:
             ["Swipe down from the top-right corner.", "Tap + at the top left, then Add a Control.", "Search MenoMap and pick Start a surge."]
         case .lockScreen:

@@ -36,6 +36,7 @@ struct YouView: View {
                     NavigationLink { MedicationListView() } label: { Label("Medications", systemImage: "pills") }
                     NavigationLink { CycleView() } label: { Label("Cycle", systemImage: "drop") }
                     Button { router.present(.surgeSetup) } label: { Label("One tap away", systemImage: "hand.tap") }
+                    NavigationLink { NightWatchSettingsView() } label: { Label("Night Watch", systemImage: "moon.stars") }
                     Picker(selection: Binding(get: { profile.voice }, set: { profile.voice = $0; store.save() })) {
                         Text("Wry").tag(VoiceStyle.wry)
                         Text("Straight").tag(VoiceStyle.straight)
@@ -60,6 +61,14 @@ struct YouView: View {
                             if allowed { container.notifications.scheduleHeatReport(enabled: on) }
                         }
                     })) { Label("Monthly Heat Report", systemImage: "calendar") }
+                    Toggle(isOn: Binding(get: { profile.weeklyWrapNotify }, set: { on in
+                        profile.weeklyWrapNotify = on
+                        store.save()
+                        Task {
+                            let allowed = on ? await container.notifications.requestPermission() : true
+                            if allowed { container.notifications.scheduleWeeklyWrap(enabled: on) }
+                        }
+                    })) { Label("Sunday Weekly Wrap", systemImage: "square.grid.3x3.middle.filled") }
                 }
 
                 Section("Learn") {
@@ -76,11 +85,15 @@ struct YouView: View {
                         Button { router.present(.paywall(.settings)) } label: { Label("MenoMap Pro", systemImage: "sparkles") }
                     }
                     Button { Task { await subscription.restore() } } label: { Label("Restore purchases", systemImage: "arrow.clockwise") }
-                    Button { showRedeem = true } label: { Label("Redeem a code", systemImage: "giftcard") }
+                    Button { showRedeem = true } label: { Label("Redeem a clinic or friend code", systemImage: "giftcard") }
                 } header: { Text("MenoMap Pro") }
 
                 Section("Share") {
                     NavigationLink { TellMyPersonView() } label: { Label("Tell my person", systemImage: "message") }
+                    ShareLink(item: LegalLinks.clinicians,
+                              message: Text("I track my symptoms with MenoMap and can bring you a one-page summary. Information for clinicians:")) {
+                        Label("Tell my clinician about MenoMap", systemImage: "stethoscope")
+                    }
                     ShareLink(item: LegalLinks.appStore,
                               message: Text("I use MenoMap to log hot flashes and bring notes to my appointments. Code MENOFRIEND gets you 30 days of Pro free.")) {
                         Label("Give a friend 30 days of Pro", systemImage: "gift")
@@ -89,6 +102,15 @@ struct YouView: View {
 
                 Section("Privacy") {
                     NavigationLink { PrivacyView() } label: { Label("What's stored and where", systemImage: "lock") }
+                }
+
+                Section("Help us") {
+                    if let url = AppLinks.writeReview {
+                        Link(destination: url) { Label("Rate MenoMap", systemImage: "star") }
+                    }
+                    if let url = AppLinks.feedbackMail {
+                        Link(destination: url) { Label("Send feedback", systemImage: "envelope") }
+                    }
                 }
 
                 Section("About") {
@@ -198,6 +220,20 @@ struct TrackedMetricsView: View {
         }
         .menoScreen()
         .navigationTitle("Check-in questions")
+    }
+}
+
+enum AppLinks {
+    static var writeReview: URL? {
+        guard let id = Bundle.main.object(forInfoDictionaryKey: "AppStoreID") as? String, !id.isEmpty else { return nil }
+        return URL(string: "https://apps.apple.com/app/id\(id)?action=write-review")
+    }
+
+    /// Plain email to support. Never includes health data; only the app version.
+    static var feedbackMail: URL? {
+        guard let mail = Bundle.main.object(forInfoDictionaryKey: "SupportEmail") as? String, !mail.isEmpty else { return nil }
+        let subject = "MenoMap \(Bundle.main.shortVersion) feedback".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "MenoMap"
+        return URL(string: "mailto:\(mail)?subject=\(subject)")
     }
 }
 

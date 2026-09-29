@@ -59,6 +59,7 @@ targets:
         excludes:
           - Info.plist
       - path: Shared
+      - path: SharedCopy
     info:
       path: MenoMap/Info.plist
       properties:
@@ -86,6 +87,9 @@ targets:
           - en
         # RevenueCat public SDK key (observer mode). Empty until the RevenueCat project exists (Milestone J).
         RevenueCatAPIKey: ""
+        # Numeric App Store ID, filled in once the App Store Connect record exists (Milestone J). Empty hides "Rate MenoMap".
+        AppStoreID: ""
+        SupportEmail: support@gwlabs.app
         NSUserActivityTypes:
           - StartSurgeIntent
     entitlements:
@@ -106,6 +110,7 @@ targets:
         ENABLE_PREVIEWS: YES
     dependencies:
       - target: MenoMapWidgets
+      - target: MenoMapMessages
       - target: MenoMapWatch
       - package: MenoCore
         product: MenoCore
@@ -203,6 +208,56 @@ targets:
     dependencies:
       - package: MenoCore
         product: MenoCore
+
+  # iMessage app: stickers + heads-up cards (growth item 2).
+  MenoMapMessages:
+    type: app-extension.messages
+    platform: iOS
+    sources:
+      - path: MenoMapMessages
+        excludes:
+          - Info.plist
+      - path: SharedCopy
+    info:
+      path: MenoMapMessages/Info.plist
+      properties:
+        CFBundleDisplayName: MenoMap
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.message-payload-provider
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).MessagesViewController
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.gwlabs.menomap.messages
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: iMessage App Icon
+        SKIP_INSTALL: YES
+
+  # iMessage app: stickers + heads-up cards (growth item 2).
+  MenoMapMessages:
+    type: app-extension.messages
+    platform: iOS
+    sources:
+      - path: MenoMapMessages
+        excludes:
+          - Info.plist
+      - path: SharedCopy
+    info:
+      path: MenoMapMessages/Info.plist
+      properties:
+        CFBundleDisplayName: MenoMap
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.message-payload-provider
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).MessagesViewController
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.gwlabs.menomap.messages
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: iMessage App Icon
+        SKIP_INSTALL: YES
 
   MenoMapTests:
     type: bundle.unit-test

@@ -86,6 +86,8 @@ struct CheckInView: View {
         container.notifications.scheduleThirtyDayNudgeIfNeeded(
             loggedDays: store.loggedDays(in: DayWindow(lastDays: 60, endingOn: .today())).count)
         dismiss()
+        // The evening check-in is the natural bedtime moment: arm Night Watch if the user turned it on.
+        if profile.nightWatchOn, Calendar.current.component(.hour, from: .now) >= 19 { container.nightWatch.arm() }
         // Paywall after the third check-in (never in session 1: onboarding can't reach three).
         if isNew, profile.checkInCount == 3, !subscription.isPro {
             Task { @MainActor in

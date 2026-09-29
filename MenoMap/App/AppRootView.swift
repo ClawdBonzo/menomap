@@ -78,6 +78,8 @@ struct SheetHost: View {
         case .surgeSetup: SurgeSetupView(isOnboarding: false)
         case .medication(let id): MedicationEditView(medicationID: id)
         case .bleeding: BleedingLogView()
+        case .samplePreview: SamplePreviewView()
+        case .medications: MedicationsSheet()
         }
     }
 }

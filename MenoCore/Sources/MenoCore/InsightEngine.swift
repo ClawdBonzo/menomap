@@ -9,10 +9,12 @@ public struct InsightInput: Sendable {
     public var sleep: [SleepNight]
     public var wristTemp: [WristTempNight]
     public var experiments: [ExperimentRecord]
+    /// First day of each period (from Apple Health or the cycle log). Used only for perimenopause users.
+    public var cycleStarts: [DayKey]
 
     public init(surges: [SurgeRecord] = [], checkIns: [CheckInRecord] = [], medications: [MedicationRecord] = [],
                 doses: [DoseRecord] = [], sleep: [SleepNight] = [], wristTemp: [WristTempNight] = [],
-                experiments: [ExperimentRecord] = []) {
+                experiments: [ExperimentRecord] = [], cycleStarts: [DayKey] = []) {
         self.surges = surges
         self.checkIns = checkIns
         self.medications = medications
@@ -20,6 +22,7 @@ public struct InsightInput: Sendable {
         self.sleep = sleep
         self.wristTemp = wristTemp
         self.experiments = experiments
+        self.cycleStarts = cycleStarts
     }
 }
 
@@ -50,6 +53,8 @@ public enum InsightKind: Hashable, Sendable {
                            beforeIntensity: Double?, afterIntensity: Double?)
     case experimentResult(experimentID: UUID, kind: ExperimentKind, measure: ExperimentMeasure,
                           baselineCount: Int, baselineDays: Int, duringCount: Int, duringDays: Int)
+    /// Surges per logged day in the 3 days before a period vs all other logged days.
+    case cyclePhase(cycles: Int, perDayBefore: Double, perDayOther: Double)
 }
 
 public struct Insight: Hashable, Identifiable, Sendable {
@@ -83,6 +88,7 @@ public enum InsightRuleID {
     public static let weekdayPattern = "weekday_pattern"
     public static let treatmentTimeline = "treatment_timeline"
     public static let experimentResult = "experiment_result"
+    public static let cyclePhase = "cycle_phase"
 }
 
 /// Local, rule-based pattern finder. No ML, no network. Every rule refuses to speak below its minimum
@@ -108,6 +114,7 @@ public struct InsightEngine: Sendable {
         out += [weekdayPattern(input, today: today)].compactMap { $0 }
         out += treatmentTimeline(input, today: today)
         out += experimentResults(input, today: today)
+        out += [cyclePhase(input, today: today)].compactMap { $0 }
         return out.sorted { $0.strength > $1.strength }
     }
 
@@ -330,6 +337,36 @@ public struct InsightEngine: Sendable {
                 id: "\(InsightRuleID.experimentResult)-\(e.id.uuidString)"))
         }
         return out
+    }
+
+    /// "Your surges cluster in the 3 days before your period." Needs 2+ period starts in 120 days,
+    /// 20+ logged days, and the pre-period days running at least 1.5x the rest.
+    func cyclePhase(_ input: InsightInput, today: DayKey) -> Insight? {
+        let window = DayWindow(lastDays: 120, endingOn: today, calendar: calendar)
+        let starts = Set(input.cycleStarts.filter { window.contains($0) })
+        guard starts.count >= 2 else { return nil }
+        let logged = loggedDays(input).filter { window.contains($0) }
+        guard logged.count >= 20 else { return nil }
+        var before = Set<DayKey>()
+        for s in starts { for k in 1...3 { before.insert(s.adding(days: -k, calendar: calendar)) } }
+        let perDay = Dictionary(grouping: input.surges) { DayKey($0.startedAt, calendar: calendar) }.mapValues(\.count)
+        let b = logged.filter { before.contains($0) }, o = logged.filter { !before.contains($0) }
+        guard b.count >= 4, o.count >= Self.minPairedDays else { return nil }
+        let bAvg = mean(b.map { Double(perDay[$0] ?? 0) }), oAvg = mean(o.map { Double(perDay[$0] ?? 0) })
+        guard oAvg > 0 ? bAvg >= oAvg * 1.5 : bAvg >= 1 else { return nil }
+        return Insight(ruleID: InsightRuleID.cyclePhase,
+                       kind: .cyclePhase(cycles: starts.count, perDayBefore: round1(bAvg), perDayOther: round1(oAvg)),
+                       windowDays: 120, strength: min((bAvg - oAvg) / max(oAvg, 1), 1) * 0.85)
+    }
+
+    /// Tonight's heads-up: the user marked alcohol today and, on past alcohol evenings, night sweats followed
+    /// at least 60% of the time (from `alcoholThenSweats`). Nil otherwise. Wording: her entries, not a forecast.
+    public func tonightHeadsUp(_ input: InsightInput, today: DayKey) -> (alcoholEvenings: Int, sweatNights: Int)? {
+        guard input.checkIns.first(where: { $0.day == today })?.alcohol == true,
+              let i = alcoholThenSweats(input, today: today),
+              case let .alcoholThenSweats(yes, sweatYes, _, _) = i.kind,
+              yes >= 3, Double(sweatYes) / Double(yes) >= 0.6 else { return nil }
+        return (yes, sweatYes)
     }
 
     private func round2(_ v: Double) -> Double { (v * 100).rounded() / 100 }

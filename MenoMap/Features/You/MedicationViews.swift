@@ -1,9 +1,40 @@
 import SwiftUI
 import MenoCore
 
+enum MedicationText {
+    static func schedule(_ m: Medication) -> String {
+        switch m.schedule {
+        case .daily: return String(localized: "Every day")
+        case .asNeeded: return String(localized: "As needed")
+        case .days:
+            let symbols = Calendar.current.shortWeekdaySymbols
+            return m.weekdays.sorted().compactMap { symbols.indices.contains($0 - 1) ? symbols[$0 - 1] : nil }.joined(separator: ", ")
+        }
+    }
+
+    static func isDueToday(_ m: Medication) -> Bool {
+        switch m.schedule {
+        case .daily, .asNeeded: true
+        case .days: m.weekdays.contains(DayKey.today().weekday())
+        }
+    }
+}
+
 enum MedicationCopy {
     static var safety: String {
         String(localized: "MenoMap cannot tell you to start, stop, or change a medicine. Bring your list to a clinician.")
+    }
+}
+
+/// Medication list as a sheet (opened from a dose reminder).
+struct MedicationsSheet: View {
+    @Environment(\.dismiss) private var dismiss
+
+    var body: some View {
+        NavigationStack {
+            MedicationListView()
+                .toolbar { ToolbarItem(placement: .cancellationAction) { Button("Done") { dismiss() } } }
+        }
     }
 }
 
@@ -53,7 +84,7 @@ private struct MedicationRow: View {
             HStack {
                 VStack(alignment: .leading, spacing: 2) {
                     Text(med.name).font(.headline).foregroundStyle(MenoTheme.ink)
-                    Text([Copy.medCategory(med.category), med.doseText, med.scheduleText].filter { !$0.isEmpty }.joined(separator: " · "))
+                    Text([Copy.medCategory(med.category), med.doseText, MedicationText.schedule(med), med.scheduleText].filter { !$0.isEmpty }.joined(separator: " · "))
                         .font(.subheadline).foregroundStyle(MenoTheme.inkSecondary)
                     Text("Since \(med.startDate.formatted(date: .abbreviated, time: .omitted))")
                         .font(.caption).foregroundStyle(MenoTheme.inkSecondary)
@@ -61,7 +92,7 @@ private struct MedicationRow: View {
                 Spacer()
                 if med.endDate != nil { Text("Stopped").font(.caption.weight(.semibold)).foregroundStyle(MenoTheme.inkSecondary) }
             }
-            if med.endDate == nil {
+            if med.endDate == nil, MedicationText.isDueToday(med) {
                 if let last = todayDoses.first {
                     Label(last.skipped ? "Skipped today" : "Taken today", systemImage: last.skipped ? "minus.circle" : "checkmark.circle.fill")
                         .font(.subheadline).foregroundStyle(last.skipped ? MenoTheme.inkSecondary : MenoTheme.teal)
@@ -97,6 +128,8 @@ struct MedicationEditView: View {
     @State private var end = Date.now
     @State private var notes = ""
     @State private var reminderOn = false
+    @State private var scheduleKind: MedicationSchedule = .daily
+    @State private var weekdays: Set<Int> = []
     @State private var reminderTime = Calendar.current.date(from: DateComponents(hour: 9)) ?? .now
     @State private var loaded = false
     @State private var confirmDelete = false
@@ -114,6 +147,24 @@ struct MedicationEditView: View {
                     }
                 } footer: {
                     Text("Types only help organize your list and notes.")
+                }
+                Section {
+                    Picker("How often", selection: $scheduleKind) {
+                        Text("Every day").tag(MedicationSchedule.daily)
+                        Text("Certain days").tag(MedicationSchedule.days)
+                        Text("As needed").tag(MedicationSchedule.asNeeded)
+                    }
+                    .pickerStyle(.segmented)
+                    if scheduleKind == .days {
+                        WeekdayPicker(selection: $weekdays)
+                        Button("Patch, twice a week (Sun & Wed)") {
+                            weekdays = [1, 4]
+                            if route.isEmpty { route = String(localized: "Patch") }
+                        }
+                        .font(.subheadline)
+                    }
+                } header: { Text("Schedule") } footer: {
+                    if scheduleKind == .days { Text("Good for patches changed twice a week or weekly treatments.") }
                 }
                 Section("Details (optional)") {
                     TextField("Dose, e.g. 1 pump or 100 mg", text: $doseText)
@@ -134,7 +185,7 @@ struct MedicationEditView: View {
                             if !subscription.isPro { ProBadge() }
                         }
                     }
-                    if reminderOn { DatePicker("Time", selection: $reminderTime, displayedComponents: .hourAndMinute) }
+                    if reminderOn && scheduleKind != .asNeeded { DatePicker("Time", selection: $reminderTime, displayedComponents: .hourAndMinute) }
                 } footer: {
                     Text("A missed dose is just a note in your log. No lectures.")
                 }
@@ -176,6 +227,8 @@ struct MedicationEditView: View {
         end = m.endDate ?? .now
         notes = m.notes
         reminderOn = m.reminderOn
+        scheduleKind = m.schedule
+        weekdays = Set(m.weekdays)
         reminderTime = Calendar.current.date(from: DateComponents(hour: m.reminderHour, minute: m.reminderMinute)) ?? .now
     }
 
@@ -193,7 +246,9 @@ struct MedicationEditView: View {
         m.startDate = start
         m.endDate = stopped ? end : nil
         m.notes = notes
-        m.reminderOn = reminderOn && subscription.isPro && !stopped
+        m.schedule = scheduleKind
+        m.weekdays = weekdays.sorted()
+        m.reminderOn = reminderOn && subscription.isPro && !stopped && scheduleKind != .asNeeded
         let c = Calendar.current.dateComponents([.hour, .minute], from: reminderTime)
         m.reminderHour = c.hour ?? 9
         m.reminderMinute = c.minute ?? 0
@@ -218,6 +273,33 @@ struct MedicationEditView: View {
         store.context.delete(m)
         store.save()
         dismiss()
+    }
+}
+
+/// Seven weekday toggles in the locale's order (1 = Sunday … 7 = Saturday, Gregorian).
+struct WeekdayPicker: View {
+    @Binding var selection: Set<Int>
+
+    var body: some View {
+        let cal = Calendar.current
+        HStack(spacing: 6) {
+            ForEach(0..<7, id: \.self) { i in
+                let wd = (cal.firstWeekday - 1 + i) % 7 + 1
+                let on = selection.contains(wd)
+                Button {
+                    if on { selection.remove(wd) } else { selection.insert(wd) }
+                } label: {
+                    Text(cal.veryShortWeekdaySymbols[wd - 1])
+                        .font(.subheadline.weight(.semibold))
+                        .frame(maxWidth: .infinity, minHeight: MenoTheme.minHit)
+                        .foregroundStyle(on ? MenoTheme.onTeal : MenoTheme.ink)
+                        .background(on ? MenoTheme.teal : MenoTheme.surface, in: Circle())
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel(Text(cal.weekdaySymbols[wd - 1]))
+                .accessibilityAddTraits(on ? .isSelected : [])
+            }
+        }
     }
 }
 

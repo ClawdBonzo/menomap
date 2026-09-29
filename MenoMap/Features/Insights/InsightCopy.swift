@@ -81,6 +81,12 @@ enum InsightCopy {
                 body: String(localized: "You logged \(after.formatted(f)) surges a day in the \(days) days after you added \(name), compared with \(before.formatted(f)) in the \(days) days before. That's a coincidence check, not proof the medicine is the reason."),
                 symbol: "pills")
 
+        case let .cyclePhase(cycles, before, other):
+            return Text(
+                title: String(localized: "The days before your period"),
+                body: String(localized: "Across your last \(cycles) cycles, you logged \(before.formatted(f)) surges a day in the 3 days before your period started, compared with \(other.formatted(f)) on other days."),
+                symbol: "drop")
+
         case let .experimentResult(_, kind, measure, b, bDays, d, dDays):
             let what = measure == .nightSurges ? String(localized: "night surges") : String(localized: "surges")
             return Text(
