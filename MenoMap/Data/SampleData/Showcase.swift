@@ -55,10 +55,17 @@ struct PDFShowcase: View {
         let input = VisitPDFInput.build(store: store, appointment: store.nextAppointment(), windowDays: 30,
                                         languageCode: Bundle.main.preferredLocalizations.first ?? "en",
                                         paper: RegionInfo.paperSize(regionCode: Locale.current.region?.identifier), preview: false)
+        let data = VisitPDFRenderer().makePDF(input)
         NavigationStack {
-            PDFKitView(data: VisitPDFRenderer().makePDF(input))
+            PDFKitView(data: data)
                 .navigationTitle("Your notes")
                 .navigationBarTitleDisplayMode(.inline)
+        }
+        .task {
+            // `-MMExportSamplePDF`: also save the PDF to Documents (the website's demo-data sample for clinicians).
+            guard ProcessInfo.processInfo.arguments.contains("-MMExportSamplePDF"),
+                  let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
+            try? data.write(to: docs.appendingPathComponent("sample-notes.pdf"))
         }
     }
 }

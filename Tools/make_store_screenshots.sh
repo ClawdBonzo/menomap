@@ -33,10 +33,22 @@ for L in $LANGS; do
   mkdir -p $WORK/raw/$L
   for F in $FRAMES; do
     N=${F%%|*}; ARGS=(${=F#*|})
+    OUT=$WORK/raw/$L/$N.png
+    # MM_KEEP=1: keep frames that already pass the check (redo only missing or blank ones).
+    if [[ -n $MM_KEEP && -f $OUT ]] && python3 Tools/shot_check.py $OUT; then continue; fi
     xcrun simctl terminate $UDID app.gwlabs.menomap 2>/dev/null || true
     xcrun simctl launch $UDID app.gwlabs.menomap -MMInMemory -MMHour 14 -AppleLanguages "($L)" -AppleLocale ${LOCALE[$L]:-en_US} $ARGS >/dev/null
-    sleep 4
-    xcrun simctl io $UDID screenshot $WORK/raw/$L/$N.png >/dev/null 2>&1
+    sleep 3
+    # Retry until the screen has drawn and stopped animating (a fixed wait sometimes caught a blank launch frame).
+    for TRY in 1 2 3 4 5 6; do
+      sleep 1.5
+      xcrun simctl io $UDID screenshot $OUT.a.png >/dev/null 2>&1
+      sleep 1.5
+      xcrun simctl io $UDID screenshot $OUT.b.png >/dev/null 2>&1
+      if python3 Tools/shot_check.py $OUT.a.png $OUT.b.png; then break; fi
+      [[ $TRY == 6 ]] && echo "WARNING: $L/$N still blank or moving after retries"
+    done
+    mv $OUT.b.png $OUT; rm -f $OUT.a.png
   done
   echo "captured $L"
 done
