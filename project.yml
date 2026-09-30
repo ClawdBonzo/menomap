@@ -13,8 +13,8 @@ options:
 settings:
   base:
     SWIFT_VERSION: "5.0"
-    MARKETING_VERSION: "1.0"
-    CURRENT_PROJECT_VERSION: "1"
+    MARKETING_VERSION: "1.0.1"
+    CURRENT_PROJECT_VERSION: "2"
     CODE_SIGN_STYLE: Automatic
     DEVELOPMENT_TEAM: 3N9RY9EG8V
     SWIFT_EMIT_LOC_STRINGS: YES
@@ -119,7 +119,7 @@ targets:
           - ms
           - hi
         # RevenueCat public SDK key (observer mode). Empty until the RevenueCat project exists (Milestone J).
-        RevenueCatAPIKey: ""
+        RevenueCatAPIKey: "appl_xDJDGXoEyvWrChUbawbWnasuUnR"  # public SDK key (safe to ship in the app)
         # Numeric App Store ID, filled in once the App Store Connect record exists (Milestone J). Empty hides "Rate MenoMap".
         AppStoreID: "6817484445"
         SupportEmail: support@gwlabs.app

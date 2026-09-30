@@ -59,7 +59,11 @@
 4. Apple Ads: Tier 1 keywords only (Docs/MARKETS.md), capped until RevenueCat attribution is live.
 
 **1.0.1 (next build)**
-- RevenueCat: Rob creates the MenoMap app in RevenueCat (StoreKit 2 observer mode), uploads the App Store In-App Purchase
-  key there himself, and pastes the public Apple SDK key into `RevenueCatAPIKey` in project.yml.
+- RevenueCat DONE 2026-09-30: project "MenoMap" (proj893da9e8), App Store app appbb5240ea21 with the team's saved
+  in-app purchase key (valid), products monthly/yearly/lifetime/visitreport, entitlement "pro" (monthly, yearly,
+  lifetime). Public SDK key in project.yml; build 1.0.1 (2) uploaded to TestFlight. Rob: paste RevenueCat's Apple
+  Server Notification URL into App Store Connect → App Information → App Store Server Notifications (prod + sandbox, V2).
+- Screenshot demo names: DemoLocalized.json wasn't bundled before 1.0.1, so every language showed "Dana"/"Dr. Patel";
+  recapture before the next metadata upload.
 - Screenshot order: clinician notes move to frame 3 (Tools/asc_listing.py ORDER); upload with `fastlane metadata`.
 - Localize the In-App Event text for the main storefronts (de, fr, es, ja, nl, it, pt-BR, sv, zh).
