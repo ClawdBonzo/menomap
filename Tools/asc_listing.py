@@ -24,6 +24,10 @@ ASC = {"en": "en-US", "en-GB": "en-GB", "ar": "ar-SA", "cs": "cs", "da": "da", "
        "zh-Hant": "zh-Hant"}
 COPIES = {"en-AU": "en-GB", "en-CA": "en", "fr-CA": "fr"}  # extra storefront locales, same text as their source
 
+# Store order of the composed frames (Tools/make_store_screenshots.sh numbers them 01-09). From 1.0.1 the clinician
+# notes (05) move up to third: that's the frame someone comparing MenoMap with a GP-report app decides on.
+ORDER = ["01", "02", "05", "03", "04", "06", "07", "08", "09"]
+
 URLS = {"privacy_url": "https://gwlabs.app/menomap/privacy", "support_url": "https://gwlabs.app/support",
         "marketing_url": "https://gwlabs.app/menomap.html"}
 
@@ -66,8 +70,8 @@ def main():
         shots = COMPOSED / code
         dest = SHOTS / asc
         dest.mkdir(parents=True, exist_ok=True)
-        for png in sorted(shots.glob("*.png")):
-            shutil.copy(png, dest / png.name)
+        for position, frame in enumerate(ORDER, start=1):
+            shutil.copy(shots / f"{frame}.png", dest / f"{position:02d}.png")
         assert len(list(dest.glob("*.png"))) == 9, f"{asc}: expected 9 screenshots"
         assert len(s["name"]) <= 30 and len(s["subtitle"]) <= 30 and len(s["keywords"]) <= 100, f"{asc}: length"
         assert len(s["promotionalText"]) <= 170 and len(s["description"]) <= 4000, f"{asc}: length"

@@ -40,3 +40,26 @@
 - **Promotional offer:** 1 month free on yearly for users who cancel within the trial (targeted through RevenueCat once connected).
 - **Billing grace period:** on (16 days).
 - The app already shows StoreKit messages (the default) and refreshes entitlements on `Transaction.updates`, so no code is needed.
+
+## 13 · Launch status and post-approval runbook (updated 2026-09-30)
+
+**Done**
+- 1.0 (build 1) + Monthly, Yearly, Lifetime, Visit Report submitted for App Review 2026-09-30 (release: automatic on approval).
+- Featuring nomination SUBMITTED (App Store Connect API, type APP_LAUNCH, publish date Oct 6, iPhone + Apple Watch, linked event).
+- In-App Event "Two Weeks of Night Watch" (id 6817924472): DRAFT, badge Challenge, en-US text + card/details art
+  (AppStore/event/), publish Oct 4, runs Oct 11-25 in the app's 173 territories. No deep link (menomap://nightwatch arms
+  Night Watch immediately, too abrupt from a store tap).
+- gwlabs.app/menomap pages live (Manus); link-preview follow-up in Docs/Web/MANUS_MENOMAP_FIX.md.
+
+**On approval (same day)**
+1. Submit the In-App Event for review (App Store Connect → In-App Events → Submit, or a review submission with the event).
+2. `python3 Tools/asc_setup.py codes` (MENOFRIEND), `python3 Tools/asc_setup.py winback`, then one
+   `python3 Tools/asc_setup.py clinic NAME30` per clinic.
+3. Ask Manus to rerun step 6 of MANUS_MENOMAP_PROMPT.md (remove "Coming soon", add downloadUrl/offers).
+4. Apple Ads: Tier 1 keywords only (Docs/MARKETS.md), capped until RevenueCat attribution is live.
+
+**1.0.1 (next build)**
+- RevenueCat: Rob creates the MenoMap app in RevenueCat (StoreKit 2 observer mode), uploads the App Store In-App Purchase
+  key there himself, and pastes the public Apple SDK key into `RevenueCatAPIKey` in project.yml.
+- Screenshot order: clinician notes move to frame 3 (Tools/asc_listing.py ORDER); upload with `fastlane metadata`.
+- Localize the In-App Event text for the main storefronts (de, fr, es, ja, nl, it, pt-BR, sv, zh).
