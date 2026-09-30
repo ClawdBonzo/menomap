@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro Bulanan",
+  "description": "Pola, statistik, dan catatan untuk dokter."
+ },
+ "yearly": {
+  "name": "MenoMap Pro Tahunan",
+  "description": "Pola, statistik, dan catatan untuk dokter."
+ },
+ "lifetime": {
+  "name": "MenoMap Pro Seumur Hidup",
+  "description": "Semua fitur Pro, selamanya."
+ },
+ "visitReport": {
+  "name": "Laporan Konsultasi",
+  "description": "PDF lengkap untuk dokter, hingga 90 hari."
+ }
+}

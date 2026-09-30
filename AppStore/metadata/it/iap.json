@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro Mensile",
+  "description": "Ricorrenze, statistiche e note per il medico."
+ },
+ "yearly": {
+  "name": "MenoMap Pro Annuale",
+  "description": "Ricorrenze, statistiche e note per il medico."
+ },
+ "lifetime": {
+  "name": "MenoMap Pro Per sempre",
+  "description": "Tutte le funzioni Pro, per sempre."
+ },
+ "visitReport": {
+  "name": "Report visita",
+  "description": "PDF completo per il medico, fino a 90 giorni."
+ }
+}

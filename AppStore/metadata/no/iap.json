@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro månedlig",
+  "description": "Mønstre, statistikk og notater til legen."
+ },
+ "yearly": {
+  "name": "MenoMap Pro årlig",
+  "description": "Mønstre, statistikk og notater til legen."
+ },
+ "lifetime": {
+  "name": "MenoMap Pro livstid",
+  "description": "Alle Pro-funksjoner, for alltid."
+ },
+ "visitReport": {
+  "name": "Legetimerapport",
+  "description": "Én full PDF til legen, opptil 90 dager."
+ }
+}

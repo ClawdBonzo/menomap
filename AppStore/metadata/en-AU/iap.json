@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro Monthly",
+  "description": "Patterns, stats and clinician notes."
+ },
+ "yearly": {
+  "name": "MenoMap Pro Yearly",
+  "description": "Patterns, stats and clinician notes."
+ },
+ "lifetime": {
+  "name": "MenoMap Pro Lifetime",
+  "description": "Every Pro feature, forever."
+ },
+ "visitReport": {
+  "name": "Visit Report",
+  "description": "One full clinician PDF, up to 90 days."
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro Mensual",
+  "description": "Patrones, estadísticas y notas médicas."
+ },
+ "yearly": {
+  "name": "MenoMap Pro Anual",
+  "description": "Patrones, estadísticas y notas médicas."
+ },
+ "lifetime": {
+  "name": "MenoMap Pro de por vida",
+  "description": "Todas las funciones Pro, para siempre."
+ },
+ "visitReport": {
+  "name": "Informe de Consulta",
+  "description": "PDF completo para tu consulta, hasta 90 días."
+ }
+}

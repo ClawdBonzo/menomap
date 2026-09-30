@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro Μηνιαία",
+  "description": "Μοτίβα, στατιστικά και σημειώσεις γιατρού."
+ },
+ "yearly": {
+  "name": "MenoMap Pro Ετήσια",
+  "description": "Μοτίβα, στατιστικά και σημειώσεις γιατρού."
+ },
+ "lifetime": {
+  "name": "MenoMap Pro Εφ' όρου ζωής",
+  "description": "Όλες οι λειτουργίες Pro, για πάντα."
+ },
+ "visitReport": {
+  "name": "Αναφορά Ραντεβού",
+  "description": "Ένα πλήρες PDF για γιατρό, έως 90 ημέρες."
+ }
+}

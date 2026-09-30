@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro חודשי",
+  "description": "דפוסים, נתונים וסיכום לרופא/ה."
+ },
+ "yearly": {
+  "name": "MenoMap Pro שנתי",
+  "description": "דפוסים, נתונים וסיכום לרופא/ה."
+ },
+ "lifetime": {
+  "name": "MenoMap Pro לכל החיים",
+  "description": "כל תכונות Pro, לתמיד."
+ },
+ "visitReport": {
+  "name": "דוח ביקור",
+  "description": "קובץ PDF מלא אחד לרופא/ה, עד 90 יום."
+ }
+}

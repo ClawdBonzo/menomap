@@ -1,0 +1,49 @@
+# MenoMap release lanes. Authentication is an App Store Connect API key (no Apple ID password, no 2FA prompts):
+#   ~/.private_keys/AuthKey_K34HFNJTXH.p8, issuer 69a6de84-f289-47e3-e053-5b8c7c11a4d1
+default_platform(:ios)
+
+KEY_ID = "K34HFNJTXH"
+ISSUER_ID = "69a6de84-f289-47e3-e053-5b8c7c11a4d1"
+KEY_PATH = File.expand_path("~/.private_keys/AuthKey_K34HFNJTXH.p8")
+
+def api_key
+  app_store_connect_api_key(key_id: KEY_ID, issuer_id: ISSUER_ID, key_filepath: KEY_PATH, in_house: false)
+end
+
+platform :ios do
+  desc "Upload App Store metadata (37 storefronts) and screenshots. Regenerate first with Tools/make_store_screenshots.sh and Tools/asc_listing.py."
+  lane :metadata do
+    api_key
+    deliver(
+      metadata_path: "AppStore/metadata",
+      screenshots_path: "AppStore/screenshots",
+      overwrite_screenshots: true,
+      skip_binary_upload: true,
+      skip_app_version_update: false,
+      force: true,               # no HTML preview prompt: this runs unattended
+      precheck_include_in_app_purchases: false,
+      submit_for_review: false,
+      run_precheck_before_submit: false
+    )
+  end
+
+  desc "Archive a Release build with automatic signing and upload it to TestFlight."
+  lane :beta do
+    api_key
+    build_app(
+      project: "MenoMap.xcodeproj",
+      scheme: "MenoMap",
+      configuration: "Release",
+      export_method: "app-store",
+      output_directory: "build/export",
+      xcargs: "-allowProvisioningUpdates -authenticationKeyPath #{KEY_PATH} -authenticationKeyID #{KEY_ID} -authenticationKeyIssuerID #{ISSUER_ID}"
+    )
+    upload_to_testflight(skip_waiting_for_build_processing: true)
+  end
+
+  desc "Metadata, screenshots and a TestFlight build in one go."
+  lane :release do
+    metadata
+    beta
+  end
+end

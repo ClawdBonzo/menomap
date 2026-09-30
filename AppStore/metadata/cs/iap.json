@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro měsíčně",
+  "description": "Vzorce, statistiky a poznámky pro lékaře."
+ },
+ "yearly": {
+  "name": "MenoMap Pro ročně",
+  "description": "Vzorce, statistiky a poznámky pro lékaře."
+ },
+ "lifetime": {
+  "name": "MenoMap Pro doživotně",
+  "description": "Všechny funkce Pro, navždy."
+ },
+ "visitReport": {
+  "name": "Zpráva k návštěvě",
+  "description": "Jedno úplné PDF pro lékaře, až za 90 dní."
+ }
+}

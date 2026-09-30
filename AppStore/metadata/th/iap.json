@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro รายเดือน",
+  "description": "รูปแบบ สถิติ และสรุปสำหรับแพทย์"
+ },
+ "yearly": {
+  "name": "MenoMap Pro รายปี",
+  "description": "รูปแบบ สถิติ และสรุปสำหรับแพทย์"
+ },
+ "lifetime": {
+  "name": "MenoMap Pro ตลอดชีพ",
+  "description": "ทุกฟีเจอร์ของ Pro ใช้ได้ตลอดไป"
+ },
+ "visitReport": {
+  "name": "รายงานพบแพทย์",
+  "description": "PDF ฉบับเต็มสำหรับแพทย์ 1 ฉบับ สูงสุด 90 วัน"
+ }
+}

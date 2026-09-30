@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro kuukausi",
+  "description": "Kuviot, tilastot ja muistiinpanot lääkärille."
+ },
+ "yearly": {
+  "name": "MenoMap Pro vuosi",
+  "description": "Kuviot, tilastot ja muistiinpanot lääkärille."
+ },
+ "lifetime": {
+  "name": "MenoMap Pro elinikäinen",
+  "description": "Kaikki Pro-ominaisuudet, ikuisesti."
+ },
+ "visitReport": {
+  "name": "Käyntiraportti",
+  "description": "Yksi täysi PDF lääkärille, enintään 90 pv."
+ }
+}

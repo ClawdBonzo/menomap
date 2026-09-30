@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro на місяць",
+  "description": "Статистика, закономірності, PDF для лікаря."
+ },
+ "yearly": {
+  "name": "MenoMap Pro на рік",
+  "description": "Статистика, закономірності, PDF для лікаря."
+ },
+ "lifetime": {
+  "name": "MenoMap Pro назавжди",
+  "description": "Усі функції Pro назавжди."
+ },
+ "visitReport": {
+  "name": "Звіт для візиту",
+  "description": "Один повний PDF для лікаря, до 90 днів."
+ }
+}

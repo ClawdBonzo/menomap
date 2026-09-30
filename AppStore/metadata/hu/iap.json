@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro – havi",
+  "description": "Mintázatok, statisztikák, orvosi jegyzetek."
+ },
+ "yearly": {
+  "name": "MenoMap Pro – éves",
+  "description": "Mintázatok, statisztikák, orvosi jegyzetek."
+ },
+ "lifetime": {
+  "name": "MenoMap Pro – életre szóló",
+  "description": "Minden Pro funkció, örökre."
+ },
+ "visitReport": {
+  "name": "Egyszeri jelentés",
+  "description": "Egy teljes orvosi PDF, legfeljebb 90 napról."
+ }
+}

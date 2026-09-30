@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro 월간",
+  "description": "패턴, 통계, 진료 메모."
+ },
+ "yearly": {
+  "name": "MenoMap Pro 연간",
+  "description": "패턴, 통계, 진료 메모."
+ },
+ "lifetime": {
+  "name": "MenoMap Pro 평생 이용",
+  "description": "모든 Pro 기능을 평생 이용."
+ },
+ "visitReport": {
+  "name": "진료 리포트",
+  "description": "의료진용 전체 PDF 1회, 최대 90일."
+ }
+}

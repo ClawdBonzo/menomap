@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro Aylık",
+  "description": "Örüntüler, istatistikler ve doktor notları."
+ },
+ "yearly": {
+  "name": "MenoMap Pro Yıllık",
+  "description": "Örüntüler, istatistikler ve doktor notları."
+ },
+ "lifetime": {
+  "name": "MenoMap Pro Ömür Boyu",
+  "description": "Tüm Pro özellikleri, ömür boyu."
+ },
+ "visitReport": {
+  "name": "Randevu Raporu",
+  "description": "90 güne kadar tek bir tam doktor PDF'i."
+ }
+}

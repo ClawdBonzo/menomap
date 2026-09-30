@@ -1,0 +1,26 @@
+Logga en värmevallning med ett tryck. Se vad som förändras. Gå till läkarbesöket med anteckningar.
+
+MenoMap är byggd för själva ögonblicket. När en värmevallning eller nattsvettning börjar trycker du en gång från låsskärmen, Kontrollcenter, snabbknappen eller din Apple Watch. MenoMap tar tid, andas med dig om du vill och sparar den. På natten håller Nattvakt en dämpad knapp för nattsvettningar på låsskärmen till morgonen, ett tryck räcker.
+
+FUNGERAR MED APPEN HÄLSA
+MenoMap läser de symtom och den fas i klimakteriet som du har loggat i Hälsa, så att din historik syns redan första dagen, och sparar varje värmevallning och nattsvettning du loggar tillbaka i Hälsa.
+
+DITT VÄDER, KARTLAGT
+• En värmekarta över dina dagar, en vågklocka som visar när de samlas och dina vanligaste taggade utlösare
+• En kvällsincheckning på 30 sekunder för sömn, humör och energi
+• Mönster i dina egna registreringar, till exempel hur din sömn ser ut efter tunga nätter, alltid som en koll av sammanträffanden, aldrig som en orsak
+• Tvåveckorsexperiment: prova en förändring och jämför ditt eget före och under
+
+GÅ DIT MED ANTECKNINGAR
+Lägg till ditt läkarbesök så visar MenoMap hur klara dina anteckningar är. Välj dina frågor och skapa sedan en tydlig PDF på en sida till din läkare, på det språk läkaren talar.
+
+PRIVAT FRÅN GRUNDEN
+Inget konto. Ingen reklam. Inget moln. Dina hälsodata stannar på din iPhone.
+
+MENOMAP PRO
+Längre historik (30, 90 och 365 dagar), mönster, experiment, hela månadens värmerapport, anteckningar till läkaren och påminnelser om läkemedel. Månadsvis, årsvis (med gratis provperiod) eller livstid. Eller köp en enskild Besöksrapport för ett läkarbesök.
+
+MenoMap är ett verktyg för att följa ditt välmående och för att lära dig mer. Appen ställer inte diagnosen menopaus eller någon annan diagnos, skriver inte ut eller ändrar behandling och ersätter inte vård från en behörig läkare.
+
+Integritet: https://gwlabs.app/menomap/privacy
+Användarvillkor: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

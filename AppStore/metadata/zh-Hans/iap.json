@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro 月度",
+  "description": "规律、统计和给医生的笔记。"
+ },
+ "yearly": {
+  "name": "MenoMap Pro 年度",
+  "description": "规律、统计和给医生的笔记。"
+ },
+ "lifetime": {
+  "name": "MenoMap Pro 终身",
+  "description": "所有 Pro 功能，永久可用。"
+ },
+ "visitReport": {
+  "name": "就诊报告",
+  "description": "一份给医生的完整 PDF，最长涵盖 90 天。"
+ }
+}

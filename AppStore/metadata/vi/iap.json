@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro theo tháng",
+  "description": "Mẫu hình, thống kê và ghi chú cho bác sĩ."
+ },
+ "yearly": {
+  "name": "MenoMap Pro theo năm",
+  "description": "Mẫu hình, thống kê và ghi chú cho bác sĩ."
+ },
+ "lifetime": {
+  "name": "MenoMap Pro trọn đời",
+  "description": "Mọi tính năng Pro, mãi mãi."
+ },
+ "visitReport": {
+  "name": "Báo cáo buổi khám",
+  "description": "Một PDF đầy đủ cho bác sĩ, tối đa 90 ngày."
+ }
+}

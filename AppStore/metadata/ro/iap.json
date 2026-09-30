@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro Lunar",
+  "description": "Tipare, statistici și notițe pentru medic."
+ },
+ "yearly": {
+  "name": "MenoMap Pro Anual",
+  "description": "Tipare, statistici și notițe pentru medic."
+ },
+ "lifetime": {
+  "name": "MenoMap Pro pe viață",
+  "description": "Toate funcțiile Pro, pentru totdeauna."
+ },
+ "visitReport": {
+  "name": "Raport de consultație",
+  "description": "PDF complet pentru medic, până la 90 de zile."
+ }
+}

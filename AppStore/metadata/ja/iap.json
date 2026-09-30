@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro 月額",
+  "description": "傾向、統計、受診メモ。"
+ },
+ "yearly": {
+  "name": "MenoMap Pro 年額",
+  "description": "傾向、統計、受診メモ。"
+ },
+ "lifetime": {
+  "name": "MenoMap Pro 買い切り",
+  "description": "Proのすべての機能を、ずっと。"
+ },
+ "visitReport": {
+  "name": "受診レポート",
+  "description": "医師向けの完全なPDFを1つ（最大90日分）。"
+ }
+}

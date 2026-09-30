@@ -1,0 +1,11 @@
+MenoMap is a symptom tracker for perimenopause and menopause (hot flashes and night sweats). There is no account or sign-in, and all data stays on the device.
+
+How to try it: complete the short onboarding (Apple Health is optional; you can skip it), then tap "I'm having a surge" on the Today tab to start a timer, and tap again to end it and rate it. "Already over" logs one after the fact, and the "Evening check-in" card is on Today. To see two weeks of sample data without logging anything: Week tab > "See what two weeks looks like".
+
+Apple Health: with permission, MenoMap reads hot flashes, night sweats, sleep, cycle data, other menopause symptoms, sleeping wrist temperature and (iOS 27) menopause stage, and writes the hot flashes, night sweats and bleeding the user logs. Health data is never sent off the device, never used for advertising, and never stored in iCloud by the app.
+
+MenoMap Pro (subscription group "MenoMap Pro"; yearly has a 7-day free trial) and the one-time "Visit Report" are sold with StoreKit. The paywall opens from the Visit tab when creating the notes PDF, from any locked pattern on the Week tab, or from You > MenoMap Pro.
+
+Other surfaces: Lock Screen/Control Center/Action Button controls and a Live Activity for a running surge; "Night Watch" (You > Night Watch) keeps a dim Lock Screen button overnight; an Apple Watch app; an iMessage sticker extension.
+
+MenoMap is a wellness and education tool. It does not diagnose or recommend treatment, and the app says so in onboarding, in the Learn articles and on every PDF. Privacy policy: https://gwlabs.app/menomap/privacy

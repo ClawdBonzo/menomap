@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro maandelijks",
+  "description": "Patronen, statistieken, notities voor je arts"
+ },
+ "yearly": {
+  "name": "MenoMap Pro jaarlijks",
+  "description": "Patronen, statistieken, notities voor je arts"
+ },
+ "lifetime": {
+  "name": "MenoMap Pro voor altijd",
+  "description": "Elke Pro-functie, voor altijd."
+ },
+ "visitReport": {
+  "name": "Afspraakverslag",
+  "description": "Eén volledige pdf voor je arts, tot 90 dagen."
+ }
+}

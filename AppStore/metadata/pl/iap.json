@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro miesięcznie",
+  "description": "Wzorce, statystyki i notatki dla lekarza."
+ },
+ "yearly": {
+  "name": "MenoMap Pro rocznie",
+  "description": "Wzorce, statystyki i notatki dla lekarza."
+ },
+ "lifetime": {
+  "name": "MenoMap Pro dożywotnio",
+  "description": "Wszystkie funkcje Pro, na zawsze."
+ },
+ "visitReport": {
+  "name": "Raport na wizytę",
+  "description": "Jeden pełny PDF dla lekarza, do 90 dni."
+ }
+}

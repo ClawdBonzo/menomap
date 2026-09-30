@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro monatlich",
+  "description": "Muster, Statistiken, Notizen zum Arzttermin."
+ },
+ "yearly": {
+  "name": "MenoMap Pro jährlich",
+  "description": "Muster, Statistiken, Notizen zum Arzttermin."
+ },
+ "lifetime": {
+  "name": "MenoMap Pro lebenslang",
+  "description": "Alle Pro-Funktionen, für immer."
+ },
+ "visitReport": {
+  "name": "Terminbericht",
+  "description": "Ein vollständiges Arzt-PDF, bis zu 90 Tage."
+ }
+}

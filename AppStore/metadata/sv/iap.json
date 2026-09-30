@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro månadsvis",
+  "description": "Mönster, statistik och läkaranteckningar."
+ },
+ "yearly": {
+  "name": "MenoMap Pro årsvis",
+  "description": "Mönster, statistik och läkaranteckningar."
+ },
+ "lifetime": {
+  "name": "MenoMap Pro livstid",
+  "description": "Alla Pro-funktioner, för alltid."
+ },
+ "visitReport": {
+  "name": "Besöksrapport",
+  "description": "Full PDF till läkaren, upp till 90 dagar."
+ }
+}

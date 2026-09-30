@@ -1,0 +1,19 @@
+{
+ "groupName": "MenoMap Pro",
+ "monthly": {
+  "name": "MenoMap Pro मासिक",
+  "description": "पैटर्न, आँकड़े और डॉक्टर के लिए नोट्स।"
+ },
+ "yearly": {
+  "name": "MenoMap Pro सालाना",
+  "description": "पैटर्न, आँकड़े और डॉक्टर के लिए नोट्स।"
+ },
+ "lifetime": {
+  "name": "MenoMap Pro आजीवन",
+  "description": "हर Pro फ़ीचर, हमेशा के लिए।"
+ },
+ "visitReport": {
+  "name": "विज़िट रिपोर्ट",
+  "description": "डॉक्टर के लिए एक पूरा PDF, 90 दिन तक।"
+ }
+}

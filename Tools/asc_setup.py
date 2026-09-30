@@ -271,12 +271,90 @@ def stage_winback(app, terrs):
     print("win-back", s, "territories", len(items), "starts", start)
 
 
+def iap_locales():
+    """AppStore/metadata/<ASC locale>/iap.json, written by Tools/asc_listing.py from the reviewed translations."""
+    import pathlib
+    root = pathlib.Path(__file__).resolve().parent.parent / "AppStore/metadata"
+    return {p.parent.name: json.loads(p.read_text()) for p in sorted(root.glob("*/iap.json"))}
+
+
+def stage_localize(app, terrs):
+    """Group, subscription and IAP names/descriptions in every listing locale (skips locales that already exist)."""
+    locs = iap_locales()
+    gid = group_id(app)
+    have = {l["attributes"]["locale"] for l in pages(f"/v1/subscriptionGroups/{gid}/subscriptionGroupLocalizations?limit=200")}
+    for loc, iap in locs.items():
+        if loc not in have:
+            req("POST", "/v1/subscriptionGroupLocalizations", {"data": {"type": "subscriptionGroupLocalizations",
+                "attributes": {"name": iap.get("groupName", GROUP_NAME), "locale": loc},
+                "relationships": {"subscriptionGroup": {"data": {"type": "subscriptionGroups", "id": gid}}}}}, f"group {loc}")
+    plans = {"menomap.pro.yearly": "yearly", "menomap.pro.monthly": "monthly"}
+    for pid, sid in subs(gid).items():
+        have = {l["attributes"]["locale"] for l in pages(f"/v1/subscriptions/{sid}/subscriptionLocalizations?limit=200")}
+        for loc, iap in locs.items():
+            if loc in have or plans.get(pid) not in iap:
+                continue
+            p = iap[plans[pid]]
+            req("POST", "/v1/subscriptionLocalizations", {"data": {"type": "subscriptionLocalizations",
+                "attributes": {"name": p["name"], "description": p["description"], "locale": loc},
+                "relationships": {"subscription": {"data": {"type": "subscriptions", "id": sid}}}}}, f"{pid} {loc}")
+    keys = {"menomap.pro.lifetime": "lifetime", "menomap.visitreport.single": "visitReport"}
+    for item in pages(f"/v1/apps/{app}/inAppPurchasesV2?limit=200"):
+        pid, iid = item["attributes"]["productId"], item["id"]
+        have = {l["attributes"]["locale"] for l in pages(f"/v2/inAppPurchases/{iid}/inAppPurchaseLocalizations?limit=200")}
+        for loc, iap in locs.items():
+            if loc in have or keys.get(pid) not in iap:
+                continue
+            p = iap[keys[pid]]
+            req("POST", "/v1/inAppPurchaseLocalizations", {"data": {"type": "inAppPurchaseLocalizations",
+                "attributes": {"name": p["name"], "description": p["description"], "locale": loc},
+                "relationships": {"inAppPurchaseV2": {"data": {"type": "inAppPurchases", "id": iid}}}}}, f"{pid} {loc}")
+    print("localized", len(locs), "locales")
+
+
+def upload_review_shot(kind, rel, owner_id, path):
+    """Reserve, upload and commit an App Review screenshot (subscription or in-app purchase)."""
+    import hashlib, os, urllib.request
+    data = open(path, "rb").read()
+    s, d = req("POST", f"/v1/{kind}", {"data": {"type": kind, "attributes": {"fileName": os.path.basename(path), "fileSize": len(data)},
+               "relationships": {rel: {"data": {"type": rel + "s" if rel == "subscription" else "inAppPurchases", "id": owner_id}}}}}, f"reserve {kind}")
+    if s >= 300:
+        return
+    shot = d["data"]
+    for op in shot["attributes"]["uploadOperations"]:
+        chunk = data[op["offset"]:op["offset"] + op["length"]]
+        r = urllib.request.Request(op["url"], data=chunk, method=op["method"], headers={h["name"]: h["value"] for h in op["requestHeaders"]})
+        urllib.request.urlopen(r, timeout=120).read()
+    req("PATCH", f"/v1/{kind}/{shot['id']}", {"data": {"type": kind, "id": shot["id"], "attributes": {
+        "uploaded": True, "sourceFileChecksum": hashlib.md5(data).hexdigest()}}}, f"commit {kind}")
+
+
+def stage_reviewshots(app, terrs, path):
+    """The paywall screenshot App Review requires on every subscription and in-app purchase (skips ones that have it)."""
+    gid = group_id(app)
+    for pid, sid in subs(gid).items():
+        s, d = req("GET", f"/v1/subscriptions/{sid}/appStoreReviewScreenshot")
+        if not d.get("data"):
+            upload_review_shot("subscriptionAppStoreReviewScreenshots", "subscription", sid, path)
+            print("review screenshot", pid)
+    for item in pages(f"/v1/apps/{app}/inAppPurchasesV2?limit=200"):
+        s, d = req("GET", f"/v2/inAppPurchases/{item['id']}/appStoreReviewScreenshot")
+        if not d.get("data"):
+            upload_review_shot("inAppPurchaseAppStoreReviewScreenshots", "inAppPurchaseV2", item["id"], path)
+            print("review screenshot", item["attributes"]["productId"])
+
+
 if __name__ == "__main__":
     stage = sys.argv[1]
+    if stage == "reviewshots":
+        a = app_id()
+        stage_reviewshots(a, [], sys.argv[2])
+        sys.exit()
     if stage == "clinic":
         add_custom_code(CLINIC_OFFER, sys.argv[2].upper())
         sys.exit()
     app = app_id()
     terrs = territories()
     print("app", app, "territories", len(terrs))
-    {"products": stage_products, "prices": stage_prices, "trial": stage_trial, "iaps": stage_iaps, "codes": stage_codes, "winback": stage_winback}[stage](app, terrs)
+    {"products": stage_products, "prices": stage_prices, "trial": stage_trial, "iaps": stage_iaps, "codes": stage_codes, "winback": stage_winback,
+     "localize": stage_localize}[stage](app, terrs)

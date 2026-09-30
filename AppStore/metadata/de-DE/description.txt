@@ -1,0 +1,26 @@
+Hitzewallung mit einem Tippen erfassen. Sehen, was sich verändert. Mit Notizen in den Arzttermin gehen.
+
+MenoMap ist für genau den Moment gemacht. Wenn eine Hitzewallung oder ein nächtlicher Schweißausbruch beginnt, tippst du einmal: auf dem Sperrbildschirm, im Kontrollzentrum, mit der Aktionstaste oder auf deiner Apple Watch. MenoMap misst die Dauer, atmet mit dir, wenn du möchtest, und speichert alles. Nachts hält die Nachtwache bis zum Morgen eine gedimmte Nachtschweiß-Taste für ein Tippen auf deinem Sperrbildschirm bereit.
+
+FUNKTIONIERT MIT APPLE HEALTH
+MenoMap liest die Beschwerden und die Wechseljahresphase, die du in Health erfasst hast, damit dein Verlauf schon am ersten Tag da ist, und speichert jede Welle, die du erfasst, zurück in Health.
+
+DEIN WETTER, KARTIERT
+• Eine Hitzekarte deiner Tage, eine Wellen-Uhr, die zeigt, wann sie sich häufen, und deine am häufigsten markierten Auslöser
+• Ein 30-Sekunden-Check-in am Abend für Schlaf, Stimmung und Energie
+• Muster in deinen eigenen Einträgen, etwa wie dein Schlaf nach heftigen Nächten aussieht, immer als Blick auf zeitliches Zusammentreffen, nie als Ursache
+• Zwei-Wochen-Experimente: Probier eine Veränderung aus und vergleiche dein eigenes Davor und Währenddessen
+
+MIT NOTIZEN IN DEN TERMIN
+Trag deinen Termin ein, und MenoMap zeigt dir, wie weit deine Notizen sind. Wähle deine Fragen aus und erstelle dann ein übersichtliches, einseitiges PDF für deine Ärztin oder deinen Arzt, in der Sprache, die sie oder er spricht.
+
+PRIVAT VON GRUND AUF
+Kein Konto. Keine Werbung. Keine Cloud. Deine Gesundheitsdaten bleiben auf deinem iPhone.
+
+MENOMAP PRO
+Längerer Verlauf (30, 90 und 365 Tage), Muster, Experimente, der vollständige monatliche Hitzebericht, Notizen für den Arzttermin und Medikamenten-Erinnerungen. Monatlich, jährlich (mit kostenloser Testphase) oder lebenslang. Oder kauf einen einzelnen Terminbericht für einen Termin.
+
+MenoMap ist ein Wellness-Tracker und Informationsangebot. Es stellt keine Diagnose der Menopause oder einer anderen Erkrankung, verschreibt oder ändert keine Behandlung und ersetzt nicht die Versorgung durch qualifizierte Ärztinnen und Ärzte.
+
+Datenschutz: https://gwlabs.app/menomap/privacy
+Nutzungsbedingungen: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

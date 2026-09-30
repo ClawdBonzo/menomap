@@ -1,0 +1,26 @@
+Kirjaa kuuma aalto yhdellä napautuksella. Näe, mikä muuttuu. Mene vastaanotolle muistiinpanojen kanssa.
+
+MenoMap on tehty juuri sitä hetkeä varten. Kun kuuma aalto tai yöhikoilu alkaa, napauta kerran lukitulta näytöltä, Ohjauskeskuksesta, Toimintopainikkeella tai Apple Watchista. MenoMap ottaa sille ajan, hengittää kanssasi, jos haluat, ja tallentaa sen. Öisin Yövahti pitää himmeän yhden napautuksen yöhikoilupainikkeen lukitulla näytölläsi aamuun asti.
+
+TOIMII TERVEYS-APIN KANSSA
+MenoMap lukee Terveys-appiin kirjaamasi oireet ja vaihdevuosien vaiheen, joten historiasi näkyy heti ensimmäisenä päivänä, ja tallentaa jokaisen kirjaamasi aallon takaisin Terveys-appiin.
+
+OMA SÄÄSI KARTALLA
+• Lämpökartta päivistäsi, aaltokello, joka näyttää, milloin aallot kasautuvat, ja useimmin merkitsemäsi laukaisevat tekijät
+• 30 sekunnin iltakysely unesta, mielialasta ja energiasta
+• Kuviot omissa merkinnöissäsi, kuten miltä unesi näyttää rankkojen öiden jälkeen – aina yhteensattuman tarkistuksena, ei koskaan syynä
+• Kahden viikon kokeilut: kokeile yhtä muutosta ja vertaa omia merkintöjäsi ennen ja aikana
+
+VASTAANOTOLLE MUISTIINPANOJEN KANSSA
+Lisää käyntisi, niin MenoMap näyttää, kuinka valmiit muistiinpanosi ovat. Valitse kysymyksesi ja luo lääkärillesi selkeä yhden sivun PDF sillä kielellä, jota hän puhuu.
+
+YKSITYISYYS SISÄÄNRAKENNETTUNA
+Ei tiliä. Ei mainoksia. Ei pilveä. Terveystietosi pysyvät iPhonessasi.
+
+MENOMAP PRO
+Pidempi historia (30, 90 ja 365 päivää), kuviot, kokeilut, koko kuukauden Lämpöraportti, muistiinpanot lääkärille ja lääkemuistutukset. Kuukausitilaus, vuositilaus (maksuttomalla kokeilujaksolla) tai elinikäinen. Tai osta yksittäinen Käyntiraportti yhtä käyntiä varten.
+
+MenoMap on hyvinvoinnin seurantasovellus ja terveystiedon työkalu. Se ei diagnosoi menopaussia eikä mitään muuta tilaa, ei määrää eikä muuta hoitoa eikä korvaa pätevän lääkärin antamaa hoitoa.
+
+Tietosuoja: https://gwlabs.app/menomap/privacy
+Käyttöehdot: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
