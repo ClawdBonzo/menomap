@@ -31,9 +31,11 @@ ORDER = ["01", "02", "05", "03", "04", "06", "07", "08", "09"]
 URLS = {"privacy_url": "https://gwlabs.app/menomap/privacy", "support_url": "https://gwlabs.app/support",
         "marketing_url": "https://gwlabs.app/menomap.html"}
 
-REVIEW_NOTES = """MenoMap is a symptom tracker for perimenopause and menopause (hot flashes and night sweats). There is no account or sign-in, and all data stays on the device.
+REVIEW_NOTES = """Changes for Guideline 5.1.1(iv) (submission ce71d292): the Apple Health screen in onboarding no longer has a Skip or Back button, and its only button now reads "Continue" and always opens the Health permission request. The app continues whether the user allows or not.
 
-How to try it: complete the short onboarding (Apple Health is optional; you can skip it), then tap "I'm having a surge" on the Today tab to start a timer, and tap again to end it and rate it. "Already over" logs one after the fact, and the "Evening check-in" card is on Today. To see two weeks of sample data without logging anything: Week tab > "See what two weeks looks like".
+MenoMap is a symptom tracker for perimenopause and menopause (hot flashes and night sweats). There is no account or sign-in, and all data stays on the device.
+
+How to try it: complete the short onboarding (on the Apple Health screen, tap Continue; allowing or not allowing both continue), then tap "I'm having a surge" on the Today tab to start a timer, and tap again to end it and rate it. "Already over" logs one after the fact, and the "Evening check-in" card is on Today. To see two weeks of sample data without logging anything: Week tab > "See what two weeks looks like".
 
 Apple Health: with permission, MenoMap reads hot flashes, night sweats, sleep, cycle data, other menopause symptoms, sleeping wrist temperature and (iOS 27) menopause stage, and writes the hot flashes, night sweats and bleeding the user logs. Health data is never sent off the device, never used for advertising, and never stored in iCloud by the app.
 
