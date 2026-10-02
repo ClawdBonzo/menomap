@@ -48,7 +48,8 @@ struct OnboardingView: View {
 
     private var topBar: some View {
         HStack {
-            if step != .promise {
+            // Health (App Review 5.1.1(iv)): no way to leave the explanation except into the permission sheet.
+            if step != .promise && !(step == .health && !healthConnected) {
                 Button { go(Step(rawValue: step.rawValue - 1) ?? .promise) } label: {
                     Image(systemName: "chevron.left").font(.title3).frame(width: MenoTheme.minHit, height: MenoTheme.minHit)
                 }
@@ -66,7 +67,7 @@ struct OnboardingView: View {
             .accessibilityElement()
             .accessibilityLabel(Text("Step \(step.rawValue + 1) of \(Step.allCases.count)"))
             Spacer()
-            if step != .privacy && step != .promise && step != .first {
+            if step != .privacy && step != .promise && step != .first && step != .health {
                 Button("Skip") { advance() }.frame(minWidth: MenoTheme.minHit, minHeight: MenoTheme.minHit)
             } else {
                 Color.clear.frame(width: MenoTheme.minHit, height: MenoTheme.minHit)
@@ -89,7 +90,6 @@ struct OnboardingView: View {
     private var primaryTitle: LocalizedStringKey {
         switch step {
         case .promise: "Get started"
-        case .health: healthConnected ? "Continue" : "Connect Apple Health"
         case .privacy: "I understand"
         default: "Continue"
         }
@@ -168,6 +168,7 @@ struct OnboardingView: View {
         store.profile().healthImportDone = true
         store.save()
         container.refreshSnapshot()
+        advance()
     }
 
     private func finish(then sheet: AppSheet?) {
