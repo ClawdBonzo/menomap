@@ -15,3 +15,5 @@ KEY=(-authenticationKeyPath ~/.private_keys/AuthKey_K34HFNJTXH.p8 -authenticatio
      -authenticationKeyIssuerID 69a6de84-f289-47e3-e053-5b8c7c11a4d1)
 xcodebuild -exportArchive -archivePath $ARCHIVE -exportOptionsPlist Tools/ExportOptions.plist -exportPath build/export $AUTH $KEY 2>&1 \
   | grep -E "error|Upload|EXPORT (SUCCEEDED|FAILED)|uploaded" | sort -u
+# Every app sends each new build to Rob's TestFlight automatically (internal group with automatic distribution).
+python3 Tools/testflight_autosend.py | grep -v " ok (" || true
