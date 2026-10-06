@@ -6,18 +6,25 @@ struct AppRootView: View {
     @Environment(AppRouter.self) private var router
     @Environment(MenoStore.self) private var store
 
+    /// Reads `revision` so finishing onboarding (which saves) always swaps the screen. Observing the profile model
+    /// alone missed the change after a fresh install, leaving "Just look around" looking dead.
+    private var onboardingDone: Bool {
+        _ = store.revision
+        return store.profile().onboardingDone
+    }
+
     var body: some View {
         Group {
             #if DEBUG
             if let kind = Showcase.kind {
                 ShowcaseView(kind: kind)
-            } else if store.profile().onboardingDone {
+            } else if onboardingDone {
                 MainTabs()
             } else {
                 OnboardingView()
             }
             #else
-            if store.profile().onboardingDone {
+            if onboardingDone {
                 MainTabs()
             } else {
                 OnboardingView()
