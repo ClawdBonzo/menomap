@@ -31,7 +31,9 @@ ORDER = ["01", "02", "05", "03", "04", "06", "07", "08", "09"]
 URLS = {"privacy_url": "https://gwlabs.app/menomap/privacy", "support_url": "https://gwlabs.app/support",
         "marketing_url": "https://gwlabs.app/menomap.html"}
 
-REVIEW_NOTES = """Changes for Guideline 5.1.1(iv) (submission ce71d292): the Apple Health screen in onboarding no longer has a Skip or Back button, and its only button now reads "Continue" and always opens the Health permission request. The app continues whether the user allows or not.
+REVIEW_NOTES = """Changes for Guideline 2.1(b) (paywall loading indefinitely, reviewed Oct 5): the products could not load because our Paid Apps Agreement was not yet active after our account moved from an individual to an organization (GW Capital Partners LLC). The Paid Apps Agreement, tax form and bank account are now active (Oct 6), so the products load in the sandbox. Build 4 also replaces the loading placeholders with a visible "Couldn't reach the App Store. Try again" button if the App Store ever returns no products.
+
+Changes for Guideline 5.1.1(iv) (Sep 30 review): the Apple Health screen in onboarding no longer has a Skip or Back button, and its only button now reads "Continue" and always opens the Health permission request. The app continues whether the user allows or not.
 
 MenoMap is a symptom tracker for perimenopause and menopause (hot flashes and night sweats). There is no account or sign-in, and all data stays on the device.
 

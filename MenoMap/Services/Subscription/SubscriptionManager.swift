@@ -86,6 +86,7 @@ final class SubscriptionManager: SubscriptionProviding {
     }
 
     func loadProducts() async {
+        productsFailed = false
         do {
             let loaded = try await Product.products(for: ProductID.all)
             products = ProductID.all.compactMap { id in loaded.first { $0.id == id } }

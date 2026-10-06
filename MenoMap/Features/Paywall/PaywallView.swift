@@ -114,15 +114,23 @@ struct PaywallView: View {
     @ViewBuilder private var plans: some View {
         if subscription.products.isEmpty {
             VStack(spacing: 10) {
-                ForEach(0..<3, id: \.self) { _ in
-                    RoundedRectangle(cornerRadius: 16).fill(MenoTheme.hairline).frame(height: 68)
-                }
                 if subscription.productsFailed {
-                    Button("Couldn't reach the App Store. Try again") { Task { await subscription.loadProducts() } }
-                        .font(.footnote)
+                    // A real message, not a skeleton: when StoreKit returns nothing, say so and offer a retry.
+                    Button { Task { await subscription.loadProducts() } } label: {
+                        Label("Couldn't reach the App Store. Try again", systemImage: "arrow.clockwise")
+                            .font(.subheadline.weight(.semibold)).foregroundStyle(MenoTheme.teal)
+                            .multilineTextAlignment(.center)
+                            .frame(maxWidth: .infinity).padding(20)
+                            .background(MenoTheme.surface, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+                    }
+                    .buttonStyle(.plain)
+                } else {
+                    ForEach(0..<3, id: \.self) { _ in
+                        RoundedRectangle(cornerRadius: 16).fill(MenoTheme.hairline).frame(height: 68)
+                    }
+                    .redacted(reason: .placeholder)
                 }
             }
-            .redacted(reason: .placeholder)
         } else {
             VStack(spacing: 10) {
                 ForEach([ProductID.yearly, ProductID.monthly, ProductID.lifetime], id: \.self) { id in
