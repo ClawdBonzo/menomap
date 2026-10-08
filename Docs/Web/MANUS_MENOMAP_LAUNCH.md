@@ -12,7 +12,8 @@ other copy exactly as they are. Change only what's listed below.
   doesn't, show no label.
 - Every MenoMap download button keeps this exact link (it carries our campaign tracking):
   `https://apps.apple.com/app/apple-store/id6817484445?pt=117201882&ct=gw-menomap&mt=8`
-- Homepage card button: `https://apps.apple.com/app/apple-store/id6817484445?pt=117201882&ct=gw-home-menomap&mt=8`
+- The MenoMap card on `/apps` links to `/menomap.html` with "View app →", like every other app card (fixed in
+  `MANUS_MENOMAP_CARD_FIX.md`).
 
 ## 2. Smart App Banner and structured data
 

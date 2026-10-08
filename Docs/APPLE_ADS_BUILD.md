@@ -13,23 +13,36 @@ Menopause Tracker" (GW Capital Partners LLC). Naming: `MM - <geo> - <type>`.
 - Ad: Default product page for now. Swap in the matching custom product page (table at the bottom) once Apple approves
   it.
 
-## Status
+## Status (built 2026-10-08, all 20 PAUSED, start date Jan 1, 2027)
 
-| Campaign | Status | Daily budget | Ad groups (default bid) |
-|---|---|---|---|
-| MM - US - Category | **Created** 2026-10-08, start Jan 1, 2027, **not yet paused** | $20 → lower to $14 | Tracker ($1.80) |
-| MM - US - Category | to add: ad groups | | HotFlash ($2.00), NightSweats ($1.80), Peri ($2.00), Doctor/HRT ($1.60) |
-| MM - US - Brand | to build | $2 | Brand ($0.60) |
-| MM - US - Competitor | to build | $4 | Competitor ($1.20) |
-| MM - US - Discovery | to build | $4 | Discovery ($1.00), broad + Search Match, all exact terms as exact negatives |
-| MM - CA - Category | to build | $3 | Category ($1.20) |
-| MM - CA - Discovery | to build | $1 | Discovery ($0.70) |
-| MM - UK/IE/AU/NZ - Brand | to build | $1 | Brand ($0.50) |
-| MM - UK/IE/AU/NZ - Category | to build | $4 | Category ($1.40), "hot flush" wording |
-| MM - UK/IE/AU/NZ - Competitor | to build | $1 | Competitor ($0.90) |
-| MM - UK/IE/AU/NZ - Discovery | to build | $1 | Discovery ($0.80) |
+| Campaign | Countries | Daily budget | Ad groups (default max bid) | Search Match |
+|---|---|---|---|---|
+| MM - US - Category | US | $20 (plan says $14; lower before launch) | Tracker $1.80, HotFlash $2.00, NightSweats $1.80, Peri $2.00, Doctor-HRT $1.60 | off |
+| MM - US - Brand | US | $2 | Brand $0.60 | off |
+| MM - US - Competitor | US | $4 | Competitor $1.20 | off |
+| MM - US - Discovery | US | $4 | Discovery $1.00 (broad), 49 exact negatives | on |
+| MM - CA - Category | CA | $3 | Category $1.20 (all 35 US category terms) | off |
+| MM - CA - Brand | CA | $1 | Brand $0.40 | off |
+| MM - CA - Competitor | CA | $1 | Competitor $0.70 | off |
+| MM - CA - Discovery | CA | $1 | Discovery $0.70 (broad), 49 exact negatives | on |
+| MM - UK/IE/AU/NZ - Category | GB, IE, AU, NZ | $4 | Category $1.40 ("hot flush" + "hot flash" terms) | off |
+| MM - UK/IE/AU/NZ - Brand | GB, IE, AU, NZ | $1 | Brand $0.50 | off |
+| MM - UK/IE/AU/NZ - Competitor | GB, IE, AU, NZ | $1 | Competitor $0.90 (+ Newson / Health & Her terms) | off |
+| MM - UK/IE/AU/NZ - Discovery | GB, IE, AU, NZ | $1 | Discovery $0.80 (broad), 48 exact negatives | on |
+| MM - DE/AT/CH - Category | DE, AT, CH | $4 | Category $1.00 (German terms) | off |
+| MM - DE/AT/CH - Discovery | DE, AT, CH | $1 | Discovery $0.60 (broad) | on |
+| MM - FR - Category | FR | $3 | Category $0.85 (French terms) | off |
+| MM - FR - Discovery | FR | $1 | Discovery $0.60 (broad) | on |
+| MM - NL - Category | NL | $2 | Category $0.90 (Dutch terms) | off |
+| MM - NL - Discovery | NL | $1 | Discovery $0.60 (broad) | on |
+| MM - JP - Category | JP | $3 | Category $1.00 (Japanese terms) | off |
+| MM - JP - Discovery | JP | $1 | Discovery $0.60 (broad) | on |
 
-Total when everything runs: about $35/day (weeks 1–2 of the plan).
+Total if every campaign ran: **$59/day**. The phased plan only turns on the English-speaking markets first
+(US + CA + UK/IE/AU/NZ = $45/day as built, ~$35/day after lowering US Category to $14), and the DE/FR/NL/JP
+campaigns from week 3 or later.
+
+All campaigns: Search Results, Manage Bids (manual CPT), Reach All Eligible Users (no age/gender), Default product page.
 
 ## Keywords (exact)
 
