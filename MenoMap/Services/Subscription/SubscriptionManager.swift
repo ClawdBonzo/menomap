@@ -52,6 +52,7 @@ final class SubscriptionManager: SubscriptionProviding {
     private static let cacheKey = "meno.entitlement.pro"
     private static let creditsKey = "meno.visitreport.credits"
     private var updatesTask: Task<Void, Never>?
+    private var intentsTask: Task<Void, Never>?
 
     init() {
         isPro = UserDefaults.standard.bool(forKey: Self.cacheKey)
@@ -68,6 +69,13 @@ final class SubscriptionManager: SubscriptionProviding {
         updatesTask = Task { [weak self] in
             for await update in StoreKit.Transaction.updates {
                 await self?.handle(update)
+            }
+        }
+        // Promoted in-app purchases: a purchase started from the App Store product page arrives here.
+        intentsTask?.cancel()
+        intentsTask = Task { [weak self] in
+            for await intent in PurchaseIntent.intents {
+                await self?.purchase(intent.product)
             }
         }
         Task {
